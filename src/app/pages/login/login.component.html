@@ -1,0 +1,22 @@
+<div class="main_component">
+    <div class="div-flex">
+        <h1>Lépj be</h1>
+        <form [formGroup]="signUpForm" (ngSubmit)="login()">
+            <mat-form-field>
+                <mat-label for="email">Email cím: </mat-label>
+                <input matInput type="text" formControlName="email" />
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="password">Jelszó: </mat-label>
+                <input matInput type="password" formControlName="password" />
+            </mat-form-field>
+            <div>
+                <span class="buttons">
+                    <button mat-raised-button type="submit">Bejelentkezés</button>
+                </span><span class="buttons">
+                    <button mat-raised-button  [routerLink]="'/signup'">Regisztráció</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>

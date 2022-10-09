@@ -1,0 +1,4 @@
+enum Unit{
+    meter,
+    kilogramm
+}

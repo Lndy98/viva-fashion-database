@@ -1,31 +1,19 @@
-<mat-toolbar>
-  <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>more_vert</mat-icon>    
-  </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item *ngIf="loggedInUser" routerLink="/mypage">
-            <span>Profil</span>
-          </button>
-        <button mat-menu-item *ngIf="loggedInUser" routerLink="/login" (click)="logout()">
-            <span>Kijelentkezés</span>
-          </button>
-          <button mat-menu-item *ngIf="!(loggedInUser)" routerLink="/login">
-            <span>Bejelentkezés</span>
-          </button>
-          <button mat-menu-item *ngIf="!(loggedInUser)" routerLink="/signup">
-            <span>Regisztráció</span>
-          </button>
-      </mat-menu>
-  <button mat-icon-button *ngIf="loggedInUser" routerLink="/shoppingcart">
-      <mat-icon>shopping_cart</mat-icon>
+<mat-toolbar color="primary">
+  <button *ngIf="!loggedInUser" mat-icon-button color="primary" routerLink="/create">
+    <mat-icon>add</mat-icon>
   </button>
   <button mat-icon-button color="primary" routerLink="/home">
-      <mat-icon>home</mat-icon>
-    </button>
-  </mat-toolbar>
+      <mat-icon class="icon">home</mat-icon>
+  </button>
+  <button *ngIf="!loggedInUser" mat-icon-button color="primary" routerLink="/login">
+    <mat-icon>login</mat-icon>
+  </button>
+  <button *ngIf="loggedInUser" mat-icon-button color="primary" routerLink="/login">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
   <div>
     <mat-card>
-      Sziasztok
       <router-outlet></router-outlet>
     </mat-card>
   </div>

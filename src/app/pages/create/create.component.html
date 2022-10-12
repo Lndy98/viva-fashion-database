@@ -1,0 +1,19 @@
+<nav mat-tab-nav-bar>
+    <a mat-tab-link
+    routerLink="./outgoing"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    Kimenő
+  </a>
+    <a mat-tab-link
+    routerLink= "./incoming"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    Bejövő
+  </a>
+</nav> 
+<div>
+    <mat-card>
+      <router-outlet></router-outlet>
+    </mat-card>
+  </div>

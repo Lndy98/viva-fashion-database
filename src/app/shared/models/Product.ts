@@ -1,8 +1,8 @@
-export interface Artical{
+export interface Product{
     number: string;
     name: string;
     price: string;
     stock: string;
-    unit: Unit;
+    unit: string;
     materialComposition: string;
 }

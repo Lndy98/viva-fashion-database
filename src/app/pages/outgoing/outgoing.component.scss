@@ -1,13 +1,20 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ mat-form-field , mat-form-field {
+    margin-left: 8px;
+  }
+.main_component{
+    align-items: center;
+}
+
 .div-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 100%;
-  }
-  
-  .main_component {
-    height: 100vh;
   }
   
   form div {
@@ -23,13 +30,4 @@
   .subForm {
     width: 100%;
     display: inline-grid;
-  }
-  
-  .buttons {
-    padding: 5px;
-  }
-  
-  button {
-    width: auto;
-  
   }

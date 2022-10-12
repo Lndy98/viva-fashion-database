@@ -1,8 +1,33 @@
-<mat-tab-group mat-align-tabs="start">
-    <mat-tab label="Szállító levél">
-        TODO: korábbi szállító levelek: szűrési lehetőséggel(cikkszám és vásárló alapján)
-    </mat-tab>
-    <mat-tab label="Ügyfelek">
-        kell erre külön táblázat is egyáltalán
-    </mat-tab>
-</mat-tab-group>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link
+    routerLink="./deliveryNoteList"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    Szállító levél
+  </a>
+    <a mat-tab-link
+    routerLink= "./products"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    Készlet
+  </a>
+  <a mat-tab-link
+    routerLink= "./deliveryNote"
+    target="_blank"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    Example for delevery-note
+  </a>
+  <a mat-tab-link
+    routerLink="./customer"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    Partnerek
+  </a>
+</nav> 
+<div>
+    <mat-card>
+      <router-outlet></router-outlet>
+    </mat-card>
+  </div>

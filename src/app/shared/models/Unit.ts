@@ -1,4 +1,4 @@
-enum Unit{
-    meter,
-    kilogramm
+export enum Unit{
+    meter="m",
+    kilogramm="kg"
 }

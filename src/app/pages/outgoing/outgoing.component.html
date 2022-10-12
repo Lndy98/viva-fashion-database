@@ -1,0 +1,32 @@
+<div class="main_component">
+    <div class="div-flex">
+        <mat-form-field appearance="fill" [color]="'accent'">
+            <mat-label>Partner</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill" [color]="'accent'">
+        <mat-label>Áfa:</mat-label>
+        <mat-select>
+            <mat-option value="zero">0%</mat-option>
+            <mat-option value="half">13,5%</mat-option>
+            <mat-option value="all">27%</mat-option>
+        </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" [color]="'accent'">
+            <mat-label>Dátum</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+</div>
+Tételek:
+<mat-form-field appearance="fill" [color]="'accent'">
+    <mat-label>Cikkszám</mat-label>
+    <input matInput>
+</mat-form-field>
+<mat-form-field appearance="fill" [color]="'accent'">
+    <mat-label>Mennyiség</mat-label>
+    <input matInput>
+</mat-form-field>

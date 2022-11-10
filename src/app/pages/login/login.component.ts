@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms'
+import { Route, Router } from '@angular/router';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,18 +10,30 @@ import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  signUpForm = new UntypedFormGroup({
-    username : new UntypedFormControl(''),
-    password : new UntypedFormControl(''),
+  signInForm = new FormGroup({
+    username : new FormControl(''),
+    password : new FormControl(''),
   });
   
 
-  constructor() { }
+  constructor(private rout: Router,private authService: AuthService) { }
 
   ngOnInit(): void {
   }
 
   login() {
+    if(this.signInForm.value.password && this.signInForm.value.username){
+      let email = this.signInForm.value.username + "@gmail.com";
+
+      this.authService.login(email, this.signInForm.value.password).then(cred=>{
+        console.log(cred);
+        this.rout.navigateByUrl('/home');
+    }).catch(error=>{
+      console.log(error);
+    });
+    } else {
+      console.log("nem töltötted ki!")
+    }
     //TODO
   }
 

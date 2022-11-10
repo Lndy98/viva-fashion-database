@@ -11,6 +11,18 @@
     [active]="rla.isActive">
     Bejövő
   </a>
+  <a mat-tab-link
+  routerLink= "./newproduct"
+  routerLinkActive #rla="routerLinkActive"
+  [active]="rla.isActive">
+  Új árucikk
+  </a>
+  <a mat-tab-link
+  routerLink= "./newcustomer"
+  routerLinkActive #rla="routerLinkActive"
+  [active]="rla.isActive">
+  Új partner
+  </a>
 </nav> 
 <div>
     <mat-card>

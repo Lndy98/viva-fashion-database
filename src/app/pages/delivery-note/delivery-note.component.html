@@ -1,43 +1,40 @@
-<div id="delivery-note">
-    <h1>Árú kísérő (kimenő)</h1>
-    <p>Bizonylat szám: xxxx-xx-xxxx <br> Vevő: Példa János<br> Dátum: 2022.10.11. <br> Áfa: 0%</p>
-    <table>
-        <tr>
-          <th>Cikkszám</th>
-          <th>Megnevezés</th>
-          <th>Mennyiség</th>
-          <th>Egység ár</th>
-          <th>Fizetendő összeg</th>
-        </tr>
-        <tr>
-          <td>nco/034</td>
-          <td>venezia prt</td>
-          <td>8.00m</td>
-          <td>1700</td>
-          <td>13 600</td>
-        </tr>
-        <tr>
-          <td>nco/034</td>
-          <td>venezia prt</td>
-          <td>8.00m</td>
-          <td>1700</td>
-          <td>13 600</td>
-        </tr>
-        <tr >
-          <td></td>
-          <td></td>
-          <td class="sum">16.00m</td>
-          <td></td>
-          <td class="sum">27 200</td>
-        </tr>
-      </table>
-      <div>
+<div id="print-section">
+  <div *ngIf="deliveryNote" id="delivery-note">
+      <h1>Árú kísérő (kimenő)</h1>
+      <p>Bizonylat szám: {{deliveryNote.number}} <br> Vevő:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date | date: 'yyyy/MM/dd'}} <br> Áfa:  {{deliveryNote.tax}} %</p>
+      <table mat-table [dataSource]="deliveryNote.products">
+        <ng-container matColumnDef="productNumber">
+            <th mat-header-cell *matHeaderCellDef> Cikkszám </th>
+            <td mat-cell *matCellDef="let element"> {{element.productNumber}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
+        </ng-container>
+        <ng-container matColumnDef="amount">
+            <th mat-header-cell *matHeaderCellDef> mennyiség </th>
+            <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+            <td mat-footer-cell *matFooterCellDef> {{ sumAmount }} </td>  
+        </ng-container>
+        <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef> Ár</th>
+            <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
+        </ng-container>
+        <ng-container matColumnDef="payable">
+            <th mat-header-cell *matHeaderCellDef> Fizetendő összeg ({{getTax()}}% áfa)</th>
+            <td mat-cell *matCellDef="let element" > {{getPayable(element.price, element.amount)}} </td>
+            <td mat-footer-cell *matFooterCellDef> {{ getSumPayable() }} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+     </table>
+     <div class="out-sign-box">
         <div class="sign-box">
-
+            Átadó
         </div>
         <div class="sign-box">
-            
+            Átvevő
         </div>
       </div>
+    </div>
 </div>
-<button printSectionId="delivery-note"  ngxPrint>Print This Page</button>
+<button mat-raised-button printSectionId="print-section" [useExistingCss]="true" color="primary" ngxPrint>Nyomtatás</button>

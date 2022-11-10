@@ -1,42 +1,4 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-@media print {
-    @page { 
-      size: auto;
-      margin: 0mm; // added mm
-    }
-    body { 
-      margin: 2cm;
-    }
-    div{
-      padding-top: 2%;
-      padding-bottom: 2%;
-      text-align: center;
-    }
-    #delivery-note{
-      border-style: double none double none;
-    }
-    h1{
-      text-align: center;
-      text-decoration: double;
-    }
-    p{
-      text-align: center;
-    }
-    table {
-      margin-top: 5%;
-        width: 100%;
-        text-align: center;
-      }
-    .sum{
-      font-weight: bold;
-    }
-    .sign-box{
-      margin-left: 2.5%;
-      margin-right: 2.5%;
-      display: inline-flex;
-      border: solid 1px;
-      width: 44%;
-      height: 100px;
-    }
-  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

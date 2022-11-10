@@ -105,6 +105,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "viva-fashion-database:build:production",
+            "firebaseProject": "viva-fashion-database",
+            "firebaseHostingSite": "viva-fashion-database"
+          }
         }
       }
     }

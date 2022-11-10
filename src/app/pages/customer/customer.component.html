@@ -1,7 +1,29 @@
 <table mat-table [dataSource]="customers">
     <ng-container matColumnDef="companyName">
         <th mat-header-cell *matHeaderCellDef> Cég név </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.companyName}} </td>
+    </ng-container>
+    <ng-container matColumnDef="address">
+        <th mat-header-cell *matHeaderCellDef> Cím </th>
+        <td mat-cell *matCellDef="let element"> {{element.country + " " + element.town+ ", "
+             + element.ZIPcode + ". " + element.street}}  </td>
+    </ng-container>
+    <ng-container matColumnDef="taxnumber">
+        <th mat-header-cell *matHeaderCellDef> Adószám </th>
+        <td mat-cell *matCellDef="let element"> {{element.taxNumber}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="accountNumber">
+        <th mat-header-cell *matHeaderCellDef> Számlaszám </th>
+        <td mat-cell *matCellDef="let element"> {{element.accountNumber}} </td>
+    </ng-container>
+    <ng-container matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef> Típus </th>
+        <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+    </ng-container>
+    <ng-container matColumnDef="comment">
+        <th mat-header-cell *matHeaderCellDef> Megjegyzés </th>
+        <td mat-cell *matCellDef="let element"> {{element.comment}} </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

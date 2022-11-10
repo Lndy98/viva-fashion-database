@@ -1,8 +1,59 @@
-<mat-form-field appearance="fill" [color]="'accent'">
-    <mat-label>Dátum</mat-label>
-    <input matInput [matDatepicker]="picker">
-    <mat-hint>MM/DD/YYYY</mat-hint>
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
+<div class="main_component"><div class="div-flex">
+    <h1>Árú felvétel</h1>
+<form [formGroup]="itemForm"  (ngSubmit)="addItem()">
+    <mat-form-field appearance="fill" [color]="'accent'">
+        <mat-label for="productNumber" >Cikkszám</mat-label>
+        <input type="text"
+            matInput
+            formControlName="productNumber"
+            [matAutocomplete]="autos">
+        <mat-autocomplete #autos="matAutocomplete" appearance="fill">
+            <mat-option *ngFor="let option of filteredProducts | async" [value]="option.number">
+                {{option.number}} - {{ option.name }}
+            </mat-option>
+        </mat-autocomplete>
+     </mat-form-field>
+    <mat-form-field appearance="fill" [color]="'accent'">
+        <mat-label for="amount" >Mennyiség</mat-label>
+        <input type="number" OnlyNumber="true" formControlName="amount" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill" [color]="'accent'">
+        <mat-label for="incomingPrice" >Bekerülési ár</mat-label>
+        <input type="number" OnlyNumber="true" formControlName="incomingPrice" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill" [color]="'accent'">
+        <mat-label for="price" >Netto ár</mat-label>
+        <input type="number" OnlyNumber="true" formControlName="price" matInput>
+    </mat-form-field>
+    <span class="button">
+        <button mat-raised-button color="primary" type="submit" >Tétel hozzáadása</button>
+    </span>
+</form>
+</div></div>
 
+<table mat-table [dataSource]="items" *ngIf="isItem">
+    <ng-container matColumnDef="number">
+        <th mat-header-cell *matHeaderCellDef> Cikkszám </th>
+        <td mat-cell *matCellDef="let element"> {{ element.productNumber }} </td>
+    </ng-container>
+    <ng-container matColumnDef="amount">
+        <th mat-header-cell *matHeaderCellDef> Mennyiség </th>
+        <td mat-cell *matCellDef="let element"> {{ element.amount }} </td>
+    </ng-container>
+    <ng-container matColumnDef="incomingPrice">
+        <th mat-header-cell *matHeaderCellDef>Bekerülési ár</th>
+        <td mat-cell *matCellDef="let element"> {{ getIncomingProducts(element.number).incomingPrice }} </td>
+    </ng-container>
+    <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef>Netto ár</th>
+        <td mat-cell *matCellDef="let element"> {{ getIncomingProducts(element.number).price}} </td>
+    </ng-container>
+    <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef>Majd a törlés</th>
+        <td mat-cell *matCellDef="let element" > <button mat-button (click)="removeElement(element)">Törlés</button> </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<button class="buttons" mat-raised-button  color="primary" type="submit" *ngIf="isItem" (click)="cancel()"> Mégse </button>
+<button class="buttons" mat-raised-button  color="primary" type="submit" form="basic" *ngIf="isItem" (click)="save()"> Mentés </button>

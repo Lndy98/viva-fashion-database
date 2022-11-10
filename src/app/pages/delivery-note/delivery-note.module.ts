@@ -6,6 +6,8 @@ import { DeliveryNoteComponent } from './delivery-note.component';
 
 import {MatTableModule} from '@angular/material/table';
 import {NgxPrintModule} from 'ngx-print';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import {NgxPrintModule} from 'ngx-print';
     CommonModule,
     DeliveryNoteRoutingModule,
     MatTableModule,
-    NgxPrintModule
+    NgxPrintModule,
+    MatButtonModule
   ]
 })
 export class DeliveryNoteModule { }

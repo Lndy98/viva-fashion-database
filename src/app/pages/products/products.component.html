@@ -24,6 +24,14 @@
         <th mat-header-cell *matHeaderCellDef> Nettó ár(Ft) </th>
         <td mat-cell *matCellDef="let element"> {{element.price}} </td>
     </ng-container> 
+    <ng-container matColumnDef="incomingPrice">
+        <th mat-header-cell *matHeaderCellDef> Bekerülési ár(Ft) </th>
+        <td mat-cell *matCellDef="let element"> {{element.incomingPrice}} </td>
+    </ng-container> 
+    <ng-container matColumnDef="stockValue">
+        <th mat-header-cell *matHeaderCellDef> Készlet értéke(Ft) </th>
+        <td mat-cell *matCellDef="let element"> {{+element.incomingPrice * +element.stock}} </td>
+    </ng-container> 
     <tr mat-header-row *matHeaderRowDef="productsDisplayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: productsDisplayedColumns;"></tr>
  </table>

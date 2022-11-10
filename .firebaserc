@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "viva-fashion-database": {
+      "hosting": {
+        "viva-fashion-database": [
+          "viva-fashion-database"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "viva-fashion-database"
+  }
+}

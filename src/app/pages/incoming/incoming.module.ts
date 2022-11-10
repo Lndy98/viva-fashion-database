@@ -10,6 +10,10 @@ import {MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
 @NgModule({
   declarations: [
     IncomingComponent
@@ -22,7 +26,10 @@ import { MatSelectModule } from '@angular/material/select';
     ReactiveFormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSelectModule
+    MatSelectModule,
+    MatAutocompleteModule,
+    MatTableModule,
+    MatButtonModule
   ]
 })
 export class IncomingModule { }

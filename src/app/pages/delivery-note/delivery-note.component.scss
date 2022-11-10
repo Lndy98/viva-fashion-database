@@ -14,18 +14,22 @@ p{
   text-align: center;
 }
 table {
-  margin-top: 5%;
-    width: 100%;
-    text-align: center;
-  }
-.sum{
+  width: 100%;
+}
+tr.mat-footer-row {
   font-weight: bold;
 }
-.sign-box{
+
+div .sign-box{
+  margin-top: 10%;
   margin-left: 2.5%;
   margin-right: 2.5%;
+  text-align: center;
+  border-top: solid 1px;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+.out-sign-box{
   display: inline-flex;
-  border: solid 1px;
-  width: 44%;
-  height: 100px;
+  width: 100%;
 }

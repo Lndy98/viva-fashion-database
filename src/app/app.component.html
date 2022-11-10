@@ -1,14 +1,14 @@
 <mat-toolbar color="primary">
-  <button *ngIf="!loggedInUser" mat-icon-button color="primary" routerLink="/create">
+  <button *ngIf="loggedInUser" mat-icon-button color="primary" routerLink="/create">
     <mat-icon>add</mat-icon>
   </button>
-  <button mat-icon-button color="primary" routerLink="/home">
+  <button *ngIf="loggedInUser" mat-icon-button color="primary" routerLink="/home">
       <mat-icon class="icon">home</mat-icon>
   </button>
-  <button *ngIf="!loggedInUser" mat-icon-button color="primary" routerLink="/login">
-    <mat-icon>login</mat-icon>
-  </button>
-  <button *ngIf="loggedInUser" mat-icon-button color="primary" routerLink="/login">
+  <button *ngIf="loggedInUser && isAdmin" mat-icon-button color="primary" routerLink="/dbLoader">
+    <mat-icon class="icon">settings</mat-icon>
+</button>
+  <button *ngIf="loggedInUser" mat-icon-button color="primary" routerLink="/login" (click)="logout()">
     <mat-icon>logout</mat-icon>
   </button>
 </mat-toolbar>

@@ -1,0 +1,55 @@
+<div class="main_component">
+    <h1>Új termék</h1>
+    <div class="div-flex">
+        <form class="basic" id="basic" [formGroup]="detailsForm" (ngSubmit)="save()">
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Név*</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Cikkszám*</mat-label>
+                <input matInput formControlName="number">
+            </mat-form-field>
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Készlet*</mat-label>
+                <input matInput formControlName="stock">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Mértékegység*</mat-label>
+                <mat-select formControlName="unit">
+                    <mat-option value="fm">fm</mat-option>
+                    <mat-option value="gm">gm</mat-option>
+                </mat-select>
+                </mat-form-field>
+
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Ár (nettó)*</mat-label>
+                <input matInput formControlName="price">
+            </mat-form-field>
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Anyag összetétel</mat-label>
+                <input matInput formControlName="materialComposition">
+            </mat-form-field>
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Gramm súly</mat-label>
+                <input matInput formControlName="grammWeight">
+            </mat-form-field>
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Származás</mat-label>
+                <input matInput formControlName="origin">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>vtsz</mat-label>
+                <input matInput formControlName="vtsz">
+            </mat-form-field>
+            <mat-form-field appearance="fill" [color]="'accent'">
+                <mat-label>Bekerülési ár*</mat-label>
+                <input matInput formControlName="incomingPrice">
+            </mat-form-field>
+        </form>
+    </div>
+</div>
+<button class="buttons" mat-raised-button  color="primary" type="submit"  (click)="cancel()"> Mégse </button>
+<button class="buttons" mat-raised-button  color="primary" type="submit" form="basic"  > Mentés </button>

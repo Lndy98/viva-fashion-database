@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/shared/services/products.service';
 import { Product } from '../../shared/models/Product';
 import { Unit } from "../../shared/models/Unit";
 
@@ -10,29 +11,21 @@ import { Unit } from "../../shared/models/Unit";
 export class ProductsComponent implements OnInit {
 
   public Unit = Unit;
+  products !: Array<Product>;
 
-  poduct1: Product={
-    number: "c03-111",
-    name: "fehér vászon",
-    price:"1200",
-    stock:"100",
-    unit: Unit.meter,
-    materialComposition: "100% pamut"
-  }
-  poduct2: Product={
-    number: "c03-105",
-    name: "drapp vászon",
-    price:"1200",
-    stock:"50",
-    unit: Unit.meter,
-    materialComposition: "70% pamut, 15% valami, és még 15% ki tudja micsoda"
-  }
-  products:Array<Product> = [this.poduct1,this.poduct2];
-  productsDisplayedColumns: string[] = ['number', 'name', 'materialComposition', 'stock', 'unit', 'price'];
+  productsDisplayedColumns: string[] = ['number', 'name', 'materialComposition', 'stock', 'unit', 'price', 'incomingPrice', 'stockValue'];
 
-  constructor() { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.setProduct();
+  }
+
+  setProduct(){
+    this.productService.loadProduct().subscribe((data: Array<Product>) => {
+      console.log(data);
+      this.products = data;
+    })
   }
 
 }

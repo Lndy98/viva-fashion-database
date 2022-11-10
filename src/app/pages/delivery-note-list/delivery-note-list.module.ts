@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DeliveryNoteListRoutingModule } from './delivery-note-list-routing.module';
 import { DeliveryNoteListComponent } from './delivery-note-list.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import {MatTableModule} from '@angular/material/table';
   imports: [
     CommonModule,
     DeliveryNoteListRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonModule
   ]
 })
 export class DeliveryNoteListModule { }

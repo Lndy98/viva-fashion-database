@@ -1,7 +1,7 @@
 <div class="main_component">
     <div class="div-flex">
         <h1>Belépés</h1>
-        <form [formGroup]="signUpForm" (ngSubmit)="login()">
+        <form [formGroup]="signInForm" (ngSubmit)="login()">
             <mat-form-field>
                 <mat-label for="username">Felhasználó név</mat-label>
                 <input matInput type="text" formControlName="username" />

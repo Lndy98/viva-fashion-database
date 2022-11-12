@@ -5,10 +5,6 @@ import { CustomerRoutingModule } from './customer-routing.module';
 import { CustomerComponent } from './customer.component';
 
 import {MatTableModule} from '@angular/material/table';
-import {MatInputModule} from '@angular/material/input';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
-import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -18,12 +14,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
   imports: [
     CommonModule,
     CustomerRoutingModule,
-    MatTableModule,
-    MatInputModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-    MatPaginatorModule
+    MatTableModule
   ]
 })
 export class CustomerModule { }

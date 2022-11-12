@@ -1,15 +1,5 @@
-<div class="div-flex">
-    <form class="basic" id="basic" [formGroup]="detailsForm" (ngSubmit)="search()">
-        <mat-form-field appearance="fill" [color]="'accent'">
-            <mat-label>Cikkszám*</mat-label>
-            <input matInput formControlName="prductNumber">
-        </mat-form-field>
-        <span class="button">
-            <button mat-raised-button color="primary" type="submit" >Keresés</button>
-        </span>
-    </form>
-</div>
-<table mat-table [dataSource]="products" *ngIf="products">
+<table mat-table [dataSource]="products">
+    <!-- Name Column -->
     <ng-container matColumnDef="number">
         <th mat-header-cell *matHeaderCellDef> Cikkszám </th>
         <td mat-cell *matCellDef="let element"> {{element.number}} </td>

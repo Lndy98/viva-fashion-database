@@ -11,7 +11,6 @@ import { v4 as uuidv4 } from 'uuid';
 })
 export class NewProductComponent implements OnInit {
 
-  errorMessage: string = "";
   product!: Product;
 
   detailsForm = new FormGroup({
@@ -34,15 +33,14 @@ export class NewProductComponent implements OnInit {
 
   save(){
     this.createProduct();
-    if(this.product){
-      this.productService.getByNumber(this.product.number).subscribe(data => {
-      if(data.length == 0){
-        console.log("Start loading:");
-        this.productService.create(this.product).then(_=>{
-          window.location.reload();
-        })
-      }
-    })}
+    console.log(this.product);
+    let bool = this.isProduct(this.product.number);
+    console.log(bool)
+    if(!bool){
+      console.log("Nincsen");
+    }else{
+      console.log("van");
+    }
   }
 
   createProduct(){
@@ -78,5 +76,15 @@ export class NewProductComponent implements OnInit {
 
   cancel(){
     window.location.reload();
+  }
+  isProduct(productNumber: string):boolean{
+    let isProduct = false;
+    this.productService.getByNumber(productNumber).subscribe(data => {
+      console.log("A leényeg: " + data);
+      if(data){
+       isProduct = true;
+      }
+    })
+    return isProduct;
   }
 }

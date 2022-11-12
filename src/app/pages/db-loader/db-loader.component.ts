@@ -17,13 +17,13 @@ export class DbLoaderComponent implements OnInit {
         "name": "Kupon",
         "stock": "-10.00",
         "unit": "fm",
-        "price": "1 850.22",
+        "price": "1850.22",
         "id": "1",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 800.00"
+        "incomingPrice": "1800.00"
     },
     {
         "number": "0AJ/001-01",
@@ -32,7 +32,7 @@ export class DbLoaderComponent implements OnInit {
         "unit": "fm",
         "price": "958.33",
         "id": "2",
-        "materialComposition": "80%VISC 19%LAN 1%MTL",
+        "materialComposition": "80%VISC19%LAN1%MTL",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
@@ -43,9 +43,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "SRON",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "3",
-        "materialComposition": "80%VISC 20%LAN",
+        "materialComposition": "80%VISC20%LAN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "53092900",
@@ -56,9 +56,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "SRON",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "4",
-        "materialComposition": "80%VISC 20%LAN",
+        "materialComposition": "80%VISC20%LAN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "53092900",
@@ -69,9 +69,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "SRON",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "5",
-        "materialComposition": "80%VISC 20%LAN",
+        "materialComposition": "80%VISC20%LAN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "53092900",
@@ -82,9 +82,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "SRON",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "6",
-        "materialComposition": "80%VISC 20%LAN",
+        "materialComposition": "80%VISC20%LAN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "53092900",
@@ -95,9 +95,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "SRON",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "7",
-        "materialComposition": "80%VISC 20%LAN",
+        "materialComposition": "80%VISC20%LAN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "53092900",
@@ -108,9 +108,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "SRON",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "8",
-        "materialComposition": "80%VISC 20%LAN",
+        "materialComposition": "80%VISC20%LAN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "53092900",
@@ -121,9 +121,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "LUKRECZIA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "9",
-        "materialComposition": "46%ACT35%RAJ 8%NYL 11%FILM",
+        "materialComposition": "46%ACT35%RAJ8%NYL11%FILM",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
@@ -134,9 +134,9 @@ export class DbLoaderComponent implements OnInit {
         "name": "LUKRECZIA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "10",
-        "materialComposition": "46%ACT35%RAJ 8%NYL 11%FILM",
+        "materialComposition": "46%ACT35%RAJ8%NYL11%FILM",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
@@ -147,26 +147,26 @@ export class DbLoaderComponent implements OnInit {
         "name": "CHAKO",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 266.66",
+        "price": "1266.66",
         "id": "11",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 380.00"
+        "incomingPrice": "1380.00"
     },
     {
         "number": "0AJ/005-10",
         "name": "ZAKARD CHAKO",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 316.66",
+        "price": "1316.66",
         "id": "12",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 460.00"
+        "incomingPrice": "1460.00"
     },
     {
         "number": "0AJ/006-05",
@@ -186,260 +186,260 @@ export class DbLoaderComponent implements OnInit {
         "name": "SATEN METAL",
         "stock": "21.00",
         "unit": "fm",
-        "price": "1 408.33",
+        "price": "1408.33",
         "id": "14",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 600.00"
+        "incomingPrice": "1600.00"
     },
     {
         "number": "0AJ/008-01",
         "name": "ZAKARD FRASCATI",
         "stock": "1.70",
         "unit": "fm",
-        "price": "1 291.66",
+        "price": "1291.66",
         "id": "15",
-        "materialComposition": "18%pes 56%ray 26%nyl",
+        "materialComposition": "18%pes56%ray26%nyl",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 400.00"
+        "incomingPrice": "1400.00"
     },
     {
         "number": "0AJ/008-02",
         "name": "ZAKARD FRASCATI",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 291.66",
+        "price": "1291.66",
         "id": "16",
-        "materialComposition": "18%pes 56%ray 26%nyl",
+        "materialComposition": "18%pes56%ray26%nyl",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 326.00"
+        "incomingPrice": "1326.00"
     },
     {
         "number": "0AJ/008-03",
         "name": "ZAKARD FRASCATI",
         "stock": "5.00",
         "unit": "fm",
-        "price": "1 291.66",
+        "price": "1291.66",
         "id": "17",
-        "materialComposition": "18%pes 56%ray 26%nyl",
+        "materialComposition": "18%pes56%ray26%nyl",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 326.00"
+        "incomingPrice": "1326.00"
     },
     {
         "number": "0AJ/008-16",
         "name": "ZAKARD FRASCATI",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 291.66",
+        "price": "1291.66",
         "id": "18",
-        "materialComposition": "18%pes 56%ray 26%nyl",
+        "materialComposition": "18%pes56%ray26%nyl",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 400.00"
+        "incomingPrice": "1400.00"
     },
     {
         "number": "0AJ/009-01",
         "name": "CRISTAL LAUREN",
         "stock": "1.00",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "19",
-        "materialComposition": "65%VISC  20%PES  15%NYL",
+        "materialComposition": "65%VISC 20%PES 15%NYL",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/009-02",
         "name": "CRISTAL LAUREN",
         "stock": "-119.50",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "20",
-        "materialComposition": "65%VISC  20%PES  15%NYL",
+        "materialComposition": "65%VISC 20%PES 15%NYL",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/009-03",
         "name": "CRISTAL LAUREN",
         "stock": "-3.50",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "21",
-        "materialComposition": "65%VISC  20%PES  15%NYL",
+        "materialComposition": "65%VISC 20%PES 15%NYL",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/009-04",
         "name": "CRISTAL LAUREN",
         "stock": "92.20",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "22",
-        "materialComposition": "65%VISC  20%PES  15%NYL",
+        "materialComposition": "65%VISC 20%PES 15%NYL",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/009-05",
         "name": "CRISTAL LAUREN",
-        "stock": "-1 515.50",
+        "stock": "-1515.50",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "23",
-        "materialComposition": "65%VISC  20%PES  15%NYL",
+        "materialComposition": "65%VISC 20%PES 15%NYL",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/009-07",
         "name": "CRISTAL LAUREN",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "24",
-        "materialComposition": "65%VISC  20%PES  15%NYL",
+        "materialComposition": "65%VISC 20%PES 15%NYL",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/010-01",
         "name": "COLOR WOOL",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 983.33",
+        "price": "1983.33",
         "id": "25",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "2 422.00"
+        "incomingPrice": "2422.00"
     },
     {
         "number": "0AJ/010-03",
         "name": "COLOR WOOL",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 983.33",
+        "price": "1983.33",
         "id": "26",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "2 422.00"
+        "incomingPrice": "2422.00"
     },
     {
         "number": "0AJ/011-01",
         "name": "COLOR WOOL HEAVY",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 960.00",
+        "price": "1960.00",
         "id": "27",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "2 422.00"
+        "incomingPrice": "2422.00"
     },
     {
         "number": "0AJ/011-04",
         "name": "COLOR WOOL HEAVY",
         "stock": "1.00",
         "unit": "fm",
-        "price": "1 960.00",
+        "price": "1960.00",
         "id": "28",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "2 422.00"
+        "incomingPrice": "2422.00"
     },
     {
         "number": "0AJ/012-01",
         "name": "FIRENZE",
         "stock": "3.00",
         "unit": "fm",
-        "price": "1 266.66",
+        "price": "1266.66",
         "id": "29",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 372.00"
+        "incomingPrice": "1372.00"
     },
     {
         "number": "0AJ/012-02",
         "name": "FIRENZE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 266.66",
+        "price": "1266.66",
         "id": "30",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 372.00"
+        "incomingPrice": "1372.00"
     },
     {
         "number": "0AJ/012-03",
         "name": "FIRENZE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 266.66",
+        "price": "1266.66",
         "id": "31",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 372.00"
+        "incomingPrice": "1372.00"
     },
     {
         "number": "0AJ/012-04",
         "name": "FIRENZE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 266.66",
+        "price": "1266.66",
         "id": "32",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 372.00"
+        "incomingPrice": "1372.00"
     },
     {
         "number": "0AJ/013-02",
         "name": "ZAKARD DIFIORI",
         "stock": "-0.50",
         "unit": "fm",
-        "price": "1 420.00",
+        "price": "1420.00",
         "id": "33",
         "materialComposition": "46% RAY 54% PES",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 720.00"
+        "incomingPrice": "1720.00"
     },
     {
         "number": "0AJ/014-01",
@@ -459,46 +459,46 @@ export class DbLoaderComponent implements OnInit {
         "name": "AKSAMIT SPAN",
         "stock": "7.00",
         "unit": "fm",
-        "price": "1 116.66",
+        "price": "1116.66",
         "id": "35",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 240.00"
+        "incomingPrice": "1240.00"
     },
     {
         "number": "0AJ/016-01",
         "name": "TWEED ZAKARD",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 208.33",
+        "price": "1208.33",
         "id": "36",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 380.00"
+        "incomingPrice": "1380.00"
     },
     {
         "number": "0AJ/016-02",
         "name": "TWEED ZAKARD",
         "stock": "6.00",
         "unit": "fm",
-        "price": "1 208.33",
+        "price": "1208.33",
         "id": "37",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 380.00"
+        "incomingPrice": "1380.00"
     },
     {
         "number": "0AJ/017-01",
         "name": "FANCY SATEN",
         "stock": "-10.00",
         "unit": "fm",
-        "price": "1 000.00",
+        "price": "1000.00",
         "id": "38",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -511,7 +511,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "FANCY SATEN",
         "stock": "-10.00",
         "unit": "fm",
-        "price": "1 000.00",
+        "price": "1000.00",
         "id": "39",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -524,39 +524,39 @@ export class DbLoaderComponent implements OnInit {
         "name": "COTTON NYLON SPAN",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "40",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 140.00"
+        "incomingPrice": "1140.00"
     },
     {
         "number": "0AJ/018-03",
         "name": "COTTON NYLON SPAN",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "41",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 140.00"
+        "incomingPrice": "1140.00"
     },
     {
         "number": "0AJ/018-04",
         "name": "COTTON NYLON SPAN",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 066.66",
+        "price": "1066.66",
         "id": "42",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 140.00"
+        "incomingPrice": "1140.00"
     },
     {
         "number": "0AJ/019-04",
@@ -582,14 +582,14 @@ export class DbLoaderComponent implements OnInit {
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/021-02",
         "name": "ZITA",
         "stock": "2.60",
         "unit": "fm",
-        "price": "1 000.00",
+        "price": "1000.00",
         "id": "45",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -602,7 +602,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "ZITA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 000.00",
+        "price": "1000.00",
         "id": "46",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -615,26 +615,26 @@ export class DbLoaderComponent implements OnInit {
         "name": "MONTREAL",
         "stock": "1.00",
         "unit": "fm",
-        "price": "1 550.00",
+        "price": "1550.00",
         "id": "47",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 400.00"
+        "incomingPrice": "1400.00"
     },
     {
         "number": "0AJ/023-06",
         "name": "LOWDEN",
         "stock": "13.80",
         "unit": "fm",
-        "price": "1 916.66",
+        "price": "1916.66",
         "id": "48",
-        "materialComposition": "75%WOOL 20%VISC 5%CASMIR",
+        "materialComposition": "75%WOOL20%VISC5%CASMIR",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 900.00"
+        "incomingPrice": "1900.00"
     },
     {
         "number": "0AJ/024-01",
@@ -654,78 +654,78 @@ export class DbLoaderComponent implements OnInit {
         "name": "SKOT",
         "stock": "0.80",
         "unit": "fm",
-        "price": "1 050.00",
+        "price": "1050.00",
         "id": "50",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/026-01",
         "name": "ZAKARD ELITE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 550.00",
+        "price": "1550.00",
         "id": "51",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 650.00"
+        "incomingPrice": "1650.00"
     },
     {
         "number": "0AJ/027-08",
         "name": "KASMIR WOOL",
         "stock": "0.00",
         "unit": "fm",
-        "price": "2 150.00",
+        "price": "2150.00",
         "id": "52",
-        "materialComposition": "80%WOOL 5%KAS 15%PES",
+        "materialComposition": "80%WOOL5%KAS15%PES",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "2 400.00"
+        "incomingPrice": "2400.00"
     },
     {
         "number": "0AJ/028-01",
         "name": "MATILDA CSIPKE",
         "stock": "32.50",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "53",
-        "materialComposition": "55%NYL 40%PES 5%SPA",
+        "materialComposition": "55%NYL40%PES5%SPA",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "54079200",
-        "incomingPrice": "1 100.00"
+        "incomingPrice": "1100.00"
     },
     {
         "number": "0AJ/028-02",
         "name": "MATILDA CSIPKE",
         "stock": "2.80",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "54",
-        "materialComposition": "55%NYL 40%PES 5%SPA",
+        "materialComposition": "55%NYL40%PES5%SPA",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "54079200",
-        "incomingPrice": "1 100.00"
+        "incomingPrice": "1100.00"
     },
     {
         "number": "0AJ/028-03",
         "name": "MATILDA CSIPKE",
         "stock": "-12.50",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "55",
-        "materialComposition": "55%NYL 40%PES 5%SPA",
+        "materialComposition": "55%NYL40%PES5%SPA",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "54079200",
-        "incomingPrice": "1 100.00"
+        "incomingPrice": "1100.00"
     },
     {
         "number": "0AJ/029-01",
@@ -758,26 +758,26 @@ export class DbLoaderComponent implements OnInit {
         "name": "BARSONY CSILLAG",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 600.00",
+        "price": "1600.00",
         "id": "58",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 740.00"
+        "incomingPrice": "1740.00"
     },
     {
         "number": "0AJ/031-01",
         "name": "BARSONY UNI",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 280.00",
+        "price": "1280.00",
         "id": "59",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 340.00"
+        "incomingPrice": "1340.00"
     },
     {
         "number": "0AJ/032-01",
@@ -836,26 +836,26 @@ export class DbLoaderComponent implements OnInit {
         "name": "SZŐRME",
         "stock": "0.00",
         "unit": "fm",
-        "price": "3 500.00",
+        "price": "3500.00",
         "id": "64",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "3 200.00"
+        "incomingPrice": "3200.00"
     },
     {
         "number": "0AJ/035-01",
         "name": "ZAKARD FIERRO",
         "stock": "10.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "65",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/036-03",
@@ -877,7 +877,7 @@ export class DbLoaderComponent implements OnInit {
         "unit": "fm",
         "price": "984.00",
         "id": "67",
-        "materialComposition": "94%COT  6%SPA",
+        "materialComposition": "94%COT 6%SPA",
         "grammWeight": "0.38",
         "origin": "KR",
         "vtsz": "52093900",
@@ -888,65 +888,65 @@ export class DbLoaderComponent implements OnInit {
         "name": "VIRGINIA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "68",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 260.00"
+        "incomingPrice": "1260.00"
     },
     {
         "number": "0AJ/038-02",
         "name": "VIRGINIA",
         "stock": "3.00",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "69",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 260.00"
+        "incomingPrice": "1260.00"
     },
     {
         "number": "0AJ/038-04",
         "name": "VIRGINIA",
         "stock": "3.80",
         "unit": "fm",
-        "price": "1 233.33",
+        "price": "1233.33",
         "id": "70",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "1 260.00"
+        "incomingPrice": "1260.00"
     },
     {
         "number": "0AJ/039-10",
         "name": "WEST SIDE",
         "stock": "29.50",
         "unit": "fm",
-        "price": "1 200.00",
+        "price": "1200.00",
         "id": "71",
         "materialComposition": "74%COT 20%NYL 6%SPA",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "55164200",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/040-01",
         "name": "KLARA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 083.33",
+        "price": "1083.33",
         "id": "72",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 000.00"
+        "incomingPrice": "1000.00"
     },
     {
         "number": "0AJ/041-01",
@@ -979,13 +979,13 @@ export class DbLoaderComponent implements OnInit {
         "name": "JEANS",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 100.00",
+        "price": "1100.00",
         "id": "75",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 040.00"
+        "incomingPrice": "1040.00"
     },
     {
         "number": "0AJ/043-01",
@@ -1005,7 +1005,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "ZAKARD TOSCANA",
         "stock": "1.00",
         "unit": "fm",
-        "price": "1 050.00",
+        "price": "1050.00",
         "id": "77",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1018,7 +1018,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "ZAKARD LARISA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 133.33",
+        "price": "1133.33",
         "id": "78",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1031,13 +1031,13 @@ export class DbLoaderComponent implements OnInit {
         "name": "CSIPKE DELHI",
         "stock": "2.00",
         "unit": "fm",
-        "price": "1 608.33",
+        "price": "1608.33",
         "id": "79",
-        "materialComposition": "55%NYL 40%PES 5%SPA",
+        "materialComposition": "55%NYL40%PES5%SPA",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "54079200",
-        "incomingPrice": "1 600.00"
+        "incomingPrice": "1600.00"
     },
     {
         "number": "0AJ/047-01",
@@ -1083,234 +1083,234 @@ export class DbLoaderComponent implements OnInit {
         "name": "ZAKARD MESSI",
         "stock": "36.00",
         "unit": "fm",
-        "price": "1 180.00",
+        "price": "1180.00",
         "id": "83",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/049-01",
         "name": "ZAKARD MESSI",
         "stock": "18.40",
         "unit": "fm",
-        "price": "1 180.00",
+        "price": "1180.00",
         "id": "84",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/050-01",
         "name": "COTTON SILK",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 180.00",
+        "price": "1180.00",
         "id": "85",
         "materialComposition": "100%COT",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/050-02",
         "name": "COTTON SILK",
         "stock": "-17.00",
         "unit": "fm",
-        "price": "1 180.00",
+        "price": "1180.00",
         "id": "86",
         "materialComposition": "100%COT",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/050-04",
         "name": "COTTON SILK",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 180.00",
+        "price": "1180.00",
         "id": "87",
         "materialComposition": "100%COT",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/051-01",
         "name": "PERLA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "88",
         "materialComposition": "32%PES 53%RAY 15%LEN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 100.00"
+        "incomingPrice": "1100.00"
     },
     {
         "number": "0AJ/051-04",
         "name": "PERLA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "89",
         "materialComposition": "32%PES 53%RAY 15%LEN",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "55162200",
-        "incomingPrice": "1 100.00"
+        "incomingPrice": "1100.00"
     },
     {
         "number": "0AJ/052-01",
         "name": "GREACE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 075.00",
+        "price": "1075.00",
         "id": "90",
         "materialComposition": "100%COT",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 026.00"
+        "incomingPrice": "1026.00"
     },
     {
         "number": "0AJ/052-02",
         "name": "GREACE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 075.00",
+        "price": "1075.00",
         "id": "91",
         "materialComposition": "100%COT",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 026.00"
+        "incomingPrice": "1026.00"
     },
     {
         "number": "0AJ/053-01",
         "name": "COTTON DOTS",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 333.33",
+        "price": "1333.33",
         "id": "92",
         "materialComposition": "100%COT",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 380.00"
+        "incomingPrice": "1380.00"
     },
     {
         "number": "0AJ/053-02",
         "name": "COTTON DOTS",
         "stock": "1.20",
         "unit": "fm",
-        "price": "1 333.33",
+        "price": "1333.33",
         "id": "93",
         "materialComposition": "100%COT",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 380.00"
+        "incomingPrice": "1380.00"
     },
     {
         "number": "0AJ/054-08",
         "name": "COTTON EXE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 133.33",
+        "price": "1133.33",
         "id": "94",
         "materialComposition": "97%COT 3%SPA",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "52093100",
-        "incomingPrice": "1 110.00"
+        "incomingPrice": "1110.00"
     },
     {
         "number": "0AJ/054-09",
         "name": "COTTON EXE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 133.33",
+        "price": "1133.33",
         "id": "95",
         "materialComposition": "97%COT 3%SPA",
         "grammWeight": "0.30",
         "origin": "KR",
         "vtsz": "52093100",
-        "incomingPrice": "1 110.00"
+        "incomingPrice": "1110.00"
     },
     {
         "number": "0aj/055-01",
         "name": "COTTON EXE II",
         "stock": "-50.00",
         "unit": "fm",
-        "price": "1 133.33",
+        "price": "1133.33",
         "id": "96",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 110.00"
+        "incomingPrice": "1110.00"
     },
     {
         "number": "0AJ/055-09",
         "name": "COTTON EXE II",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 133.33",
+        "price": "1133.33",
         "id": "97",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 100.00"
+        "incomingPrice": "1100.00"
     },
     {
         "number": "0AJ/058-08",
         "name": "DIAMONT PRT",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 333.33",
+        "price": "1333.33",
         "id": "98",
         "materialComposition": "100%COT",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 148.00"
+        "incomingPrice": "1148.00"
     },
     {
         "number": "0AJ/058-31",
         "name": "DIAMONT PRT",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 333.33",
+        "price": "1333.33",
         "id": "99",
         "materialComposition": "100%COT",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 148.00"
+        "incomingPrice": "1148.00"
     },
     {
         "number": "0AJ/058-32",
         "name": "DIAMONT PRT",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 333.33",
+        "price": "1333.33",
         "id": "100",
         "materialComposition": "100%COT",
         "grammWeight": "0.25",
         "origin": "KR",
         "vtsz": "52083100",
-        "incomingPrice": "1 148.00"
+        "incomingPrice": "1148.00"
     },
     {
         "number": "0AJ/059-04",
@@ -1330,104 +1330,104 @@ export class DbLoaderComponent implements OnInit {
         "name": "ZAKARD SOLANGE",
         "stock": "0.20",
         "unit": "fm",
-        "price": "1 933.33",
+        "price": "1933.33",
         "id": "102",
         "materialComposition": "40%PES 40%VISC 20%NYL",
         "grammWeight": "0.21",
         "origin": "KR",
         "vtsz": "54079200",
-        "incomingPrice": "1 920.00"
+        "incomingPrice": "1920.00"
     },
     {
         "number": "0AJ/061-01",
         "name": "PAMUT SPAN PRESTIGE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 160.00",
+        "price": "1160.00",
         "id": "103",
         "materialComposition": "97%COT 3%SPAN",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "52093900",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/061-04",
         "name": "PAMUT SPAN PRESTIGE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 160.00",
+        "price": "1160.00",
         "id": "104",
         "materialComposition": "97%COT 3%SPAN",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "52093900",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/061-05",
         "name": "PAMUT SPAN PRESTIGE",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 160.00",
+        "price": "1160.00",
         "id": "105",
         "materialComposition": "97%COT 3%SPAN",
         "grammWeight": "0.20",
         "origin": "KR",
         "vtsz": "52093900",
-        "incomingPrice": "1 160.00"
+        "incomingPrice": "1160.00"
     },
     {
         "number": "0AJ/062-01",
         "name": "PAM SPA BEVERLY",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "106",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 120.00"
+        "incomingPrice": "1120.00"
     },
     {
         "number": "0AJ/063-01",
         "name": "PAM SPA BEVERLY UNI",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "107",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 120.00"
+        "incomingPrice": "1120.00"
     },
     {
         "number": "0AJ/063-04",
         "name": "PAM SPA BEVERLY UNI",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "108",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 120.00"
+        "incomingPrice": "1120.00"
     },
     {
         "number": "0AJ/064-04",
         "name": "PRONTO MODA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 250.00",
+        "price": "1250.00",
         "id": "109",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 300.00"
+        "incomingPrice": "1300.00"
     },
     {
         "number": "0AJ/065-05",
@@ -1447,20 +1447,20 @@ export class DbLoaderComponent implements OnInit {
         "name": "CARDIF",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 390.00",
+        "price": "1390.00",
         "id": "111",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 440.00"
+        "incomingPrice": "1440.00"
     },
     {
         "number": "0AJ/066-05",
         "name": "CARDIF II",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 050.00",
+        "price": "1050.00",
         "id": "112",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1473,7 +1473,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "CSIPKE NIKE",
         "stock": "2.80",
         "unit": "fm",
-        "price": "1 050.00",
+        "price": "1050.00",
         "id": "113",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1486,85 +1486,85 @@ export class DbLoaderComponent implements OnInit {
         "name": "2WAY SPAN",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 260.00",
+        "price": "1260.00",
         "id": "114",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 260.00"
+        "incomingPrice": "1260.00"
     },
     {
         "number": "0AJ/068-02",
         "name": "2WAY SPAN",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 260.00",
+        "price": "1260.00",
         "id": "115",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 260.00"
+        "incomingPrice": "1260.00"
     },
     {
         "number": "0AJ/069-03",
         "name": "ZAKARD ROYAL",
         "stock": "1.00",
         "unit": "fm",
-        "price": "1 250.00",
+        "price": "1250.00",
         "id": "116",
         "materialComposition": "73%pes27%visc",
         "grammWeight": "119.00",
         "origin": "KR",
         "vtsz": "",
-        "incomingPrice": "2 060.00"
+        "incomingPrice": "2060.00"
     },
     {
         "number": "0AJ/070-01",
         "name": "KASMIR WOOL",
         "stock": "0.00",
         "unit": "fm",
-        "price": "2 500.00",
+        "price": "2500.00",
         "id": "117",
-        "materialComposition": "80%WOOL  20%NYL",
+        "materialComposition": "80%WOOL 20%NYL",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "2 580.00"
+        "incomingPrice": "2580.00"
     },
     {
         "number": "0AJ/071-02",
         "name": "YOURNAY",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 512.00",
+        "price": "1512.00",
         "id": "118",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 446.00"
+        "incomingPrice": "1446.00"
     },
     {
         "number": "0AJ/071-05",
         "name": "YOURNAY",
         "stock": "-3.50",
         "unit": "fm",
-        "price": "1 512.00",
+        "price": "1512.00",
         "id": "119",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 446.00"
+        "incomingPrice": "1446.00"
     },
     {
         "number": "0AJ/072-01",
         "name": "OTTAWA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 250.00",
+        "price": "1250.00",
         "id": "120",
         "materialComposition": "80%PES 17%RAY 3%SPA",
         "grammWeight": "0.00",
@@ -1577,72 +1577,72 @@ export class DbLoaderComponent implements OnInit {
         "name": "OTTAWA SUPERIOR",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 420.00",
+        "price": "1420.00",
         "id": "121",
         "materialComposition": "63%PES 35%RAY 2%SPA",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 500.00"
+        "incomingPrice": "1500.00"
     },
     {
         "number": "0AJ/074-01",
         "name": "NYLON SPAN PRT",
         "stock": "4.60",
         "unit": "fm",
-        "price": "1 280.00",
+        "price": "1280.00",
         "id": "122",
         "materialComposition": "92%NYL 8%SPA",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 300.00"
+        "incomingPrice": "1300.00"
     },
     {
         "number": "0AJ/075-02",
         "name": "LODEN VELUR",
         "stock": "0.00",
         "unit": "fm",
-        "price": "2 380.00",
+        "price": "2380.00",
         "id": "123",
         "materialComposition": "70%WOOL 25%PES 5%OTHER",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "2 500.00"
+        "incomingPrice": "2500.00"
     },
     {
         "number": "0AJ/076-01",
         "name": "SCOTT",
         "stock": "48.30",
         "unit": "fm",
-        "price": "1 200.00",
+        "price": "1200.00",
         "id": "124",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 200.00"
+        "incomingPrice": "1200.00"
     },
     {
         "number": "0AJ/076-05",
         "name": "SCOTT",
         "stock": "1.50",
         "unit": "fm",
-        "price": "1 200.00",
+        "price": "1200.00",
         "id": "125",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 200.00"
+        "incomingPrice": "1200.00"
     },
     {
         "number": "0AJ/077-01",
         "name": "KÖTÖTT PAMUT",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 100.00",
+        "price": "1100.00",
         "id": "126",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1655,7 +1655,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "KÖTÖTT PAMUT",
         "stock": "-1.00",
         "unit": "fm",
-        "price": "1 100.00",
+        "price": "1100.00",
         "id": "127",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1668,7 +1668,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "KÖTÖTT PAMUT",
         "stock": "-2.00",
         "unit": "fm",
-        "price": "1 100.00",
+        "price": "1100.00",
         "id": "128",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1681,20 +1681,20 @@ export class DbLoaderComponent implements OnInit {
         "name": "ZAKARD KAREN",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 500.00",
+        "price": "1500.00",
         "id": "129",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 100.00"
+        "incomingPrice": "1100.00"
     },
     {
         "number": "0AJ/079-01",
         "name": "KÖTÖTT OLASZ",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "130",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1707,7 +1707,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "KÖTÖTT OLASZ",
         "stock": "4.50",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "131",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1720,7 +1720,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "KÖTÖTT OLASZ",
         "stock": "3.00",
         "unit": "fm",
-        "price": "1 150.00",
+        "price": "1150.00",
         "id": "132",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1733,7 +1733,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "P0RTO",
         "stock": "-4.00",
         "unit": "fm",
-        "price": "1 050.00",
+        "price": "1050.00",
         "id": "133",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1759,20 +1759,20 @@ export class DbLoaderComponent implements OnInit {
         "name": "rövid szőrme",
         "stock": "0.00",
         "unit": "fm",
-        "price": "3 900.00",
+        "price": "3900.00",
         "id": "135",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "2 060.00"
+        "incomingPrice": "2060.00"
     },
     {
         "number": "0AJ/083-05",
         "name": "OTTAWA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 290.00",
+        "price": "1290.00",
         "id": "136",
         "materialComposition": "80%PES 17%RAY 3%SPA",
         "grammWeight": "0.38",
@@ -1785,7 +1785,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "OTTAWA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 290.00",
+        "price": "1290.00",
         "id": "137",
         "materialComposition": "80%PES 17%RAY 3%SPA",
         "grammWeight": "0.38",
@@ -1798,7 +1798,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "OTTAWA",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 290.00",
+        "price": "1290.00",
         "id": "138",
         "materialComposition": "80%PES 17%RAY 3%SPA",
         "grammWeight": "0.38",
@@ -1811,7 +1811,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "OTTAWA",
         "stock": "18.00",
         "unit": "fm",
-        "price": "1 290.00",
+        "price": "1290.00",
         "id": "139",
         "materialComposition": "80%PES 17%RAY 3%SPA",
         "grammWeight": "0.38",
@@ -1824,7 +1824,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "VELOUR SPAN",
         "stock": "18.00",
         "unit": "fm",
-        "price": "1 200.00",
+        "price": "1200.00",
         "id": "140",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1837,7 +1837,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "VELOUR SPAN",
         "stock": "3.50",
         "unit": "fm",
-        "price": "1 200.00",
+        "price": "1200.00",
         "id": "141",
         "materialComposition": "",
         "grammWeight": "0.00",
@@ -1850,33 +1850,33 @@ export class DbLoaderComponent implements OnInit {
         "name": "KRAJKA DIAMONDE",
         "stock": "3.50",
         "unit": "fm",
-        "price": "1 650.00",
+        "price": "1650.00",
         "id": "142",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 280.00"
+        "incomingPrice": "1280.00"
     },
     {
         "number": "0AJ/085-10",
         "name": "KRAJKA DIAMONDE",
         "stock": "-2.00",
         "unit": "fm",
-        "price": "1 650.00",
+        "price": "1650.00",
         "id": "143",
         "materialComposition": "",
         "grammWeight": "0.00",
         "origin": "",
         "vtsz": "",
-        "incomingPrice": "1 280.00"
+        "incomingPrice": "1280.00"
     },
     {
         "number": "0AJ/086-01",
         "name": "SWING",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 250.00",
+        "price": "1250.00",
         "id": "144",
         "materialComposition": "51%PES 46%COT 3%SPA",
         "grammWeight": "0.00",
@@ -1889,7 +1889,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "SWING",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 250.00",
+        "price": "1250.00",
         "id": "145",
         "materialComposition": "51%PES 46%COT 3%SPA",
         "grammWeight": "0.00",
@@ -1902,7 +1902,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "SWING",
         "stock": "0.00",
         "unit": "fm",
-        "price": "1 250.00",
+        "price": "1250.00",
         "id": "146",
         "materialComposition": "51%PES 46%COT 3%SPA",
         "grammWeight": "0.00",
@@ -1915,7 +1915,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "SANGRIA",
         "stock": "113.60",
         "unit": "fm",
-        "price": "1 390.00",
+        "price": "1390.00",
         "id": "147",
         "materialComposition": "68%COT 30%PES 2%SPA",
         "grammWeight": "0.00",
@@ -1928,7 +1928,7 @@ export class DbLoaderComponent implements OnInit {
         "name": "SANGRIA",
         "stock": "72.80",
         "unit": "fm",
-        "price": "1 390.00",
+        "price": "1390.00",
         "id": "148",
         "materialComposition": "68%COT 30%PES 2%SPA",
         "grammWeight": "0.00",
@@ -1937,11 +1937,9 @@ export class DbLoaderComponent implements OnInit {
         "incomingPrice": "990.00"
     }
 ];
-    
   productsLength: number = this.products.length;
   custamers: Custamer[] = [
     {
-        "searchName": "MIGOTEX S.R.L.",
         "companyName": "MIGOTEX s.r.l.",
         "ZIPcode": "59100",
         "town": "PRATO",
@@ -1954,7 +1952,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "1"
     },
     {
-        "searchName": "NEM!!!NÁSFA 2001 KFT.",
         "companyName": "nem!!!NÁSFA 2001 Kft.",
         "ZIPcode": "1132",
         "town": "Budapest",
@@ -1967,7 +1964,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "2"
     },
     {
-        "searchName": "0NT",
         "companyName": "0NT",
         "ZIPcode": "",
         "town": "",
@@ -1980,7 +1976,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "3"
     },
     {
-        "searchName": "0SI",
         "companyName": "0SI",
         "ZIPcode": "",
         "town": "",
@@ -1993,7 +1988,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "4"
     },
     {
-        "searchName": "2F TRADE KFT.",
         "companyName": "2F Trade Kft.",
         "ZIPcode": "2800",
         "town": "Tatabánya",
@@ -2006,7 +2000,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "5"
     },
     {
-        "searchName": "3 BALI BT",
         "companyName": "3 BALI BT",
         "ZIPcode": "5000",
         "town": "SZOLNOK",
@@ -2019,7 +2012,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "6"
     },
     {
-        "searchName": "3 P MAX TRADE KFT.",
         "companyName": "3 P MAX TRADE Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2032,7 +2024,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "7"
     },
     {
-        "searchName": "Á&P KFT",
         "companyName": "Á&P Kft",
         "ZIPcode": "1182",
         "town": "Budapest",
@@ -2045,7 +2036,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "8"
     },
     {
-        "searchName": "A.INCZE KFT.",
         "companyName": "A.Incze Kft.",
         "ZIPcode": "2049",
         "town": "Diósd",
@@ -2058,7 +2048,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "9"
     },
     {
-        "searchName": "AAM",
         "companyName": "AAM",
         "ZIPcode": "",
         "town": "",
@@ -2071,7 +2060,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "10"
     },
     {
-        "searchName": "ABM",
         "companyName": "ABM",
         "ZIPcode": "",
         "town": "",
@@ -2084,7 +2072,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "11"
     },
     {
-        "searchName": "ABN",
         "companyName": "ABN",
         "ZIPcode": "",
         "town": "",
@@ -2097,7 +2084,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "12"
     },
     {
-        "searchName": "AD - STYLE S.R.O",
         "companyName": "AD - STYLE s.r.o",
         "ZIPcode": "949 01",
         "town": "NITRA",
@@ -2110,7 +2096,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "13"
     },
     {
-        "searchName": "ÁDÁM-ÉVA DIVAT",
         "companyName": "Ádám-Éva divat",
         "ZIPcode": "6200",
         "town": "Kiskörös",
@@ -2123,7 +2108,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "14"
     },
     {
-        "searchName": "ADRI ADRA",
         "companyName": "Adri Adra",
         "ZIPcode": "2040",
         "town": "BUDAÖRS",
@@ -2136,7 +2120,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "15"
     },
     {
-        "searchName": "ADRIANA PETREJE",
         "companyName": "Adriana Petreje",
         "ZIPcode": "",
         "town": "Bánovce nad Beblavou",
@@ -2149,7 +2132,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "16"
     },
     {
-        "searchName": "ADRIJANA PESA-LAMBADA",
         "companyName": "ADRIJANA PESA-LAMBADA",
         "ZIPcode": "32100",
         "town": "VINKOVCI",
@@ -2162,7 +2144,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "17"
     },
     {
-        "searchName": "ADVISORS BT.",
         "companyName": "Advisors Bt.",
         "ZIPcode": "1163",
         "town": "Budapest",
@@ -2175,7 +2156,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "18"
     },
     {
-        "searchName": "AJA",
         "companyName": "AJA",
         "ZIPcode": "90-030",
         "town": "RZGOW",
@@ -2188,7 +2168,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "19"
     },
     {
-        "searchName": "AKROPOLISZ",
         "companyName": "Akropolisz",
         "ZIPcode": "",
         "town": "",
@@ -2201,7 +2180,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "20"
     },
     {
-        "searchName": "ALEXANDER KUCHAROVIC",
         "companyName": "Alexander Kucharovic",
         "ZIPcode": "94074",
         "town": "Nové Zámky",
@@ -2214,7 +2192,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "21"
     },
     {
-        "searchName": "ALEXERA BT.",
         "companyName": "Alexera Bt.",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -2227,7 +2204,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "22"
     },
     {
-        "searchName": "ALK",
         "companyName": "ALK",
         "ZIPcode": "",
         "town": "",
@@ -2240,7 +2216,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "23"
     },
     {
-        "searchName": "ALLEGRA",
         "companyName": "Allegra",
         "ZIPcode": "",
         "town": "",
@@ -2253,7 +2228,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "24"
     },
     {
-        "searchName": "ALPA GLOVES KFT.",
         "companyName": "Alpa Gloves Kft.",
         "ZIPcode": "1202",
         "town": "Budapest",
@@ -2266,7 +2240,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "25"
     },
     {
-        "searchName": "AM & VT KFT",
         "companyName": "Am & Vt kft",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2279,7 +2252,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "26"
     },
     {
-        "searchName": "AMA",
         "companyName": "Ama",
         "ZIPcode": "",
         "town": "",
@@ -2292,7 +2264,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "27"
     },
     {
-        "searchName": "AMBACH KFT.",
         "companyName": "AMBACH KFT.",
         "ZIPcode": "2465",
         "town": "Ráckeresztúr",
@@ -2305,7 +2276,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "28"
     },
     {
-        "searchName": "AMETISZT DIVATHÁZ KFT.",
         "companyName": "Ametiszt Divatház Kft.",
         "ZIPcode": "2800",
         "town": "Tatabánya",
@@ -2318,7 +2288,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "29"
     },
     {
-        "searchName": "AMM",
         "companyName": "AMM",
         "ZIPcode": "",
         "town": "",
@@ -2331,7 +2300,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "30"
     },
     {
-        "searchName": "ÁMORDIVAT KFT.",
         "companyName": "Ámordivat Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2344,7 +2312,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "31"
     },
     {
-        "searchName": "ÁN-TREND KFT.",
         "companyName": "ÁN-trend kft.",
         "ZIPcode": "6726",
         "town": "Szeged",
@@ -2357,7 +2324,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "32"
     },
     {
-        "searchName": "ANAS KFT",
         "companyName": "Anas kft",
         "ZIPcode": "6726",
         "town": "Szeged",
@@ -2370,7 +2336,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "33"
     },
     {
-        "searchName": "ANCSA AKRO",
         "companyName": "Ancsa Akro",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2383,7 +2348,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "34"
     },
     {
-        "searchName": "AND-ZSU MÉTERÁRU",
         "companyName": "And-Zsu Méteráru",
         "ZIPcode": "6300",
         "town": "Kalocsa",
@@ -2396,7 +2360,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "35"
     },
     {
-        "searchName": "ANDORSA S.R.L.",
         "companyName": "Andorsa s.r.l.",
         "ZIPcode": "",
         "town": "Municipul Oradea",
@@ -2409,7 +2372,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "36"
     },
     {
-        "searchName": "ANETT DESIGN",
         "companyName": "Anett Design",
         "ZIPcode": "",
         "town": "Komárno",
@@ -2422,7 +2384,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "37"
     },
     {
-        "searchName": "ANGA",
         "companyName": "Anga",
         "ZIPcode": "1036",
         "town": "Budapest",
@@ -2435,7 +2396,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "38"
     },
     {
-        "searchName": "ANGEL FASHION KFT.",
         "companyName": "Angel Fashion Kft.",
         "ZIPcode": "1027",
         "town": "Budapest",
@@ -2448,7 +2408,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "39"
     },
     {
-        "searchName": "ANGYALI SEGÍTSÉG MINDENKINEK KFT.",
         "companyName": "Angyali segítség mindenkinek kft.",
         "ZIPcode": "1138",
         "town": "Budapest",
@@ -2461,7 +2420,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "40"
     },
     {
-        "searchName": "ANI KESZTHELY",
         "companyName": "Ani Keszthely",
         "ZIPcode": "",
         "town": "",
@@ -2474,7 +2432,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "41"
     },
     {
-        "searchName": "ANIEE FASHION",
         "companyName": "ANIEE Fashion",
         "ZIPcode": "",
         "town": "Horne Saliby 41",
@@ -2487,7 +2444,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "42"
     },
     {
-        "searchName": "ANNA DIVAT KFT.",
         "companyName": "Anna Divat Kft.",
         "ZIPcode": "9022",
         "town": "Győr",
@@ -2500,7 +2456,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "43"
     },
     {
-        "searchName": "ANNA SAJBENOVÁ ANICE FASHION",
         "companyName": "Anna Sajbenová Anice Fashion",
         "ZIPcode": "92503",
         "town": "Horne Saliby 41",
@@ -2513,7 +2468,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "44"
     },
     {
-        "searchName": "ANNAMARIE SZCZECINOVA",
         "companyName": "Annamarie Szczecinova",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2526,7 +2480,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "45"
     },
     {
-        "searchName": "ANNBOR FASHION",
         "companyName": "Annbor Fashion",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2539,7 +2492,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "46"
     },
     {
-        "searchName": "ANVINA D.O.O.",
         "companyName": "ANVINA d.o.o.",
         "ZIPcode": "1360",
         "town": "VRHNIKA",
@@ -2552,7 +2504,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "47"
     },
     {
-        "searchName": "APOLLO SO MO FIÓKTELEP",
         "companyName": "Apollo so mo fióktelep",
         "ZIPcode": "1061",
         "town": "Budapest",
@@ -2565,7 +2516,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "48"
     },
     {
-        "searchName": "APPEL ÉS TSA BT",
         "companyName": "Appel és Tsa Bt",
         "ZIPcode": "2340",
         "town": "Kiskunlacháza",
@@ -2578,7 +2528,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "49"
     },
     {
-        "searchName": "AQUA-TERRA KFT.",
         "companyName": "Aqua-terra Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2591,7 +2540,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "50"
     },
     {
-        "searchName": "ARANEL KFT.",
         "companyName": "Aranel Kft.",
         "ZIPcode": "3000",
         "town": "Hatvan",
@@ -2604,7 +2552,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "51"
     },
     {
-        "searchName": "ARANY LIÁN KFT.",
         "companyName": "Arany Lián Kft.",
         "ZIPcode": "4027",
         "town": "Debrecen",
@@ -2617,7 +2564,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "52"
     },
     {
-        "searchName": "ARANY PÁLMA",
         "companyName": "Arany Pálma",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2630,7 +2576,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "53"
     },
     {
-        "searchName": "ARANYPENGŐ KFT.",
         "companyName": "ARANYPENGŐ KFT.",
         "ZIPcode": "2039",
         "town": "Pusztazámor",
@@ -2643,7 +2588,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "54"
     },
     {
-        "searchName": "ARANYTŰ MÉTERÁRU",
         "companyName": "Aranytű Méteráru",
         "ZIPcode": "7100",
         "town": "Szekszárd",
@@ -2656,7 +2600,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "55"
     },
     {
-        "searchName": "ARANYTÜ MÉTERÁRU",
         "companyName": "ARANYTÜ méteráru",
         "ZIPcode": "2600",
         "town": "VÁC",
@@ -2669,7 +2612,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "56"
     },
     {
-        "searchName": "ARCHI-TEXTURA KFT",
         "companyName": "Archi-textura kft",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -2682,7 +2624,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "57"
     },
     {
-        "searchName": "ARCONSULT KFT.",
         "companyName": "Arconsult Kft.",
         "ZIPcode": "1124",
         "town": "Budapest",
@@ -2695,7 +2636,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "58"
     },
     {
-        "searchName": "ARMADA VAGYONVÉDELMI KFT.",
         "companyName": "Armada Vagyonvédelmi Kft.",
         "ZIPcode": "1139",
         "town": "Budapest",
@@ -2708,7 +2648,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "59"
     },
     {
-        "searchName": "ARS MODE S.R.O.",
         "companyName": "ARS MODE s.r.o.",
         "ZIPcode": "92901",
         "town": "Dunajská streda",
@@ -2721,7 +2660,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "60"
     },
     {
-        "searchName": "ART",
         "companyName": "Art",
         "ZIPcode": "",
         "town": "",
@@ -2734,7 +2672,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "61"
     },
     {
-        "searchName": "ART LAURUS KFT.",
         "companyName": "Art Laurus KFt.",
         "ZIPcode": "1029",
         "town": "Budapest",
@@ -2747,7 +2684,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "62"
     },
     {
-        "searchName": "ÁSCHINNÉ TÖRÖK ZSUZSANNA",
         "companyName": "Áschinné Török Zsuzsanna",
         "ZIPcode": "2316",
         "town": "Tököl",
@@ -2760,7 +2696,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "63"
     },
     {
-        "searchName": "ASHY FASHION",
         "companyName": "Ashy Fashion",
         "ZIPcode": "",
         "town": "Budapest",
@@ -2773,7 +2708,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "64"
     },
     {
-        "searchName": "ASU",
         "companyName": "ASU",
         "ZIPcode": "",
         "town": "",
@@ -2786,7 +2720,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "65"
     },
     {
-        "searchName": "ATELI-ART KFT.",
         "companyName": "Ateli-Art Kft.",
         "ZIPcode": "7630",
         "town": "Pécs",
@@ -2799,7 +2732,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "66"
     },
     {
-        "searchName": "ATLANTA JUDR. IVETA PETRASOVA",
         "companyName": "Atlanta JuDr. Iveta Petrasova",
         "ZIPcode": "94071",
         "town": "Nové Zámky",
@@ -2812,7 +2744,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "67"
     },
     {
-        "searchName": "B. Á. FASHION KFT.",
         "companyName": "B. Á. Fashion Kft.",
         "ZIPcode": "1052",
         "town": "Budapest",
@@ -2825,7 +2756,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "68"
     },
     {
-        "searchName": "BABA-HÁZ 73 BT",
         "companyName": "Baba-ház 73 Bt",
         "ZIPcode": "2300",
         "town": "Ráckeve",
@@ -2838,7 +2768,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "69"
     },
     {
-        "searchName": "BABY-TOP BT.",
         "companyName": "Baby-Top Bt.",
         "ZIPcode": "2143",
         "town": "Kistarcsa",
@@ -2851,7 +2780,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "70"
     },
     {
-        "searchName": "BABYDREAM KFT.",
         "companyName": "Babydream Kft.",
         "ZIPcode": "5500",
         "town": "Gyomaendrőd",
@@ -2864,7 +2792,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "71"
     },
     {
-        "searchName": "BABYLON INVEST KFT",
         "companyName": "Babylon invest kft",
         "ZIPcode": "1037",
         "town": "Budapest",
@@ -2877,7 +2804,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "72"
     },
     {
-        "searchName": "BACSÁNÉ SANDI ANIKÓ",
         "companyName": "Bacsáné Sandi Anikó",
         "ZIPcode": "1221",
         "town": "Budapest",
@@ -2890,7 +2816,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "73"
     },
     {
-        "searchName": "BÁCSKAI ÉS TÁRSA KFT.",
         "companyName": "Bácskai és Társa Kft.",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -2903,7 +2828,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "74"
     },
     {
-        "searchName": "BADICS IBOLYA",
         "companyName": "Badics Ibolya",
         "ZIPcode": "1224",
         "town": "Budapest",
@@ -2916,7 +2840,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "75"
     },
     {
-        "searchName": "BAK KRISZTIÁN",
         "companyName": "Bak Krisztián",
         "ZIPcode": "5510",
         "town": "Dévaványa",
@@ -2929,7 +2852,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "76"
     },
     {
-        "searchName": "BALANCE",
         "companyName": "BALANCE",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -2942,7 +2864,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "77"
     },
     {
-        "searchName": "BALÁZS ATTILA",
         "companyName": "BALÁZS ATTILA",
         "ZIPcode": "6000",
         "town": "KECSKEMÉT",
@@ -2955,7 +2876,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "78"
     },
     {
-        "searchName": "BALÁZS ZSUZSANNA",
         "companyName": "BALÁZS ZSUZSANNA",
         "ZIPcode": "1118",
         "town": "BUDAPEST",
@@ -2968,7 +2888,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "79"
     },
     {
-        "searchName": "BALU",
         "companyName": "Balu",
         "ZIPcode": "",
         "town": "",
@@ -2981,7 +2900,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "80"
     },
     {
-        "searchName": "BAMBINO 2007 BT",
         "companyName": "BAMBINO 2007 BT",
         "ZIPcode": "1081",
         "town": "BUDAPEST",
@@ -2994,7 +2912,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "81"
     },
     {
-        "searchName": "BANDI BERNADETT",
         "companyName": "Bandi Bernadett",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -3007,7 +2924,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "82"
     },
     {
-        "searchName": "BÁNSZKI MIHÁLYNÉ",
         "companyName": "Bánszki Mihályné",
         "ZIPcode": "3434",
         "town": "Mályi",
@@ -3020,7 +2936,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "83"
     },
     {
-        "searchName": "BÁNYAI SZILVIA",
         "companyName": "BÁNYAI SZILVIA",
         "ZIPcode": "8043",
         "town": "ISZKASZENTGYÖRGY",
@@ -3033,7 +2948,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "84"
     },
     {
-        "searchName": "BARA MARIANNE",
         "companyName": "Bara Marianne",
         "ZIPcode": "1125",
         "town": "Budapest",
@@ -3046,7 +2960,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "85"
     },
     {
-        "searchName": "BARANYI KÁROLYNÉ",
         "companyName": "Baranyi Károlyné",
         "ZIPcode": "",
         "town": "",
@@ -3059,7 +2972,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "86"
     },
     {
-        "searchName": "BÁRCZI ERIKA",
         "companyName": "Bárczi Erika",
         "ZIPcode": "2092",
         "town": "Budakeszi",
@@ -3072,7 +2984,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "87"
     },
     {
-        "searchName": "BÁRDOSNÉ KISS ERZSÉBET",
         "companyName": "Bárdosné Kiss ERZSÉBET",
         "ZIPcode": "6900",
         "town": "Makó",
@@ -3085,7 +2996,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "88"
     },
     {
-        "searchName": "BARETT KFT.",
         "companyName": "Barett Kft.",
         "ZIPcode": "4024",
         "town": "Debrecen",
@@ -3098,7 +3008,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "89"
     },
     {
-        "searchName": "BARNA ISTVÁNNÉ",
         "companyName": "Barna Istvánné",
         "ZIPcode": "2085",
         "town": "Pilisvörösvár",
@@ -3111,7 +3020,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "90"
     },
     {
-        "searchName": "BARTHA ZSUZSANNA",
         "companyName": "Bartha Zsuzsanna",
         "ZIPcode": "2800",
         "town": "Tatabánya",
@@ -3124,7 +3032,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "91"
     },
     {
-        "searchName": "BAUMGARTNER ÉVA",
         "companyName": "Baumgartner Éva",
         "ZIPcode": "2162",
         "town": "Martonvásár",
@@ -3137,7 +3044,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "92"
     },
     {
-        "searchName": "BAVIERA VERSALIS SRL",
         "companyName": "Baviera Versalis SRL",
         "ZIPcode": "",
         "town": "",
@@ -3150,7 +3056,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "93"
     },
     {
-        "searchName": "BEAD TEX KFT.",
         "companyName": "BEAD Tex Kft.",
         "ZIPcode": "4024",
         "town": "Debrecen",
@@ -3163,7 +3068,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "94"
     },
     {
-        "searchName": "BEAUTY KFT.",
         "companyName": "Beauty Kft.",
         "ZIPcode": "1118",
         "town": "Budapest",
@@ -3176,7 +3080,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "95"
     },
     {
-        "searchName": "BEAUTYLEX",
         "companyName": "beautylex",
         "ZIPcode": "1149",
         "town": "Bp",
@@ -3189,7 +3092,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "96"
     },
     {
-        "searchName": "BEBE",
         "companyName": "BEBE",
         "ZIPcode": "2040",
         "town": "BUDAÖRS",
@@ -3202,7 +3104,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "97"
     },
     {
-        "searchName": "BECKER BEATRICE COUTURE",
         "companyName": "Becker Beatrice couture",
         "ZIPcode": "1122",
         "town": "Budapest",
@@ -3215,7 +3116,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "98"
     },
     {
-        "searchName": "BEDEGI B KFT.",
         "companyName": "Bedegi B Kft.",
         "ZIPcode": "7626",
         "town": "Pécs",
@@ -3228,7 +3128,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "99"
     },
     {
-        "searchName": "BEJÁRAT BT.",
         "companyName": "Bejárat Bt.",
         "ZIPcode": "1221",
         "town": "Budapest",
@@ -3241,7 +3140,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "100"
     },
     {
-        "searchName": "BEJCZY BERNADETT",
         "companyName": "Bejczy Bernadett",
         "ZIPcode": "",
         "town": "",
@@ -3254,7 +3152,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "101"
     },
     {
-        "searchName": "BELÁNSZKY JÁNOSNÉ",
         "companyName": "Belánszky Jánosné",
         "ZIPcode": "2500",
         "town": "Esztergom",
@@ -3267,7 +3164,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "102"
     },
     {
-        "searchName": "BELLA BLUE KFT.",
         "companyName": "Bella Blue Kft.",
         "ZIPcode": "1118",
         "town": "Budapest",
@@ -3280,7 +3176,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "103"
     },
     {
-        "searchName": "BELLA MODA",
         "companyName": "Bella Moda",
         "ZIPcode": "1118",
         "town": "Budapest",
@@ -3293,7 +3188,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "104"
     },
     {
-        "searchName": "BELLES KFT",
         "companyName": "Belles Kft",
         "ZIPcode": "1078",
         "town": "Budapest",
@@ -3306,7 +3200,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "105"
     },
     {
-        "searchName": "BELLO TEX",
         "companyName": "Bello Tex",
         "ZIPcode": "1101",
         "town": "Budapest",
@@ -3319,7 +3212,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "106"
     },
     {
-        "searchName": "BELVÁROSI FIRST LADY KFT.",
         "companyName": "Belvárosi First Lady Kft.",
         "ZIPcode": "1052",
         "town": "Budapest",
@@ -3332,7 +3224,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "107"
     },
     {
-        "searchName": "BEN",
         "companyName": "BEN",
         "ZIPcode": "",
         "town": "",
@@ -3345,7 +3236,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "108"
     },
     {
-        "searchName": "BENEDEK OLIMPIA",
         "companyName": "Benedek Olimpia",
         "ZIPcode": "2890",
         "town": "Tata",
@@ -3358,7 +3248,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "109"
     },
     {
-        "searchName": "BENEDICTO KFT",
         "companyName": "Benedicto Kft",
         "ZIPcode": "1015",
         "town": "Budapest",
@@ -3371,7 +3260,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "110"
     },
     {
-        "searchName": "BENKE ILDIKÓ",
         "companyName": "BENKE ILDIKÓ",
         "ZIPcode": "1182",
         "town": "BUDAPEST",
@@ -3384,7 +3272,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "111"
     },
     {
-        "searchName": "BERAXA ZSOLT",
         "companyName": "Beraxa Zsolt",
         "ZIPcode": "3400",
         "town": "Mezőkövesd",
@@ -3397,7 +3284,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "112"
     },
     {
-        "searchName": "BERTA JÓZSEF",
         "companyName": "Berta József",
         "ZIPcode": "",
         "town": "",
@@ -3410,7 +3296,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "113"
     },
     {
-        "searchName": "BERTALAN MÓZES",
         "companyName": "Bertalan Mózes",
         "ZIPcode": "",
         "town": "",
@@ -3423,7 +3308,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "114"
     },
     {
-        "searchName": "BETYEM-EVA MOCARYOVA",
         "companyName": "BETYEM-Eva Mocaryova",
         "ZIPcode": "",
         "town": "Topolcany",
@@ -3436,7 +3320,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "115"
     },
     {
-        "searchName": "BIRTALAN PÉTER",
         "companyName": "Birtalan Péter",
         "ZIPcode": "",
         "town": "Budapest",
@@ -3449,7 +3332,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "116"
     },
     {
-        "searchName": "BIZARR KFT",
         "companyName": "BIZARR KFT",
         "ZIPcode": "3519",
         "town": "MISKOLC",
@@ -3462,7 +3344,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "117"
     },
     {
-        "searchName": "BLACK-C S.R.O.",
         "companyName": "BLACK-C s.r.o.",
         "ZIPcode": "4001",
         "town": "Kosice",
@@ -3475,7 +3356,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "118"
     },
     {
-        "searchName": "BODA ÉS TSA",
         "companyName": "Boda és tsa",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -3488,7 +3368,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "119"
     },
     {
-        "searchName": "BODA GÁBOR",
         "companyName": "Boda Gábor",
         "ZIPcode": "2461",
         "town": "Tárnok",
@@ -3501,7 +3380,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "120"
     },
     {
-        "searchName": "BODA JÓZSEF",
         "companyName": "Boda József",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -3514,7 +3392,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "121"
     },
     {
-        "searchName": "BOHÁCSINÉ KISS ÉVA",
         "companyName": "BOHÁCSINÉ KISS ÉVA",
         "ZIPcode": "",
         "town": "",
@@ -3527,7 +3404,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "122"
     },
     {
-        "searchName": "BONANZA MÉDIA KFT.",
         "companyName": "Bonanza Média kft.",
         "ZIPcode": "6723",
         "town": "Szeged",
@@ -3540,7 +3416,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "123"
     },
     {
-        "searchName": "BONCZÓ RENÁTA",
         "companyName": "BONCZÓ RENÁTA",
         "ZIPcode": "8600",
         "town": "SIÓFOK",
@@ -3553,7 +3428,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "124"
     },
     {
-        "searchName": "BONJOUR SZALON KFT",
         "companyName": "Bonjour szalon kft",
         "ZIPcode": "2440",
         "town": "Százhalombatta",
@@ -3566,7 +3440,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "125"
     },
     {
-        "searchName": "BORI ÉVA",
         "companyName": "Bori Éva",
         "ZIPcode": "1144",
         "town": "Budapest",
@@ -3579,7 +3452,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "126"
     },
     {
-        "searchName": "BOTTYÁN BŐR BT",
         "companyName": "BOTTYÁN BŐR BT",
         "ZIPcode": "1163",
         "town": "BUDAPEST",
@@ -3592,7 +3464,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "127"
     },
     {
-        "searchName": "BOTTYÁN-BŐR BT.",
         "companyName": "Bottyán-Bőr Bt.",
         "ZIPcode": "1163",
         "town": "Budapest",
@@ -3605,7 +3476,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "128"
     },
     {
-        "searchName": "BPOWERCLOTHES",
         "companyName": "BPowerclothes",
         "ZIPcode": "1163",
         "town": "Budapest",
@@ -3618,7 +3488,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "129"
     },
     {
-        "searchName": "BREDA ISTVÁN",
         "companyName": "BREDA ISTVÁN",
         "ZIPcode": "2315",
         "town": "SZIGETHALOM",
@@ -3631,7 +3500,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "130"
     },
     {
-        "searchName": "BUDAÖRS NÉMET NEMZETISÉGI ÖNKORMÁNYZAT",
         "companyName": "Budaörs Német Nemzetiségi Önkormányzat",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -3644,7 +3512,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "131"
     },
     {
-        "searchName": "BUKVAI ALBERTNÉ",
         "companyName": "BUKVAI ALBERTNÉ",
         "ZIPcode": "9700",
         "town": "SZOMBATHELY",
@@ -3657,7 +3524,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "132"
     },
     {
-        "searchName": "BUKVAI ALBERTNÉ",
         "companyName": "Bukvai Albertné",
         "ZIPcode": "9700",
         "town": "Szombathey",
@@ -3670,7 +3536,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "133"
     },
     {
-        "searchName": "BUNTH JOZSEFNÉ",
         "companyName": "BUNTH JOZSEFNÉ",
         "ZIPcode": "2051",
         "town": "BIATORBÁGY",
@@ -3683,7 +3548,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "134"
     },
     {
-        "searchName": "BV IDEAS GROUP KFT",
         "companyName": "BV Ideas Group Kft",
         "ZIPcode": "3000",
         "town": "Hatvan",
@@ -3696,7 +3560,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "135"
     },
     {
-        "searchName": "C-V.TEAM KFT",
         "companyName": "C-V.TEAM KFT",
         "ZIPcode": "2040",
         "town": "BUDAÖRS",
@@ -3709,7 +3572,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "136"
     },
     {
-        "searchName": "C-VITAMIN",
         "companyName": "C-Vitamin",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -3722,7 +3584,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "137"
     },
     {
-        "searchName": "CAFISSI IT",
         "companyName": "Cafissi IT",
         "ZIPcode": "59014",
         "town": "Prato Tavola",
@@ -3735,7 +3596,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "138"
     },
     {
-        "searchName": "CAPET S KFT.",
         "companyName": "Capet s Kft.",
         "ZIPcode": "2365",
         "town": "Inárcs",
@@ -3748,7 +3608,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "139"
     },
     {
-        "searchName": "CARACO KFT.",
         "companyName": "Caraco Kft.",
         "ZIPcode": "1221",
         "town": "Budapest",
@@ -3761,7 +3620,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "140"
     },
     {
-        "searchName": "CARYS SLOVAKIA S.R.O.",
         "companyName": "Carys Slovakia s.r.o.",
         "ZIPcode": "4941",
         "town": "Krásnohorske Podhradie",
@@ -3774,7 +3632,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "141"
     },
     {
-        "searchName": "CATHERINE",
         "companyName": "Catherine",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -3787,7 +3644,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "142"
     },
     {
-        "searchName": "CATRASH JANKA SK",
         "companyName": "catrash janka sk",
         "ZIPcode": "",
         "town": "",
@@ -3800,7 +3656,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "143"
     },
     {
-        "searchName": "CAVALLIERA INTERNATIONAL K.F.T.",
         "companyName": "CAVALLIERA International k.f.t.",
         "ZIPcode": "1162",
         "town": "Budapest",
@@ -3813,7 +3668,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "144"
     },
     {
-        "searchName": "CÉDRUS SZEGED BT.",
         "companyName": "Cédrus Szeged Bt.",
         "ZIPcode": "6723",
         "town": "Szeged",
@@ -3826,7 +3680,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "145"
     },
     {
-        "searchName": "CHRISTINE COUTURE KFT.",
         "companyName": "Christine Couture Kft.",
         "ZIPcode": "2049",
         "town": "Diósd",
@@ -3839,7 +3692,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "146"
     },
     {
-        "searchName": "CIABATTI",
         "companyName": "Ciabatti",
         "ZIPcode": "",
         "town": "",
@@ -3852,7 +3704,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "147"
     },
     {
-        "searchName": "CLASSIS KKT.",
         "companyName": "Classis Kkt.",
         "ZIPcode": "2660",
         "town": "Balassagyarmat",
@@ -3865,7 +3716,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "148"
     },
     {
-        "searchName": "CMC",
         "companyName": "CMC",
         "ZIPcode": "",
         "town": "",
@@ -3878,7 +3728,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "149"
     },
     {
-        "searchName": "COALA KKT",
         "companyName": "COALA KKT",
         "ZIPcode": "1196",
         "town": "BUDAPEST",
@@ -3891,7 +3740,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "150"
     },
     {
-        "searchName": "COCONUTS BT",
         "companyName": "Coconuts Bt",
         "ZIPcode": "",
         "town": "",
@@ -3904,7 +3752,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "151"
     },
     {
-        "searchName": "COLORADO",
         "companyName": "Colorado",
         "ZIPcode": "2040",
         "town": "",
@@ -3917,7 +3764,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "152"
     },
     {
-        "searchName": "COMINVEST PARTNER BT",
         "companyName": "Cominvest Partner Bt",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -3930,7 +3776,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "153"
     },
     {
-        "searchName": "CONTEXT SZEGED",
         "companyName": "Context Szeged",
         "ZIPcode": "6724",
         "town": "Szeged",
@@ -3943,7 +3788,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "154"
     },
     {
-        "searchName": "COSMO INTERNACIONAL",
         "companyName": "COSMO Internacional",
         "ZIPcode": "",
         "town": "RZGOW",
@@ -3956,7 +3800,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "155"
     },
     {
-        "searchName": "CROWN INTERNATIONAL KFT.",
         "companyName": "Crown International Kft.",
         "ZIPcode": "",
         "town": "",
@@ -3969,7 +3812,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "156"
     },
     {
-        "searchName": "CS.MÉNASÁG KFT.",
         "companyName": "Cs.Ménaság Kft.",
         "ZIPcode": "1163",
         "town": "Budapest",
@@ -3982,7 +3824,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "157"
     },
     {
-        "searchName": "CSABA JÁNOSNÉ",
         "companyName": "Csaba Jánosné",
         "ZIPcode": "2700",
         "town": "Cegléd",
@@ -3995,7 +3836,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "158"
     },
     {
-        "searchName": "CSEKE GYULÁNÉ",
         "companyName": "Cseke Gyuláné",
         "ZIPcode": "2800",
         "town": "Tatabánya",
@@ -4008,7 +3848,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "159"
     },
     {
-        "searchName": "CSENDES ILONA",
         "companyName": "Csendes Ilona",
         "ZIPcode": "4200",
         "town": "Hajdúszoboszló",
@@ -4021,7 +3860,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "160"
     },
     {
-        "searchName": "CSERNYIK ÉS TÁRSA BT",
         "companyName": "CSERNYIK ÉS TÁRSA BT",
         "ZIPcode": "6725",
         "town": "SZEGED",
@@ -4034,7 +3872,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "161"
     },
     {
-        "searchName": "CSILLAG ZSUZSANNA ERZSÉBET",
         "companyName": "Csillag Zsuzsanna Erzsébet",
         "ZIPcode": "8360",
         "town": "Keszthely",
@@ -4047,7 +3884,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "162"
     },
     {
-        "searchName": "CSIZMADIÁNÉ FÜLÖP ÉVA",
         "companyName": "Csizmadiáné Fülöp Éva",
         "ZIPcode": "6722",
         "town": "Szeged",
@@ -4060,7 +3896,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "163"
     },
     {
-        "searchName": "CSÓKA ISTVÁNNÉ",
         "companyName": "Csóka Istvánné",
         "ZIPcode": "9400",
         "town": "Sopron",
@@ -4073,7 +3908,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "164"
     },
     {
-        "searchName": "CZUCZOR GERGELY",
         "companyName": "Czuczor Gergely",
         "ZIPcode": "3351",
         "town": "Verpelét",
@@ -4086,7 +3920,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "165"
     },
     {
-        "searchName": "D-VONAL KFT.",
         "companyName": "D-Vonal Kft.",
         "ZIPcode": "1153",
         "town": "Budapest",
@@ -4099,7 +3932,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "166"
     },
     {
-        "searchName": "DADAY ÉS D BT.",
         "companyName": "Daday és D Bt.",
         "ZIPcode": "8900",
         "town": "Zalaegerszeg",
@@ -4112,7 +3944,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "167"
     },
     {
-        "searchName": "DAL-OLLÓ BT.",
         "companyName": "Dal-Olló Bt.",
         "ZIPcode": "9022",
         "town": "Győr",
@@ -4125,7 +3956,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "168"
     },
     {
-        "searchName": "DAM",
         "companyName": "DAM",
         "ZIPcode": "",
         "town": "",
@@ -4138,7 +3968,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "169"
     },
     {
-        "searchName": "DÁMA DIVAT KFT.",
         "companyName": "Dáma divat Kft.",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -4151,7 +3980,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "170"
     },
     {
-        "searchName": "DÁN GYÖNGY BT.",
         "companyName": "Dán GYöngy Bt.",
         "ZIPcode": "1223",
         "town": "Bp.",
@@ -4164,7 +3992,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "171"
     },
     {
-        "searchName": "DANA ÉS MARA KFT",
         "companyName": "Dana és Mara Kft",
         "ZIPcode": "1027",
         "town": "Budapest",
@@ -4177,7 +4004,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "172"
     },
     {
-        "searchName": "DANKA MUZIKOVÁ",
         "companyName": "Danka Muziková",
         "ZIPcode": "",
         "town": "Nitra",
@@ -4190,7 +4016,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "173"
     },
     {
-        "searchName": "DARÁZSI BENJÁMINNÉ",
         "companyName": "Darázsi Benjáminné",
         "ZIPcode": "2200",
         "town": "Monor",
@@ -4203,7 +4028,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "174"
     },
     {
-        "searchName": "DAV",
         "companyName": "DAV",
         "ZIPcode": "",
         "town": "",
@@ -4216,7 +4040,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "175"
     },
     {
-        "searchName": "DAVID DICZHAZY",
         "companyName": "DAVID DICZHAZY",
         "ZIPcode": "040 0 1",
         "town": "Kosice",
@@ -4229,7 +4052,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "176"
     },
     {
-        "searchName": "DÁVID ERIKA",
         "companyName": "Dávid Erika",
         "ZIPcode": "",
         "town": "",
@@ -4242,7 +4064,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "177"
     },
     {
-        "searchName": "DÁVID-KER HUNGARY",
         "companyName": "Dávid-ker Hungary",
         "ZIPcode": "2049",
         "town": "Diósd",
@@ -4255,7 +4076,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "178"
     },
     {
-        "searchName": "DB DESIRE 2000 KFT",
         "companyName": "DB DESIRE 2000 KFT",
         "ZIPcode": "1021",
         "town": "BUDAPEST",
@@ -4268,7 +4088,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "179"
     },
     {
-        "searchName": "DE-MOR BT",
         "companyName": "De-mor Bt",
         "ZIPcode": "1055",
         "town": "Budapest",
@@ -4281,7 +4100,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "180"
     },
     {
-        "searchName": "DÉ.J.DESIGN BT",
         "companyName": "DÉ.J.DESIGN BT",
         "ZIPcode": "1125",
         "town": "BUDAPEST",
@@ -4294,7 +4112,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "181"
     },
     {
-        "searchName": "DEKO-RATIO HOLDING REKLÁMSZOLGÁLTATÓ KFT.",
         "companyName": "Deko-Ratio Holding Reklámszolgáltató Kft.",
         "ZIPcode": "1077",
         "town": "Budapest",
@@ -4307,7 +4124,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "182"
     },
     {
-        "searchName": "DELI JÓZSEFNÉ",
         "companyName": "Deli Józsefné",
         "ZIPcode": "8060",
         "town": "Mór",
@@ -4320,7 +4136,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "183"
     },
     {
-        "searchName": "DELINA RUHAKÉSZÍTŐ KKT.",
         "companyName": "Delina Ruhakészítő Kkt.",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -4333,7 +4148,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "184"
     },
     {
-        "searchName": "DEMETREND KFT.",
         "companyName": "Demetrend Kft.",
         "ZIPcode": "4030",
         "town": "Debrecen",
@@ -4346,7 +4160,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "185"
     },
     {
-        "searchName": "DEMIX SPOL.S.R.O.",
         "companyName": "DEMIX SPOL.S.R.O.",
         "ZIPcode": "60200",
         "town": "BRNO",
@@ -4359,7 +4172,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "186"
     },
     {
-        "searchName": "DENIZ MODE KFT",
         "companyName": "Deniz Mode Kft",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -4372,7 +4184,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "187"
     },
     {
-        "searchName": "DEPALMA KFT",
         "companyName": "Depalma kft",
         "ZIPcode": "1021",
         "town": "Budapest",
@@ -4385,7 +4196,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "188"
     },
     {
-        "searchName": "DI-VAT KFT.",
         "companyName": "Di-Vat Kft.",
         "ZIPcode": "2089",
         "town": "Telki",
@@ -4398,7 +4208,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "189"
     },
     {
-        "searchName": "DI-WATT",
         "companyName": "DI-WATT",
         "ZIPcode": "1116",
         "town": "Budapest",
@@ -4411,7 +4220,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "190"
     },
     {
-        "searchName": "DIVERA MODA",
         "companyName": "Divera Moda",
         "ZIPcode": "",
         "town": "",
@@ -4424,7 +4232,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "191"
     },
     {
-        "searchName": "DIZ",
         "companyName": "DIZ",
         "ZIPcode": "",
         "town": "",
@@ -4437,7 +4244,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "192"
     },
     {
-        "searchName": "DK NETWORK MAGYARORSZÁG KFT.",
         "companyName": "DK Network Magyarország Kft.",
         "ZIPcode": "5435",
         "town": "Martfű",
@@ -4450,7 +4256,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "193"
     },
     {
-        "searchName": "DOBOS IMRÉNÉ",
         "companyName": "DOBOS IMRÉNÉ",
         "ZIPcode": "4220",
         "town": "HAJDUBÖSZÖRMÉNY",
@@ -4463,7 +4268,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "194"
     },
     {
-        "searchName": "DON-ZENIT BT",
         "companyName": "DON-ZENIT BT",
         "ZIPcode": "6000",
         "town": "KECSKEMÉT",
@@ -4476,7 +4280,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "195"
     },
     {
-        "searchName": "DORÁDO RUHAKÉSZÍTŐ KKT.",
         "companyName": "Dorádo Ruhakészítő Kkt.",
         "ZIPcode": "2092",
         "town": "Budakeszi",
@@ -4489,7 +4292,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "196"
     },
     {
-        "searchName": "DOSIBO STUDIO",
         "companyName": "DOSIBO STUDIO",
         "ZIPcode": "1221",
         "town": "Budapest",
@@ -4502,7 +4304,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "197"
     },
     {
-        "searchName": "DR ALVÁRINÉ KÖVY MÁRIA",
         "companyName": "Dr Alváriné Kövy Mária",
         "ZIPcode": "8230",
         "town": "Balatonfüred",
@@ -4515,7 +4316,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "198"
     },
     {
-        "searchName": "DR BERNDT GABRIELLA",
         "companyName": "Dr Berndt Gabriella",
         "ZIPcode": "",
         "town": "",
@@ -4528,7 +4328,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "199"
     },
     {
-        "searchName": "DR. BOROS DEZSŐNÉ",
         "companyName": "DR. BOROS DEZSŐNÉ",
         "ZIPcode": "1173",
         "town": "BUDAPEST",
@@ -4541,7 +4340,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "200"
     },
     {
-        "searchName": "DR. DUZSEJNÉ K. E.",
         "companyName": "Dr. Duzsejné K. E.",
         "ZIPcode": "3744",
         "town": "Mucsony",
@@ -4554,7 +4352,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "201"
     },
     {
-        "searchName": "DR.KISS MIHÁLY IMRE",
         "companyName": "Dr.Kiss Mihály Imre",
         "ZIPcode": "7027",
         "town": "Paks",
@@ -4567,7 +4364,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "202"
     },
     {
-        "searchName": "DR.ORSÓ ZOLTÁN JÓZSEFNÉ",
         "companyName": "Dr.Orsó Zoltán Józsefné",
         "ZIPcode": "1113",
         "town": "Budapest",
@@ -4580,7 +4376,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "203"
     },
     {
-        "searchName": "DR.VIDA SÁNDORNÉ",
         "companyName": "Dr.Vida Sándorné",
         "ZIPcode": "2900",
         "town": "Komáron",
@@ -4593,7 +4388,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "204"
     },
     {
-        "searchName": "DRESS BT.",
         "companyName": "Dress bt.",
         "ZIPcode": "1023.",
         "town": "Budapest",
@@ -4606,7 +4400,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "205"
     },
     {
-        "searchName": "DUALSZKY-KOVÁCSNÉ SÁNTA ÁGNES MÁRIA",
         "companyName": "DUALSZKY-KOVÁCSNÉ SÁNTA ÁGNES MÁRIA",
         "ZIPcode": "2459",
         "town": "RÁCALMÁS",
@@ -4619,7 +4412,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "206"
     },
     {
-        "searchName": "DUBAI CITY KFT",
         "companyName": "Dubai City Kft",
         "ZIPcode": "1081",
         "town": "Budapest",
@@ -4632,7 +4424,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "207"
     },
     {
-        "searchName": "DUETT KFT.",
         "companyName": "Duett Kft.",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -4645,7 +4436,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "208"
     },
     {
-        "searchName": "DUNA TV",
         "companyName": "Duna TV",
         "ZIPcode": "",
         "town": "Budapest",
@@ -4658,7 +4448,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "209"
     },
     {
-        "searchName": "DUNATEX 9002 KFT.",
         "companyName": "Dunatex 9002 Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -4671,7 +4460,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "210"
     },
     {
-        "searchName": "DYN",
         "companyName": "DYN",
         "ZIPcode": "",
         "town": "",
@@ -4684,7 +4472,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "211"
     },
     {
-        "searchName": "DZSENY",
         "companyName": "Dzseny",
         "ZIPcode": "",
         "town": "Budapest",
@@ -4697,7 +4484,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "212"
     },
     {
-        "searchName": "EAST-ORIENT CONSULTING KFT",
         "companyName": "East-Orient consulting Kft",
         "ZIPcode": "1054",
         "town": "Budapest",
@@ -4710,7 +4496,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "213"
     },
     {
-        "searchName": "EDELWILD",
         "companyName": "Edelwild",
         "ZIPcode": "2230",
         "town": "Gyömrő",
@@ -4723,7 +4508,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "214"
     },
     {
-        "searchName": "EDIT SZOLNOK",
         "companyName": "Edit Szolnok",
         "ZIPcode": "",
         "town": "",
@@ -4736,7 +4520,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "215"
     },
     {
-        "searchName": "EEN",
         "companyName": "EEN",
         "ZIPcode": "",
         "town": "",
@@ -4749,7 +4532,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "216"
     },
     {
-        "searchName": "EF LINE 95 KFT",
         "companyName": "EF LINE 95 KFT",
         "ZIPcode": "3300",
         "town": "EGER",
@@ -4762,7 +4544,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "217"
     },
     {
-        "searchName": "EGRI VIKI",
         "companyName": "Egri Viki",
         "ZIPcode": "2040",
         "town": "BUDAÖRS",
@@ -4775,7 +4556,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "218"
     },
     {
-        "searchName": "EGYÜD LÁSZLÓ",
         "companyName": "Együd László",
         "ZIPcode": "1161",
         "town": "Budapest",
@@ -4788,7 +4568,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "219"
     },
     {
-        "searchName": "EKKERNÉ R. KATALIN",
         "companyName": "Ekkerné R. Katalin",
         "ZIPcode": "9700",
         "town": "Szombathely",
@@ -4801,7 +4580,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "220"
     },
     {
-        "searchName": "ELE",
         "companyName": "Ele",
         "ZIPcode": "",
         "town": "",
@@ -4814,7 +4592,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "221"
     },
     {
-        "searchName": "ELEGANCE BRANKA ROMICH SP.",
         "companyName": "ELEGANCE Branka Romich Sp.",
         "ZIPcode": "1241",
         "town": "KAMNIK",
@@ -4827,7 +4604,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "222"
     },
     {
-        "searchName": "ELEGANCE 2006 BT.",
         "companyName": "Elegance 2006 Bt.",
         "ZIPcode": "9400",
         "town": "Sopron",
@@ -4840,7 +4616,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "223"
     },
     {
-        "searchName": "ELEGANCIA KZSH KFT",
         "companyName": "Elegancia KZSH Kft",
         "ZIPcode": "1136",
         "town": "Budapest",
@@ -4853,7 +4628,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "224"
     },
     {
-        "searchName": "ELEGANT MODE MANAGEMENT KFT.",
         "companyName": "Elegant Mode Management Kft.",
         "ZIPcode": "1146",
         "town": "Budapest",
@@ -4866,7 +4640,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "225"
     },
     {
-        "searchName": "ELEK BETTINA",
         "companyName": "Elek Bettina",
         "ZIPcode": "",
         "town": "",
@@ -4879,7 +4652,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "226"
     },
     {
-        "searchName": "ELENOR DIVAT KFT.",
         "companyName": "Elenor Divat Kft.",
         "ZIPcode": "2132",
         "town": "Göd",
@@ -4892,7 +4664,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "227"
     },
     {
-        "searchName": "ELIZA DIVATÁRU",
         "companyName": "Eliza Divatáru",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -4905,7 +4676,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "228"
     },
     {
-        "searchName": "ÉLKOTRÓ",
         "companyName": "Élkotró",
         "ZIPcode": "2534",
         "town": "Tát",
@@ -4918,7 +4688,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "229"
     },
     {
-        "searchName": "ELT",
         "companyName": "ELT",
         "ZIPcode": "",
         "town": "",
@@ -4931,7 +4700,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "230"
     },
     {
-        "searchName": "EMEM VARRODA KFT",
         "companyName": "EMEM VARRODA KFT",
         "ZIPcode": "2800",
         "town": "Tatabanya",
@@ -4944,7 +4712,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "231"
     },
     {
-        "searchName": "EMPORIUM KFT",
         "companyName": "EMPORIUM KFT",
         "ZIPcode": "1115",
         "town": "BUDAPEST",
@@ -4957,7 +4724,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "232"
     },
     {
-        "searchName": "EN-CHIC KFT",
         "companyName": "EN-CHIC KFT",
         "ZIPcode": "7020",
         "town": "Dunaföldvár",
@@ -4970,7 +4736,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "233"
     },
     {
-        "searchName": "ENDROSZIAD KFT",
         "companyName": "ENDROSZIAD KFT",
         "ZIPcode": "3300",
         "town": "EGER",
@@ -4983,7 +4748,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "234"
     },
     {
-        "searchName": "ENVY",
         "companyName": "ENVY",
         "ZIPcode": "",
         "town": "TREND 2",
@@ -4996,7 +4760,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "235"
     },
     {
-        "searchName": "EPERFA BT.",
         "companyName": "Eperfa Bt.",
         "ZIPcode": "9022",
         "town": "Győr",
@@ -5009,7 +4772,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "236"
     },
     {
-        "searchName": "ERDŐSSY ÁGNES",
         "companyName": "Erdőssy Ágnes",
         "ZIPcode": "2400",
         "town": "Dunaújváros",
@@ -5022,7 +4784,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "237"
     },
     {
-        "searchName": "ERIKA 75 BT.",
         "companyName": "Erika 75 Bt.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -5035,7 +4796,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "238"
     },
     {
-        "searchName": "ERLA SHOP KFT",
         "companyName": "ERLA SHOP KFT",
         "ZIPcode": "1152",
         "town": "BUDAPEST",
@@ -5048,7 +4808,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "239"
     },
     {
-        "searchName": "ESOLINE-GABRIELA KRAJCSOVICSOVÁ",
         "companyName": "ESOLINE-Gabriela Krajcsovicsová",
         "ZIPcode": "",
         "town": "",
@@ -5061,7 +4820,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "240"
     },
     {
-        "searchName": "ET-TEX KFT.",
         "companyName": "ET-TEX Kft.",
         "ZIPcode": "4400",
         "town": "Nyíregyháza",
@@ -5074,7 +4832,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "241"
     },
     {
-        "searchName": "EURO SYLVER TRADE KFT.",
         "companyName": "Euro Sylver Trade Kft.",
         "ZIPcode": "2800",
         "town": "Tatabánya",
@@ -5087,7 +4844,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "242"
     },
     {
-        "searchName": "EUT",
         "companyName": "EUT",
         "ZIPcode": "",
         "town": "",
@@ -5100,7 +4856,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "243"
     },
     {
-        "searchName": "EVA OKRUHLICHOVA-GRACIA",
         "companyName": "Eva Okruhlichova-GRACIA",
         "ZIPcode": "92701",
         "town": "Sala",
@@ -5113,7 +4868,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "244"
     },
     {
-        "searchName": "EVER MODE KFT",
         "companyName": "EVER MODE KFT",
         "ZIPcode": "2011",
         "town": "BUDAKALÁSZ",
@@ -5126,7 +4880,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "245"
     },
     {
-        "searchName": "EXKLUZÍV FÜGGÖNY MÉTERÁRU",
         "companyName": "Exkluzív Függöny Méteráru",
         "ZIPcode": "4700",
         "town": "Mátészalka",
@@ -5139,7 +4892,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "246"
     },
     {
-        "searchName": "EXTRA BEAUTYKFT.",
         "companyName": "Extra Beautykft.",
         "ZIPcode": "1139",
         "town": "Budapest",
@@ -5152,7 +4904,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "247"
     },
     {
-        "searchName": "EXTRA DÁMA BT.",
         "companyName": "Extra Dáma Bt.",
         "ZIPcode": "1181",
         "town": "Budapest",
@@ -5165,7 +4916,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "248"
     },
     {
-        "searchName": "EXTYN",
         "companyName": "EXTYN",
         "ZIPcode": "1076",
         "town": "Budapest",
@@ -5178,7 +4928,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "249"
     },
     {
-        "searchName": "F & L BT.",
         "companyName": "F & L Bt.",
         "ZIPcode": "2059",
         "town": "Esztergom Kertváros",
@@ -5191,7 +4940,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "250"
     },
     {
-        "searchName": "F-MANIA KFT.",
         "companyName": "F-mania kft.",
         "ZIPcode": "9026",
         "town": "Győr",
@@ -5204,7 +4952,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "251"
     },
     {
-        "searchName": "F.M.K.PINCESZÍNHÁZ",
         "companyName": "F.M.K.Pinceszínház",
         "ZIPcode": "1093",
         "town": "Budapest",
@@ -5217,7 +4964,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "252"
     },
     {
-        "searchName": "FABRIK ILDIKO",
         "companyName": "fabrik ildiko",
         "ZIPcode": "",
         "town": "",
@@ -5230,7 +4976,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "253"
     },
     {
-        "searchName": "FAMOUSCLOTHES KFT",
         "companyName": "Famousclothes kft",
         "ZIPcode": "6800",
         "town": "Hódmezővásárhely",
@@ -5243,7 +4988,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "254"
     },
     {
-        "searchName": "FANATIQ",
         "companyName": "Fanatiq",
         "ZIPcode": "",
         "town": "",
@@ -5256,7 +5000,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "255"
     },
     {
-        "searchName": "FAPPLE BT.",
         "companyName": "Fapple Bt.",
         "ZIPcode": "2100",
         "town": "Gödöllő",
@@ -5269,7 +5012,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "256"
     },
     {
-        "searchName": "FARAGÓ VIRÁG GÖNGÖNGYVÉR",
         "companyName": "FARAGÓ Virág Göngöngyvér",
         "ZIPcode": "1123",
         "town": "Budapeast",
@@ -5282,7 +5024,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "257"
     },
     {
-        "searchName": "FARKAS GABRIELLA",
         "companyName": "FARKAS GABRIELLA",
         "ZIPcode": "2890",
         "town": "TATA",
@@ -5295,7 +5036,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "258"
     },
     {
-        "searchName": "FARKAS MAGDA",
         "companyName": "Farkas Magda",
         "ZIPcode": "6050",
         "town": "LAJOSMIZSE",
@@ -5308,7 +5048,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "259"
     },
     {
-        "searchName": "FARKAS ZSOLTNÉ",
         "companyName": "FARKAS ZSOLTNÉ",
         "ZIPcode": "1124",
         "town": "BUDAPEST",
@@ -5321,7 +5060,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "260"
     },
     {
-        "searchName": "FATAL DOO",
         "companyName": "Fatal doo",
         "ZIPcode": "3202",
         "town": "Ljubecna,Slovenija",
@@ -5334,7 +5072,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "261"
     },
     {
-        "searchName": "FATIMA STÚDIÓ KFT.",
         "companyName": "Fatima Stúdió Kft.",
         "ZIPcode": "3200",
         "town": "Gyöngyös",
@@ -5347,7 +5084,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "262"
     },
     {
-        "searchName": "FE-TEX BT",
         "companyName": "FE-TEX BT",
         "ZIPcode": "2660",
         "town": "Balasagyarmat",
@@ -5360,7 +5096,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "263"
     },
     {
-        "searchName": "FEGA-MODE BT.",
         "companyName": "Fega-Mode Bt.",
         "ZIPcode": "3508",
         "town": "MIskolc",
@@ -5373,7 +5108,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "264"
     },
     {
-        "searchName": "FEHÉR TŰ",
         "companyName": "Fehér tű",
         "ZIPcode": "",
         "town": "Szolnok",
@@ -5386,7 +5120,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "265"
     },
     {
-        "searchName": "FEHÉRNÉ SOÓS IBOLYA",
         "companyName": "Fehérné Soós Ibolya",
         "ZIPcode": "",
         "town": "",
@@ -5399,7 +5132,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "266"
     },
     {
-        "searchName": "FEKETE ÉVA ÉS TÁRSA BT",
         "companyName": "Fekete Éva és társa Bt",
         "ZIPcode": "7720",
         "town": "Pécsvárad",
@@ -5412,7 +5144,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "267"
     },
     {
-        "searchName": "FELHŐNÉ NEMES VIKTÓRIA",
         "companyName": "Felhőné Nemes Viktória",
         "ZIPcode": "2310",
         "town": "Szigetszentmiklós",
@@ -5425,7 +5156,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "268"
     },
     {
-        "searchName": "FICÁNKA KFT.",
         "companyName": "Ficánka Kft.",
         "ZIPcode": "1142",
         "town": "Budapest",
@@ -5438,7 +5168,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "269"
     },
     {
-        "searchName": "FICSOR ÁRPÁDNÉ",
         "companyName": "Ficsor Árpádné",
         "ZIPcode": "2330",
         "town": "Dunaharaszti",
@@ -5451,7 +5180,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "270"
     },
     {
-        "searchName": "FIK",
         "companyName": "FIK",
         "ZIPcode": "",
         "town": "",
@@ -5464,7 +5192,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "271"
     },
     {
-        "searchName": "FINIAS KFT",
         "companyName": "finias kft",
         "ZIPcode": "",
         "town": "",
@@ -5477,7 +5204,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "272"
     },
     {
-        "searchName": "FIORIDIVAT KFT",
         "companyName": "Fioridivat Kft",
         "ZIPcode": "1076",
         "town": "Budapest",
@@ -5490,7 +5216,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "273"
     },
     {
-        "searchName": "FJI",
         "companyName": "FJI",
         "ZIPcode": "",
         "town": "",
@@ -5503,7 +5228,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "274"
     },
     {
-        "searchName": "FLOBEDO KFT.",
         "companyName": "Flobedo Kft.",
         "ZIPcode": "2310",
         "town": "Szigetszentmiklós",
@@ -5516,7 +5240,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "275"
     },
     {
-        "searchName": "FMK PINCESZÍNHÁZ",
         "companyName": "FMK PINCESZÍNHÁZ",
         "ZIPcode": "1093",
         "town": "BUDAPEST",
@@ -5529,7 +5252,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "276"
     },
     {
-        "searchName": "FOR-CREATION BT.",
         "companyName": "For-Creation Bt.",
         "ZIPcode": "1121",
         "town": "Budapest",
@@ -5542,7 +5264,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "277"
     },
     {
-        "searchName": "FORRAI PÉTER",
         "companyName": "Forrai Péter",
         "ZIPcode": "1072",
         "town": "Budapest",
@@ -5555,7 +5276,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "278"
     },
     {
-        "searchName": "FREDO",
         "companyName": "Fredo",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -5568,7 +5288,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "279"
     },
     {
-        "searchName": "FREE-TEX TREND2",
         "companyName": "FREE-TEX TREND2",
         "ZIPcode": "",
         "town": "",
@@ -5581,7 +5300,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "280"
     },
     {
-        "searchName": "FRUTTI TSE",
         "companyName": "Frutti TSE",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -5594,7 +5312,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "281"
     },
     {
-        "searchName": "FUTURE SOUND KFT",
         "companyName": "FUTURE SOUND KFT",
         "ZIPcode": "1184",
         "town": "BUDAPEST",
@@ -5607,7 +5324,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "282"
     },
     {
-        "searchName": "FUTUREAL",
         "companyName": "FUTUREAL",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -5620,7 +5336,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "283"
     },
     {
-        "searchName": "FÜLÖP SÁNDORNÉ",
         "companyName": "Fülöp Sándorné",
         "ZIPcode": "2730",
         "town": "Albertirsa",
@@ -5633,7 +5348,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "284"
     },
     {
-        "searchName": "FÜRI ZSANETT",
         "companyName": "Füri Zsanett",
         "ZIPcode": "1133",
         "town": "",
@@ -5646,7 +5360,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "285"
     },
     {
-        "searchName": "FÜRJES KELLÉKHÁZ KFT",
         "companyName": "Fürjes Kellékház Kft",
         "ZIPcode": "1082",
         "town": "Budapest",
@@ -5659,7 +5372,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "286"
     },
     {
-        "searchName": "FÜRJESNÉ PAPP ERIKA",
         "companyName": "Fürjesné Papp Erika",
         "ZIPcode": "1024",
         "town": "Budapest",
@@ -5672,7 +5384,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "287"
     },
     {
-        "searchName": "FÖRDÖSNÉ SZABÓ IZABELLA",
         "companyName": "Fördösné Szabó Izabella",
         "ZIPcode": "7400",
         "town": "Kaposvár",
@@ -5685,7 +5396,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "288"
     },
     {
-        "searchName": "G.DO & DO BT.",
         "companyName": "G.DO & DO BT.",
         "ZIPcode": "2170",
         "town": "ASZÓD",
@@ -5698,7 +5408,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "289"
     },
     {
-        "searchName": "GABI BT.",
         "companyName": "Gabi Bt.",
         "ZIPcode": "6600",
         "town": "Szentes",
@@ -5711,7 +5420,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "290"
     },
     {
-        "searchName": "GABÓ BT.",
         "companyName": "Gabó Bt.",
         "ZIPcode": "6600",
         "town": "Szentes",
@@ -5724,7 +5432,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "291"
     },
     {
-        "searchName": "GÁLA KFT",
         "companyName": "GÁLA KFT",
         "ZIPcode": "2170",
         "town": "ASZÓD",
@@ -5737,7 +5444,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "292"
     },
     {
-        "searchName": "GALLÁNÉ MÉSZÁROS JULIANNA",
         "companyName": "Galláné Mészáros Julianna",
         "ZIPcode": "7600",
         "town": "Pécs",
@@ -5750,7 +5456,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "293"
     },
     {
-        "searchName": "GÁLNÉ NAGY JOLÁN",
         "companyName": "GÁLNÉ NAGY JOLÁN",
         "ZIPcode": "6400",
         "town": "KISKUNHALAS",
@@ -5763,7 +5468,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "294"
     },
     {
-        "searchName": "GELENCSÉR DIVATSZALON",
         "companyName": "GELENCSÉR DIVATSZALON",
         "ZIPcode": "6000",
         "town": "KECSKEMÉT",
@@ -5776,7 +5480,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "295"
     },
     {
-        "searchName": "GELERI BT.",
         "companyName": "Geleri Bt.",
         "ZIPcode": "",
         "town": "Diósd",
@@ -5789,7 +5492,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "296"
     },
     {
-        "searchName": "GENIUS ALAPFOKÚ MŰVÉSZETOKTATÁSI INTÉZMÉNY",
         "companyName": "Genius Alapfokú Művészetoktatási Intézmény",
         "ZIPcode": "9330",
         "town": "Kapuvár",
@@ -5802,7 +5504,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "297"
     },
     {
-        "searchName": "GEPOFLY",
         "companyName": "GEPOFLY",
         "ZIPcode": "2120",
         "town": "DUNAKESZI",
@@ -5815,7 +5516,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "298"
     },
     {
-        "searchName": "GGD KFT.",
         "companyName": "GGD Kft.",
         "ZIPcode": "7621",
         "town": "Pécs",
@@ -5828,7 +5528,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "299"
     },
     {
-        "searchName": "GIANNI DORELLI KOSZÓ DOROTTYA",
         "companyName": "Gianni Dorelli Koszó Dorottya",
         "ZIPcode": "1042",
         "town": "Budapest",
@@ -5841,7 +5540,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "300"
     },
     {
-        "searchName": "GILTON TRADE KFT.",
         "companyName": "GILTON TRADE KFT.",
         "ZIPcode": "1037",
         "town": "Budapest",
@@ -5854,7 +5552,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "301"
     },
     {
-        "searchName": "GLD",
         "companyName": "GLD",
         "ZIPcode": "",
         "town": "",
@@ -5867,7 +5564,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "302"
     },
     {
-        "searchName": "GLOBAL-TOLL KFT",
         "companyName": "GLOBAL-TOLL KFT",
         "ZIPcode": "2030",
         "town": "ÉRD",
@@ -5880,7 +5576,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "303"
     },
     {
-        "searchName": "GLOBÁL-TREND KFT.",
         "companyName": "Globál-trend Kft.",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -5893,7 +5588,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "304"
     },
     {
-        "searchName": "GLÓRIA VONAL KFT.",
         "companyName": "Glória Vonal Kft.",
         "ZIPcode": "4030",
         "town": "Debrecen",
@@ -5906,7 +5600,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "305"
     },
     {
-        "searchName": "GOSZLETH R DIVAT BT.",
         "companyName": "Goszleth R Divat Bt.",
         "ZIPcode": "1052",
         "town": "Budapest",
@@ -5919,7 +5612,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "306"
     },
     {
-        "searchName": "GRIFF GENTLEMANS ZRT",
         "companyName": "GRIFF GENTLEMANS ZRT",
         "ZIPcode": "1037",
         "town": "Budapest",
@@ -5932,7 +5624,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "307"
     },
     {
-        "searchName": "GRÓF RÓBERT",
         "companyName": "Gróf Róbert",
         "ZIPcode": "",
         "town": "",
@@ -5945,7 +5636,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "308"
     },
     {
-        "searchName": "GRÓF TIBORNÉ",
         "companyName": "Gróf Tiborné",
         "ZIPcode": "2083",
         "town": "Solymár",
@@ -5958,7 +5648,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "309"
     },
     {
-        "searchName": "GROSZNÉ KMETHY ILDIKÓ",
         "companyName": "GROSZNÉ Kmethy Ildikó",
         "ZIPcode": "2600",
         "town": "VÁC",
@@ -5971,7 +5660,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "310"
     },
     {
-        "searchName": "GROTEX KFT.",
         "companyName": "Grotex kft.",
         "ZIPcode": "2319",
         "town": "Szigetújfalu",
@@ -5984,7 +5672,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "311"
     },
     {
-        "searchName": "GYÁFRÁS MODE STUDIO KFT",
         "companyName": "GYÁFRÁS MODE STUDIO KFT",
         "ZIPcode": "2120",
         "town": "DUNAKESZI",
@@ -5997,7 +5684,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "312"
     },
     {
-        "searchName": "GYEMANTORSÓ KFT.",
         "companyName": "Gyemantorsó Kft.",
         "ZIPcode": "",
         "town": "Budapest",
@@ -6010,7 +5696,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "313"
     },
     {
-        "searchName": "GYÓCSOS VIOLA",
         "companyName": "GYÓCSOS VIOLA",
         "ZIPcode": "2220",
         "town": "VECSÉS",
@@ -6023,7 +5708,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "314"
     },
     {
-        "searchName": "GYÖNGYHÁZ SZALON",
         "companyName": "Gyöngyház Szalon",
         "ZIPcode": "7900",
         "town": "Szigetvár",
@@ -6036,7 +5720,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "315"
     },
     {
-        "searchName": "GÖLÖNCSÉR FLÓRA",
         "companyName": "Gölöncsér Flóra",
         "ZIPcode": "",
         "town": "",
@@ -6049,7 +5732,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "316"
     },
     {
-        "searchName": "GÖLÖNCSÉRNÉ STRECKER MÁRTA",
         "companyName": "Gölöncsérné Strecker Márta",
         "ZIPcode": "",
         "town": "",
@@ -6062,7 +5744,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "317"
     },
     {
-        "searchName": "HALMAINÉ ÉS TÁRSA BT",
         "companyName": "Halmainé és Társa Bt",
         "ZIPcode": "5900",
         "town": "Orosháza",
@@ -6075,7 +5756,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "318"
     },
     {
-        "searchName": "HALMOSNÉ LISZTES MARGIT",
         "companyName": "HALMOSNÉ LISZTES MARGIT",
         "ZIPcode": "2836",
         "town": "BAJ",
@@ -6088,7 +5768,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "319"
     },
     {
-        "searchName": "HARGITAI ATTILÁNÉ",
         "companyName": "HARGITAI ATTILÁNÉ",
         "ZIPcode": "2344",
         "town": "DÖMSÖD",
@@ -6101,7 +5780,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "320"
     },
     {
-        "searchName": "HAVASINÉ FRITSCHI SZILVIA",
         "companyName": "HAVASINÉ FRITSCHI SZILVIA",
         "ZIPcode": "",
         "town": "",
@@ -6114,7 +5792,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "321"
     },
     {
-        "searchName": "HEDVICSEK MAGDI",
         "companyName": "Hedvicsek Magdi",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -6127,7 +5804,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "322"
     },
     {
-        "searchName": "HEINRICH FAMILY KFT.",
         "companyName": "Heinrich Family Kft.",
         "ZIPcode": "3533",
         "town": "Miskolc",
@@ -6140,7 +5816,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "323"
     },
     {
-        "searchName": "HÉJJA TRENDLINE BT.",
         "companyName": "Héjja Trendline Bt.",
         "ZIPcode": "2700",
         "town": "Cegléd",
@@ -6153,7 +5828,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "324"
     },
     {
-        "searchName": "HELBICH ERIKA",
         "companyName": "Helbich Erika",
         "ZIPcode": "7634",
         "town": "Pécs",
@@ -6166,7 +5840,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "325"
     },
     {
-        "searchName": "HERKA-TEX KFT.",
         "companyName": "HERKA-tex Kft.",
         "ZIPcode": "7634",
         "town": "Pécs",
@@ -6179,7 +5852,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "326"
     },
     {
-        "searchName": "HETEDIK DIMENZIÓ",
         "companyName": "Hetedik dimenzió",
         "ZIPcode": "",
         "town": "Budapest",
@@ -6192,7 +5864,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "327"
     },
     {
-        "searchName": "HEVES GABRIELLA",
         "companyName": "HEVES GABRIELLA",
         "ZIPcode": "1204",
         "town": "BUDAPEST",
@@ -6205,7 +5876,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "328"
     },
     {
-        "searchName": "HÍRŐS TEX KFT.",
         "companyName": "Hírős Tex Kft.",
         "ZIPcode": "6000",
         "town": "Kecskemét",
@@ -6218,7 +5888,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "329"
     },
     {
-        "searchName": "HIRSCHLER GLAS",
         "companyName": "Hirschler Glas",
         "ZIPcode": "2045",
         "town": "Törökbálint",
@@ -6231,7 +5900,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "330"
     },
     {
-        "searchName": "HOL-MIKER KFT",
         "companyName": "Hol-miker kft",
         "ZIPcode": "1124",
         "town": "Budapest",
@@ -6244,7 +5912,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "331"
     },
     {
-        "searchName": "HOLCH JÓZSEFNÉ",
         "companyName": "Holch Józsefné",
         "ZIPcode": "1028",
         "town": "Budapest",
@@ -6257,7 +5924,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "332"
     },
     {
-        "searchName": "HOLCZMANN-NÉ SZERDAHELYI HELGA",
         "companyName": "Holczmann-né Szerdahelyi Helga",
         "ZIPcode": "9024",
         "town": "Győr",
@@ -6270,7 +5936,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "333"
     },
     {
-        "searchName": "HOLLÓ KATALIN",
         "companyName": "Holló Katalin",
         "ZIPcode": "2890",
         "town": "Tata",
@@ -6283,7 +5948,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "334"
     },
     {
-        "searchName": "HOME BAZAAR",
         "companyName": "HOME BAZAAR",
         "ZIPcode": "1075",
         "town": "BUDAPEST",
@@ -6296,7 +5960,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "335"
     },
     {
-        "searchName": "HOMONATURA KFT.",
         "companyName": "HOMONATURA Kft.",
         "ZIPcode": "1138",
         "town": "Bp",
@@ -6309,7 +5972,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "336"
     },
     {
-        "searchName": "HONEY",
         "companyName": "Honey",
         "ZIPcode": "2040",
         "town": "trend2",
@@ -6322,7 +5984,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "337"
     },
     {
-        "searchName": "HORVÁTH ÁRPÁDNÉ",
         "companyName": "Horváth Árpádné",
         "ZIPcode": "9400.",
         "town": "Sopron",
@@ -6335,7 +5996,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "338"
     },
     {
-        "searchName": "HORVÁTH ATTILA",
         "companyName": "HORVÁTH ATTILA",
         "ZIPcode": "7400",
         "town": "KAPOSVÁR",
@@ -6348,7 +6008,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "339"
     },
     {
-        "searchName": "HORVÁTH LÁSZLÓ",
         "companyName": "Horváth László",
         "ZIPcode": "8100",
         "town": "VÁRPALOTA",
@@ -6361,7 +6020,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "340"
     },
     {
-        "searchName": "HORVÁTH MÁRIA",
         "companyName": "HORVÁTH MÁRIA",
         "ZIPcode": "9021",
         "town": "GYŐR",
@@ -6374,7 +6032,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "341"
     },
     {
-        "searchName": "HORVÁTH MIKLÓSNÉ",
         "companyName": "Horváth Miklósné",
         "ZIPcode": "9100",
         "town": "Tét",
@@ -6387,7 +6044,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "342"
     },
     {
-        "searchName": "HORVÁTH PÉTER",
         "companyName": "Horváth Péter",
         "ZIPcode": "6720",
         "town": "Szeged",
@@ -6400,7 +6056,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "343"
     },
     {
-        "searchName": "HORVÁTH REZSŐ",
         "companyName": "Horváth Rezső",
         "ZIPcode": "2117",
         "town": "Isaszeg",
@@ -6413,7 +6068,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "344"
     },
     {
-        "searchName": "HORVÁTH TIBOR",
         "companyName": "Horváth Tibor",
         "ZIPcode": "8900",
         "town": "Zalaegerszeg",
@@ -6426,7 +6080,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "345"
     },
     {
-        "searchName": "HORVÁTH-TEXTIL KEC",
         "companyName": "Horváth-Textil KEC",
         "ZIPcode": "6720",
         "town": "Szeged",
@@ -6439,7 +6092,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "346"
     },
     {
-        "searchName": "HORVÁTHY LILIEN",
         "companyName": "Horváthy Lilien",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -6452,7 +6104,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "347"
     },
     {
-        "searchName": "HUBÁNÉ LAKATOS ÉVA",
         "companyName": "Hubáné Lakatos Éva",
         "ZIPcode": "1112",
         "town": "Budapest",
@@ -6465,7 +6116,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "348"
     },
     {
-        "searchName": "HUNG-ESSZENCIA KFT",
         "companyName": "Hung-Esszencia Kft",
         "ZIPcode": "1121",
         "town": "Budapest",
@@ -6478,7 +6128,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "349"
     },
     {
-        "searchName": "HUNYADI MÁTYÁS ÁLT. ISK.",
         "companyName": "Hunyadi Mátyás Ált. Isk.",
         "ZIPcode": "2083",
         "town": "Solymár",
@@ -6491,7 +6140,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "350"
     },
     {
-        "searchName": "HUSZ ÉS TÁRSA BT.",
         "companyName": "Husz és Társa Bt.",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -6504,7 +6152,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "351"
     },
     {
-        "searchName": "I-FASHION S.R.O.",
         "companyName": "i-fashion s.r.o.",
         "ZIPcode": "60200",
         "town": "Brno",
@@ -6517,7 +6164,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "352"
     },
     {
-        "searchName": "IBI KFT",
         "companyName": "IBI KFT",
         "ZIPcode": "1084",
         "town": "BUDAPEST",
@@ -6530,7 +6176,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "353"
     },
     {
-        "searchName": "IBOYA VIRAG",
         "companyName": "IBOYA VIRAG",
         "ZIPcode": "",
         "town": "Dunaujvaros",
@@ -6543,7 +6188,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "354"
     },
     {
-        "searchName": "ICE N GO KFT.",
         "companyName": "Ice N Go Kft.",
         "ZIPcode": "8600",
         "town": "Siófok",
@@ -6556,7 +6200,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "355"
     },
     {
-        "searchName": "IDEÁL-MÉTER KFT.",
         "companyName": "Ideál-MÉTER kft.",
         "ZIPcode": "5100",
         "town": "Jászberény",
@@ -6569,7 +6212,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "356"
     },
     {
-        "searchName": "IGAZGYÖNGY",
         "companyName": "Igazgyöngy",
         "ZIPcode": "11188",
         "town": "Budapest",
@@ -6582,7 +6224,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "357"
     },
     {
-        "searchName": "IGÉZŐ VISELET KFT.",
         "companyName": "iGÉZŐ VISELET kFT.",
         "ZIPcode": "",
         "town": "",
@@ -6595,7 +6236,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "358"
     },
     {
-        "searchName": "IKA",
         "companyName": "IKA",
         "ZIPcode": "",
         "town": "",
@@ -6608,7 +6248,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "359"
     },
     {
-        "searchName": "IL-KLA 2007 KFT",
         "companyName": "IL-KLA 2007 Kft",
         "ZIPcode": "1098",
         "town": "Budapest",
@@ -6621,7 +6260,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "360"
     },
     {
-        "searchName": "ILA",
         "companyName": "ILA",
         "ZIPcode": "",
         "town": "",
@@ -6634,7 +6272,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "361"
     },
     {
-        "searchName": "ILA DIVAT BT.",
         "companyName": "Ila Divat Bt.",
         "ZIPcode": "3530",
         "town": "Miskolc",
@@ -6647,7 +6284,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "362"
     },
     {
-        "searchName": "ILLEGAL",
         "companyName": "Illegal",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -6660,7 +6296,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "363"
     },
     {
-        "searchName": "ILLÉS NORBERT",
         "companyName": "Illés Norbert",
         "ZIPcode": "6300",
         "town": "Kalocsa",
@@ -6673,7 +6308,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "364"
     },
     {
-        "searchName": "ILLKER 2000 BT",
         "companyName": "ILLKER 2000 BT",
         "ZIPcode": "02.KER",
         "town": "BUDAPEST",
@@ -6686,7 +6320,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "365"
     },
     {
-        "searchName": "IMATALNET",
         "companyName": "Imatalnet",
         "ZIPcode": "",
         "town": "",
@@ -6699,7 +6332,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "366"
     },
     {
-        "searchName": "IMÓKER BT",
         "companyName": "Imóker Bt",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -6712,7 +6344,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "367"
     },
     {
-        "searchName": "IMPRESS TREND2",
         "companyName": "Impress trend2",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -6725,7 +6356,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "368"
     },
     {
-        "searchName": "IMPULS",
         "companyName": "Impuls",
         "ZIPcode": "",
         "town": "",
@@ -6738,7 +6368,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "369"
     },
     {
-        "searchName": "INDIVIL-FASHION KFT",
         "companyName": "Indivil-fashion kft",
         "ZIPcode": "2365",
         "town": "Inárcs",
@@ -6751,7 +6380,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "370"
     },
     {
-        "searchName": "ING. JAROSLAV SADLON - SETOOP",
         "companyName": "Ing. Jaroslav Sadlon - SETOOP",
         "ZIPcode": "91616",
         "town": "Krajné",
@@ -6764,7 +6392,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "371"
     },
     {
-        "searchName": "INKAM TRADE KFT",
         "companyName": "INKAM TRADE KFT",
         "ZIPcode": "8100",
         "town": "VÁRPALOTA",
@@ -6777,7 +6404,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "372"
     },
     {
-        "searchName": "INPACK KFT",
         "companyName": "Inpack kft",
         "ZIPcode": "1118",
         "town": "Budapest",
@@ -6790,7 +6416,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "373"
     },
     {
-        "searchName": "INVIVA S.R.O",
         "companyName": "INVIVA s.r.o",
         "ZIPcode": "4001",
         "town": "Kosice",
@@ -6803,7 +6428,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "374"
     },
     {
-        "searchName": "IP-ART KFT.",
         "companyName": "Ip-Art Kft.",
         "ZIPcode": "1053",
         "town": "Budapest",
@@ -6816,7 +6440,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "375"
     },
     {
-        "searchName": "IRENA GOLCER S. P.",
         "companyName": "Irena Golcer S. P.",
         "ZIPcode": "3212",
         "town": "Vojnik",
@@ -6829,7 +6452,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "376"
     },
     {
-        "searchName": "ITF",
         "companyName": "itf",
         "ZIPcode": "",
         "town": "",
@@ -6842,7 +6464,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "377"
     },
     {
-        "searchName": "ITN",
         "companyName": "ITN",
         "ZIPcode": "",
         "town": "",
@@ -6855,7 +6476,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "378"
     },
     {
-        "searchName": "IVÁN",
         "companyName": "Iván",
         "ZIPcode": "",
         "town": "",
@@ -6868,7 +6488,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "379"
     },
     {
-        "searchName": "IVETA HORNACKOVA",
         "companyName": "Iveta Hornackova",
         "ZIPcode": "91942",
         "town": "Voderady",
@@ -6881,7 +6500,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "380"
     },
     {
-        "searchName": "JACSÓ ÉS JACSÓ KFT",
         "companyName": "JACSÓ ÉS JACSÓ KFT",
         "ZIPcode": "1122",
         "town": "BUDAPEST",
@@ -6894,7 +6512,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "381"
     },
     {
-        "searchName": "JACSÓ JÁNOSNÉ",
         "companyName": "Jacsó Jánosné",
         "ZIPcode": "3400",
         "town": "Mezőkövesd",
@@ -6907,7 +6524,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "382"
     },
     {
-        "searchName": "JAFFA KAPU BT",
         "companyName": "Jaffa Kapu Bt",
         "ZIPcode": "2800",
         "town": "Tata",
@@ -6920,7 +6536,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "383"
     },
     {
-        "searchName": "JAKABNÉ KOCZNER EDIT",
         "companyName": "Jakabné Koczner Edit",
         "ZIPcode": "2040",
         "town": "",
@@ -6933,7 +6548,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "384"
     },
     {
-        "searchName": "JÁKÓ GYÖRGYI",
         "companyName": "Jákó Györgyi",
         "ZIPcode": "1026",
         "town": "Budapest",
@@ -6946,7 +6560,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "385"
     },
     {
-        "searchName": "JAM",
         "companyName": "JAM",
         "ZIPcode": "",
         "town": "",
@@ -6959,7 +6572,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "386"
     },
     {
-        "searchName": "JAMEELA",
         "companyName": "jameela",
         "ZIPcode": "",
         "town": "",
@@ -6972,7 +6584,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "387"
     },
     {
-        "searchName": "JANWO",
         "companyName": "JANWO",
         "ZIPcode": "90505",
         "town": "LODZ",
@@ -6985,7 +6596,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "388"
     },
     {
-        "searchName": "JAXSIS KFT.",
         "companyName": "Jaxsis Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -6998,7 +6608,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "389"
     },
     {
-        "searchName": "JELMEZ-ART KFT",
         "companyName": "Jelmez-Art Kft",
         "ZIPcode": "5000",
         "town": "Szolnok",
@@ -7011,7 +6620,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "390"
     },
     {
-        "searchName": "JOHNNY",
         "companyName": "Johnny",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -7024,7 +6632,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "391"
     },
     {
-        "searchName": "JOLINE-TEX",
         "companyName": "JOLINE-TEX",
         "ZIPcode": "",
         "town": "DUBAI",
@@ -7037,7 +6644,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "392"
     },
     {
-        "searchName": "JOZSÁNÉ SZLAMA EMŐKE",
         "companyName": "Jozsáné Szlama Emőke",
         "ZIPcode": "",
         "town": "Budapest",
@@ -7050,7 +6656,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "393"
     },
     {
-        "searchName": "JÓZSÁNÉ SZLAMA EMŐKE",
         "companyName": "Józsáné Szlama Emőke",
         "ZIPcode": "1116",
         "town": "Budapest",
@@ -7063,7 +6668,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "394"
     },
     {
-        "searchName": "JS MODELL",
         "companyName": "JS modell",
         "ZIPcode": "",
         "town": "Poltár",
@@ -7076,7 +6680,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "395"
     },
     {
-        "searchName": "JSM",
         "companyName": "JSM",
         "ZIPcode": "",
         "town": "",
@@ -7089,7 +6692,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "396"
     },
     {
-        "searchName": "JUDIT DIVATÁRU 2003 BT.",
         "companyName": "Judit Divatáru 2003 Bt.",
         "ZIPcode": "9200",
         "town": "Mosonmagyaróvár",
@@ -7102,7 +6704,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "397"
     },
     {
-        "searchName": "JUHÁSZ ZSUZSANNA",
         "companyName": "Juhász Zsuzsanna",
         "ZIPcode": "2890",
         "town": "Tata",
@@ -7115,7 +6716,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "398"
     },
     {
-        "searchName": "K ÉS M RUHÁZATI KFT",
         "companyName": "K és M Ruházati kft",
         "ZIPcode": "1152",
         "town": "Budapest",
@@ -7128,7 +6728,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "399"
     },
     {
-        "searchName": "K&C KONFEKCIÓ RUHAIPARI BT.",
         "companyName": "K&C Konfekció Ruhaipari Bt.",
         "ZIPcode": "2457",
         "town": "Adony",
@@ -7141,7 +6740,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "400"
     },
     {
-        "searchName": "K-V",
         "companyName": "K-V",
         "ZIPcode": "1076",
         "town": "Budapest",
@@ -7154,7 +6752,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "401"
     },
     {
-        "searchName": "KÁKÁZSÉ BT",
         "companyName": "KáKáZsé Bt",
         "ZIPcode": "2092",
         "town": "Budakeszi",
@@ -7167,7 +6764,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "402"
     },
     {
-        "searchName": "KAMONDY TIVADAR",
         "companyName": "KAMONDY Tivadar",
         "ZIPcode": "9500",
         "town": "Celldömölk",
@@ -7180,7 +6776,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "403"
     },
     {
-        "searchName": "KAR",
         "companyName": "Kar",
         "ZIPcode": "",
         "town": "",
@@ -7193,7 +6788,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "404"
     },
     {
-        "searchName": "KARASZI ATTILÁNÉ",
         "companyName": "KARASZI ATTILÁNÉ",
         "ZIPcode": "6500",
         "town": "BAJA",
@@ -7206,7 +6800,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "405"
     },
     {
-        "searchName": "KARDOS PÁLNÉ",
         "companyName": "Kardos Pálné",
         "ZIPcode": "1061",
         "town": "Budapest",
@@ -7219,7 +6812,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "406"
     },
     {
-        "searchName": "KARINA BAJTEKOVÁ",
         "companyName": "Karina Bajteková",
         "ZIPcode": "",
         "town": "",
@@ -7232,7 +6824,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "407"
     },
     {
-        "searchName": "KARIPNÉ SZABÓ KRISZTINA ÁGNES",
         "companyName": "Karipné Szabó Krisztina Ágnes",
         "ZIPcode": "8700",
         "town": "Marcali",
@@ -7245,7 +6836,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "408"
     },
     {
-        "searchName": "KATERINA COUTURE KFT",
         "companyName": "KATERINA COUTURE KFT",
         "ZIPcode": "1052",
         "town": "BUDAPEST",
@@ -7258,7 +6848,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "409"
     },
     {
-        "searchName": "KATONA IBOLYA",
         "companyName": "KATONA IBOLYA",
         "ZIPcode": "1116",
         "town": "BUDAPEST",
@@ -7271,7 +6860,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "410"
     },
     {
-        "searchName": "KEBERT KFT.",
         "companyName": "Kebert Kft.",
         "ZIPcode": "6000",
         "town": "Kecskemét",
@@ -7284,7 +6872,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "411"
     },
     {
-        "searchName": "KECSKÉS ZOLTÁN",
         "companyName": "Kecskés Zoltán",
         "ZIPcode": "1039",
         "town": "Budapest",
@@ -7297,7 +6884,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "412"
     },
     {
-        "searchName": "KEGYE JOLÁN",
         "companyName": "Kegye Jolán",
         "ZIPcode": "4090",
         "town": "Polgár",
@@ -7310,7 +6896,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "413"
     },
     {
-        "searchName": "KEHIDÁMÁK AEROBIK KLUB",
         "companyName": "Kehidámák Aerobik Klub",
         "ZIPcode": "8784",
         "town": "Kehidakustány",
@@ -7323,7 +6908,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "414"
     },
     {
-        "searchName": "KELET KONF. KFT",
         "companyName": "KELET KONF. KFT",
         "ZIPcode": "4400",
         "town": "NYIREGYHÁZA",
@@ -7336,7 +6920,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "415"
     },
     {
-        "searchName": "KENGURU KID KFT.",
         "companyName": "Kenguru Kid Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -7349,7 +6932,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "416"
     },
     {
-        "searchName": "KENTEXT KFT.",
         "companyName": "Kentext Kft.",
         "ZIPcode": "3955",
         "town": "Kenézlő",
@@ -7362,7 +6944,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "417"
     },
     {
-        "searchName": "KERÉNYI ANDRÁS",
         "companyName": "Kerényi András",
         "ZIPcode": "6500",
         "town": "Baja",
@@ -7375,7 +6956,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "418"
     },
     {
-        "searchName": "KERESZTÉNYI SZILVIA",
         "companyName": "KERESZTÉNYI SZILVIA",
         "ZIPcode": "2440",
         "town": "SZÁZHALOMBATTA",
@@ -7388,7 +6968,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "419"
     },
     {
-        "searchName": "KEVA-TRANS 95 BT.",
         "companyName": "Keva-Trans 95 Bt.",
         "ZIPcode": "6500",
         "town": "Baja",
@@ -7401,7 +6980,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "420"
     },
     {
-        "searchName": "KÉZI-VARÁZS KFT.",
         "companyName": "Kézi-Varázs Kft.",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -7414,7 +6992,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "421"
     },
     {
-        "searchName": "KILLY GYEREKRUHÁS",
         "companyName": "Killy Gyerekruhás",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -7427,7 +7004,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "422"
     },
     {
-        "searchName": "KILLY LINDA",
         "companyName": "Killy Linda",
         "ZIPcode": "",
         "town": "",
@@ -7440,7 +7016,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "423"
     },
     {
-        "searchName": "KIM",
         "companyName": "KIM",
         "ZIPcode": "",
         "town": "",
@@ -7453,7 +7028,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "424"
     },
     {
-        "searchName": "KINKY KFT.",
         "companyName": "Kinky Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -7466,7 +7040,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "425"
     },
     {
-        "searchName": "KISGÉP BT.",
         "companyName": "Kisgép Bt.",
         "ZIPcode": "2535",
         "town": "Mogyorósbánya",
@@ -7479,7 +7052,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "426"
     },
     {
-        "searchName": "KISS TEXTIL KFT",
         "companyName": "KISS TEXTIL KFT",
         "ZIPcode": "2100",
         "town": "GÖDÖLLŐ",
@@ -7492,7 +7064,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "427"
     },
     {
-        "searchName": "KISSNÉ MATKÓ GABRIELLA",
         "companyName": "Kissné Matkó Gabriella",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -7505,7 +7076,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "428"
     },
     {
-        "searchName": "KITANOVICS ÉVA",
         "companyName": "Kitanovics Éva",
         "ZIPcode": "",
         "town": "",
@@ -7518,7 +7088,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "429"
     },
     {
-        "searchName": "KITTY LAURO",
         "companyName": "Kitty Lauro",
         "ZIPcode": "",
         "town": "",
@@ -7531,7 +7100,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "430"
     },
     {
-        "searchName": "KLIK 196031",
         "companyName": "Klik 196031",
         "ZIPcode": "1055",
         "town": "Szalay u.10-14",
@@ -7544,7 +7112,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "431"
     },
     {
-        "searchName": "KLOTCZ KFT",
         "companyName": "Klotcz kft",
         "ZIPcode": "7621",
         "town": "Pécs",
@@ -7557,7 +7124,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "432"
     },
     {
-        "searchName": "KLÚBER FERENCNÉ",
         "companyName": "Klúber Ferencné",
         "ZIPcode": "8066",
         "town": "Pusztavám",
@@ -7570,7 +7136,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "433"
     },
     {
-        "searchName": "KOHANYEC KÁROLYNÉ",
         "companyName": "KOHANYEC KÁROLYNÉ",
         "ZIPcode": "5600",
         "town": "BÉKÉSCSABA",
@@ -7583,7 +7148,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "434"
     },
     {
-        "searchName": "KOMÁROMI KAMILLA",
         "companyName": "Komáromi Kamilla",
         "ZIPcode": "",
         "town": "",
@@ -7596,7 +7160,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "435"
     },
     {
-        "searchName": "KÓNYA TIBORNÉ",
         "companyName": "Kónya Tiborné",
         "ZIPcode": "7635",
         "town": "Pécs",
@@ -7609,7 +7172,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "436"
     },
     {
-        "searchName": "KOPOCSI JENŐNÉ",
         "companyName": "KOPOCSI JENŐNÉ",
         "ZIPcode": "1149",
         "town": "BUDAPEST",
@@ -7622,7 +7184,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "437"
     },
     {
-        "searchName": "KORREKCIÓ",
         "companyName": "KORREKCIÓ",
         "ZIPcode": "",
         "town": "",
@@ -7635,7 +7196,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "438"
     },
     {
-        "searchName": "KÓSA ZOLTÁN",
         "companyName": "Kósa Zoltán",
         "ZIPcode": "2851",
         "town": "Környe",
@@ -7648,7 +7208,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "439"
     },
     {
-        "searchName": "KÓSZÓ DOROTTYA",
         "companyName": "Kószó Dorottya",
         "ZIPcode": "1042",
         "town": "Budapest",
@@ -7661,7 +7220,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "440"
     },
     {
-        "searchName": "KOTRÁS ZOLTÁN",
         "companyName": "Kotrás Zoltán",
         "ZIPcode": "4024",
         "town": "Debrecen",
@@ -7674,7 +7232,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "441"
     },
     {
-        "searchName": "KOVÁCS ANITA",
         "companyName": "Kovács Anita",
         "ZIPcode": "9172",
         "town": "Győrzámoly",
@@ -7687,7 +7244,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "442"
     },
     {
-        "searchName": "KOVÁCS ÉS KOVÁCS BT.",
         "companyName": "Kovács és Kovács Bt.",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -7700,7 +7256,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "443"
     },
     {
-        "searchName": "KOVÁCS ESZTER",
         "companyName": "Kovács Eszter",
         "ZIPcode": "2045",
         "town": "Törökbálint",
@@ -7713,7 +7268,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "444"
     },
     {
-        "searchName": "KOVÁCS ETEL",
         "companyName": "Kovács Etel",
         "ZIPcode": "2051",
         "town": "BIATORBÁGY",
@@ -7726,7 +7280,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "445"
     },
     {
-        "searchName": "KOVÁCS JÓZSEF",
         "companyName": "Kovács József",
         "ZIPcode": "9400",
         "town": "Sopron",
@@ -7739,7 +7292,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "446"
     },
     {
-        "searchName": "KOVÁCS LÁSZLÓ",
         "companyName": "Kovács László",
         "ZIPcode": "1221",
         "town": "Budapest",
@@ -7752,7 +7304,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "447"
     },
     {
-        "searchName": "KOVÁCS ZITA",
         "companyName": "Kovács Zita",
         "ZIPcode": "1024",
         "town": "Budapest",
@@ -7765,7 +7316,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "448"
     },
     {
-        "searchName": "KOVÁCSNÉ SZILASI ANDREA",
         "companyName": "Kovácsné Szilasi Andrea",
         "ZIPcode": "9789",
         "town": "Sé",
@@ -7778,7 +7328,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "449"
     },
     {
-        "searchName": "KOWAKO KFT.",
         "companyName": "Kowako Kft.",
         "ZIPcode": "2310",
         "town": "Szigetszentmiklós",
@@ -7791,7 +7340,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "450"
     },
     {
-        "searchName": "KRETEX KERESKEDELMI ÉS SZOLGÁLTATÓ KFT.",
         "companyName": "KRETEX KERESKEDELMI ÉS SZOLGÁLTATÓ KFT.",
         "ZIPcode": "7628",
         "town": "PÉCS",
@@ -7804,7 +7352,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "451"
     },
     {
-        "searchName": "KRUPÁNSZKI BÉLA",
         "companyName": "Krupánszki Béla",
         "ZIPcode": "4080",
         "town": "Hajdúnánás",
@@ -7817,7 +7364,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "452"
     },
     {
-        "searchName": "KSU",
         "companyName": "ksu",
         "ZIPcode": "",
         "town": "",
@@ -7830,7 +7376,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "453"
     },
     {
-        "searchName": "KSZA KFT.",
         "companyName": "KSZA Kft.",
         "ZIPcode": "9021",
         "town": "Győr",
@@ -7843,7 +7388,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "454"
     },
     {
-        "searchName": "KULCSARCONF S.R.L.",
         "companyName": "Kulcsarconf s.r.l.",
         "ZIPcode": "",
         "town": "QRS.CEHU SILVANIEI",
@@ -7856,7 +7400,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "455"
     },
     {
-        "searchName": "KULTURA ALAPÍTVÁNY",
         "companyName": "KULTURA ALAPÍTVÁNY",
         "ZIPcode": "1201",
         "town": "BUDAPEST",
@@ -7869,7 +7412,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "456"
     },
     {
-        "searchName": "KULTÚRA ALAPÍTVÁNY",
         "companyName": "Kultúra Alapítvány",
         "ZIPcode": "1201",
         "town": "Budapest",
@@ -7882,7 +7424,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "457"
     },
     {
-        "searchName": "KURRENS KFT.",
         "companyName": "Kurrens Kft.",
         "ZIPcode": "1119",
         "town": "Budapest",
@@ -7895,7 +7436,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "458"
     },
     {
-        "searchName": "KÖLES ANTAL",
         "companyName": "Köles Antal",
         "ZIPcode": "2316",
         "town": "Tököl",
@@ -7908,7 +7448,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "459"
     },
     {
-        "searchName": "KÖLESÉRI EDIT",
         "companyName": "Köleséri Edit",
         "ZIPcode": "8100",
         "town": "Várpalota",
@@ -7921,7 +7460,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "460"
     },
     {
-        "searchName": "KÖRMENDI SÁNDOR",
         "companyName": "KÖRMENDI SÁNDOR",
         "ZIPcode": "8000",
         "town": "SZÉKESFEHÉRVÁR",
@@ -7934,7 +7472,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "461"
     },
     {
-        "searchName": "KÖTÉL ERIKA",
         "companyName": "KÖTÉL ERIKA",
         "ZIPcode": "",
         "town": "",
@@ -7947,7 +7484,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "462"
     },
     {
-        "searchName": "KÖV-TEXT KFT.",
         "companyName": "Köv-text kft.",
         "ZIPcode": "9028",
         "town": "Győr",
@@ -7960,7 +7496,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "463"
     },
     {
-        "searchName": "L-MODELL KFT.",
         "companyName": "L-Modell kft.",
         "ZIPcode": "1076",
         "town": "Budapest",
@@ -7973,7 +7508,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "464"
     },
     {
-        "searchName": "L.K.Z. ASSISTANCE BT",
         "companyName": "L.K.Z. Assistance Bt",
         "ZIPcode": "8831",
         "town": "Liszó",
@@ -7986,7 +7520,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "465"
     },
     {
-        "searchName": "LACHMANN ZOLTÁN",
         "companyName": "Lachmann Zoltán",
         "ZIPcode": "9022",
         "town": "Győr",
@@ -7999,7 +7532,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "466"
     },
     {
-        "searchName": "LADY M",
         "companyName": "Lady M",
         "ZIPcode": "90301",
         "town": "Senec",
@@ -8012,7 +7544,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "467"
     },
     {
-        "searchName": "LADY M CLASSIC",
         "companyName": "Lady M Classic",
         "ZIPcode": "90301",
         "town": "Senec",
@@ -8025,7 +7556,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "468"
     },
     {
-        "searchName": "LAM",
         "companyName": "LAM",
         "ZIPcode": "",
         "town": "",
@@ -8038,7 +7568,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "469"
     },
     {
-        "searchName": "LAMM ÉS TSA KFT.",
         "companyName": "Lamm és tsa kft.",
         "ZIPcode": "1045",
         "town": "Budapest",
@@ -8051,7 +7580,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "470"
     },
     {
-        "searchName": "LÁNGH GÁBOR",
         "companyName": "Lángh Gábor",
         "ZIPcode": "9400",
         "town": "Sopron",
@@ -8064,7 +7592,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "471"
     },
     {
-        "searchName": "LANGO ZSUZSANNA",
         "companyName": "LANGO ZSUZSANNA",
         "ZIPcode": "6900",
         "town": "MAKÓ",
@@ -8077,7 +7604,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "472"
     },
     {
-        "searchName": "LANIFICIO BRUNETTO MORGANTI",
         "companyName": "Lanificio Brunetto Morganti",
         "ZIPcode": "59100",
         "town": "Tavola, Prato, Italy",
@@ -8090,7 +7616,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "473"
     },
     {
-        "searchName": "LANIFICIO R.I.A.",
         "companyName": "LANIFICIO R.I.A.",
         "ZIPcode": "51037",
         "town": "MONTALE",
@@ -8103,7 +7628,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "474"
     },
     {
-        "searchName": "LÁSZLÓ ÉS TÁRSA",
         "companyName": "László és Társa",
         "ZIPcode": "7300",
         "town": "Komló",
@@ -8116,7 +7640,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "475"
     },
     {
-        "searchName": "LÁSZLÓ JÁNOSNÉ",
         "companyName": "László Jánosné",
         "ZIPcode": "8124",
         "town": "Kálóz",
@@ -8129,7 +7652,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "476"
     },
     {
-        "searchName": "LÁTVÁNY BT",
         "companyName": "Látvány Bt",
         "ZIPcode": "1117",
         "town": "Budapest",
@@ -8142,7 +7664,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "477"
     },
     {
-        "searchName": "LAUDI BT.",
         "companyName": "Laudi Bt.",
         "ZIPcode": "1123",
         "town": "Budapest",
@@ -8155,7 +7676,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "478"
     },
     {
-        "searchName": "LAURA S.R.O",
         "companyName": "Laura s.r.o",
         "ZIPcode": "905 01",
         "town": "Senica",
@@ -8168,7 +7688,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "479"
     },
     {
-        "searchName": "LÉGRÁDI BORBÁLA",
         "companyName": "Légrádi Borbála",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -8181,7 +7700,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "480"
     },
     {
-        "searchName": "LETTER KFT",
         "companyName": "Letter Kft",
         "ZIPcode": "",
         "town": "",
@@ -8194,7 +7712,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "481"
     },
     {
-        "searchName": "LEV",
         "companyName": "LEV",
         "ZIPcode": "",
         "town": "",
@@ -8207,7 +7724,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "482"
     },
     {
-        "searchName": "LICSKAI GÉZÁNÉ",
         "companyName": "Licskai Gézáné",
         "ZIPcode": "9330",
         "town": "Kapuvár",
@@ -8220,7 +7736,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "483"
     },
     {
-        "searchName": "LICSKAI TAMÁS",
         "companyName": "Licskai Tamás",
         "ZIPcode": "",
         "town": "Csorna",
@@ -8233,7 +7748,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "484"
     },
     {
-        "searchName": "LID",
         "companyName": "LID",
         "ZIPcode": "",
         "town": "",
@@ -8246,7 +7760,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "485"
     },
     {
-        "searchName": "LIDIJA SKRABEL",
         "companyName": "Lidija Skrabel",
         "ZIPcode": "",
         "town": "Maribor",
@@ -8259,7 +7772,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "486"
     },
     {
-        "searchName": "LIDO COLO BT.",
         "companyName": "Lido Colo Bt.",
         "ZIPcode": "3200",
         "town": "Gyöngyös",
@@ -8272,7 +7784,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "487"
     },
     {
-        "searchName": "LILBEN",
         "companyName": "lilben",
         "ZIPcode": "",
         "town": "",
@@ -8285,7 +7796,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "488"
     },
     {
-        "searchName": "LILI CLASSIC",
         "companyName": "Lili Classic",
         "ZIPcode": "1118",
         "town": "Budapest",
@@ -8298,7 +7808,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "489"
     },
     {
-        "searchName": "LILIEN-MODE",
         "companyName": "Lilien-Mode",
         "ZIPcode": "1212",
         "town": "Budapest",
@@ -8311,7 +7820,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "490"
     },
     {
-        "searchName": "LILIFO KFT.",
         "companyName": "Lilifo Kft.",
         "ZIPcode": "1137",
         "town": "Budapest",
@@ -8324,7 +7832,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "491"
     },
     {
-        "searchName": "LILLA",
         "companyName": "Lilla",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -8337,7 +7844,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "492"
     },
     {
-        "searchName": "LILLY CHIC",
         "companyName": "Lilly Chic",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -8350,7 +7856,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "493"
     },
     {
-        "searchName": "LINANIK BT.",
         "companyName": "Linanik Bt.",
         "ZIPcode": "5100",
         "town": "Jászberény",
@@ -8363,7 +7868,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "494"
     },
     {
-        "searchName": "LION DESIGN KFT.",
         "companyName": "Lion design Kft.",
         "ZIPcode": "8360",
         "town": "Keszthely",
@@ -8376,7 +7880,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "495"
     },
     {
-        "searchName": "LIPA SZLOVÁK FOLKLÓR EGYESÜLET",
         "companyName": "Lipa Szlovák folklór egyesület",
         "ZIPcode": "1192",
         "town": "Budapest",
@@ -8389,7 +7892,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "496"
     },
     {
-        "searchName": "LISTVÁN MARIANN",
         "companyName": "Listván Mariann",
         "ZIPcode": "",
         "town": "Nyíregyháza",
@@ -8402,7 +7904,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "497"
     },
     {
-        "searchName": "LIZ-KA",
         "companyName": "Liz-Ka",
         "ZIPcode": "1202",
         "town": "Budapest",
@@ -8415,7 +7916,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "498"
     },
     {
-        "searchName": "LM COLLECTION KFT.",
         "companyName": "LM Collection Kft.",
         "ZIPcode": "7400",
         "town": "Kapoosvár",
@@ -8428,7 +7928,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "499"
     },
     {
-        "searchName": "LONA DIVATÁRU",
         "companyName": "LONA DIVATÁRU",
         "ZIPcode": "1173",
         "town": "BUDAPEST",
@@ -8441,7 +7940,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "500"
     },
     {
-        "searchName": "LOR",
         "companyName": "LOR",
         "ZIPcode": "",
         "town": "",
@@ -8454,7 +7952,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "501"
     },
     {
-        "searchName": "LŐRINCZ JÓZSEFNÉ",
         "companyName": "Lőrincz Józsefné",
         "ZIPcode": "",
         "town": "Nagyrécse",
@@ -8467,7 +7964,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "502"
     },
     {
-        "searchName": "LŐRINCZ LAJOS",
         "companyName": "LŐRINCZ LAJOS",
         "ZIPcode": "9028",
         "town": "Győr",
@@ -8480,7 +7976,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "503"
     },
     {
-        "searchName": "LOVÁSZ FERENCNÉ",
         "companyName": "LOVÁSZ FERENCNÉ",
         "ZIPcode": "7400",
         "town": "KAPOSVÁR",
@@ -8493,7 +7988,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "504"
     },
     {
-        "searchName": "LOZÁR RÉKA",
         "companyName": "Lozár Réka",
         "ZIPcode": "",
         "town": "",
@@ -8506,7 +8000,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "505"
     },
     {
-        "searchName": "LRI",
         "companyName": "LRI",
         "ZIPcode": "",
         "town": "",
@@ -8519,7 +8012,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "506"
     },
     {
-        "searchName": "LU-BO 2001 KFT.",
         "companyName": "Lu-Bo 2001 Kft.",
         "ZIPcode": "1142",
         "town": "Budapest",
@@ -8532,7 +8024,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "507"
     },
     {
-        "searchName": "LUC",
         "companyName": "LUC",
         "ZIPcode": "",
         "town": "",
@@ -8545,7 +8036,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "508"
     },
     {
-        "searchName": "LUDMILLA",
         "companyName": "LUDMILLA",
         "ZIPcode": "1037",
         "town": "BUDAPEST",
@@ -8558,7 +8048,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "509"
     },
     {
-        "searchName": "M & G TEXTILRUHÁZATI BT",
         "companyName": "M & G TEXTILRUHÁZATI BT",
         "ZIPcode": "1024",
         "town": "BUDAPEST",
@@ -8571,7 +8060,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "510"
     },
     {
-        "searchName": "M + Z KFT.",
         "companyName": "M + Z Kft.",
         "ZIPcode": "4220",
         "town": "Hajdúböszörmény",
@@ -8584,7 +8072,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "511"
     },
     {
-        "searchName": "M-ESSENZA KFT.",
         "companyName": "M-essenza Kft.",
         "ZIPcode": "2040",
         "town": "budaörs",
@@ -8597,7 +8084,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "512"
     },
     {
-        "searchName": "M.J MODELL BT",
         "companyName": "M.J MODELL BT",
         "ZIPcode": "1021",
         "town": "BUDAPEST",
@@ -8610,7 +8096,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "513"
     },
     {
-        "searchName": "MA DONNA BT. NAGY TIBORNÉ",
         "companyName": "Ma donna Bt. Nagy Tiborné",
         "ZIPcode": "1211",
         "town": "Budapest",
@@ -8623,7 +8108,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "514"
     },
     {
-        "searchName": "MADAME ELEGANT KFT.",
         "companyName": "Madame Elegant Kft.",
         "ZIPcode": "1024",
         "town": "Budapest",
@@ -8636,7 +8120,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "515"
     },
     {
-        "searchName": "MADETEX S.R.O.",
         "companyName": "MADETEX s.r.o.",
         "ZIPcode": "92401",
         "town": "Galanta",
@@ -8649,7 +8132,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "516"
     },
     {
-        "searchName": "MAGAS NŐK BÁZISA",
         "companyName": "Magas Nők Bázisa",
         "ZIPcode": "",
         "town": "",
@@ -8662,7 +8144,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "517"
     },
     {
-        "searchName": "MAGDALENA HORVATHOVA",
         "companyName": "Magdalena Horvathova",
         "ZIPcode": "93557",
         "town": "Jur nad Hronom",
@@ -8675,7 +8156,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "518"
     },
     {
-        "searchName": "MAGINT 2007 KFT.",
         "companyName": "Magint 2007 Kft.",
         "ZIPcode": "2092",
         "town": "Budakeszi",
@@ -8688,7 +8168,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "519"
     },
     {
-        "searchName": "MAGISTER MODA KFT",
         "companyName": "Magister Moda kft",
         "ZIPcode": "2220",
         "town": "Vecsés",
@@ -8701,7 +8180,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "520"
     },
     {
-        "searchName": "MAGISTRAL KFT",
         "companyName": "Magistral kft",
         "ZIPcode": "2360",
         "town": "Gyál",
@@ -8714,7 +8192,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "521"
     },
     {
-        "searchName": "MAGLIA 2000KFT",
         "companyName": "MAGLIA 2000KFT",
         "ZIPcode": "4400",
         "town": "Nyíregyháza",
@@ -8727,7 +8204,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "522"
     },
     {
-        "searchName": "MAGYAR ÁLLAMI OPERAHÁZ",
         "companyName": "Magyar Állami Operaház",
         "ZIPcode": "1061",
         "town": "Budapest",
@@ -8740,7 +8216,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "523"
     },
     {
-        "searchName": "MAIER MIRA",
         "companyName": "MAIER MIRA",
         "ZIPcode": "",
         "town": "",
@@ -8753,7 +8228,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "524"
     },
     {
-        "searchName": "MAJA",
         "companyName": "MAJA",
         "ZIPcode": "",
         "town": "",
@@ -8766,7 +8240,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "525"
     },
     {
-        "searchName": "MAJA",
         "companyName": "MAJA",
         "ZIPcode": "",
         "town": "",
@@ -8779,7 +8252,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "526"
     },
     {
-        "searchName": "MAJER ALAJOS",
         "companyName": "Majer Alajos",
         "ZIPcode": "2648",
         "town": "Patak",
@@ -8792,7 +8264,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "527"
     },
     {
-        "searchName": "MAKÁNY MÁRTA",
         "companyName": "Makány Márta",
         "ZIPcode": "",
         "town": "",
@@ -8805,7 +8276,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "528"
     },
     {
-        "searchName": "MAKRAI GÁBORNÉ",
         "companyName": "MAKRAI GÁBORNÉ",
         "ZIPcode": "1157",
         "town": "BUDAPEST",
@@ -8818,7 +8288,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "529"
     },
     {
-        "searchName": "MAKSA ZSOLTNÉ",
         "companyName": "Maksa Zsoltné",
         "ZIPcode": "3434",
         "town": "Mályi",
@@ -8831,7 +8300,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "530"
     },
     {
-        "searchName": "MALIK MIHÁLY",
         "companyName": "Malik Mihály",
         "ZIPcode": "2721",
         "town": "Pilis",
@@ -8844,7 +8312,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "531"
     },
     {
-        "searchName": "MALLÁR MÓNIKA",
         "companyName": "Mallár Mónika",
         "ZIPcode": "3300",
         "town": "Eger",
@@ -8857,7 +8324,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "532"
     },
     {
-        "searchName": "MAM",
         "companyName": "MAM",
         "ZIPcode": "",
         "town": "",
@@ -8870,7 +8336,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "533"
     },
     {
-        "searchName": "MANDULÁS-MÜLLER OLIMPIA",
         "companyName": "Mandulás-Müller Olimpia",
         "ZIPcode": "7130",
         "town": "",
@@ -8883,7 +8348,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "534"
     },
     {
-        "searchName": "MANIAXTREME KFT.",
         "companyName": "MANIAXTREME Kft.",
         "ZIPcode": "1116",
         "town": "Budapest",
@@ -8896,7 +8360,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "535"
     },
     {
-        "searchName": "MANTEX KFT.",
         "companyName": "Mantex Kft.",
         "ZIPcode": "8400",
         "town": "Ajka",
@@ -8909,7 +8372,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "536"
     },
     {
-        "searchName": "MAP",
         "companyName": "MAP",
         "ZIPcode": "",
         "town": "",
@@ -8922,7 +8384,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "537"
     },
     {
-        "searchName": "MARANGONA",
         "companyName": "Marangona",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -8935,7 +8396,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "538"
     },
     {
-        "searchName": "MARASTAR TRADE",
         "companyName": "Marastar Trade",
         "ZIPcode": "3700 RO",
         "town": "Nagyvárad",
@@ -8948,7 +8408,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "539"
     },
     {
-        "searchName": "MARIA SVECOVA DOMINI",
         "companyName": "MARIA SVECOVA DOMINI",
         "ZIPcode": "95101",
         "town": "Nitra",
@@ -8961,7 +8420,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "540"
     },
     {
-        "searchName": "MÁRICS ÉS TÁRSA BT.",
         "companyName": "Márics és Társa Bt.",
         "ZIPcode": "2000",
         "town": "Szentendre",
@@ -8974,7 +8432,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "541"
     },
     {
-        "searchName": "MARJETA LEVICAR S.P.",
         "companyName": "MARJETA LEVICAR S.P.",
         "ZIPcode": "3270",
         "town": "LASKO",
@@ -8987,7 +8444,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "542"
     },
     {
-        "searchName": "MAROSI MÓNIKA",
         "companyName": "Marosi Mónika",
         "ZIPcode": "3519",
         "town": "Miskolc",
@@ -9000,7 +8456,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "543"
     },
     {
-        "searchName": "MAROSVÁRI ÉS TSA BT",
         "companyName": "Marosvári és Tsa Bt",
         "ZIPcode": "3580",
         "town": "Tiszaújváros",
@@ -9013,7 +8468,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "544"
     },
     {
-        "searchName": "MARTINA ISKROVÁ",
         "companyName": "Martina Iskrová",
         "ZIPcode": "",
         "town": "Banska Bystrica",
@@ -9026,7 +8480,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "545"
     },
     {
-        "searchName": "MARTINA KFT.",
         "companyName": "Martina Kft.",
         "ZIPcode": "1125",
         "town": "Budapest",
@@ -9039,7 +8492,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "546"
     },
     {
-        "searchName": "MARTINI CSABÁNÉ",
         "companyName": "MARTINI Csabáné",
         "ZIPcode": "9026",
         "town": "Győr",
@@ -9052,7 +8504,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "547"
     },
     {
-        "searchName": "MÁRTON ATTILA",
         "companyName": "Márton Attila",
         "ZIPcode": "2060",
         "town": "Bicske",
@@ -9065,7 +8516,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "548"
     },
     {
-        "searchName": "MÁRTON VERONIKA",
         "companyName": "Márton Veronika",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -9078,7 +8528,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "549"
     },
     {
-        "searchName": "MASCA FASHION KFT",
         "companyName": "MASCA FASHION KFT",
         "ZIPcode": "9028",
         "town": "GYőr",
@@ -9091,7 +8540,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "550"
     },
     {
-        "searchName": "MASZLÁVÉR FERENCNÉ",
         "companyName": "MASZLÁVÉR FERENCNÉ",
         "ZIPcode": "2890",
         "town": "TATA",
@@ -9104,7 +8552,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "551"
     },
     {
-        "searchName": "MÁTÉ SZILVIA",
         "companyName": "Máté Szilvia",
         "ZIPcode": "3300",
         "town": "Eger",
@@ -9117,7 +8564,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "552"
     },
     {
-        "searchName": "MAUL ADRIENN",
         "companyName": "Maul Adrienn",
         "ZIPcode": "",
         "town": "",
@@ -9130,7 +8576,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "553"
     },
     {
-        "searchName": "MAX",
         "companyName": "MAX",
         "ZIPcode": "",
         "town": "",
@@ -9143,7 +8588,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "554"
     },
     {
-        "searchName": "MEB",
         "companyName": "MEB",
         "ZIPcode": "",
         "town": "",
@@ -9156,7 +8600,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "555"
     },
     {
-        "searchName": "MED",
         "companyName": "MED",
         "ZIPcode": "",
         "town": "",
@@ -9169,7 +8612,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "556"
     },
     {
-        "searchName": "MEDICOMP KFT.",
         "companyName": "Medicomp Kft.",
         "ZIPcode": "1122",
         "town": "Budapest",
@@ -9182,7 +8624,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "557"
     },
     {
-        "searchName": "MEDISHFOTEX",
         "companyName": "MEDISHFOTEX",
         "ZIPcode": "2890",
         "town": "TATA",
@@ -9195,7 +8636,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "558"
     },
     {
-        "searchName": "MEGAZINO KFT",
         "companyName": "Megazino kft",
         "ZIPcode": "2085",
         "town": "Pilisvörösvár",
@@ -9208,7 +8648,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "559"
     },
     {
-        "searchName": "MELONE-LINE",
         "companyName": "MELONE-LINE",
         "ZIPcode": "2051",
         "town": "BIATORBÁGY",
@@ -9221,7 +8660,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "560"
     },
     {
-        "searchName": "MEN",
         "companyName": "MEN",
         "ZIPcode": "",
         "town": "",
@@ -9234,7 +8672,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "561"
     },
     {
-        "searchName": "MENTA-MODELL KFT",
         "companyName": "Menta-Modell kft",
         "ZIPcode": "1055",
         "town": "Budapest",
@@ -9247,7 +8684,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "562"
     },
     {
-        "searchName": "MENTOR -TEXT KFT",
         "companyName": "MENTOR -TEXT KFT",
         "ZIPcode": "2314",
         "town": "Halásztelek",
@@ -9260,7 +8696,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "563"
     },
     {
-        "searchName": "MÉSZÁROS ÉVA",
         "companyName": "Mészáros Éva",
         "ZIPcode": "1087",
         "town": "Budapest",
@@ -9273,7 +8708,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "564"
     },
     {
-        "searchName": "MÉTERÁRU CENTRUM",
         "companyName": "Méteráru Centrum",
         "ZIPcode": "7622",
         "town": "Pécs",
@@ -9286,7 +8720,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "565"
     },
     {
-        "searchName": "MÉTERÁRU ÉS FÜGGÖNYHÁZ",
         "companyName": "Méteráru és Függönyház",
         "ZIPcode": "7400",
         "town": "Kaposvár",
@@ -9299,7 +8732,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "566"
     },
     {
-        "searchName": "MÉTERÁRU ÉS KONYHAFELSZ. FÖLDESSY T.",
         "companyName": "Méteráru és Konyhafelsz. Földessy T.",
         "ZIPcode": "2523",
         "town": "Sárisáp",
@@ -9312,7 +8744,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "567"
     },
     {
-        "searchName": "METYOVINYI ISTVÁNNÉ",
         "companyName": "Metyovinyi Istvánné",
         "ZIPcode": "2651",
         "town": "Rétság",
@@ -9325,7 +8756,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "568"
     },
     {
-        "searchName": "MGM KFT.",
         "companyName": "MGM Kft.",
         "ZIPcode": "3530",
         "town": "Miskolc",
@@ -9338,7 +8768,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "569"
     },
     {
-        "searchName": "MIA RUHÁZAT KFT",
         "companyName": "MIa ruházat kft",
         "ZIPcode": "8200",
         "town": "Veszprém",
@@ -9351,7 +8780,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "570"
     },
     {
-        "searchName": "MIDI KKT",
         "companyName": "Midi kkt",
         "ZIPcode": "",
         "town": "Budapest",
@@ -9364,7 +8792,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "571"
     },
     {
-        "searchName": "MIKITA FASHION - ING. JAROSLAV MIKITA",
         "companyName": "Mikita Fashion - Ing. Jaroslav Mikita",
         "ZIPcode": "4001",
         "town": "Kosice",
@@ -9377,7 +8804,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "572"
     },
     {
-        "searchName": "MIKLÓS KÁROLY",
         "companyName": "MIKLÓS KÁROLY",
         "ZIPcode": "2721",
         "town": "PILIS",
@@ -9390,7 +8816,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "573"
     },
     {
-        "searchName": "MIKOLÁS IMRE",
         "companyName": "Mikolás Imre",
         "ZIPcode": "8900",
         "town": "Zalaegerszeg",
@@ -9403,7 +8828,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "574"
     },
     {
-        "searchName": "MILAN MESAROS-MM",
         "companyName": "Milan Mesaros-MM",
         "ZIPcode": "84105",
         "town": "Bratislava",
@@ -9416,7 +8840,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "575"
     },
     {
-        "searchName": "MISS REBEL",
         "companyName": "Miss Rebel",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -9429,7 +8852,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "576"
     },
     {
-        "searchName": "MISSTICO TIMI",
         "companyName": "Misstico Timi",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -9442,7 +8864,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "577"
     },
     {
-        "searchName": "MISSY HUNGARY KFT.",
         "companyName": "MISSY HUNGARY Kft.",
         "ZIPcode": "6720",
         "town": "SZEGED",
@@ -9455,7 +8876,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "578"
     },
     {
-        "searchName": "MISTRAL BT",
         "companyName": "Mistral Bt",
         "ZIPcode": "1033",
         "town": "Budapest",
@@ -9468,7 +8888,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "579"
     },
     {
-        "searchName": "MIU",
         "companyName": "miu",
         "ZIPcode": "",
         "town": "",
@@ -9481,7 +8900,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "580"
     },
     {
-        "searchName": "MK MÉTERÁRU",
         "companyName": "MK MÉTERÁRU",
         "ZIPcode": "9400",
         "town": "SOPRON",
@@ -9494,7 +8912,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "581"
     },
     {
-        "searchName": "MMD",
         "companyName": "MMD",
         "ZIPcode": "",
         "town": "",
@@ -9507,7 +8924,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "582"
     },
     {
-        "searchName": "MMV BT.",
         "companyName": "MMV Bt.",
         "ZIPcode": "2132",
         "town": "Göd",
@@ -9520,7 +8936,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "583"
     },
     {
-        "searchName": "MNG",
         "companyName": "MNG",
         "ZIPcode": "",
         "town": "",
@@ -9533,7 +8948,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "584"
     },
     {
-        "searchName": "MNT",
         "companyName": "MNT",
         "ZIPcode": "",
         "town": "",
@@ -9546,7 +8960,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "585"
     },
     {
-        "searchName": "MODEX",
         "companyName": "modex",
         "ZIPcode": "4400",
         "town": "Nyíregyháza",
@@ -9559,7 +8972,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "586"
     },
     {
-        "searchName": "MODEXPORT-MOLADY BT.",
         "companyName": "Modexport-Molady Bt.",
         "ZIPcode": "1026",
         "town": "Budapest",
@@ -9572,7 +8984,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "587"
     },
     {
-        "searchName": "MODISTA BT.",
         "companyName": "Modista Bt.",
         "ZIPcode": "1222",
         "town": "Budapest",
@@ -9585,7 +8996,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "588"
     },
     {
-        "searchName": "MODISZTA BT",
         "companyName": "Modiszta Bt",
         "ZIPcode": "1222",
         "town": "Budapest",
@@ -9598,7 +9008,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "589"
     },
     {
-        "searchName": "MOHR GABRIELLA",
         "companyName": "Mohr Gabriella",
         "ZIPcode": "3630",
         "town": "Putnok",
@@ -9611,7 +9020,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "590"
     },
     {
-        "searchName": "MOJZSISNÉ LAPATINSZKI ERZSÉBET",
         "companyName": "Mojzsisné Lapatinszki Erzsébet",
         "ZIPcode": "5540",
         "town": "Szarvas",
@@ -9624,7 +9032,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "591"
     },
     {
-        "searchName": "MOLNÁR BEÁTA",
         "companyName": "MOLNÁR BEÁTA",
         "ZIPcode": "2942",
         "town": "NAGYIGMÁND",
@@ -9637,7 +9044,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "592"
     },
     {
-        "searchName": "MOLNÁR PÉTERNÉ",
         "companyName": "Molnár Péterné",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -9650,7 +9056,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "593"
     },
     {
-        "searchName": "MOLNÁR RITA",
         "companyName": "Molnár Rita",
         "ZIPcode": "8400",
         "town": "Ajka",
@@ -9663,7 +9068,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "594"
     },
     {
-        "searchName": "MOLNÁRNÉ GYÖRGY IRMA",
         "companyName": "MOLNÁRNÉ GYÖRGY IRMA",
         "ZIPcode": "3100",
         "town": "SALGOTARJÁN",
@@ -9676,7 +9080,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "595"
     },
     {
-        "searchName": "MOLNÁRNÉ KALLÓ MÁRIA",
         "companyName": "Molnárné Kalló Mária",
         "ZIPcode": "9021",
         "town": "Győr",
@@ -9689,7 +9092,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "596"
     },
     {
-        "searchName": "MON-DREV S.R.O.",
         "companyName": "MoN-DREV s.r.o.",
         "ZIPcode": "4501",
         "town": "Moldava nad Bodvou",
@@ -9702,7 +9104,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "597"
     },
     {
-        "searchName": "MONAMELL KFT.",
         "companyName": "Monamell Kft.",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -9715,7 +9116,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "598"
     },
     {
-        "searchName": "MONIKA KESANOVÁ",
         "companyName": "Monika Kesanová",
         "ZIPcode": "94603",
         "town": "Kolarovo",
@@ -9728,7 +9128,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "599"
     },
     {
-        "searchName": "MONIKA SZARKOVA TREE",
         "companyName": "MONIKA SZARKOVA TREE",
         "ZIPcode": "92582",
         "town": "TESEDIKOVO",
@@ -9741,7 +9140,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "600"
     },
     {
-        "searchName": "MONIKA VONTSZEMŰOVÁ",
         "companyName": "MONIKA VONTSZEMŰOVÁ",
         "ZIPcode": "811 08",
         "town": "BRATISLAVA",
@@ -9754,7 +9152,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "601"
     },
     {
-        "searchName": "MOON&KATE KFT",
         "companyName": "Moon&Kate kft",
         "ZIPcode": "9011",
         "town": "Győr",
@@ -9767,7 +9164,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "602"
     },
     {
-        "searchName": "MORELL DIVAT B.T",
         "companyName": "MORELL DIVAT B.T",
         "ZIPcode": "9400",
         "town": "Sopron",
@@ -9780,7 +9176,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "603"
     },
     {
-        "searchName": "MÓZES BRIGI",
         "companyName": "Mózes Brigi",
         "ZIPcode": "",
         "town": "",
@@ -9793,7 +9188,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "604"
     },
     {
-        "searchName": "MP PARFUMES S.R.O.",
         "companyName": "MP Parfumes s.r.o.",
         "ZIPcode": "93541",
         "town": "Tekovske Luzany",
@@ -9806,7 +9200,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "605"
     },
     {
-        "searchName": "MRÁZNÉ PELIKÁN EDIT",
         "companyName": "Mrázné Pelikán Edit",
         "ZIPcode": "2370",
         "town": "Dabas",
@@ -9819,7 +9212,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "606"
     },
     {
-        "searchName": "MRT",
         "companyName": "MRT",
         "ZIPcode": "",
         "town": "",
@@ -9832,7 +9224,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "607"
     },
     {
-        "searchName": "MUSZLIN RUHÁZATI KKT",
         "companyName": "MUSZLIN RUHÁZATI KKT",
         "ZIPcode": "1126",
         "town": "Budapest",
@@ -9845,7 +9236,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "608"
     },
     {
-        "searchName": "MYA TREND 2",
         "companyName": "MYA TREND 2",
         "ZIPcode": "2040",
         "town": "BUDAÖRS",
@@ -9858,7 +9248,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "609"
     },
     {
-        "searchName": "NABU TRADE KFT",
         "companyName": "Nabu Trade Kft",
         "ZIPcode": "1022",
         "town": "Budapest",
@@ -9871,7 +9260,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "610"
     },
     {
-        "searchName": "NAGY ANETT",
         "companyName": "Nagy Anett",
         "ZIPcode": "3100",
         "town": "Salgótarján",
@@ -9884,7 +9272,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "611"
     },
     {
-        "searchName": "NAGYNÉ JUDIT",
         "companyName": "Nagyné Judit",
         "ZIPcode": "2045",
         "town": "Törökbálint",
@@ -9897,7 +9284,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "612"
     },
     {
-        "searchName": "NAGYNÉ KOVÁCS MÁRTA",
         "companyName": "Nagyné Kovács Márta",
         "ZIPcode": "9023",
         "town": "Győr",
@@ -9910,7 +9296,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "613"
     },
     {
-        "searchName": "NAGYNÉ SCHNEIDER OLGA",
         "companyName": "Nagyné Schneider Olga",
         "ZIPcode": "7631",
         "town": "Pécs",
@@ -9923,7 +9308,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "614"
     },
     {
-        "searchName": "NANI DIVAT",
         "companyName": "NANI DIVAT",
         "ZIPcode": "1055",
         "town": "BUDAPEST",
@@ -9936,7 +9320,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "615"
     },
     {
-        "searchName": "NÁSFA BT.",
         "companyName": "Násfa Bt.",
         "ZIPcode": "1132",
         "town": "Budapest",
@@ -9949,7 +9332,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "616"
     },
     {
-        "searchName": "NAV",
         "companyName": "NAV",
         "ZIPcode": "",
         "town": "",
@@ -9962,7 +9344,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "617"
     },
     {
-        "searchName": "NCO",
         "companyName": "NCO",
         "ZIPcode": "",
         "town": "",
@@ -9975,7 +9356,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "618"
     },
     {
-        "searchName": "NEEEEEM!!!TINI KKT",
         "companyName": "NEEEEEM!!!TINI KKT",
         "ZIPcode": "8000",
         "town": "SZÉKESFEHÉRVÁR",
@@ -9988,7 +9368,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "619"
     },
     {
-        "searchName": "NEEEMGRIFF KONFEKCIÓ KFT",
         "companyName": "neeemGRIFF KONFEKCIÓ KFT",
         "ZIPcode": "1037",
         "town": "Budapest",
@@ -10001,7 +9380,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "620"
     },
     {
-        "searchName": "NEL",
         "companyName": "NEL",
         "ZIPcode": "",
         "town": "",
@@ -10014,7 +9392,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "621"
     },
     {
-        "searchName": "NEMES ALÍZ",
         "companyName": "Nemes Alíz",
         "ZIPcode": "1117",
         "town": "Budapest",
@@ -10027,7 +9404,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "622"
     },
     {
-        "searchName": "NEMES NIKOLETT",
         "companyName": "Nemes Nikolett",
         "ZIPcode": "7130",
         "town": "Tolna",
@@ -10040,7 +9416,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "623"
     },
     {
-        "searchName": "NÉMETH ERZSÉBET",
         "companyName": "Németh Erzsébet",
         "ZIPcode": "7621",
         "town": "Pécs",
@@ -10053,7 +9428,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "624"
     },
     {
-        "searchName": "NÉMETH ÉS GUTH BT.",
         "companyName": "NÉMETH ÉS GUTH BT.",
         "ZIPcode": "7570",
         "town": "BARCS",
@@ -10066,7 +9440,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "625"
     },
     {
-        "searchName": "NÉMETH ILDIKÓ",
         "companyName": "NÉMETH ILDIKÓ",
         "ZIPcode": "1029",
         "town": "BUDAPEST",
@@ -10079,7 +9452,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "626"
     },
     {
-        "searchName": "NÉMETH ZOLTÁN",
         "companyName": "Németh Zoltán",
         "ZIPcode": "9400",
         "town": "Sopron",
@@ -10092,7 +9464,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "627"
     },
     {
-        "searchName": "NÉMETHNÉ GÚTH ÉVA",
         "companyName": "Némethné Gúth Éva",
         "ZIPcode": "7070",
         "town": "Barcs",
@@ -10105,7 +9476,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "628"
     },
     {
-        "searchName": "NEW AGE FASHION",
         "companyName": "New Age Fashion",
         "ZIPcode": "1185",
         "town": "Budapesat",
@@ -10118,7 +9488,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "629"
     },
     {
-        "searchName": "NEW FASHION",
         "companyName": "NEW FASHION",
         "ZIPcode": "59,100",
         "town": "PRATO",
@@ -10131,7 +9500,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "630"
     },
     {
-        "searchName": "NEXTFASHION HUNGARY KFT.",
         "companyName": "Nextfashion Hungary Kft.",
         "ZIPcode": "1138",
         "town": "Budapest",
@@ -10144,7 +9512,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "631"
     },
     {
-        "searchName": "NIA",
         "companyName": "NIA",
         "ZIPcode": "",
         "town": "",
@@ -10157,7 +9524,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "632"
     },
     {
-        "searchName": "NIC",
         "companyName": "NIC",
         "ZIPcode": "",
         "town": "",
@@ -10170,7 +9536,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "633"
     },
     {
-        "searchName": "NIFFAN BT.",
         "companyName": "Niffan Bt.",
         "ZIPcode": "2890",
         "town": "Tata",
@@ -10183,7 +9548,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "634"
     },
     {
-        "searchName": "NIKÉ ÉS DÁVID KFT",
         "companyName": "NIKÉ ÉS DÁVID KFT",
         "ZIPcode": "2030",
         "town": "ÉRD",
@@ -10196,7 +9560,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "635"
     },
     {
-        "searchName": "NIKO-DEKO BT",
         "companyName": "NIKO-DEKO BT",
         "ZIPcode": "1103",
         "town": "BUDAPEST",
@@ -10209,7 +9572,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "636"
     },
     {
-        "searchName": "NOÉ KFT.",
         "companyName": "Noé Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -10222,7 +9584,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "637"
     },
     {
-        "searchName": "NOS",
         "companyName": "Nos",
         "ZIPcode": "",
         "town": "",
@@ -10235,7 +9596,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "638"
     },
     {
-        "searchName": "NOVÁK HAJNALKA",
         "companyName": "Novák Hajnalka",
         "ZIPcode": "2900",
         "town": "Komárom",
@@ -10248,7 +9608,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "639"
     },
     {
-        "searchName": "NOVY STYL",
         "companyName": "Novy Styl",
         "ZIPcode": "94901",
         "town": "Nitra",
@@ -10261,7 +9620,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "640"
     },
     {
-        "searchName": "NT & T HUNGARY KFT",
         "companyName": "NT & T Hungary Kft",
         "ZIPcode": "1065",
         "town": "Bp",
@@ -10274,7 +9632,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "641"
     },
     {
-        "searchName": "NTI",
         "companyName": "NTI",
         "ZIPcode": "",
         "town": "",
@@ -10287,7 +9644,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "642"
     },
     {
-        "searchName": "OÁMK TELEKI BLANKA SZAKKÖZÉP ISKOLA",
         "companyName": "OÁMK TELEKI BLANKA SZAKKÖZÉP ISKOLA",
         "ZIPcode": "9700",
         "town": "SZOMBATHELY",
@@ -10300,7 +9656,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "643"
     },
     {
-        "searchName": "ÓCEÁN FÜRDŐRUHA",
         "companyName": "Óceán Fürdőruha",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -10313,7 +9668,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "644"
     },
     {
-        "searchName": "OLÁH ZOLTÁNNÉ",
         "companyName": "Oláh Zoltánné",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -10326,7 +9680,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "645"
     },
     {
-        "searchName": "OLIV DIVAT STUDIO",
         "companyName": "Oliv Divat studio",
         "ZIPcode": "",
         "town": "",
@@ -10339,7 +9692,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "646"
     },
     {
-        "searchName": "OLIV DIVATSTUDIÓ",
         "companyName": "OLIV DIVATSTUDIÓ",
         "ZIPcode": "6500",
         "town": "BAJA",
@@ -10352,7 +9704,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "647"
     },
     {
-        "searchName": "OLIVIA SK",
         "companyName": "Olivia SK",
         "ZIPcode": "",
         "town": "",
@@ -10365,7 +9716,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "648"
     },
     {
-        "searchName": "OM CONSULTING KFT.",
         "companyName": "OM Consulting Kft.",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -10378,7 +9728,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "649"
     },
     {
-        "searchName": "ONE WORLDWIDE KFT.",
         "companyName": "One Worldwide Kft.",
         "ZIPcode": "1078",
         "town": "Budapest",
@@ -10391,7 +9740,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "650"
     },
     {
-        "searchName": "OPART FASHION",
         "companyName": "Opart fashion",
         "ZIPcode": "",
         "town": "trend 2",
@@ -10404,7 +9752,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "651"
     },
     {
-        "searchName": "ORANGE FABRIK",
         "companyName": "Orange Fabrik",
         "ZIPcode": "9200",
         "town": "Mosonmagyaróvár",
@@ -10417,7 +9764,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "652"
     },
     {
-        "searchName": "ORBÁN BT.",
         "companyName": "Orbán Bt.",
         "ZIPcode": "1138",
         "town": "Budapest",
@@ -10430,7 +9776,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "653"
     },
     {
-        "searchName": "OROSZ ANNA",
         "companyName": "Orosz Anna",
         "ZIPcode": "1024",
         "town": "Budapest",
@@ -10443,7 +9788,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "654"
     },
     {
-        "searchName": "ORSI",
         "companyName": "Orsi",
         "ZIPcode": "",
         "town": "",
@@ -10456,7 +9800,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "655"
     },
     {
-        "searchName": "PACSINÉ KOCSIS ZSUZSANNA",
         "companyName": "Pacsiné Kocsis Zsuzsanna",
         "ZIPcode": "8360",
         "town": "Keszthely",
@@ -10469,7 +9812,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "656"
     },
     {
-        "searchName": "PADOS ENIKÕ",
         "companyName": "Pados Enikõ",
         "ZIPcode": "1121",
         "town": "Budapest",
@@ -10482,7 +9824,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "657"
     },
     {
-        "searchName": "PÁKOZDI JÁNOSNÉ",
         "companyName": "Pákozdi Jánosné",
         "ZIPcode": "1181",
         "town": "Budapest",
@@ -10495,7 +9836,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "658"
     },
     {
-        "searchName": "PÁLFALVI GYÖRGY E.V.",
         "companyName": "Pálfalvi György E.V.",
         "ZIPcode": "",
         "town": "",
@@ -10508,7 +9848,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "659"
     },
     {
-        "searchName": "PÁLLFY COUTURE",
         "companyName": "Pállfy Couture",
         "ZIPcode": "",
         "town": "",
@@ -10521,7 +9860,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "660"
     },
     {
-        "searchName": "PÁNCSITY KATALIN",
         "companyName": "PÁNCSITY KATALIN",
         "ZIPcode": "1039",
         "town": "BUDAPEST",
@@ -10534,7 +9872,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "661"
     },
     {
-        "searchName": "PAND-TEX BT",
         "companyName": "Pand-tex Bt",
         "ZIPcode": "1039",
         "town": "Budapest",
@@ -10547,7 +9884,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "662"
     },
     {
-        "searchName": "PAPP BRIGITTA",
         "companyName": "Papp Brigitta",
         "ZIPcode": "",
         "town": "",
@@ -10560,7 +9896,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "663"
     },
     {
-        "searchName": "PARASUCCO",
         "companyName": "Parasucco",
         "ZIPcode": "",
         "town": "",
@@ -10573,7 +9908,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "664"
     },
     {
-        "searchName": "PARÉJ MÓNIKA",
         "companyName": "Paréj Mónika",
         "ZIPcode": "7400",
         "town": "Kaposvár",
@@ -10586,7 +9920,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "665"
     },
     {
-        "searchName": "PARK-M GARDEN BT.",
         "companyName": "Park-M Garden bt.",
         "ZIPcode": "",
         "town": "Dabas",
@@ -10599,7 +9932,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "666"
     },
     {
-        "searchName": "PARKTEX KFT.",
         "companyName": "Parktex Kft.",
         "ZIPcode": "4400",
         "town": "Nyíregyháza",
@@ -10612,7 +9944,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "667"
     },
     {
-        "searchName": "PASHMINA BT",
         "companyName": "Pashmina Bt",
         "ZIPcode": "1133",
         "town": "Budapest",
@@ -10625,7 +9956,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "668"
     },
     {
-        "searchName": "PÁSZTOR PÉTER",
         "companyName": "Pásztor Péter",
         "ZIPcode": "2194",
         "town": "Tura",
@@ -10638,7 +9968,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "669"
     },
     {
-        "searchName": "PÁSZTOR GYÖRGYI",
         "companyName": "Pásztor Györgyi",
         "ZIPcode": "1026",
         "town": "Budapest II",
@@ -10651,7 +9980,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "670"
     },
     {
-        "searchName": "PÁSZTOR PÉTER",
         "companyName": "Pásztor Péter",
         "ZIPcode": "2194",
         "town": "Tura",
@@ -10664,7 +9992,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "671"
     },
     {
-        "searchName": "PÁTKAI VERONIKA",
         "companyName": "Pátkai Veronika",
         "ZIPcode": "2330",
         "town": "Dunaharaszti",
@@ -10677,7 +10004,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "672"
     },
     {
-        "searchName": "PATYI IRÉN",
         "companyName": "Patyi Irén",
         "ZIPcode": "7200",
         "town": "Dombóvár",
@@ -10690,7 +10016,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "673"
     },
     {
-        "searchName": "PAULIK ÉS PAULIK KFT.",
         "companyName": "Paulik és Paulik Kft.",
         "ZIPcode": "4254",
         "town": "Nyíradony",
@@ -10703,7 +10028,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "674"
     },
     {
-        "searchName": "PAVA",
         "companyName": "PAVA",
         "ZIPcode": "91101",
         "town": "Trencin",
@@ -10716,7 +10040,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "675"
     },
     {
-        "searchName": "PAVEL VACUL",
         "companyName": "Pavel Vacul",
         "ZIPcode": "68801",
         "town": "Uhersky Brod",
@@ -10729,7 +10052,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "676"
     },
     {
-        "searchName": "PAVLINA DVORÁKOVÁ",
         "companyName": "Pavlina Dvoráková",
         "ZIPcode": "73947",
         "town": "Lhutka 170",
@@ -10742,7 +10064,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "677"
     },
     {
-        "searchName": "PÉK MELINDA",
         "companyName": "Pék Melinda",
         "ZIPcode": "2081",
         "town": "Piliscsaba",
@@ -10755,7 +10076,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "678"
     },
     {
-        "searchName": "PENTATON KFT",
         "companyName": "Pentaton Kft",
         "ZIPcode": "1053",
         "town": "Budapest",
@@ -10768,7 +10088,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "679"
     },
     {
-        "searchName": "PEPITA MÉTERÁRÚ PAKS-WOLF JÓZSEF",
         "companyName": "Pepita Méterárú Paks-Wolf József",
         "ZIPcode": "7030",
         "town": "paks",
@@ -10781,7 +10100,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "680"
     },
     {
-        "searchName": "PEPITA-LAND",
         "companyName": "Pepita-Land",
         "ZIPcode": "1141",
         "town": "Budapest",
@@ -10794,7 +10112,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "681"
     },
     {
-        "searchName": "PERGER ZOLTÁN",
         "companyName": "Perger Zoltán",
         "ZIPcode": "8200",
         "town": "Veszprém",
@@ -10807,7 +10124,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "682"
     },
     {
-        "searchName": "PERSONA COSMETIX KFT.",
         "companyName": "PERSONA cosmetix kft.",
         "ZIPcode": "",
         "town": "Szigerszentmiklos",
@@ -10820,7 +10136,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "683"
     },
     {
-        "searchName": "PEST-BUDA KKT",
         "companyName": "PEST-BUDA KKT",
         "ZIPcode": "1014",
         "town": "BUDAPEST",
@@ -10833,7 +10148,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "684"
     },
     {
-        "searchName": "PETER BENKOVIC-MONAD",
         "companyName": "Peter Benkovic-MONAD",
         "ZIPcode": "92401",
         "town": "Galanta",
@@ -10846,7 +10160,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "685"
     },
     {
-        "searchName": "PETERS TEXTIL",
         "companyName": "PETERS TEXTIL",
         "ZIPcode": "1095",
         "town": "BUDAPEST",
@@ -10859,7 +10172,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "686"
     },
     {
-        "searchName": "PETRA VECEROVA",
         "companyName": "Petra Vecerova",
         "ZIPcode": "688 01",
         "town": "Uherske Gradiste",
@@ -10872,7 +10184,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "687"
     },
     {
-        "searchName": "PETRIK BT.",
         "companyName": "Petrik Bt.",
         "ZIPcode": "",
         "town": "",
@@ -10885,7 +10196,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "688"
     },
     {
-        "searchName": "PEZOREX D.O.O.",
         "companyName": "Pezorex d.o.o.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -10898,7 +10208,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "689"
     },
     {
-        "searchName": "PEZOREX D.O.O. (SZÁLLÍTÓ)",
         "companyName": "Pezorex d.o.o. (Szállító)",
         "ZIPcode": "3250",
         "town": "Rogaska Slatina",
@@ -10911,7 +10220,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "690"
     },
     {
-        "searchName": "PEZOREX GYÁRTÁS H.L.É:",
         "companyName": "Pezorex Gyártás H.L.É:",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -10924,7 +10232,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "691"
     },
     {
-        "searchName": "PEZOREX GYÁRTÁS WHITE GIRLS",
         "companyName": "Pezorex gyártás White Girls",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -10937,7 +10244,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "692"
     },
     {
-        "searchName": "PEZOREX KFT.",
         "companyName": "Pezorex Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -10950,7 +10256,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "693"
     },
     {
-        "searchName": "",
         "companyName": "",
         "ZIPcode": "",
         "town": "",
@@ -10963,7 +10268,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "694"
     },
     {
-        "searchName": "PHILIPIPPI KFT",
         "companyName": "PHILIPIPPI KFT",
         "ZIPcode": "1118",
         "town": "Budapest",
@@ -10976,7 +10280,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "695"
     },
     {
-        "searchName": "PICK-PACK DIVAT",
         "companyName": "PICK-PACK DIVAT",
         "ZIPcode": "3600",
         "town": "ÓZD",
@@ -10989,7 +10292,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "696"
     },
     {
-        "searchName": "PIERRA MODA",
         "companyName": "Pierra Moda",
         "ZIPcode": "99106",
         "town": "Velky Krtis",
@@ -11002,7 +10304,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "697"
     },
     {
-        "searchName": "PIMPLI ÁRPÁD",
         "companyName": "PIMPLI ÁRPÁD",
         "ZIPcode": "2049",
         "town": "DIOSD",
@@ -11015,7 +10316,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "698"
     },
     {
-        "searchName": "PINTÉR JÓZSEFNÉ",
         "companyName": "PINTÉR JÓZSEFNÉ",
         "ZIPcode": "7100",
         "town": "SZEKSZÁRD",
@@ -11028,7 +10328,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "699"
     },
     {
-        "searchName": "PINTÉR KFT",
         "companyName": "Pintér Kft",
         "ZIPcode": "6060",
         "town": "Tiszakécske",
@@ -11041,7 +10340,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "700"
     },
     {
-        "searchName": "PINTÉR SZABOLCS",
         "companyName": "Pintér Szabolcs",
         "ZIPcode": "7200",
         "town": "Dombovar",
@@ -11054,7 +10352,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "701"
     },
     {
-        "searchName": "PINTHER KFT.",
         "companyName": "Pinther Kft.",
         "ZIPcode": "8800",
         "town": "Nagykanizsa",
@@ -11067,7 +10364,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "702"
     },
     {
-        "searchName": "PIRK ZSOLT",
         "companyName": "Pirk Zsolt",
         "ZIPcode": "3530",
         "town": "Miskolc",
@@ -11080,7 +10376,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "703"
     },
     {
-        "searchName": "PLATHERMO KFT.",
         "companyName": "Plathermo KFT.",
         "ZIPcode": "1214.",
         "town": "BUDAPEST",
@@ -11093,7 +10388,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "704"
     },
     {
-        "searchName": "PÓKECZ GÁBORNÉ",
         "companyName": "Pókecz Gáborné",
         "ZIPcode": "9400",
         "town": "Sopron",
@@ -11106,7 +10400,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "705"
     },
     {
-        "searchName": "POMPADUR HELENA SCECINOVA",
         "companyName": "Pompadur Helena Scecinova",
         "ZIPcode": "4000",
         "town": "Kosice",
@@ -11119,7 +10412,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "706"
     },
     {
-        "searchName": "PONGÓ BÉLA",
         "companyName": "Pongó Béla",
         "ZIPcode": "2144",
         "town": "Kerepes",
@@ -11132,7 +10424,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "707"
     },
     {
-        "searchName": "PORITA KFT.",
         "companyName": "Porita Kft.",
         "ZIPcode": "1112",
         "town": "Budapest",
@@ -11145,7 +10436,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "708"
     },
     {
-        "searchName": "POTA NORBERT",
         "companyName": "pota norbert",
         "ZIPcode": "",
         "town": "",
@@ -11158,7 +10448,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "709"
     },
     {
-        "searchName": "POTOCSKA ERIKA",
         "companyName": "Potocska Erika",
         "ZIPcode": "",
         "town": "Maglód",
@@ -11171,7 +10460,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "710"
     },
     {
-        "searchName": "PRESZTIZS 96 BT",
         "companyName": "PRESZTIZS 96 BT",
         "ZIPcode": "3770",
         "town": "SAJÓSZENTPÉTER",
@@ -11184,7 +10472,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "711"
     },
     {
-        "searchName": "PRIMERA KFT.",
         "companyName": "Primera Kft.",
         "ZIPcode": "5008",
         "town": "Szolnok",
@@ -11197,7 +10484,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "712"
     },
     {
-        "searchName": "PRM",
         "companyName": "PRM",
         "ZIPcode": "",
         "town": "",
@@ -11210,7 +10496,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "713"
     },
     {
-        "searchName": "PRO ART TEH.ÉS F.MŰV. ÉS SPORT ALAPÍTVÁNY",
         "companyName": "Pro Art Teh.és F.Műv. és Sport alapítvány",
         "ZIPcode": "9330",
         "town": "Kapuvár",
@@ -11223,7 +10508,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "714"
     },
     {
-        "searchName": "PROGRESSOR KFT.",
         "companyName": "Progressor Kft.",
         "ZIPcode": "1202",
         "town": "Budapest",
@@ -11236,7 +10520,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "715"
     },
     {
-        "searchName": "PROSAS 91 KFT",
         "companyName": "Prosas 91 Kft",
         "ZIPcode": "1143",
         "town": "Budapest",
@@ -11249,7 +10532,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "716"
     },
     {
-        "searchName": "PROVON S.R.O",
         "companyName": "PROVON s.r.o",
         "ZIPcode": "639 00",
         "town": "Brno",
@@ -11262,7 +10544,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "717"
     },
     {
-        "searchName": "PTK BŐRDÍSZMŰ KER.EC",
         "companyName": "PTK Bőrdíszmű ker.EC",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -11275,7 +10556,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "718"
     },
     {
-        "searchName": "QIT",
         "companyName": "QIT",
         "ZIPcode": "",
         "town": "",
@@ -11288,7 +10568,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "719"
     },
     {
-        "searchName": "R-FASHION KFT.",
         "companyName": "R-Fashion Kft.",
         "ZIPcode": "8630",
         "town": "Balatonboglár",
@@ -11301,7 +10580,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "720"
     },
     {
-        "searchName": "R-KONFEKCIÓ KFT.",
         "companyName": "R-KONFEKCIÓ KFT.",
         "ZIPcode": "4400",
         "town": "NYÍREGYHÁZA",
@@ -11314,7 +10592,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "721"
     },
     {
-        "searchName": "RADIKA TEXTILE",
         "companyName": "RADIKA TEXTILE",
         "ZIPcode": "",
         "town": "",
@@ -11327,7 +10604,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "722"
     },
     {
-        "searchName": "RAJ",
         "companyName": "raj",
         "ZIPcode": "",
         "town": "",
@@ -11340,7 +10616,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "723"
     },
     {
-        "searchName": "REBECCA KFT.",
         "companyName": "Rebecca Kft.",
         "ZIPcode": "1037",
         "town": "Budapest",
@@ -11353,7 +10628,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "724"
     },
     {
-        "searchName": "REBEKA-RUHAKER LUKASZ ERNŐNÉ",
         "companyName": "REBEKA-RUHAKER LUKASZ ERNŐNÉ",
         "ZIPcode": "2536",
         "town": "NYERGESÚJFALU",
@@ -11366,7 +10640,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "725"
     },
     {
-        "searchName": "RÉFFI FERENC",
         "companyName": "Réffi Ferenc",
         "ZIPcode": "7400",
         "town": "Kaposvár",
@@ -11379,7 +10652,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "726"
     },
     {
-        "searchName": "REN-ARCH 2006 BT",
         "companyName": "Ren-ARCH 2006 Bt",
         "ZIPcode": "2060",
         "town": "Bicske",
@@ -11392,7 +10664,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "727"
     },
     {
-        "searchName": "RENATA STEFANKOVA",
         "companyName": "Renata Stefankova",
         "ZIPcode": "687 03",
         "town": "Babice u Uherskeho Hradiste",
@@ -11405,7 +10676,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "728"
     },
     {
-        "searchName": "RÉVEN KFT",
         "companyName": "RÉVEN KFT",
         "ZIPcode": "8220",
         "town": "BALATONALMÁDI",
@@ -11418,7 +10688,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "729"
     },
     {
-        "searchName": "REVIVALL S.R.O.",
         "companyName": "REVIVALL S.R.O.",
         "ZIPcode": "4011",
         "town": "KASSA",
@@ -11431,7 +10700,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "730"
     },
     {
-        "searchName": "REXÁM BT.",
         "companyName": "Rexám Bt.",
         "ZIPcode": "6100",
         "town": "Kiskunfélegyháza",
@@ -11444,7 +10712,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "731"
     },
     {
-        "searchName": "REZES GÁBOR",
         "companyName": "REZES GÁBOR",
         "ZIPcode": "8360",
         "town": "KESZTHELY",
@@ -11457,7 +10724,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "732"
     },
     {
-        "searchName": "RIM",
         "companyName": "RIM",
         "ZIPcode": "",
         "town": "",
@@ -11470,7 +10736,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "733"
     },
     {
-        "searchName": "RIMÓCZI KLÁRA",
         "companyName": "Rimóczi Klára",
         "ZIPcode": "6050",
         "town": "Lajosmizse",
@@ -11483,7 +10748,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "734"
     },
     {
-        "searchName": "RIVIERA COORPERATION",
         "companyName": "Riviera Coorperation",
         "ZIPcode": "",
         "town": "",
@@ -11496,7 +10760,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "735"
     },
     {
-        "searchName": "ROBELTEX",
         "companyName": "Robeltex",
         "ZIPcode": "",
         "town": "oradea",
@@ -11509,7 +10772,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "736"
     },
     {
-        "searchName": "RŐFÖS ZSUZSA KFT.",
         "companyName": "Rőfös Zsuzsa Kft.",
         "ZIPcode": "2170",
         "town": "Aszód",
@@ -11522,7 +10784,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "737"
     },
     {
-        "searchName": "ROSSI RUHAKÖLCSÖNZŐ KFT",
         "companyName": "Rossi Ruhakölcsönző Kft",
         "ZIPcode": "1139",
         "town": "Budapest",
@@ -11535,7 +10796,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "738"
     },
     {
-        "searchName": "ROYAL",
         "companyName": "Royal",
         "ZIPcode": "",
         "town": "",
@@ -11548,7 +10808,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "739"
     },
     {
-        "searchName": "ROZA DEKOR KFT.",
         "companyName": "Roza Dekor kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -11561,7 +10820,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "740"
     },
     {
-        "searchName": "ROZINGER EDINA",
         "companyName": "Rozinger Edina",
         "ZIPcode": "7621",
         "town": "Pécs",
@@ -11574,7 +10832,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "741"
     },
     {
-        "searchName": "RU-MO MODE KFT.",
         "companyName": "RU-MO MODE KFT.",
         "ZIPcode": "7621",
         "town": "Pécs",
@@ -11587,7 +10844,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "742"
     },
     {
-        "searchName": "S. PRINCESS KFT.",
         "companyName": "S. Princess Kft.",
         "ZIPcode": "1076",
         "town": "Budapest",
@@ -11600,7 +10856,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "743"
     },
     {
-        "searchName": "S.C.ANDORSA S.R.L.",
         "companyName": "S.C.Andorsa S.R.L.",
         "ZIPcode": "410561",
         "town": "Oradea",
@@ -11613,7 +10868,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "744"
     },
     {
-        "searchName": "SACC 96 KFT.",
         "companyName": "Sacc 96 Kft.",
         "ZIPcode": "2254",
         "town": "Szentmártonkáta",
@@ -11626,7 +10880,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "745"
     },
     {
-        "searchName": "SAJÓ-INVEST KFT",
         "companyName": "Sajó-Invest Kft",
         "ZIPcode": "3561",
         "town": "Felsőzsolca",
@@ -11639,7 +10892,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "746"
     },
     {
-        "searchName": "SAMETEX S.R.O.",
         "companyName": "Sametex s.r.o.",
         "ZIPcode": "16000",
         "town": "Praha 6",
@@ -11652,7 +10904,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "747"
     },
     {
-        "searchName": "SÁNDOR JÓZSEF",
         "companyName": "Sándor József",
         "ZIPcode": "",
         "town": "",
@@ -11665,7 +10916,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "748"
     },
     {
-        "searchName": "SÁNDOR LAJOSNÉ",
         "companyName": "Sándor Lajosné",
         "ZIPcode": "8600",
         "town": "Siófok",
@@ -11678,7 +10928,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "749"
     },
     {
-        "searchName": "SARA-TEX KFT",
         "companyName": "SARA-TEX KFT",
         "ZIPcode": "2660",
         "town": "Balassagyarmat",
@@ -11691,7 +10940,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "750"
     },
     {
-        "searchName": "SÁSKA BT.",
         "companyName": "Sáska Bt.",
         "ZIPcode": "1024",
         "town": "Budapest",
@@ -11704,7 +10952,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "751"
     },
     {
-        "searchName": "SATYAM",
         "companyName": "SATYAM",
         "ZIPcode": "",
         "town": "",
@@ -11717,7 +10964,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "752"
     },
     {
-        "searchName": "SAVOX BT.",
         "companyName": "Savox Bt.",
         "ZIPcode": "6000",
         "town": "Kecskemét",
@@ -11730,7 +10976,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "753"
     },
     {
-        "searchName": "SC GINETTE SRL",
         "companyName": "Sc Ginette SRL",
         "ZIPcode": "300519",
         "town": "TIMISOARA",
@@ -11743,7 +10988,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "754"
     },
     {
-        "searchName": "SCT",
         "companyName": "Sct",
         "ZIPcode": "",
         "town": "",
@@ -11756,7 +11000,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "755"
     },
     {
-        "searchName": "SELYEMGUBÓ",
         "companyName": "SELYEMGUBÓ",
         "ZIPcode": "2510",
         "town": "DOROG",
@@ -11769,7 +11012,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "756"
     },
     {
-        "searchName": "SEMADA TEKSTIL",
         "companyName": "Semada Tekstil",
         "ZIPcode": "16300",
         "town": "Ankara Yolu Otosansit 5. SK 9 Bl",
@@ -11782,7 +11024,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "757"
     },
     {
-        "searchName": "SEVEN EIGHT SIX KFT",
         "companyName": "seven eight six kft",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -11795,7 +11036,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "758"
     },
     {
-        "searchName": "SHARON KFT",
         "companyName": "SHARON KFT",
         "ZIPcode": "2041",
         "town": "BUDAÖRS",
@@ -11808,7 +11048,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "759"
     },
     {
-        "searchName": "SIL",
         "companyName": "SIL",
         "ZIPcode": "",
         "town": "",
@@ -11821,7 +11060,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "760"
     },
     {
-        "searchName": "SILKY BT. (SILOMA)",
         "companyName": "Silky Bt. (Siloma)",
         "ZIPcode": "2141",
         "town": "Csömör",
@@ -11834,7 +11072,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "761"
     },
     {
-        "searchName": "SIMOTEG KFT.",
         "companyName": "SIMOTEG KFT.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -11847,7 +11084,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "762"
     },
     {
-        "searchName": "SINDY -SZILVASIOVA EVA",
         "companyName": "SINDY -SZILVASIOVA EVA",
         "ZIPcode": "92592",
         "town": "TOPOLNICA",
@@ -11860,7 +11096,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "763"
     },
     {
-        "searchName": "SIPOS ANDREA",
         "companyName": "Sipos Andrea",
         "ZIPcode": "2132",
         "town": "Göd",
@@ -11873,7 +11108,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "764"
     },
     {
-        "searchName": "SIVILJSTVO STELLA STYLE",
         "companyName": "Siviljstvo Stella Style",
         "ZIPcode": "3211",
         "town": "Skofja vas",
@@ -11886,7 +11120,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "765"
     },
     {
-        "searchName": "SIVÓ ANIKO JUST MARRIED",
         "companyName": "Sivó Aniko Just Married",
         "ZIPcode": "",
         "town": "",
@@ -11899,7 +11132,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "766"
     },
     {
-        "searchName": "SKY-COUTURE",
         "companyName": "Sky-Couture",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -11912,7 +11144,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "767"
     },
     {
-        "searchName": "SNAJDER ÉS TSA BT",
         "companyName": "Snajder és tsa bt",
         "ZIPcode": "1061",
         "town": "Budapest",
@@ -11925,7 +11156,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "768"
     },
     {
-        "searchName": "SOLTVADKERT ÉS VIDÉKE ÁFÉSZ",
         "companyName": "SOLTVADKERT ÉS VIDÉKE ÁFÉSZ",
         "ZIPcode": "6230",
         "town": "SOLTVADKERT",
@@ -11938,7 +11168,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "769"
     },
     {
-        "searchName": "SOMAFIS KFT.",
         "companyName": "Somafis Kft.",
         "ZIPcode": "1113",
         "town": "Budapest",
@@ -11951,7 +11180,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "770"
     },
     {
-        "searchName": "SONJA",
         "companyName": "SONJA",
         "ZIPcode": "",
         "town": "",
@@ -11964,7 +11192,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "771"
     },
     {
-        "searchName": "SOUNDX PRO KFT",
         "companyName": "SOUNDX PRO KFT",
         "ZIPcode": "1149",
         "town": "BUDAPEST",
@@ -11977,7 +11204,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "772"
     },
     {
-        "searchName": "SPA CAPITAL",
         "companyName": "Spa Capital",
         "ZIPcode": "",
         "town": "",
@@ -11990,7 +11216,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "773"
     },
     {
-        "searchName": "SPRINGMED KFT.",
         "companyName": "Springmed Kft.",
         "ZIPcode": "1114",
         "town": "Budapest",
@@ -12003,7 +11228,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "774"
     },
     {
-        "searchName": "STÍLUS 96 KFT",
         "companyName": "Stílus 96 kft",
         "ZIPcode": "6100",
         "town": "Kiskunfélegyháza",
@@ -12016,7 +11240,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "775"
     },
     {
-        "searchName": "STÍLUS IMPEX KFT.",
         "companyName": "Stílus Impex Kft.",
         "ZIPcode": "2451",
         "town": "Ercsi",
@@ -12029,7 +11252,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "776"
     },
     {
-        "searchName": "STRATO KFT.",
         "companyName": "Strato Kft.",
         "ZIPcode": "1053",
         "town": "Budapest",
@@ -12042,7 +11264,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "777"
     },
     {
-        "searchName": "SUB ROSA SUN KFT.",
         "companyName": "Sub Rosa Sun Kft.",
         "ZIPcode": "6728",
         "town": "Szeged",
@@ -12055,7 +11276,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "778"
     },
     {
-        "searchName": "SUN",
         "companyName": "SUN",
         "ZIPcode": "",
         "town": "",
@@ -12068,7 +11288,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "779"
     },
     {
-        "searchName": "SUNTEX.HU KFT.",
         "companyName": "Suntex.hu Kft.",
         "ZIPcode": "9025",
         "town": "Győr",
@@ -12081,7 +11300,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "780"
     },
     {
-        "searchName": "SVANK JÁNOSNÉ",
         "companyName": "SVANK JÁNOSNÉ",
         "ZIPcode": "1188",
         "town": "BUDAPEST",
@@ -12094,7 +11312,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "781"
     },
     {
-        "searchName": "SW. MTEC-BP. BT",
         "companyName": "SW. MTEC-BP. BT",
         "ZIPcode": "1144",
         "town": "BUDAPEST",
@@ -12107,7 +11324,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "782"
     },
     {
-        "searchName": "SYLPHIDE-I KFT.",
         "companyName": "Sylphide-I Kft.",
         "ZIPcode": "9330",
         "town": "Kapuvár",
@@ -12120,7 +11336,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "783"
     },
     {
-        "searchName": "SYLVERRO KFT",
         "companyName": "Sylverro Kft",
         "ZIPcode": "2143",
         "town": "Kistarcsa",
@@ -12133,7 +11348,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "784"
     },
     {
-        "searchName": "SZ&R&P BT",
         "companyName": "SZ&R&P BT",
         "ZIPcode": "2119",
         "town": "PÉCEL",
@@ -12146,7 +11360,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "785"
     },
     {
-        "searchName": "SZABADOS ESZTER",
         "companyName": "SZABADOS ESZTER",
         "ZIPcode": "5600",
         "town": "BÉKÉSCSABA",
@@ -12159,7 +11372,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "786"
     },
     {
-        "searchName": "SZABÓ JÁNOSNÉ",
         "companyName": "Szabó Jánosné",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -12172,7 +11384,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "787"
     },
     {
-        "searchName": "SZABÓ LÁSZLÓ",
         "companyName": "Szabó László",
         "ZIPcode": "9735",
         "town": "Csepreg",
@@ -12185,7 +11396,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "788"
     },
     {
-        "searchName": "SZABÓ TIBORNÉ",
         "companyName": "Szabó Tiborné",
         "ZIPcode": "4375",
         "town": "Piricse",
@@ -12198,7 +11408,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "789"
     },
     {
-        "searchName": "SZABÓ TIMEA",
         "companyName": "SZABÓ TIMEA",
         "ZIPcode": "9023",
         "town": "Győr",
@@ -12211,7 +11420,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "790"
     },
     {
-        "searchName": "SZABÓNÉ SZILÁGYI MAGDOLNA",
         "companyName": "Szabóné Szilágyi Magdolna",
         "ZIPcode": "5540",
         "town": "Szarvas",
@@ -12224,7 +11432,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "791"
     },
     {
-        "searchName": "SZAKÁLOS ERIKA",
         "companyName": "Szakálos Erika",
         "ZIPcode": "5500",
         "town": "Gyomaendrőd",
@@ -12237,7 +11444,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "792"
     },
     {
-        "searchName": "SZANISZLÓ GABRIELLA",
         "companyName": "Szaniszló Gabriella",
         "ZIPcode": "1131",
         "town": "Budapest",
@@ -12250,7 +11456,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "793"
     },
     {
-        "searchName": "SZÁSZ PÁL ERZSÉBET",
         "companyName": "Szász Pál Erzsébet",
         "ZIPcode": "",
         "town": "",
@@ -12263,7 +11468,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "794"
     },
     {
-        "searchName": "SZÁSZ-PÁL ERZSÉBET",
         "companyName": "Szász-Pál Erzsébet",
         "ZIPcode": "537173",
         "town": "",
@@ -12276,7 +11480,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "795"
     },
     {
-        "searchName": "SZÁZ DIVAT",
         "companyName": "Száz divat",
         "ZIPcode": "",
         "town": "",
@@ -12289,7 +11492,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "796"
     },
     {
-        "searchName": "SZEDELIK MARIANN",
         "companyName": "Szedelik Mariann",
         "ZIPcode": "2316",
         "town": "Tököl",
@@ -12302,7 +11504,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "797"
     },
     {
-        "searchName": "SZEGED BOLERO KFT.",
         "companyName": "Szeged Bolero Kft.",
         "ZIPcode": "6724",
         "town": "Szeged",
@@ -12315,7 +11516,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "798"
     },
     {
-        "searchName": "SZEMÁN NIKOLETT",
         "companyName": "Szemán Nikolett",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -12328,7 +11528,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "799"
     },
     {
-        "searchName": "SZENES KFT.",
         "companyName": "Szenes Kft.",
         "ZIPcode": "1089",
         "town": "Rezső tér 3.",
@@ -12341,7 +11540,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "800"
     },
     {
-        "searchName": "SZIGET-LINE KFT",
         "companyName": "Sziget-Line kft",
         "ZIPcode": "",
         "town": "",
@@ -12354,7 +11552,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "801"
     },
     {
-        "searchName": "SZIGETI ÉS TÁRSA",
         "companyName": "Szigeti és társa",
         "ZIPcode": "4027",
         "town": "Debrecen",
@@ -12367,7 +11564,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "802"
     },
     {
-        "searchName": "SZILÁGYI ALBERTNÉ",
         "companyName": "Szilágyi Albertné",
         "ZIPcode": "4225",
         "town": "Debrecen",
@@ -12380,7 +11576,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "803"
     },
     {
-        "searchName": "SZILÁGYI IZABELLA",
         "companyName": "Szilágyi Izabella",
         "ZIPcode": "5510",
         "town": "Dévaványa",
@@ -12393,7 +11588,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "804"
     },
     {
-        "searchName": "SZILVÁSINÉ BABICZ PETRA",
         "companyName": "Szilvásiné Babicz Petra",
         "ZIPcode": "",
         "town": "",
@@ -12406,7 +11600,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "805"
     },
     {
-        "searchName": "SZIPORKA",
         "companyName": "Sziporka",
         "ZIPcode": "8093",
         "town": "Lovasberény",
@@ -12419,7 +11612,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "806"
     },
     {
-        "searchName": "SZITA JÁNOSNÉ",
         "companyName": "Szita Jánosné",
         "ZIPcode": "8420",
         "town": "Zirc",
@@ -12432,7 +11624,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "807"
     },
     {
-        "searchName": "SZŐKE KFT.",
         "companyName": "Szőke Kft.",
         "ZIPcode": "7621",
         "town": "Pécs",
@@ -12445,7 +11636,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "808"
     },
     {
-        "searchName": "SZŐKE TIBOR (ANNBOR)",
         "companyName": "Szőke Tibor (Annbor)",
         "ZIPcode": "6400",
         "town": "Kiskunhalas",
@@ -12458,7 +11648,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "809"
     },
     {
-        "searchName": "SZONDYKER KFT.",
         "companyName": "Szondyker Kft.",
         "ZIPcode": "2800",
         "town": "Tatabánya",
@@ -12471,7 +11660,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "810"
     },
     {
-        "searchName": "SZÖVETVARÁZS KFT.",
         "companyName": "Szövetvarázs Kft.",
         "ZIPcode": "5000",
         "town": "Szolnok",
@@ -12484,7 +11672,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "811"
     },
     {
-        "searchName": "T & T",
         "companyName": "T & T",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -12497,7 +11684,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "812"
     },
     {
-        "searchName": "T AND M IMMO KFT",
         "companyName": "T AND M Immo Kft",
         "ZIPcode": "",
         "town": "",
@@ -12510,7 +11696,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "813"
     },
     {
-        "searchName": "T-MIX 2003 KFT",
         "companyName": "T-Mix 2003 Kft",
         "ZIPcode": "1116",
         "town": "Budapest",
@@ -12523,7 +11708,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "814"
     },
     {
-        "searchName": "TAF",
         "companyName": "TAF",
         "ZIPcode": "",
         "town": "",
@@ -12536,7 +11720,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "815"
     },
     {
-        "searchName": "TAILOR STUDIO",
         "companyName": "Tailor Studio",
         "ZIPcode": "9022",
         "town": "Győr",
@@ -12549,7 +11732,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "816"
     },
     {
-        "searchName": "TAKÁCS ANIKO",
         "companyName": "TAKÁCS ANIKO",
         "ZIPcode": "1098",
         "town": "BUDAPEST",
@@ -12562,7 +11744,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "817"
     },
     {
-        "searchName": "TAKÁCS KÁLMÁNNÉ",
         "companyName": "Takács Kálmánné",
         "ZIPcode": "9730",
         "town": "Kőszeg",
@@ -12575,7 +11756,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "818"
     },
     {
-        "searchName": "TAKÁCS SZILVIA",
         "companyName": "Takács Szilvia",
         "ZIPcode": "",
         "town": "",
@@ -12588,7 +11768,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "819"
     },
     {
-        "searchName": "TALIÁNNÉ HATÓ ANITA",
         "companyName": "Taliánné Ható Anita",
         "ZIPcode": "8700",
         "town": "Marcali",
@@ -12601,7 +11780,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "820"
     },
     {
-        "searchName": "TAMÁSINÉ HOFFER ZSUZSA",
         "companyName": "Tamásiné Hoffer Zsuzsa",
         "ZIPcode": "9026",
         "town": "Győr",
@@ -12614,7 +11792,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "821"
     },
     {
-        "searchName": "TÁNCVARÁZS 2006 KFT.",
         "companyName": "Táncvarázs 2006 Kft.",
         "ZIPcode": "7400",
         "town": "Kaposvár",
@@ -12627,7 +11804,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "822"
     },
     {
-        "searchName": "TASKOVICS PÉTERNÉ",
         "companyName": "Taskovics Péterné",
         "ZIPcode": "7200",
         "town": "Dombóvár",
@@ -12640,7 +11816,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "823"
     },
     {
-        "searchName": "TATTI TESSUTI",
         "companyName": "Tatti Tessuti",
         "ZIPcode": "59100",
         "town": "Preato",
@@ -12653,7 +11828,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "824"
     },
     {
-        "searchName": "TECTRON KFT.",
         "companyName": "Tectron Kft.",
         "ZIPcode": "9022",
         "town": "Győr",
@@ -12666,7 +11840,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "825"
     },
     {
-        "searchName": "TESSILMAGLIA SRL",
         "companyName": "Tessilmaglia srl",
         "ZIPcode": "59100",
         "town": "Prato",
@@ -12679,7 +11852,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "826"
     },
     {
-        "searchName": "TEX",
         "companyName": "Tex",
         "ZIPcode": "",
         "town": "",
@@ -12692,7 +11864,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "827"
     },
     {
-        "searchName": "TEXIMPEX E.C.",
         "companyName": "Teximpex E.C.",
         "ZIPcode": "2484",
         "town": "Agárd",
@@ -12705,7 +11876,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "828"
     },
     {
-        "searchName": "TEXTIL BARLANG",
         "companyName": "Textil barlang",
         "ZIPcode": "2330",
         "town": "Dunaharaszti",
@@ -12718,7 +11888,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "829"
     },
     {
-        "searchName": "TEXTIL-MÓR",
         "companyName": "Textil-Mór",
         "ZIPcode": "8060",
         "town": "Mór",
@@ -12731,7 +11900,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "830"
     },
     {
-        "searchName": "TIANA D.O.O.",
         "companyName": "Tiana d.o.o.",
         "ZIPcode": "3241",
         "town": "Podplat",
@@ -12744,7 +11912,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "831"
     },
     {
-        "searchName": "TIBA A.S.",
         "companyName": "TIBA a.s.",
         "ZIPcode": "16011",
         "town": "Praha 6",
@@ -12757,7 +11924,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "832"
     },
     {
-        "searchName": "TÍMEA DIVAT ELEGANCIA",
         "companyName": "Tímea Divat Elegancia",
         "ZIPcode": "5700",
         "town": "Gyula",
@@ -12770,7 +11936,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "833"
     },
     {
-        "searchName": "TINI KFT",
         "companyName": "Tini Kft",
         "ZIPcode": "8051",
         "town": "Sárkeresztes",
@@ -12783,7 +11948,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "834"
     },
     {
-        "searchName": "TIRSA MODA BT.",
         "companyName": "Tirsa Moda Bt.",
         "ZIPcode": "1139",
         "town": "Budapest",
@@ -12796,7 +11960,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "835"
     },
     {
-        "searchName": "TISZAFARM 21 KFT",
         "companyName": "tiszafarm 21 kft",
         "ZIPcode": "5000",
         "town": "Szolnok",
@@ -12809,7 +11972,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "836"
     },
     {
-        "searchName": "TITÁN BAU PLUSSZ BT.",
         "companyName": "Titán Bau Plussz Bt.",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -12822,7 +11984,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "837"
     },
     {
-        "searchName": "TITKOS & JÁGER KFT.",
         "companyName": "TITKOS & JÁGER Kft.",
         "ZIPcode": "7027",
         "town": "Paks",
@@ -12835,7 +11996,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "838"
     },
     {
-        "searchName": "TIZES MODELL KFT.",
         "companyName": "Tizes Modell Kft.",
         "ZIPcode": "2800",
         "town": "Tatabánya",
@@ -12848,7 +12008,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "839"
     },
     {
-        "searchName": "TLE",
         "companyName": "TLE",
         "ZIPcode": "",
         "town": "",
@@ -12861,7 +12020,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "840"
     },
     {
-        "searchName": "TOLNAI LÁSZLÓNÉ",
         "companyName": "Tolnai Lászlóné",
         "ZIPcode": "7030",
         "town": "Paks",
@@ -12874,7 +12032,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "841"
     },
     {
-        "searchName": "TOM-CSU KFT.",
         "companyName": "TOM-CSU KFT.",
         "ZIPcode": "8600.",
         "town": "SIÓFOK",
@@ -12887,7 +12044,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "842"
     },
     {
-        "searchName": "TONDO BT",
         "companyName": "TONDO BT",
         "ZIPcode": "3529",
         "town": "Miskolc",
@@ -12900,7 +12056,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "843"
     },
     {
-        "searchName": "TOPFABRIK KKT",
         "companyName": "TOPFABRIK KKT",
         "ZIPcode": "2040",
         "town": "BUDAÖRS",
@@ -12913,7 +12068,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "844"
     },
     {
-        "searchName": "TÓTH BT.",
         "companyName": "Tóth Bt.",
         "ZIPcode": "8900",
         "town": "Zalaegerszeg",
@@ -12926,7 +12080,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "845"
     },
     {
-        "searchName": "TPM",
         "companyName": "tpm",
         "ZIPcode": "",
         "town": "",
@@ -12939,7 +12092,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "846"
     },
     {
-        "searchName": "TPX",
         "companyName": "TPX",
         "ZIPcode": "",
         "town": "",
@@ -12952,7 +12104,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "847"
     },
     {
-        "searchName": "TRAUTEX KFT.",
         "companyName": "Trautex Kft.",
         "ZIPcode": "7626",
         "town": "Pécs",
@@ -12965,7 +12116,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "848"
     },
     {
-        "searchName": "TREND 2",
         "companyName": "Trend 2",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -12978,7 +12128,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "849"
     },
     {
-        "searchName": "TREND 2 DÓRI",
         "companyName": "Trend 2 Dóri",
         "ZIPcode": "",
         "town": "",
@@ -12991,7 +12140,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "850"
     },
     {
-        "searchName": "TREND 2 SZÖSZY",
         "companyName": "Trend 2 Szöszy",
         "ZIPcode": "",
         "town": "",
@@ -13004,7 +12152,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "851"
     },
     {
-        "searchName": "TREND 4ALL KFT.",
         "companyName": "Trend 4All kft.",
         "ZIPcode": "",
         "town": "",
@@ -13017,7 +12164,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "852"
     },
     {
-        "searchName": "TREND SZABÁSZAT",
         "companyName": "Trend Szabászat",
         "ZIPcode": "2310",
         "town": "Szigetszentmiklós",
@@ -13030,7 +12176,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "853"
     },
     {
-        "searchName": "TREND2 KINCSES ILDI",
         "companyName": "TREND2 KINCSES ILDI",
         "ZIPcode": "",
         "town": "",
@@ -13043,7 +12188,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "854"
     },
     {
-        "searchName": "TRÉNING 2000 KFT.",
         "companyName": "TRÉNING 2000 KFT.",
         "ZIPcode": "3200.",
         "town": "GYÖNGYÖS",
@@ -13056,7 +12200,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "855"
     },
     {
-        "searchName": "TRGOVINA NITKA-KATJA CUVAN S.P.",
         "companyName": "Trgovina Nitka-Katja Cuvan s.p.",
         "ZIPcode": "3310",
         "town": "Zalec",
@@ -13069,7 +12212,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "856"
     },
     {
-        "searchName": "TRIBUSZ HENRIETT",
         "companyName": "TRIBUSZ HENRIETT",
         "ZIPcode": "2870",
         "town": "KISBÉR",
@@ -13082,7 +12224,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "857"
     },
     {
-        "searchName": "TRÓPUSIFA",
         "companyName": "TrópusiFa",
         "ZIPcode": "",
         "town": "",
@@ -13095,7 +12236,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "858"
     },
     {
-        "searchName": "TTA",
         "companyName": "tta",
         "ZIPcode": "",
         "town": "",
@@ -13108,7 +12248,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "859"
     },
     {
-        "searchName": "TTX",
         "companyName": "TTX",
         "ZIPcode": "",
         "town": "",
@@ -13121,7 +12260,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "860"
     },
     {
-        "searchName": "TURI KER BT",
         "companyName": "Turi Ker Bt",
         "ZIPcode": "2510",
         "town": "Dorog",
@@ -13134,7 +12272,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "861"
     },
     {
-        "searchName": "TÖRÖK ERZSÉBET",
         "companyName": "Török Erzsébet",
         "ZIPcode": "3529",
         "town": "MISKOLC",
@@ -13147,7 +12284,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "862"
     },
     {
-        "searchName": "UDVARI GYÖNGYI",
         "companyName": "UDVARI GYÖNGYI",
         "ZIPcode": "2030",
         "town": "ÉRD",
@@ -13160,7 +12296,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "863"
     },
     {
-        "searchName": "UNDA CHIC",
         "companyName": "Unda chic",
         "ZIPcode": "",
         "town": "Oradea-Bihar",
@@ -13173,7 +12308,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "864"
     },
     {
-        "searchName": "UNIQUE UNIFORMS KFT.",
         "companyName": "Unique Uniforms Kft.",
         "ZIPcode": "1026",
         "town": "Budapest",
@@ -13186,7 +12320,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "865"
     },
     {
-        "searchName": "UNITEAM KFT",
         "companyName": "Uniteam Kft",
         "ZIPcode": "1118",
         "town": "Budapest",
@@ -13199,7 +12332,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "866"
     },
     {
-        "searchName": "VA-R-RÁD BT.",
         "companyName": "VA-R-RÁD Bt.",
         "ZIPcode": "1142",
         "town": "Budapest",
@@ -13212,7 +12344,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "867"
     },
     {
-        "searchName": "VAGANZA BT.",
         "companyName": "Vaganza Bt.",
         "ZIPcode": "",
         "town": "Budaörs",
@@ -13225,7 +12356,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "868"
     },
     {
-        "searchName": "VAJK SZILVI",
         "companyName": "Vajk Szilvi",
         "ZIPcode": "",
         "town": "",
@@ -13238,7 +12368,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "869"
     },
     {
-        "searchName": "VALKÓ ATTILÁNÉ",
         "companyName": "Valkó Attiláné",
         "ZIPcode": "1125",
         "town": "Budapest",
@@ -13251,7 +12380,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "870"
     },
     {
-        "searchName": "VÁM-ÉRTÉK BT.",
         "companyName": "Vám-érték Bt.",
         "ZIPcode": "6900",
         "town": "Makó",
@@ -13264,7 +12392,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "871"
     },
     {
-        "searchName": "VÁMOSI GYÖRGYI",
         "companyName": "VÁMOSI GYÖRGYI",
         "ZIPcode": "2400",
         "town": "DUNAÚJVÁROS",
@@ -13277,7 +12404,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "872"
     },
     {
-        "searchName": "VÁRADI PÉTER",
         "companyName": "Váradi Péter",
         "ZIPcode": "7634",
         "town": "Pécs",
@@ -13290,7 +12416,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "873"
     },
     {
-        "searchName": "VARGA ENIKŐ",
         "companyName": "Varga Enikő",
         "ZIPcode": "4025",
         "town": "Debrecen",
@@ -13303,7 +12428,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "874"
     },
     {
-        "searchName": "VARGA ILDIKÓ",
         "companyName": "Varga Ildikó",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -13316,7 +12440,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "875"
     },
     {
-        "searchName": "VARGA ISTVÁNNÉ",
         "companyName": "Varga Istvánné",
         "ZIPcode": "6080",
         "town": "Szabadszállás",
@@ -13329,7 +12452,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "876"
     },
     {
-        "searchName": "VARGÁNÉ NAGY ILONA",
         "companyName": "Vargáné Nagy Ilona",
         "ZIPcode": "",
         "town": "",
@@ -13342,7 +12464,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "877"
     },
     {
-        "searchName": "VARI-TEX KFT.",
         "companyName": "VARI-TEX kft.",
         "ZIPcode": "2700",
         "town": "CEGLÉD",
@@ -13355,7 +12476,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "878"
     },
     {
-        "searchName": "VARRÓ BIRODALOM SZABATEX HUNARY KFT",
         "companyName": "VARRÓ BIRODALOM SZABATEX HUNARY KFT",
         "ZIPcode": "1184",
         "town": "BUDAPEST",
@@ -13368,7 +12488,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "879"
     },
     {
-        "searchName": "VASVÁRI ZSÓKA",
         "companyName": "Vasvári Zsóka",
         "ZIPcode": "1025",
         "town": "Budapest",
@@ -13381,7 +12500,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "880"
     },
     {
-        "searchName": "VÉGH CSABA",
         "companyName": "Végh Csaba",
         "ZIPcode": "4431",
         "town": "Sóstófürdő",
@@ -13394,7 +12512,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "881"
     },
     {
-        "searchName": "VÉGLESI KÁLMÁN",
         "companyName": "VÉGLESI KÁLMÁN",
         "ZIPcode": "2612",
         "town": "KOSD",
@@ -13407,7 +12524,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "882"
     },
     {
-        "searchName": "VELBOA KFT.",
         "companyName": "Velboa Kft.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -13420,7 +12536,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "883"
     },
     {
-        "searchName": "VELIS NOLIS",
         "companyName": "Velis nolis",
         "ZIPcode": "",
         "town": "",
@@ -13433,7 +12548,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "884"
     },
     {
-        "searchName": "VERONA KFT",
         "companyName": "VERONA KFT",
         "ZIPcode": "",
         "town": "",
@@ -13446,7 +12560,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "885"
     },
     {
-        "searchName": "VEZÉR ELIZA",
         "companyName": "VEZÉR ELIZA",
         "ZIPcode": "2094",
         "town": "NAGYKOVÁCSI",
@@ -13459,7 +12572,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "886"
     },
     {
-        "searchName": "VEZIR EDITA",
         "companyName": "Vezir Edita",
         "ZIPcode": "",
         "town": "Nagykovacsi",
@@ -13472,7 +12584,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "887"
     },
     {
-        "searchName": "VFV",
         "companyName": "VFV",
         "ZIPcode": "",
         "town": "",
@@ -13485,7 +12596,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "888"
     },
     {
-        "searchName": "VIC",
         "companyName": "VIC",
         "ZIPcode": "",
         "town": "",
@@ -13498,7 +12608,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "889"
     },
     {
-        "searchName": "VICTORIA M.",
         "companyName": "Victoria M.",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -13511,7 +12620,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "890"
     },
     {
-        "searchName": "VIDA BEÁTA",
         "companyName": "Vida Beáta",
         "ZIPcode": "1033",
         "town": "Budapest",
@@ -13524,7 +12632,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "891"
     },
     {
-        "searchName": "VIERA NAVAROVA",
         "companyName": "VIERA NAVAROVA",
         "ZIPcode": "28002",
         "town": "KOLIN",
@@ -13537,7 +12644,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "892"
     },
     {
-        "searchName": "VIKVIO KFT.",
         "companyName": "Vikvio Kft.",
         "ZIPcode": "8640",
         "town": "Fonyód",
@@ -13550,7 +12656,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "893"
     },
     {
-        "searchName": "VIOLA KATALIN",
         "companyName": "Viola Katalin",
         "ZIPcode": "8900",
         "town": "Zalaegerszeg",
@@ -13563,7 +12668,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "894"
     },
     {
-        "searchName": "VIT",
         "companyName": "VIT",
         "ZIPcode": "",
         "town": "",
@@ -13576,7 +12680,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "895"
     },
     {
-        "searchName": "VITKAI-SZABÓ IZABELLA",
         "companyName": "Vitkai-Szabó Izabella",
         "ZIPcode": "7400",
         "town": "Kaposvár",
@@ -13589,7 +12692,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "896"
     },
     {
-        "searchName": "VNC",
         "companyName": "VNC",
         "ZIPcode": "",
         "town": "",
@@ -13602,7 +12704,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "897"
     },
     {
-        "searchName": "VOFA KFT",
         "companyName": "VOFA KFT",
         "ZIPcode": "1037",
         "town": "BUDAPEST",
@@ -13615,7 +12716,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "898"
     },
     {
-        "searchName": "VONA JÁNOS",
         "companyName": "Vona János",
         "ZIPcode": "2310",
         "town": "Szigetszentmiklós",
@@ -13628,7 +12728,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "899"
     },
     {
-        "searchName": "VORBILD KFT.",
         "companyName": "Vorbild Kft.",
         "ZIPcode": "3434",
         "town": "Mályi",
@@ -13641,7 +12740,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "900"
     },
     {
-        "searchName": "VÖRÖS ÉS VÖRÖS KFT.",
         "companyName": "Vörös és Vörös Kft.",
         "ZIPcode": "6000",
         "town": "Kecskemét",
@@ -13654,7 +12752,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "901"
     },
     {
-        "searchName": "VÖRÖS ILDIKÓ",
         "companyName": "Vörös ILdikó",
         "ZIPcode": "6000",
         "town": "Kecskemét",
@@ -13667,7 +12764,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "902"
     },
     {
-        "searchName": "VÖRÖS TIBOR",
         "companyName": "Vörös Tibor",
         "ZIPcode": "2060",
         "town": "Bicske",
@@ -13680,7 +12776,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "903"
     },
     {
-        "searchName": "WALTER GYÖRGYNÉ",
         "companyName": "Walter Györgyné",
         "ZIPcode": "2030",
         "town": "Érd",
@@ -13693,7 +12788,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "904"
     },
     {
-        "searchName": "WEB ÜGYNÖK KFT",
         "companyName": "WEB ÜGYNÖK KFT",
         "ZIPcode": "8800",
         "town": "NAGYKANIZSA",
@@ -13706,7 +12800,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "905"
     },
     {
-        "searchName": "WEST KFT",
         "companyName": "West kft",
         "ZIPcode": "2837",
         "town": "Vértesszőlős",
@@ -13719,7 +12812,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "906"
     },
     {
-        "searchName": "WEWE MODA",
         "companyName": "WEWE MODA",
         "ZIPcode": "",
         "town": "",
@@ -13732,7 +12824,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "907"
     },
     {
-        "searchName": "WHITE FASHION",
         "companyName": "White fashion",
         "ZIPcode": "",
         "town": "Trend 2",
@@ -13745,7 +12836,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "908"
     },
     {
-        "searchName": "WHITE GIRLS BT.",
         "companyName": "White Girls Bt.",
         "ZIPcode": "1115",
         "town": "Budapest",
@@ -13758,7 +12848,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "909"
     },
     {
-        "searchName": "WINGER BT.",
         "companyName": "Winger Bt.",
         "ZIPcode": "1162",
         "town": "Budapest",
@@ -13771,7 +12860,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "910"
     },
     {
-        "searchName": "X-TRAMEDIA KFT",
         "companyName": "X-TRAMEDIA KFT",
         "ZIPcode": "1094",
         "town": "BUDAPEST",
@@ -13784,7 +12872,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "911"
     },
     {
-        "searchName": "YFIR 46",
         "companyName": "yfir 46",
         "ZIPcode": "310",
         "town": "borgarnes",
@@ -13797,7 +12884,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "912"
     },
     {
-        "searchName": "YOR",
         "companyName": "YOR",
         "ZIPcode": "",
         "town": "",
@@ -13810,7 +12896,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "913"
     },
     {
-        "searchName": "Z-ERIDAN KFT",
         "companyName": "Z-Eridan Kft",
         "ZIPcode": "7630",
         "town": "Pécs",
@@ -13823,7 +12908,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "914"
     },
     {
-        "searchName": "Z.A.R.A. DIVAT STUDIÓ BT.",
         "companyName": "Z.A.R.A. DIVAT STUDIÓ BT.",
         "ZIPcode": "9025",
         "town": "GYŐR",
@@ -13836,7 +12920,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "915"
     },
     {
-        "searchName": "ZAK",
         "companyName": "ZAK",
         "ZIPcode": "",
         "town": "",
@@ -13849,7 +12932,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "916"
     },
     {
-        "searchName": "ZAR",
         "companyName": "ZAR",
         "ZIPcode": "",
         "town": "",
@@ -13862,7 +12944,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "917"
     },
     {
-        "searchName": "ZDENKA GUNDOVÁ-TWIGI",
         "companyName": "ZDENKA GUNDOVÁ-TWIGI",
         "ZIPcode": "81104",
         "town": "BRATISLAVA",
@@ -13875,7 +12956,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "918"
     },
     {
-        "searchName": "ZEKO TEKSTIL",
         "companyName": "Zeko Tekstil",
         "ZIPcode": "10090",
         "town": "Zagreb Croatia",
@@ -13888,7 +12968,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "919"
     },
     {
-        "searchName": "ZELKONT S.R.O.",
         "companyName": "Zelkont s.r.o.",
         "ZIPcode": "94501",
         "town": "Komarno",
@@ -13901,7 +12980,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "920"
     },
     {
-        "searchName": "ZETA",
         "companyName": "Zeta",
         "ZIPcode": "",
         "town": "",
@@ -13914,7 +12992,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "921"
     },
     {
-        "searchName": "ZETA MODA",
         "companyName": "ZETA MODA",
         "ZIPcode": "",
         "town": "",
@@ -13927,7 +13004,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "922"
     },
     {
-        "searchName": "ZO-ZO 2000",
         "companyName": "ZO-ZO 2000",
         "ZIPcode": "2040",
         "town": "Budaörs",
@@ -13940,7 +13016,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "923"
     },
     {
-        "searchName": "ZSÉNA KFT.",
         "companyName": "ZSÉNA KFT.",
         "ZIPcode": "7400",
         "town": "Kaposvár",
@@ -13953,7 +13028,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "924"
     },
     {
-        "searchName": "ZSIL-KER KFT",
         "companyName": "Zsil-ker Kft",
         "ZIPcode": "3212",
         "town": "Gyöngyöshalász",
@@ -13966,7 +13040,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "925"
     },
     {
-        "searchName": "ZSOLT RENSIX",
         "companyName": "Zsolt Rensix",
         "ZIPcode": "",
         "town": "",
@@ -13979,7 +13052,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "926"
     },
     {
-        "searchName": "ÖLTÖZÉK BT.",
         "companyName": "Öltözék Bt.",
         "ZIPcode": "8000",
         "town": "Székesfehérvár",
@@ -13992,7 +13064,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "927"
     },
     {
-        "searchName": "ÖTTEVÉNYI KAVALKÁD SZABADIDŐ S.E.",
         "companyName": "Öttevényi Kavalkád Szabadidő S.E.",
         "ZIPcode": "9153",
         "town": "Öttevény",
@@ -14005,7 +13076,6 @@ export class DbLoaderComponent implements OnInit {
         "id": "928"
     },
     {
-        "searchName": "ÖTTEVÉNYI T.C.",
         "companyName": "Öttevényi T.C.",
         "ZIPcode": "9153",
         "town": "Öttevény",

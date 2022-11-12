@@ -32,6 +32,8 @@ export class IncomingComponent implements OnInit {
     price: new FormControl(''),
   });
 
+  actualPrice: string = "";
+  actualIncomingPrice: string = "";
 
   constructor(private productService: ProductService) { }
 
@@ -52,8 +54,11 @@ export class IncomingComponent implements OnInit {
   }
 
   private _filterProduct(value: string): Product[] {
-    const filterValue = value.toLowerCase();
-    return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) || product.name.toLowerCase().includes(filterValue));
+    if(value.length >= 3){
+      const filterValue = value.toLowerCase();
+      return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) || product.name.toLowerCase().includes(filterValue));
+    }
+    return [];
   }
 
   addItem(){
@@ -61,7 +66,7 @@ export class IncomingComponent implements OnInit {
       this.itemNumber += 1;
       this.isItem = true;
       let item : Item ={
-        number: this.itemNumber.toString(),
+        number: this.itemNumber.toString().toUpperCase(),
         productNumber: this.itemForm.value.productNumber,
         amount: this.itemForm.value.amount.toString(),
         price: ""

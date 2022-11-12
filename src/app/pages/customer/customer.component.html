@@ -1,3 +1,15 @@
+<div class="div-flex">
+    <form class="basic" id="basic" [formGroup]="detailsForm" (ngSubmit)="search()">
+        <mat-form-field appearance="fill" [color]="'accent'">
+            <mat-label>Név*</mat-label>
+            <input matInput formControlName="companyName">
+        </mat-form-field>
+        <span class="button">
+            <button mat-raised-button color="primary" type="submit" >Keresés</button>
+        </span>
+    </form>
+</div>
+
 <table mat-table [dataSource]="customers">
     <ng-container matColumnDef="companyName">
         <th mat-header-cell *matHeaderCellDef> Cég név </th>

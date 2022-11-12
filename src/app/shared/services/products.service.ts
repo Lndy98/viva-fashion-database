@@ -20,6 +20,13 @@ export class ProductService {
     return this.afs.collection<Product>(this.collectionName, o => o.where('number', '==', productNumber)).valueChanges();
   }
 
+  getByNumberBetween(start: string, end:string) : Observable<Array<Product>>{
+    return this.afs.collection<Product>(this.collectionName, o => o.where('number', '>=', start).where('number', '<', end)).valueChanges();
+  }
+  getByNumberStartWith(start: string): Observable<Array<Product>>{
+    return this.afs.collection<Product>(this.collectionName, o => o.where('number', '>=', start)).valueChanges();
+  }
+
   loadProduct(): Observable<Array<Product>>{
     return this.afs.collection<Product>(this.collectionName).valueChanges();
   }
@@ -31,4 +38,7 @@ export class ProductService {
   create(product: Product){
     return this.afs.collection<Product>(this.collectionName).doc(product.id).set(product);
   }
+
+
+ 
 }

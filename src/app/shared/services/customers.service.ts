@@ -24,4 +24,13 @@ export class CustomersService {
   create(custamer: Custamer){
     return this.afs.collection<Custamer>(this.collectionName).doc(custamer.id).set(custamer);
   }
+  getByName(companyName: string){
+    return this.afs.collection<Custamer>(this.collectionName, o => o.where('companyName', '==', companyName)).valueChanges();
+  }
+  getBySearchNameBetween(start: string, end:string){
+    return this.afs.collection<Custamer>(this.collectionName, o => o.where('searchName', '>=', start).where('searchName', '<', end)).valueChanges();
+  }
+  getBySearchNameStartWith(start: string){
+    return this.afs.collection<Custamer>(this.collectionName, o => o.where('searchName', '>=', start)).valueChanges();
+  }
 }

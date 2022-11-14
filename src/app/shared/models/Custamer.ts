@@ -1,6 +1,7 @@
 export interface Custamer{
     id: string;
     companyName: string;
+    searchName: string;
     country: string;
     ZIPcode: string;
     town: string;

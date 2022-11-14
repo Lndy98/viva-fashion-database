@@ -122,7 +122,6 @@ export class IncomingComponent implements OnInit {
   }
   save(){
     this.calculateStock();
-    let unSuccesArray: Product[] = [];
     this.incomingProduct.forEach((element:Product, key:string) => {
       this.productService.setProduct(element).then(_=>{
       }).catch(error=>{

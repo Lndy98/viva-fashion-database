@@ -3,7 +3,7 @@
       <h1>Árú kísérő (kimenő)</h1>
       <p>Bizonylat szám: {{deliveryNote.number}} <br> Vevő:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date | date: 'yyyy/MM/dd'}} <br> Áfa:  {{deliveryNote.tax}} %</p>
       <table mat-table [dataSource]="deliveryNote.products">
-        <ng-container matColumnDef="productNumber">
+        <ng-container matColumnDef="productNumber" *ngIf="deliveryNote">
             <th mat-header-cell *matHeaderCellDef> Cikkszám </th>
             <td mat-cell *matCellDef="let element"> {{element.productNumber}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
@@ -19,7 +19,7 @@
             <td mat-footer-cell *matFooterCellDef> </td>
         </ng-container>
         <ng-container matColumnDef="payable">
-            <th mat-header-cell *matHeaderCellDef> Fizetendő összeg ({{getTax()}}% áfa)</th>
+            <th mat-header-cell *matHeaderCellDef> Fizetendő összeg ({{deliveryNote.tax}}% áfa)</th>
             <td mat-cell *matCellDef="let element" > {{getPayable(element.price, element.amount)}} </td>
             <td mat-footer-cell *matFooterCellDef> {{ getSumPayable() }} </td>
         </ng-container>

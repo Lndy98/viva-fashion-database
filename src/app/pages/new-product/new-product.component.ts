@@ -26,6 +26,8 @@ export class NewProductComponent implements OnInit {
     incomingPrice: new FormControl()
   });
 
+  text : string = ""
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -33,14 +35,15 @@ export class NewProductComponent implements OnInit {
 
   save(){
     this.createProduct();
-    console.log(this.product);
-    let bool = this.isProduct(this.product.number);
-    console.log(bool)
-    if(!bool){
-      console.log("Nincsen");
-    }else{
-      console.log("van");
-    }
+    this.productService.getByNumber(this.product.number).subscribe(data => {
+      console.log(data);
+      if(data.length != 0){
+        this.text = "Sikertelen árúcikk felvétel!"
+      } else {
+        window.location.reload();
+        this.productService.create(this.product);
+      }
+    })
   }
 
   createProduct(){
@@ -79,12 +82,7 @@ export class NewProductComponent implements OnInit {
   }
   isProduct(productNumber: string):boolean{
     let isProduct = false;
-    this.productService.getByNumber(productNumber).subscribe(data => {
-      console.log("A leényeg: " + data);
-      if(data){
-       isProduct = true;
-      }
-    })
+   
     return isProduct;
   }
 }

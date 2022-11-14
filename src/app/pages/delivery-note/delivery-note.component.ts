@@ -39,22 +39,12 @@ export class DeliveryNoteComponent implements OnInit {
   printThisPage() {
     window.print();
   }
-  getTax() : number{
-    switch(this.deliveryNote.tax){
-      case 'zero': 
-        return 0;
-      case 'half':
-        return 13.5;
-    }
-    return 27;
-  
-  }
   getPayable(price: string, amount: string): any{
-    let tax = (this.getTax()/100)+1
+    let tax = (+this.deliveryNote.tax/100)+1
     return this.formatNumber((+amount)*(+price)*tax);
   }
   getSumPayable(): any{
-    let tax = (this.getTax()/100)+1
+    let tax = (+this.deliveryNote.tax/100)+1
     return this.formatNumber(this.sumPrice*tax);
   }
   formatNumber(number: number): string{

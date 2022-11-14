@@ -40,20 +40,21 @@ export class IncomingComponent implements OnInit {
   }
 
   setProduct(){
-    this.productService.loadProduct().subscribe((data: Array<Product>) => {
-      if(data){
-        this.allProducts = data;
-        this.filteredProducts = this.itemForm.controls['productNumber'].valueChanges.pipe(
-          startWith(''),
-          map(value => this._filterProduct(value||'')),
-        );
-      }
-    });
+    this.filteredProducts = this.itemForm.controls['productNumber'].valueChanges.pipe(
+      startWith(''),
+      map(value => this._filterProduct(value||'')),
+    );
   }
 
   private _filterProduct(value: string): Product[] {
-    const filterValue = value.toLowerCase();
-    return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) || product.name.toLowerCase().includes(filterValue));
+    if(value.length == 2){
+      this.searchProduct(value);
+    }
+    if(value.length >=3){
+      const filterValue = value.toLowerCase();
+      return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) );
+    }
+    return [];
   }
 
   addItem(){
@@ -138,6 +139,27 @@ export class IncomingComponent implements OnInit {
     })
   }
 
+  searchProduct(start: string){
+      start = start.toUpperCase();
+      let end = start.slice(0,start.length-1);
+      let lastChar = start.slice(start.length-1);
+      let charCode = lastChar.charCodeAt(0);
+      if(charCode>89 || charCode == 57){
+        this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
+          this.allProducts = data;
+        })
+        return;
+      } else if (charCode<89){
+        charCode +=  1;
+        lastChar = String.fromCharCode(charCode);
+        
+        end += lastChar;
+        this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
+          console.log(data);
+          this.allProducts = data;
+        })
+      }
+    }
   
 
 }

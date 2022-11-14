@@ -35,6 +35,8 @@ export class OutgoingComponent implements OnInit {
   filteredProducts !: Observable<Product[]>;
   customer !: Array<Custamer>;
   filteredCustomer !: Observable<Custamer[]>;
+
+  productArray: Product [] = [];
   
   detailsForm = new FormGroup({
     customer: new FormControl(''),
@@ -62,9 +64,6 @@ export class OutgoingComponent implements OnInit {
   }
 
   setProduct(){
-    this.productService.loadProduct().subscribe((data: Array<Product>) => {
-      this.allProducts = data;
-    });
     this.filteredProducts = this.itemForm.controls['productNumber'].valueChanges.pipe(
       startWith(''),
       map(value => this._filterProduct(value||'')),
@@ -72,9 +71,6 @@ export class OutgoingComponent implements OnInit {
   }
 
   setCustomer(){
-    this.customerService.loadCustomer().subscribe((data: Array<Custamer>) => {
-      this.customer = data;
-    });
     this.filteredCustomer = this.detailsForm.controls['customer'].valueChanges.pipe(
       startWith(''),
       map(value => this._filterCustomer(value||'')),
@@ -87,19 +83,30 @@ export class OutgoingComponent implements OnInit {
     this.deliveryNoteService.loadDeliveryNotes().subscribe((data : Array<DeliveryNote>) => {
       if(data){
         this.deliveryNotes = data.filter(deliveryNote => new Date(deliveryNote.date) > date);
-        console.log("aktuális honapban: "+this.deliveryNotes);
         this.generateDeliveryNoteNumber();
         }
     })
     }
 
-  private _filterProduct(value: string): Product[] {
-    const filterValue = value.toLowerCase();
-    return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) || product.name.toLowerCase().includes(filterValue));
+  private _filterProduct(value: string) {
+    if(value.length == 2){
+      this.searchProduct(value);
+    }
+    if(value.length >=3){
+      const filterValue = value.toLowerCase();
+      return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) );
+    }
+    return [];
   }
   private _filterCustomer(value: string) {
-    const filterValue = value.toLowerCase();
-    return this.customer.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
+    if(value.length == 2){
+      this.searchCustomer(value);
+    }
+    if(value.length >=3){
+      const filterValue = value.toLowerCase();
+      return this.customer.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
+    }
+    return [];
   }
 
   generateDeliveryNoteNumber(){
@@ -116,24 +123,29 @@ export class OutgoingComponent implements OnInit {
   }
 
   addItem(){
-    if(this.itemForm.value.productNumber && this.itemForm.value.amount && this.getProduct(this.itemForm.value.productNumber)){
-      this.isItem = true;
-      this.itemNumber += 1;
-      let item : Item = ({
-        number: this.itemNumber.toString(),
-        productNumber: this.itemForm.value.productNumber,
-        price: this.getProduct( this.itemForm.value.productNumber).price,
-        amount: this.itemForm.value.amount
-      });
-      this.checkStock(item.productNumber, this.itemForm.value.amount);
-      this.itemArray.push(item);
-      this.calculateSumValue(item,true);
-      this.itemForm.reset();
-      if(this.itemNumber > 1){
-        this.table.renderRows();
+    if(this.itemForm.value.productNumber && this.itemForm.value.amount ){
+      let product = this.getProduct(this.itemForm.value.productNumber);
+      console.log(product);
+      if(product){
+        this.isItem = true;
+        this.itemNumber += 1;
+        let item : Item = ({
+          number: this.itemNumber.toString(),
+          productNumber: this.itemForm.value.productNumber,
+          price: product.price,
+          amount: this.itemForm.value.amount
+        });
+        this.checkStock(product, this.itemForm.value.amount);
+        this.itemArray.push(item);
+        this.addProductArray(product, this.itemForm.value.amount);
+        this.calculateSumValue(item,true);
+        this.itemForm.reset();
+        if(this.itemNumber > 1){
+          this.table.renderRows();
+        }
       }
     }
-  }
+}
 
   getProduct(productNumber: string): any{
     let product:Product|null = null;
@@ -145,10 +157,23 @@ export class OutgoingComponent implements OnInit {
     return product;
   }
 
-  checkStock(productNumber: string, amount: string){
-    this.getProduct(productNumber).stock = (+this.formatNumber(this.getProduct(productNumber).stock) - +amount).toString();
-    if(+this.getProduct(productNumber).stock < 0){
-      this.invalidStock.push(productNumber);
+  checkStock(product: Product, amount: string){
+    product.stock = (+this.formatNumber(product.stock) - +amount).toString();
+    if(+product.stock < 0){
+      this.invalidStock.push(product.number);
+    }
+  }
+
+  addProductArray(product: Product, amount: string){
+    let isInArray = false;
+    this.productArray.forEach(value =>{
+      if(value.number === product.number){
+        isInArray = true;
+        value.stock = (+value.stock - +amount ).toString();
+      }
+    })
+    if(!isInArray){
+      this.productArray.push(product);
     }
   }
 
@@ -197,10 +222,14 @@ export class OutgoingComponent implements OnInit {
   }
 
   refreshStock(productNumber: string, amount: String){
-    this.getProduct(productNumber).stock =(+this.getProduct(productNumber).stock + +amount).toString();
-    if(this.invalidStock.includes(productNumber) && this.getProduct(productNumber).stock >=0){
-      delete this.invalidStock[this.invalidStock.indexOf(productNumber)];
-    }
+    this.productArray.forEach(element => {
+      if(element.number === productNumber){
+        element.stock =(+element.stock + +amount).toString();
+        if(this.invalidStock.includes(element.number) && +element.stock >=0){
+          delete this.invalidStock[this.invalidStock.indexOf(element.number)];
+        }
+      }
+    });
   }
 
   formatNumber(number: string): string{
@@ -223,8 +252,7 @@ export class OutgoingComponent implements OnInit {
       };
       this.deliveryNoteService.create(deliveryNote).then(_=>{
         //TODO: Products db módosítása
-        this.itemArray.forEach(item => {
-          let product = this.getProduct(item.productNumber);
+        this.productArray.forEach(product => {
           this.productService.setProduct(product);
         });
         this.router.navigate(['home/deliveryNote', deliveryNote.id]);
@@ -243,4 +271,48 @@ export class OutgoingComponent implements OnInit {
     });
     return id;
   }
+
+
+  searchCustomer(start: string){
+      start = start.toUpperCase();
+      let end = start.slice(0,start.length-1);
+      let lastChar = start.slice(start.length-1);
+      let charCode = lastChar.charCodeAt(0);
+      if(charCode>89 || charCode == 57){
+        this.customerService.getBySearchNameStartWith(start).subscribe((data:Array<Custamer>)=>{
+          this.customer = data;
+        })
+        return;
+      } else if (charCode<89){
+        charCode +=  1;
+        lastChar = String.fromCharCode(charCode);
+        
+        end += lastChar;
+        this.customerService.getBySearchNameBetween(start,end).subscribe((data: Array<Custamer>) => {
+          console.log(data);
+          this.customer = data;
+        })
+      }
+    }
+    searchProduct(start: string){
+        start = start.toUpperCase();
+        let end = start.slice(0,start.length-1);
+        let lastChar = start.slice(start.length-1);
+        let charCode = lastChar.charCodeAt(0);
+        if(charCode>89 || charCode == 57){
+          this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
+            this.allProducts = data;
+          })
+          return;
+        } else if (charCode<89){
+          charCode +=  1;
+          lastChar = String.fromCharCode(charCode);
+          
+          end += lastChar;
+          this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
+            console.log(data);
+            this.allProducts = data;
+          })
+        }
+      }
 }

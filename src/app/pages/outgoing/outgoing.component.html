@@ -1,4 +1,4 @@
-<div class="main_component" *ngIf="customer && allProducts">
+<div class="main_component">
     <h1>Árúkisérő (kimenő)</h1>
     <h1>{{deliveryNoteNumber}}</h1>
     <div class="div-flex">
@@ -42,7 +42,7 @@
                     [matAutocomplete]="autos">
                 <mat-autocomplete #autos="matAutocomplete" appearance="fill">
                     <mat-option *ngFor="let option of filteredProducts | async" [value]="option.number">
-                        {{option.number}} - {{ option.name }}
+                        {{option.number}}
                     </mat-option>
                 </mat-autocomplete>
              </mat-form-field>

@@ -11,20 +11,7 @@ import { ProductService } from 'src/app/shared/services/products.service';
 })
 export class DbLoaderComponent implements OnInit {
 
-  products: Product[] =[
-    {
-        "number": "9999",
-        "name": "Kupon",
-        "stock": "-10.00",
-        "unit": "fm",
-        "price": "1850.22",
-        "id": "1",
-        "materialComposition": "",
-        "grammWeight": "0.00",
-        "origin": "",
-        "vtsz": "",
-        "incomingPrice": "1800.00"
-    },
+  products: Product[] = [
     {
         "number": "0AJ/001-01",
         "name": "PERUGIA",

@@ -3,6 +3,8 @@ import { ProductService } from 'src/app/shared/services/products.service';
 import { Product } from '../../shared/models/Product';
 import { Unit } from "../../shared/models/Unit";
 import { FormControl, FormGroup } from '@angular/forms'
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
 
 @Component({
   selector: 'app-products',
@@ -56,4 +58,3 @@ export class ProductsComponent implements OnInit {
     }
     }
   }
-

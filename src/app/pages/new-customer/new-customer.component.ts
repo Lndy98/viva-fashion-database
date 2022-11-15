@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms'
+import { Router } from '@angular/router';
 import { Custamer } from 'src/app/shared/models/Custamer';
 import { CustomersService } from 'src/app/shared/services/customers.service';
 import { v4 as uuidv4 } from 'uuid';
@@ -25,7 +26,7 @@ export class NewCustomerComponent implements OnInit {
     comment: new FormControl()
   });
 
-  constructor(private customerService: CustomersService) { }
+  constructor(private router: Router, private customerService: CustomersService) { }
 
   ngOnInit(): void {
   }
@@ -35,7 +36,7 @@ export class NewCustomerComponent implements OnInit {
     this.customerService.getByName(this.customer.companyName).subscribe(data =>{
       if(data.length > 0){}else{
         this.customerService.create(this.customer);
-        this.cancel();
+        this.router.navigate(['create/newcustomer']);
       }
     })
   }

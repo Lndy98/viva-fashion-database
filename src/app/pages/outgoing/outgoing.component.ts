@@ -83,16 +83,17 @@ export class OutgoingComponent implements OnInit {
     this.deliveryNoteService.loadDeliveryNotes().subscribe((data : Array<DeliveryNote>) => {
       if(data){
         this.deliveryNotes = data.filter(deliveryNote => new Date(deliveryNote.date) > date);
+        console.log("aktuális honapban: "+this.deliveryNotes);
         this.generateDeliveryNoteNumber();
         }
     })
     }
 
   private _filterProduct(value: string) {
-    if(value.length == 2){
+    if(value.length == 2 || value.length >2 && !this.allProducts){
       this.searchProduct(value);
     }
-    if(value.length >=3){
+    if(value.length >=3 && this.allProducts){
       const filterValue = value.toLowerCase();
       return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) );
     }

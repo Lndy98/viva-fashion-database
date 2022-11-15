@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms'
+import { Router } from '@angular/router';
 import { Product } from 'src/app/shared/models/Product';
 import { ProductService } from 'src/app/shared/services/products.service';
 import { v4 as uuidv4 } from 'uuid';
@@ -28,7 +29,7 @@ export class NewProductComponent implements OnInit {
 
   text : string = ""
 
-  constructor(private productService: ProductService) { }
+  constructor(private router: Router,private productService: ProductService) { }
 
   ngOnInit(): void {
   }
@@ -38,9 +39,8 @@ export class NewProductComponent implements OnInit {
     this.productService.getByNumber(this.product.number).subscribe(data => {
       console.log(data);
       if(data.length != 0){
-        this.text = "Sikertelen árúcikk felvétel!"
       } else {
-        window.location.reload();
+        this.router.navigate(['create/newproduct']);
         this.productService.create(this.product);
       }
     })

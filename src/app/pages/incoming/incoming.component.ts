@@ -7,6 +7,7 @@ import { Product } from 'src/app/shared/models/Product';
 import { ProductService } from 'src/app/shared/services/products.service';
 import { Item } from 'src/app/shared/models/Item';
 import {MatTable} from '@angular/material/table';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-incoming',
@@ -33,7 +34,7 @@ export class IncomingComponent implements OnInit {
   });
 
 
-  constructor(private productService: ProductService) { }
+  constructor(private router: Router, private productService: ProductService) { }
 
   ngOnInit(): void {
     this.setProduct();
@@ -47,10 +48,10 @@ export class IncomingComponent implements OnInit {
   }
 
   private _filterProduct(value: string): Product[] {
-    if(value.length == 2){
+    if(value.length == 2|| value.length >2 && !this.allProducts){
       this.searchProduct(value);
     }
-    if(value.length >=3){
+    if(value.length >=3 && this.allProducts){
       const filterValue = value.toLowerCase();
       return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) );
     }
@@ -125,17 +126,19 @@ export class IncomingComponent implements OnInit {
     this.calculateStock();
     this.incomingProduct.forEach((element:Product, key:string) => {
       this.productService.setProduct(element).then(_=>{
+        console.log(element);
       }).catch(error=>{
         console.error(error);
       });
     });
-    window.location.reload();
+    this.router.navigate(['create/incoming']);
   }
   calculateStock(){
     this.items.forEach(element =>{
       let product = this.getIncomingProducts(element.number);
       product.stock = (+product.stock + +element.amount).toString();
       this.incomingProduct.set(element.number, product);
+      console.log(this.incomingProduct);
     })
   }
 

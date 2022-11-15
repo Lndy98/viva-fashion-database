@@ -2,7 +2,7 @@
     <h1>Árú felvétel</h1>
 <form [formGroup]="itemForm"  (ngSubmit)="addItem()">
     <mat-form-field appearance="fill" [color]="'accent'">
-        <mat-label for="productNumber" >Cikkszám</mat-label>
+        <mat-label for="productNumber" >Cikkszám*</mat-label>
         <input type="text"
             matInput
             formControlName="productNumber"
@@ -14,7 +14,7 @@
         </mat-autocomplete>
      </mat-form-field>
     <mat-form-field appearance="fill" [color]="'accent'">
-        <mat-label for="amount" >Mennyiség</mat-label>
+        <mat-label for="amount" >Mennyiség*</mat-label>
         <input type="number" OnlyNumber="true" formControlName="amount" matInput>
     </mat-form-field>
     <mat-form-field appearance="fill" [color]="'accent'">

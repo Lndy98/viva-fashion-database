@@ -9,7 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms'
   styleUrls: ['./customer.component.scss']
 })
 export class CustomerComponent implements OnInit {
-  customers:Array<Custamer> = [];
+  customers!:Array<Custamer>;
   displayedColumns: string[] = ['companyName', 'address', 'taxnumber','accountNumber', 'type', 'comment'];
 
   detailsForm = new FormGroup({

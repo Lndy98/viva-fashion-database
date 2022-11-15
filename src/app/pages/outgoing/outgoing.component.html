@@ -68,14 +68,23 @@
         <td mat-cell *matCellDef="let element"> {{element.productNumber}} </td>
         <td mat-footer-cell *matFooterCellDef> </td>
     </ng-container>
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Megnevezés </th>
+        <td mat-cell *matCellDef="let element"> {{element.productName}} </td>
+        <td mat-footer-cell *matFooterCellDef> </td>
+    </ng-container>
     <ng-container matColumnDef="amount">
         <th mat-header-cell *matHeaderCellDef> mennyiség </th>
         <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
         <td mat-footer-cell *matFooterCellDef> {{ sumAmount }} </td>  
     </ng-container>
     <ng-container matColumnDef="price">
-        <th mat-header-cell *matHeaderCellDef> Ár</th>
-        <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+        <th mat-header-cell *matHeaderCellDef> Ár </th>
+        <td mat-cell *matCellDef="let element">  
+            <mat-form-field class="example-full-width" appearance="fill">
+            <input matInput type="text" [(ngModel)]="element.price">
+            </mat-form-field> 
+        </td>
         <td mat-footer-cell *matFooterCellDef> </td>
     </ng-container>
     <ng-container matColumnDef="payable">

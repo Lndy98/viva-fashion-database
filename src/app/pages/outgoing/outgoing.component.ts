@@ -25,7 +25,7 @@ export class OutgoingComponent implements OnInit {
   itemNumber: number = 0;
   
   itemArray: Item [] = [];
-  displayedColumns: string[] = ['id','productNumber', 'amount', 'price', 'payable', 'remove'];
+  displayedColumns: string[] = ['id','productNumber','name', 'amount', 'price','payable', 'remove'];
   invalidStock : string[] = [];
   sumAmount : number = 0;
   sumPrice : number = 0; 
@@ -133,6 +133,7 @@ export class OutgoingComponent implements OnInit {
         let item : Item = ({
           number: this.itemNumber.toString(),
           productNumber: this.itemForm.value.productNumber,
+          productName: product.name,
           price: product.price,
           amount: this.itemForm.value.amount
         });

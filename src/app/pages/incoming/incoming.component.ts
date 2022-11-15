@@ -65,6 +65,7 @@ export class IncomingComponent implements OnInit {
       let item : Item ={
         number: this.itemNumber.toString(),
         productNumber: this.itemForm.value.productNumber,
+        productName: "",
         amount: this.itemForm.value.amount.toString(),
         price: ""
       }

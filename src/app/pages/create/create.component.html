@@ -1,26 +1,34 @@
 <nav mat-tab-nav-bar>
     <a mat-tab-link
     routerLink="./outgoing"
-    routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
+    routerLinkActive
+     #rla="routerLinkActive"
+     mat-tab-link
+     [active]="rla.isActive">
     Kimenő
   </a>
     <a mat-tab-link
     routerLink= "./incoming"
-    routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
+    routerLinkActive
+     #rla="routerLinkActive"
+     mat-tab-link
+     [active]="rla.isActive">
     Bejövő
   </a>
   <a mat-tab-link
   routerLink= "./newproduct"
-  routerLinkActive #rla="routerLinkActive"
-  [active]="rla.isActive">
+  routerLinkActive
+     #rla="routerLinkActive"
+     mat-tab-link
+     [active]="rla.isActive">
   Új árucikk
   </a>
   <a mat-tab-link
   routerLink= "./newcustomer"
-  routerLinkActive #rla="routerLinkActive"
-  [active]="rla.isActive">
+  routerLinkActive
+     #rla="routerLinkActive"
+     mat-tab-link
+     [active]="rla.isActive">
   Új partner
   </a>
 </nav> 

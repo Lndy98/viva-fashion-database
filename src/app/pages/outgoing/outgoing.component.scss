@@ -34,6 +34,10 @@
 table {
   width: 100%;
 }
+.mat-header-cell, .mat-cell, .mat-footer-row {
+  justify-content: center; 
+  text-align: center;
+}
 tr.mat-footer-row {
   font-weight: bold;
 }

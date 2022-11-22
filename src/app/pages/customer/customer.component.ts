@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Custamer } from 'src/app/shared/models/Custamer';
 import { CustomersService } from 'src/app/shared/services/customers.service';
 import { FormControl, FormGroup } from '@angular/forms'
+import { Util } from 'src/app/shared/interfaces/Util';
 
 @Component({
   selector: 'app-customer',
   templateUrl: './customer.component.html',
-  styleUrls: ['./customer.component.scss']
+  styleUrls: ['./customer.component.scss'],
+  providers: [Util]
 })
 export class CustomerComponent implements OnInit {
   customers!:Array<Custamer>;
@@ -16,33 +18,25 @@ export class CustomerComponent implements OnInit {
     companyName: new FormControl('')
   });
 
-  constructor(private customerService: CustomersService) { }
+  constructor(private customerService: CustomersService, private util: Util) { }
 
   ngOnInit(): void {
   }
 
   search(){
-    if(this.detailsForm.value.companyName && this.detailsForm.value.companyName.length >= 3){
+    if(this.detailsForm.value.companyName){
       let start = this.detailsForm.value.companyName.toUpperCase();
-      let end = start.slice(0,start.length-1);
-      let lastChar = start.slice(start.length-1);
-      let charCode = lastChar.charCodeAt(0);
-      if(charCode>89 || charCode == 57){
+      let end = this.util.endPartOfSearch(this.detailsForm.value.companyName);
+      if(end == ''){
         this.customerService.getBySearchNameStartWith(start).subscribe((data:Array<Custamer>)=>{
-          this.customers = data;
-        })
-        return;
-      } else if (charCode<89){
-        charCode +=  1;
-        lastChar = String.fromCharCode(charCode);
-        
-        end += lastChar;
+          this.customers =  data;
+          }) 
+    } else {
+        let end = this.util.endPartOfSearch(start);
         this.customerService.getBySearchNameBetween(start,end).subscribe((data: Array<Custamer>) => {
-          console.log(data);
-          this.customers = data;
+            this.customers =  data;
         })
-      }
+     }
     }
-    }
-
+  }
 }

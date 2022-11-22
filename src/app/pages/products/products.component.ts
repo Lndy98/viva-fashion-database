@@ -3,13 +3,13 @@ import { ProductService } from 'src/app/shared/services/products.service';
 import { Product } from '../../shared/models/Product';
 import { Unit } from "../../shared/models/Unit";
 import { FormControl, FormGroup } from '@angular/forms'
-import {Observable} from 'rxjs';
-import {map, startWith} from 'rxjs/operators';
+import { Util } from 'src/app/shared/interfaces/Util';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+  styleUrls: ['./products.component.scss'],
+  providers: [Util]
 })
 export class ProductsComponent implements OnInit {
  
@@ -20,41 +20,31 @@ export class ProductsComponent implements OnInit {
   public Unit = Unit;
   products !: Array<Product>;
 
-  productsDisplayedColumns: string[] = ['number', 'name', 'materialComposition', 'stock', 'unit', 'price', 'incomingPrice', 'stockValue'];
+  productsDisplayedColumns: string[] = ['number', 'name', 'materialComposition', 'stock', 'price', 'incomingPrice', 'stockValue', 'save'];
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private util: Util) { }
 
   ngOnInit(): void {
   }
 
-  setProduct(){
-    this.productService.loadXProduct().subscribe((data: Array<Product>) => {
-      console.log(data);
-      this.products = data;
-    })
-  }
-
   search(){
-    if(this.detailsForm.value.prductNumber && this.detailsForm.value.prductNumber.length >= 3){
+    if(this.detailsForm.value.prductNumber){
       let start = this.detailsForm.value.prductNumber.toUpperCase();
-      let end = start.slice(0,start.length-1);
-      let lastChar = start.slice(start.length-1);
-      let charCode = lastChar.charCodeAt(0);
-      if(charCode>89 || charCode == 57){
-        this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
-          this.products = data;
-        })
-        return;
-      } else if (charCode<89){
-        charCode +=  1;
-        lastChar = String.fromCharCode(charCode);
-        
-        end += lastChar;
-        this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
-          console.log(data);
-          this.products = data;
-        })
-      }
-    }
+      let end = this.util.endPartOfSearch(start); 
+        if(end == ''){
+          this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
+            this.products = data;
+          })
+        } else {
+          this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
+            this.products = data;
+          })
+         }
     }
   }
+  save(element: Product){
+    if(element.price && element.incomingPrice){
+      this.productService.setProduct(element);
+    }
+  }
+}

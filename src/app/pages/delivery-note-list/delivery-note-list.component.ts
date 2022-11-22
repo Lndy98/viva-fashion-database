@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
+import { FormControl, FormGroup } from '@angular/forms'
 
 @Component({
   selector: 'app-delivery-note-list',
@@ -11,6 +12,12 @@ import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.ser
 export class DeliveryNoteListComponent implements OnInit {
   deliveryNotes:Array<DeliveryNote> = [];
   displayedColumns: string[] = ['number', 'date', 'custamer'];
+
+  detailsForm = new FormGroup({
+    productNumber: new FormControl(''),
+    customer: new FormControl(''),
+    date: new FormControl('')
+  });
 
   constructor(private router: Router, private deliveryNotesService: DeliveryNotesService) { }
   ngOnInit(): void {
@@ -26,5 +33,18 @@ export class DeliveryNoteListComponent implements OnInit {
   goToProductDetails(id: string) {
     this.router.navigate(['home/deliveryNote', id]);
   }
-
+  search(){
+    if(this.detailsForm.value.date && !this.detailsForm.value.customer && !this.detailsForm.value.productNumber){
+      this.deliveryNotesService.getByDate(new Date(this.detailsForm.value.date)).subscribe(data =>{
+        if(data){
+          this.deliveryNotes = data;
+        }
+      });
+    }
+    if(this.detailsForm.value.productNumber){
+      this.deliveryNotesService.getByProduct(this.detailsForm.value.productNumber).subscribe(data =>{
+        this.deliveryNotes = data;
+      })
+    }
+  }
 }

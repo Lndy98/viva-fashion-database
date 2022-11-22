@@ -23,16 +23,13 @@ export class DeliveryNotesService {
     return this.afs.collection<DeliveryNote>(this.collectionName).doc(id).valueChanges();
   }
   getByDate(date: Date){
-    this.loadDeliveryNotes().subscribe((data: Array<DeliveryNote>) => {
-      return data.filter(deliveryNote => new Date(deliveryNote.date) > date);
-    })
-    return new Array<DeliveryNote>;
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '>=', date.toString())).valueChanges();;
   }
-  getActualMonthSize(){
-    let now = new Date();
-    let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
-    let deliveryNotes = this.getByDate(date);
-    return deliveryNotes.length;
+  getByCustomer(customer: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('customerId', '==', customer)).valueChanges();;
   }
-  
+  getByProduct(productNumber: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('products.productNumber', '==', productNumber)).valueChanges();;
+  }
+
 }

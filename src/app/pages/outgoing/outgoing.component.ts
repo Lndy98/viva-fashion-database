@@ -5,46 +5,49 @@ import { Product } from '../../shared/models/Product';
 import { DeliveryNote } from '../../shared/models/DeliveryNote';
 import { Custamer } from '../../shared/models/Custamer';
 import { Item } from 'src/app/shared/models/Item';
+import { Util } from 'src/app/shared/interfaces/Util';
+
 import {MatTable} from '@angular/material/table';
 import { v4 as uuidv4 } from 'uuid';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
 import { CustomersService } from 'src/app/shared/services/customers.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
+import * as _moment from 'moment';
+const moment = _moment; 
+
 @Component({
   selector: 'app-outgoing',
   templateUrl: './outgoing.component.html',
-  styleUrls: ['./outgoing.component.scss']
+  styleUrls: ['./outgoing.component.scss'],
+  providers: [Util]
 })
 export class OutgoingComponent implements OnInit {
 
   isItem: boolean = false;
-  itemNumber: number = 0;
-  
+  itemNumber: number = 0;  
   itemArray: Item [] = [];
+
   displayedColumns: string[] = ['id','productNumber','name', 'amount', 'price','payable', 'remove'];
   invalidStock : string[] = [];
-  sumAmount : number = 0;
-  sumPrice : number = 0; 
 
-
-  allProducts !: Array<Product>;
+  products !: Array<Product>;
+  customers !: Array<Custamer>;
   filteredProducts !: Observable<Product[]>;
-  customer !: Array<Custamer>;
   filteredCustomer !: Observable<Custamer[]>;
 
-  productArray: Product [] = [];
+  selectedProducts: Product [] = [];
   
   detailsForm = new FormGroup({
     customer: new FormControl(''),
     tax: new FormControl(''),
-    date: new FormControl(new Date())
+    date: new FormControl(moment(new Date))
   });
 
-  deliveryNoteNumber!: string;
+  deliveryNote!: DeliveryNote;
   itemForm =  new FormGroup({
     productNumber: new FormControl(''),
     amount: new FormControl('')
@@ -54,14 +57,60 @@ export class OutgoingComponent implements OnInit {
   
   @ViewChild (MatTable) table !: MatTable<Item>;
 
-  constructor(private router: Router, private productService: ProductService,
-      private deliveryNoteService: DeliveryNotesService, private customerService: CustomersService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private productService: ProductService,
+      private deliveryNoteService: DeliveryNotesService, private customerService: CustomersService, public util: Util) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe(params => {
+      if(params['id']){
+        this.getDeliveryNote(params['id']);
+      } else {
+        this.setDeliveryNote();
+      }
+   });
     this.setCustomer();
     this.setProduct();
-    this.setDeliveryNote();
+    console.log(this.selectedProducts);
   }
+  getDeliveryNote(id: string){
+    this.deliveryNoteService.getById(id).subscribe(data =>{
+      if(data){
+        this.deliveryNote = data;
+        this.itemArray = data.products;
+        this.isItem = true;
+        this.itemNumber = this.itemArray.length;
+
+        this.detailsForm.get('customer')?.setValue(this.deliveryNote.customerId);
+        this.detailsForm.get('tax')?.setValue(this.util.getTaxToString(this.deliveryNote.tax));
+        this.detailsForm.get('date')?.setValue(moment(new Date(this.deliveryNote.date)));
+      }
+    })
+  }
+  setDeliveryNote(){
+    let now = new Date();
+    let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
+    let number = "";
+    this.deliveryNoteService.getByDate(date).subscribe((data : Array<DeliveryNote>) => {
+      if(data){
+       this.deliveryNote= {
+          id: uuidv4(),
+          number: number,
+          date: this.generateDeliveryNoteNumber((data.length+1).toString()),
+          customerId: "",
+          products: [],
+          tax: this.util.getTaxFromStrign(this.detailsForm.value.tax).toString(),
+        };
+        }
+    })
+    }
+
+    generateDeliveryNoteNumber(number: string){
+      let now = new Date();
+      while(number.length<4){
+        number = "0"+number;
+      }
+      return  now.getFullYear()+"-"+ (now.getMonth()+1)+"-"+number;
+    }
 
   setProduct(){
     this.filteredProducts = this.itemForm.controls['productNumber'].valueChanges.pipe(
@@ -76,82 +125,103 @@ export class OutgoingComponent implements OnInit {
       map(value => this._filterCustomer(value||'')),
     );
   }
-
-  setDeliveryNote(){
-    let now = new Date();
-    let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
-    this.deliveryNoteService.loadDeliveryNotes().subscribe((data : Array<DeliveryNote>) => {
-      if(data){
-        this.deliveryNotes = data.filter(deliveryNote => new Date(deliveryNote.date) > date);
-        console.log("aktuális honapban: "+this.deliveryNotes);
-        this.generateDeliveryNoteNumber();
-        }
-    })
+  _filterProduct(value: string) {
+    if(value.length === 0){
+        this.products = [];
     }
-
-  private _filterProduct(value: string) {
-    if(value.length == 2 || value.length >2 && !this.allProducts){
-      this.searchProduct(value);
+    if(value.length === 2 || value.length > 2 && !this.products){
+       this.searchProduct(value);
     }
-    if(value.length >=3 && this.allProducts){
+    if(value.length >=3 && this.products){
       const filterValue = value.toLowerCase();
-      return this.allProducts.filter(product => product.number.toLowerCase().includes(filterValue) );
+      return this.products.filter(product => product.number.toLowerCase().includes(filterValue) );
     }
     return [];
   }
-  private _filterCustomer(value: string) {
-    if(value.length == 2){
-      this.searchCustomer(value);
+  _filterCustomer(value: string) {
+    if(value.length === 0 || value.length === 1){
+        this.customers = [];
+    }
+    if(value.length == 2 ){
+        this.searchCustomer(value);
     }
     if(value.length >=3){
       const filterValue = value.toLowerCase();
-      return this.customer.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
+      return this.customers.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
     }
     return [];
   }
 
-  generateDeliveryNoteNumber(){
-    const now = new Date();
-    let i = 1;
-    this.deliveryNotes.forEach(_ =>{
-      i += 1;
-    })
-    let number = i.toString();
-    while(number.toString().length<4){
-      number = "0"+number;
+  searchProduct(start: string){
+    start = start.toUpperCase();
+    let end = this.util.endPartOfSearch(start); 
+    if(end == ''){
+        this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
+          this.products = data;
+          })
+    } else {
+        this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
+          this.products = data;
+          })
+     }
     }
-    this.deliveryNoteNumber = now.getFullYear()+"-"+ (now.getMonth()+1)+"-"+number;
-  }
+
+    
+  searchCustomer(start: string){
+      start = start.toUpperCase();
+      let end = this.util.endPartOfSearch(start);
+      if(end == ''){
+        this.customerService.getBySearchNameStartWith(start).subscribe((data:Array<Custamer>)=>{
+          this.customers =  data;
+          }) 
+    } else {
+        let end = this.util.endPartOfSearch(start);
+        this.customerService.getBySearchNameBetween(start,end).subscribe((data: Array<Custamer>) => {
+            this.customers =  data;
+        })
+     }
+ }
+
+  
 
   addItem(){
     if(this.itemForm.value.productNumber && this.itemForm.value.amount ){
       let product = this.getProduct(this.itemForm.value.productNumber);
-      console.log(product);
+      let amount = this.itemForm.value.amount;
       if(product){
         this.isItem = true;
-        this.itemNumber += 1;
+        let i = this.isInItemArray(this.itemForm.value.productNumber);
+        if(i){
+          this.itemArray.forEach(element => {
+            console.log(element.number == this.itemForm.value.productNumber)
+            if(element.productNumber == this.itemForm.value.productNumber){
+              console.log(element);
+              element.amount = (+element.amount + amount).toString();
+            }
+          });
+        } else{
+          this.itemNumber += 1;
         let item : Item = ({
           number: this.itemNumber.toString(),
           productNumber: this.itemForm.value.productNumber,
           productName: product.name,
           price: product.price,
-          amount: this.itemForm.value.amount
+          amount: amount
         });
-        this.checkStock(product, this.itemForm.value.amount);
         this.itemArray.push(item);
-        this.addProductArray(product, this.itemForm.value.amount);
-        this.calculateSumValue(item,true);
+        this.selectedProducts.push(product);
+        }
         this.itemForm.reset();
         if(this.itemNumber > 1){
           this.table.renderRows();
         }
       }
     }
-}
+  }
 
   getProduct(productNumber: string): any{
     let product:Product|null = null;
-    this.allProducts.forEach(element => {
+    this.products.forEach(element => {
       if(element.number == productNumber){
         product = element;
       }
@@ -159,45 +229,23 @@ export class OutgoingComponent implements OnInit {
     return product;
   }
 
+  isInItemArray(productNumber: string){
+    let item : Item|null = null
+    this.itemArray.forEach(element =>{
+      if(element.productNumber = productNumber){
+        item = element;
+      }
+    })
+    return item;
+  }
+
   checkStock(product: Product, amount: string){
-    product.stock = (+this.formatNumber(product.stock) - +amount).toString();
+    product.stock = (+this.util.formatNumber(product.stock) - +amount).toString();
     if(+product.stock < 0){
       this.invalidStock.push(product.number);
     }
   }
-
-  addProductArray(product: Product, amount: string){
-    let isInArray = false;
-    this.productArray.forEach(value =>{
-      if(value.number === product.number){
-        isInArray = true;
-        value.stock = (+value.stock - +amount ).toString();
-      }
-    })
-    if(!isInArray){
-      this.productArray.push(product);
-    }
-  }
-
-  getTax() : number{
-    switch(this.detailsForm.value.tax){
-      case 'zero': 
-        return 0;
-      case 'half':
-        return 13.5;
-    }
-    return 27;
   
-  }
-  getPayable(price: string, amount: string): any{
-    let tax = (this.getTax()/100)+1
-    return this.formatNumber(((+amount)*(+price)*tax).toString());
-  }
-  getSumPayable(): any{
-    let tax = (this.getTax()/100)+1
-    return this.formatNumber((this.sumPrice*tax).toString());
-  }
-
   removeElement(item: Item){
     const index = this.itemArray.indexOf(item);
     if (index !== -1) {
@@ -209,112 +257,55 @@ export class OutgoingComponent implements OnInit {
     } else {
       this.isItem = false;
     }
-    this.calculateSumValue(item, false);
-    this.refreshStock(item.productNumber, item.amount);
   }
 
-  calculateSumValue(item: Item, isAdding: boolean){
-    if(isAdding){
-      this.sumAmount = this.sumAmount + (+item.amount);
-      this.sumPrice = this.sumPrice + ((+item.price)*(+item.amount));
-    }else{
-      this.sumAmount = this.sumAmount - (+item.amount);
-      this.sumPrice = this.sumPrice - ((+item.price)*(+item.amount));
-    }
+  calculateSumAmount(): number{
+    let sum = 0;
+    this.itemArray.forEach(item =>{
+      sum += +item.amount;
+    })
+    return sum;
+  }
+  calculateSumPrice(): number{
+    let sum = 0;
+    this.itemArray.forEach(item =>{
+      sum += +item.amount*+item.price;
+    })
+    return sum;
   }
 
-  refreshStock(productNumber: string, amount: String){
-    this.productArray.forEach(element => {
-      if(element.number === productNumber){
-        element.stock =(+element.stock + +amount).toString();
-        if(this.invalidStock.includes(element.number) && +element.stock >=0){
-          delete this.invalidStock[this.invalidStock.indexOf(element.number)];
-        }
-      }
-    });
-  }
 
-  formatNumber(number: string): string{
-    let num = +number.replace(",",".");
-    return ((Math.round(num * 100) / 100).toFixed(2)).toString();
-  }
-
-  cancel(){
-    window.location.reload();
-  }
   save(){
-    if(this.detailsForm.value.date && this.detailsForm.value.customer){
-      let deliveryNote : DeliveryNote = {
-        id: uuidv4(),
-        number: this.deliveryNoteNumber,
-        date: this.detailsForm.value.date.toString(),
-        customerId: this.detailsForm.value.customer,
-        products: this.itemArray,
-        tax: this.getTax().toString(),
-      };
-      this.deliveryNoteService.create(deliveryNote).then(_=>{
-        //TODO: Products db módosítása
-        this.productArray.forEach(product => {
+    if(this.detailsForm.value.date && this.detailsForm.value.customer ){
+      this.deliveryNote.tax = this.util.getTaxFromStrign(this.detailsForm.value.tax).toString();
+      this.deliveryNote.customerId = this.detailsForm.value.customer;
+      this.deliveryNote.date = this.detailsForm.value.date.toString();
+      this.deliveryNote.products = this.itemArray;
+      
+      this.calculateProductStock();
+      this.deliveryNoteService.create(this.deliveryNote).then(_=>{
+        this.selectedProducts.forEach(product => {
           this.productService.setProduct(product);
         });
-        this.router.navigate(['home/deliveryNote', deliveryNote.id]);
+        this.router.navigate(['home/deliveryNote', this.deliveryNote.id]);
       }).catch(error=>{
         console.error(error);
       });
     } 
   }
 
-  getCustomerId(){
-    let id = "";
-    this.customer.forEach(element => {
-      if(element.companyName == this.detailsForm.value.customer){
-        id = element.id;
-      }
-    });
-    return id;
+  calculateProductStock(){
+    this.itemArray.forEach(item =>{
+      this.selectedProducts.forEach(product =>{
+        if(product.number == item.productNumber){
+          product.stock = (+product.stock - +item.amount).toString();
+          product.price = item.price;
+        }
+      })
+    })
   }
 
-
-  searchCustomer(start: string){
-      start = start.toUpperCase();
-      let end = start.slice(0,start.length-1);
-      let lastChar = start.slice(start.length-1);
-      let charCode = lastChar.charCodeAt(0);
-      if(charCode>89 || charCode == 57){
-        this.customerService.getBySearchNameStartWith(start).subscribe((data:Array<Custamer>)=>{
-          this.customer = data;
-        })
-        return;
-      } else if (charCode<89){
-        charCode +=  1;
-        lastChar = String.fromCharCode(charCode);
-        
-        end += lastChar;
-        this.customerService.getBySearchNameBetween(start,end).subscribe((data: Array<Custamer>) => {
-          console.log(data);
-          this.customer = data;
-        })
-      }
-    }
-    searchProduct(start: string){
-        start = start.toUpperCase();
-        let end = start.slice(0,start.length-1);
-        let lastChar = start.slice(start.length-1);
-        let charCode = lastChar.charCodeAt(0);
-        if(charCode>89 || charCode == 57){
-          this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
-            this.allProducts = data;
-          })
-          return;
-        } else if (charCode<89){
-          charCode +=  1;
-          lastChar = String.fromCharCode(charCode);
-          
-          end += lastChar;
-          this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
-            console.log(data);
-            this.allProducts = data;
-          })
-        }
-      }
+  cancel(){
+    window.location.reload();
+  }
 }

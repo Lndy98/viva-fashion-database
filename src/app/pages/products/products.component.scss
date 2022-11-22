@@ -1,3 +1,19 @@
 table {
-    width: 100%;
-  }
+  width:100%;
+}
+
+.mat-header-cell, .mat-cell {
+  justify-content: center; 
+  text-align: center;
+}
+mat-form-field {
+  margin-left: 2.5%;
+  margin-top: 3%;
+  padding: 2%;
+}
+.button {
+  border-left: 5%;
+  margin-left: 2.5%;
+  border: 2%;
+  width: auto;
+}

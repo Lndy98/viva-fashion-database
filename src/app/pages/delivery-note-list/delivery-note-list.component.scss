@@ -1,3 +1,20 @@
+.div-flex {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+mat-form-field {
+  margin-left: 2.5%;
+  margin-top: 3%;
+}
+.button {
+  border-left: 5%;
+  margin-left: 2.5%;
+  border: 2%;
+  width: auto;
+}
 table {
     width: 100%;
-  }
+}

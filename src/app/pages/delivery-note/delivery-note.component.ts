@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
+import { Util } from 'src/app/shared/interfaces/Util';
 import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
 import { Item } from 'src/app/shared/models/Item';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
@@ -7,22 +8,26 @@ import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.ser
 @Component({
   selector: 'app-delivery-note',
   templateUrl: './delivery-note.component.html',
-  styleUrls: ['./delivery-note.component.scss']
+  styleUrls: ['./delivery-note.component.scss'],
+  providers: [Util]
 })
 export class DeliveryNoteComponent implements OnInit {
+
+  isEditMode: boolean = false;
 
   isCallculated: boolean = false;
   sumAmount: number = 0;
   sumPrice: number = 0;
   products!: Item[];
 
-  deliveryNote !: DeliveryNote;
-  displayedColumns: string[] = ['productNumber', 'amount', 'price', 'payable'];
 
-  constructor(private route: ActivatedRoute, private deliveryNoteService: DeliveryNotesService) { }
+  deliveryNote !: DeliveryNote;
+  displayedColumns: string[] = ['productNumber','name', 'amount', 'price', 'payable'];
+
+  constructor(private activatedRoute: ActivatedRoute,private router: Router, private deliveryNoteService: DeliveryNotesService, public util: Util) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
+    this.activatedRoute.params.subscribe(params => {
       this.getDeliveryNote(params['id']);
    });
   }
@@ -39,17 +44,11 @@ export class DeliveryNoteComponent implements OnInit {
   printThisPage() {
     window.print();
   }
-  getPayable(price: string, amount: string): any{
-    let tax = (+this.deliveryNote.tax/100)+1
-    return this.formatNumber((+amount)*(+price)*tax);
+
+  edit(){
+    this.router.navigate(['create/outgoing', this.deliveryNote.id]);
   }
-  getSumPayable(): any{
-    let tax = (+this.deliveryNote.tax/100)+1
-    return this.formatNumber(this.sumPrice*tax);
-  }
-  formatNumber(number: number): string{
-    return ((Math.round(number * 100) / 100).toFixed(2)).toString();
-  }
+ 
   calculateSumValues(){
     if(!this.isCallculated){
       this.isCallculated = true;
@@ -59,5 +58,6 @@ export class DeliveryNoteComponent implements OnInit {
       });
    }
   }
+
 
 }

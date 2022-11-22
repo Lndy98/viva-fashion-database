@@ -11,7 +11,7 @@ import { ProductService } from 'src/app/shared/services/products.service';
 })
 export class DbLoaderComponent implements OnInit {
 
-  products: Product[] = [];
+  products: Product[] =[];
   productsLength: number = this.products.length;
   custamers: Custamer[] = [];
   custamersLength: number = this.custamers.length;

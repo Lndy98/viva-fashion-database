@@ -25,6 +25,10 @@ mat-form-field {
 table{
   width: 100%;
 }
+.mat-header-cell, .mat-cell, .mat-footer-row {
+  justify-content: center; 
+  text-align: center;
+}
 .buttons {
   margin: 5%;
   width: 40%;

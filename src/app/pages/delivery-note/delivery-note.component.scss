@@ -16,20 +16,25 @@ p{
 table {
   width: 100%;
 }
+.mat-header-cell, .mat-cell, .mat-footer-row {
+  justify-content: center; 
+  text-align: center;
+}
 tr.mat-footer-row {
   font-weight: bold;
 }
 
 div .sign-box{
-  margin-top: 10%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
   text-align: center;
   border-top: solid 1px;
-  padding-right: 20%;
-  padding-left: 20%;
+  margin: 5%;
+  width: 40%;
 }
 .out-sign-box{
   display: inline-flex;
   width: 100%;
+}
+button {
+  margin: 5%;
+  width: 40%;
 }

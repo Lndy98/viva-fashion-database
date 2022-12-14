@@ -1,4 +1,4 @@
-import { Custamer } from "./Custamer";
+
 import { Item } from "./Item";
 
 export interface DeliveryNote{
@@ -8,4 +8,5 @@ export interface DeliveryNote{
     customerId: string;
     products: Item[];
     tax: string;
+    type: string; //incoming or outgoing
 }

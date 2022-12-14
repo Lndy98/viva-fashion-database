@@ -15,9 +15,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-
-import * as _moment from 'moment';
-const moment = _moment; 
+import { hrtime } from 'process';
 
 @Component({
   selector: 'app-outgoing',
@@ -27,6 +25,7 @@ const moment = _moment;
 })
 export class OutgoingComponent implements OnInit {
 
+  isNew: boolean = false;
   isItem: boolean = false;
   itemNumber: number = 0;  
   itemArray: Item [] = [];
@@ -44,7 +43,7 @@ export class OutgoingComponent implements OnInit {
   detailsForm = new FormGroup({
     customer: new FormControl(''),
     tax: new FormControl(''),
-    date: new FormControl(moment(new Date))
+    date: new FormControl()
   });
 
   deliveryNote!: DeliveryNote;
@@ -65,41 +64,57 @@ export class OutgoingComponent implements OnInit {
       if(params['id']){
         this.getDeliveryNote(params['id']);
       } else {
+        this.isNew= true;
         this.setDeliveryNote();
       }
    });
     this.setCustomer();
     this.setProduct();
+    console.log("A kezdo products: ")
     console.log(this.selectedProducts);
   }
   getDeliveryNote(id: string){
-    this.deliveryNoteService.getById(id).subscribe(data =>{
-      if(data){
-        this.deliveryNote = data;
-        this.itemArray = data.products;
-        this.isItem = true;
-        this.itemNumber = this.itemArray.length;
-
-        this.detailsForm.get('customer')?.setValue(this.deliveryNote.customerId);
-        this.detailsForm.get('tax')?.setValue(this.util.getTaxToString(this.deliveryNote.tax));
-        this.detailsForm.get('date')?.setValue(moment(new Date(this.deliveryNote.date)));
-      }
-    })
+      this.deliveryNoteService.getById(id).subscribe(data =>{
+        if(data){
+          this.deliveryNote = data;
+          
+          this.itemArray = this.deliveryNote.products;
+          this.isItem = true;
+          this.itemNumber = this.itemArray.length;
+  
+          this.itemArray.forEach( item =>{
+            this.productService.getByNumber(item.productNumber).subscribe(product =>{
+              if(product){
+                let pr = product[0];
+                pr.stock = (+pr.stock + +item.amount).toString()
+                this.selectedProducts.push(pr);
+              }
+            })
+          })
+  
+          this.detailsForm.get('customer')?.setValue(this.deliveryNote.customerId);
+          this.detailsForm.get('tax')?.setValue(this.util.getTaxToString(this.deliveryNote.tax));
+          this.detailsForm.get('date')?.setValue(new Date(this.deliveryNote.date));
+        }
+      })
+    
   }
   setDeliveryNote(){
     let now = new Date();
     let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
-    let number = "";
+    
     this.deliveryNoteService.getByDate(date).subscribe((data : Array<DeliveryNote>) => {
       if(data){
        this.deliveryNote= {
           id: uuidv4(),
-          number: number,
-          date: this.generateDeliveryNoteNumber((data.length+1).toString()),
+          number: this.generateDeliveryNoteNumber((data.length+1).toString()),
+          date: "",
           customerId: "",
           products: [],
-          tax: this.util.getTaxFromStrign(this.detailsForm.value.tax).toString(),
+          tax: '27',
+          type: 'outgoing'
         };
+        this.detailsForm.get('tax')?.setValue(this.util.getTaxToString(this.deliveryNote.tax));
         }
     })
     }
@@ -190,8 +205,7 @@ export class OutgoingComponent implements OnInit {
       let amount = this.itemForm.value.amount;
       if(product){
         this.isItem = true;
-        let i = this.isInItemArray(this.itemForm.value.productNumber);
-        if(i){
+        if(this.isInItemArray(this.itemForm.value.productNumber)){
           this.itemArray.forEach(element => {
             console.log(element.number == this.itemForm.value.productNumber)
             if(element.productNumber == this.itemForm.value.productNumber){
@@ -206,7 +220,8 @@ export class OutgoingComponent implements OnInit {
           productNumber: this.itemForm.value.productNumber,
           productName: product.name,
           price: product.price,
-          amount: amount
+          amount: amount,
+          incomingPrice: ''
         });
         this.itemArray.push(item);
         this.selectedProducts.push(product);
@@ -230,13 +245,13 @@ export class OutgoingComponent implements OnInit {
   }
 
   isInItemArray(productNumber: string){
-    let item : Item|null = null
+    let isInArray = false;
     this.itemArray.forEach(element =>{
       if(element.productNumber = productNumber){
-        item = element;
+        isInArray = true;
       }
     })
-    return item;
+    return isInArray;
   }
 
   checkStock(product: Product, amount: string){
@@ -275,37 +290,46 @@ export class OutgoingComponent implements OnInit {
   }
 
 
-  save(){
+  async save(){
     if(this.detailsForm.value.date && this.detailsForm.value.customer ){
       this.deliveryNote.tax = this.util.getTaxFromStrign(this.detailsForm.value.tax).toString();
       this.deliveryNote.customerId = this.detailsForm.value.customer;
       this.deliveryNote.date = this.detailsForm.value.date.toString();
       this.deliveryNote.products = this.itemArray;
       
-      this.calculateProductStock();
+      let modifyProductsList : Product[] = [];
+     
+      this.selectedProducts.forEach(async product =>{
+        await this.util.takeItemAmountFromStock(product,this.itemArray);
+        if(this.isNew){
+          await this.util.modifyProductsPrice(product,this.itemArray);
+        }
+        modifyProductsList.push(product);
+      })
+      
+      console.log("A kiválasztott termékek listája módosítotva:")
+      console.log(modifyProductsList)
+      
       this.deliveryNoteService.create(this.deliveryNote).then(_=>{
-        this.selectedProducts.forEach(product => {
-          this.productService.setProduct(product);
-        });
-        this.router.navigate(['home/deliveryNote', this.deliveryNote.id]);
-      }).catch(error=>{
-        console.error(error);
-      });
+        modifyProductsList.forEach(async product  =>{
+          await this.productService.setProduct(product);
+       })
+
+      })
+      
+      this.router.navigate(['home/deliveryNote', this.deliveryNote.id]);
+      
+      
     } 
   }
 
-  calculateProductStock(){
-    this.itemArray.forEach(item =>{
-      this.selectedProducts.forEach(product =>{
-        if(product.number == item.productNumber){
-          product.stock = (+product.stock - +item.amount).toString();
-          product.price = item.price;
-        }
-      })
-    })
-  }
+
 
   cancel(){
-    window.location.reload();
+    if(!this.isNew){
+      this.router.navigate(['home/deliveryNote', this.deliveryNote.id]);
+    } else{
+      window.location.reload();
+    }
   }
 }

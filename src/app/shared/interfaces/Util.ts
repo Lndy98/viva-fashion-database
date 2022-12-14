@@ -3,6 +3,7 @@ import { Product } from "../models/Product";
 import { CustomersService } from "../services/customers.service";
 import { ProductService } from "../services/products.service";
 import { Injectable } from "@angular/core";
+import { Item } from "../models/Item";
 
 @Injectable()
 export class Util{
@@ -58,4 +59,32 @@ export class Util{
         return '';
     }
 
+    addItemAmountToStock(product: Product, items: Item[]){
+      items.forEach(item =>{
+          if(product.number == item.productNumber){
+            product.stock = (+product.stock + +item.amount).toString();
+          } 
+        })
+        return Promise.resolve('done');
+    }
+
+    takeItemAmountFromStock(product: Product, items: Item[]){
+      items.forEach(item =>{
+        if(product.number == item.productNumber){
+          product.stock = (+product.stock - +item.amount).toString();
+        } 
+      })
+      return Promise.resolve('done');
+    }
+
+    modifyProductsPrice(product: Product, items: Item[]){
+      items.forEach(async item =>{
+          if(product.number == item.productNumber){
+            product.price = item.price;
+            product.incomingPrice = item.incomingPrice;
+            await this.productService.setProduct(product);
+          }
+      })
+      return Promise.resolve('done');
+    }
 }

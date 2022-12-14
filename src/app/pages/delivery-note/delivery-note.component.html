@@ -1,4 +1,4 @@
-<div id="print-section" *ngIf="!isEditMode">
+<div id="print-section" *ngIf="!isIncoming">
   <div *ngIf="deliveryNote" id="delivery-note">
       <h1>Árú kísérő (kimenő)</h1>
       <p>Bizonylat szám: {{deliveryNote.number}} <br> Vevő:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date | date: 'yyyy/MM/dd'}} <br> Áfa:  {{deliveryNote.tax}} %</p>
@@ -14,12 +14,12 @@
             <td mat-footer-cell *matFooterCellDef> </td>
         </ng-container>
         <ng-container matColumnDef="amount">
-            <th mat-header-cell *matHeaderCellDef> mennyiség </th>
+            <th mat-header-cell *matHeaderCellDef> Mennyiség </th>
             <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
             <td mat-footer-cell *matFooterCellDef> {{ sumAmount }} </td>  
         </ng-container>
         <ng-container matColumnDef="price">
-            <th mat-header-cell *matHeaderCellDef> Ár</th>
+            <th mat-header-cell *matHeaderCellDef> Ár (Ft)</th>
             <td mat-cell *matCellDef="let element"> {{element.price}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
         </ng-container>
@@ -41,6 +41,50 @@
         </div>
       </div>
     </div>
-    <button mat-raised-button color="primary" (click)="edit()" > Módosítás </button>
-    <button mat-raised-button printSectionId="print-section" [useExistingCss]="true" color="primary" ngxPrint>Nyomtatás</button>
 </div>
+<div id="print-section" *ngIf="isIncoming">
+    <div *ngIf="deliveryNote" id="delivery-note">
+        <h1>Árú kísérő (bejövő)</h1>
+        <p>Bizonylat szám: {{deliveryNote.number}} <br> Beszállító:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date | date: 'yyyy/MM/dd'}} </p>
+        <table mat-table [dataSource]="deliveryNote.products">
+          <ng-container matColumnDef="productNumber" *ngIf="deliveryNote">
+              <th mat-header-cell *matHeaderCellDef> Cikkszám </th>
+              <td mat-cell *matCellDef="let element"> {{element.productNumber}} </td>
+              <td mat-footer-cell *matFooterCellDef> </td>
+          </ng-container>
+          <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Megnevezés </th>
+              <td mat-cell *matCellDef="let element"> {{element.productName}} </td>
+              <td mat-footer-cell *matFooterCellDef> </td>
+          </ng-container>
+          <ng-container matColumnDef="amount">
+              <th mat-header-cell *matHeaderCellDef> Mennyiség </th>
+              <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+              <td mat-footer-cell *matFooterCellDef> {{ sumAmount }} </td>  
+          </ng-container>
+          <ng-container matColumnDef="price">
+              <th mat-header-cell *matHeaderCellDef> Bekerülési ár (Ft)</th>
+              <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+              <td mat-footer-cell *matFooterCellDef> </td>
+          </ng-container>
+          <ng-container matColumnDef="payable">
+              <th mat-header-cell *matHeaderCellDef> Értéke (Ft)</th>
+              <td mat-cell *matCellDef="let element" > {{+element.price * +element.amount}} </td>
+              <td mat-footer-cell *matFooterCellDef> {{ sumPrice }} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+       </table>
+       <div class="out-sign-box">
+          <div class="sign-box">
+              Átadó
+          </div>
+          <div class="sign-box">
+              Átvevő
+          </div>
+        </div>
+      </div>
+  </div>
+<button mat-raised-button color="primary" (click)="edit()" > Módosítás </button>
+<button mat-raised-button printSectionId="print-section" [useExistingCss]="true" color="primary" ngxPrint>Nyomtatás</button>

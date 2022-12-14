@@ -13,7 +13,7 @@ import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.ser
 })
 export class DeliveryNoteComponent implements OnInit {
 
-  isEditMode: boolean = false;
+  isIncoming: boolean = false;
 
   isCallculated: boolean = false;
   sumAmount: number = 0;
@@ -36,8 +36,11 @@ export class DeliveryNoteComponent implements OnInit {
     this.deliveryNoteService.getById(id).subscribe(data =>{
       if(data){
         this.deliveryNote = data;
+        this.calculateSumValues();
+        if(this.deliveryNote.type == 'incoming'){
+          this.isIncoming = true;
+        }
       }
-      this.calculateSumValues();
     })
   }
 
@@ -46,7 +49,11 @@ export class DeliveryNoteComponent implements OnInit {
   }
 
   edit(){
-    this.router.navigate(['create/outgoing', this.deliveryNote.id]);
+    if(this.isIncoming){
+      this.router.navigate(['create/incoming', this.deliveryNote.id]);
+    }else{
+      this.router.navigate(['create/outgoing', this.deliveryNote.id]);
+    }
   }
  
   calculateSumValues(){

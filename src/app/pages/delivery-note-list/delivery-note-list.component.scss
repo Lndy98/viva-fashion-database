@@ -1,11 +1,11 @@
-.div-flex {
+.filter {
   display: inline;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin-bottom: 5%;
 }
-mat-form-field {
+mat-form-field, mat-radio-button {
   margin-left: 2.5%;
   margin-top: 3%;
 }

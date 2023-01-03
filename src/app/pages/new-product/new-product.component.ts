@@ -40,8 +40,8 @@ export class NewProductComponent implements OnInit {
       console.log(data);
       if(data.length != 0){
       } else {
-        this.router.navigate(['create/newproduct']);
         this.productService.create(this.product);
+        this.detailsForm.reset();
       }
     })
   }

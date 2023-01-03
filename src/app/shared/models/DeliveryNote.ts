@@ -9,4 +9,5 @@ export interface DeliveryNote{
     products: Item[];
     tax: string;
     type: string; //incoming or outgoing
+    searchArray: string[];
 }

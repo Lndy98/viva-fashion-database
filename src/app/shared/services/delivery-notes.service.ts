@@ -19,17 +19,36 @@ export class DeliveryNotesService {
   loadDeliveryNotes(): Observable<Array<DeliveryNote>>{
     return this.afs.collection<DeliveryNote>(this.collectionName).valueChanges();
   }
+  loadDeliveryNotesByType(type: string): Observable<Array<DeliveryNote>>{
+    return this.afs.collection<DeliveryNote>(this.collectionName,o => o.where('type', '==', type)).valueChanges();
+  }
   getById(id: string) {
     return this.afs.collection<DeliveryNote>(this.collectionName).doc(id).valueChanges();
   }
-  getByDate(date: Date){
-    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '>=', date.toString())).valueChanges();;
+  getByMonth(date: Date){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '>=', date.toDateString())).valueChanges();
   }
-  getByCustomer(customer: string){
-    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('customerId', '==', customer)).valueChanges();;
+  getByDate(date: Date, type: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '==', date.toDateString()).where('type', '==', type)).valueChanges();
   }
-  getByProduct(productNumber: string){
-    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('products.productNumber', '==', productNumber)).valueChanges();;
+  getByCustomer(customer: string, type: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('customerId', '==', customer).where('type', '==', type)).valueChanges();
+  }
+  getByProduct(productNumber: string, type: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('searchArray', 'array-contains', productNumber).where('type', '==', type)).valueChanges();
+  }
+  getByCustomerAndDate(customer: string, date: Date, type: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '==', date.toDateString()).where('type', '==', type).where('customerId', '==', customer)).valueChanges();
+  }
+  getByCustomerAndProductNumber(customer: string, productNumber: string, type: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('customerId', '==', customer).where('type', '==', type).where('searchArray', 'array-contains', productNumber)).valueChanges();
+ 
+  }
+  getByDateAndProductNumber(date: Date, productNumber: string, type: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '==', date.toDateString()).where('type', '==', type).where('searchArray', 'array-contains', productNumber)).valueChanges();
+  }
+  getByCustomerAndDateAndProductNumber(customer: string, date: Date, productNumber: string, type: string){
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('customerId', '==', customer).where('type', '==', type).where('date', '==', date.toDateString()).where('searchArray', 'array-contains', productNumber)).valueChanges();
   }
 
 }

@@ -91,7 +91,7 @@ export class OutgoingComponent implements OnInit {
               }
             })
           })
-  
+          this.deliveryNote.searchArray = [];
           this.detailsForm.get('customer')?.setValue(this.deliveryNote.customerId);
           this.detailsForm.get('tax')?.setValue(this.util.getTaxToString(this.deliveryNote.tax));
           this.detailsForm.get('date')?.setValue(new Date(this.deliveryNote.date));
@@ -102,8 +102,8 @@ export class OutgoingComponent implements OnInit {
   setDeliveryNote(){
     let now = new Date();
     let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
-    
-    this.deliveryNoteService.getByDate(date).subscribe((data : Array<DeliveryNote>) => {
+
+    this.deliveryNoteService.getByMonth(date).subscribe((data : Array<DeliveryNote>) => {
       if(data){
        this.deliveryNote= {
           id: uuidv4(),
@@ -112,7 +112,8 @@ export class OutgoingComponent implements OnInit {
           customerId: "",
           products: [],
           tax: '27',
-          type: 'outgoing'
+          type: 'outgoing',
+          searchArray: []
         };
         this.detailsForm.get('tax')?.setValue(this.util.getTaxToString(this.deliveryNote.tax));
         }
@@ -294,21 +295,21 @@ export class OutgoingComponent implements OnInit {
     if(this.detailsForm.value.date && this.detailsForm.value.customer ){
       this.deliveryNote.tax = this.util.getTaxFromStrign(this.detailsForm.value.tax).toString();
       this.deliveryNote.customerId = this.detailsForm.value.customer;
-      this.deliveryNote.date = this.detailsForm.value.date.toString();
+      this.deliveryNote.date = this.detailsForm.value.date.toDateString();
       this.deliveryNote.products = this.itemArray;
       
       let modifyProductsList : Product[] = [];
-     
       this.selectedProducts.forEach(async product =>{
+        this.deliveryNote.searchArray.push(product.number);
         await this.util.takeItemAmountFromStock(product,this.itemArray);
         if(this.isNew){
           await this.util.modifyProductsPrice(product,this.itemArray);
         }
+        
         modifyProductsList.push(product);
       })
-      
-      console.log("A kiválasztott termékek listája módosítotva:")
-      console.log(modifyProductsList)
+      console.log("A kiválasztott termékek kódok listája:")
+      console.log(this.deliveryNote.searchArray)
       
       this.deliveryNoteService.create(this.deliveryNote).then(_=>{
         modifyProductsList.forEach(async product  =>{

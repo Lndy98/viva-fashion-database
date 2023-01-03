@@ -36,7 +36,7 @@ export class NewCustomerComponent implements OnInit {
     this.customerService.getByName(this.customer.companyName).subscribe(data =>{
       if(data.length > 0){}else{
         this.customerService.create(this.customer);
-        this.router.navigate(['create/newcustomer']);
+        this.detailsForm.reset();
       }
     })
   }

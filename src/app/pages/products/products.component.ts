@@ -12,9 +12,9 @@ import { Util } from 'src/app/shared/interfaces/Util';
   providers: [Util]
 })
 export class ProductsComponent implements OnInit {
- 
+
   detailsForm = new FormGroup({
-    prductNumber: new FormControl('')
+    productNumber: new FormControl('')
   });
 
   public Unit = Unit;
@@ -28,8 +28,8 @@ export class ProductsComponent implements OnInit {
   }
 
   search(){
-    if(this.detailsForm.value.prductNumber){
-      let start = this.detailsForm.value.prductNumber.toUpperCase();
+    if(this.detailsForm.value.productNumber){
+      let start = this.detailsForm.value.productNumber.toUpperCase();
       let end = this.util.endPartOfSearch(start); 
         if(end == ''){
           this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{

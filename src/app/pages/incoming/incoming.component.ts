@@ -88,7 +88,7 @@ export class IncomingComponent implements OnInit {
             }
           })
         })
-        
+        this.deliveryNote.searchArray = [];
         this.detailsForm.get('customer')?.setValue(this.deliveryNote.customerId);
         this.detailsForm.get('date')?.setValue(new Date(this.deliveryNote.date));
       }
@@ -179,7 +179,7 @@ export class IncomingComponent implements OnInit {
   let now = new Date();
     let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
     
-  this.deliveryNoteService.getByDate(date).subscribe((data : Array<DeliveryNote>) => {
+  this.deliveryNoteService.getByMonth(date).subscribe((data : Array<DeliveryNote>) => {
     if(data){
       this.deliveryNote={
         id: uuidv4(),
@@ -189,6 +189,7 @@ export class IncomingComponent implements OnInit {
         type: "incoming",
         tax: "",
         date: "",
+        searchArray: []
       } 
     }
   })
@@ -287,7 +288,7 @@ export class IncomingComponent implements OnInit {
   }
   async save(){
     if(this.detailsForm.value.date){ 
-      this.deliveryNote.date = (this.detailsForm.value.date).toString();
+      this.deliveryNote.date = (this.detailsForm.value.date).toDateString();
       if(this.detailsForm.value.customer){
         this.deliveryNote.customerId = this.detailsForm.value.customer;
       }

@@ -34,16 +34,22 @@ export class NewProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  save(){
-    this.createProduct();
-    this.productService.getByNumber(this.product.number).subscribe(data => {
-      console.log(data);
-      if(data.length != 0){
-      } else {
-        this.productService.create(this.product);
-        this.detailsForm.reset();
-      }
-    })
+  async save(){
+    this.text = "";
+    let isSuccess = false;
+    await this.createProduct();
+    if(this.text == ""){
+      this.productService.getByNumber(this.product.number).subscribe(async data => {
+        console.log(data);
+        if(data.length == 0){
+          isSuccess = true;
+          await this.productService.create(this.product);
+          window.location.reload();
+        } else if (data.length != 0 && !isSuccess){
+          this.text = "A megadott cikkszám már létezik!";
+        }
+      })
+    }
   }
 
   createProduct(){
@@ -74,7 +80,10 @@ export class NewProductComponent implements OnInit {
         if(this.detailsForm.value.origin){
           this.product.origin = this.detailsForm.value.origin;
         }
+      } else {
+        this.text = "Minden csillaggal jelölt mezőt töltsön ki!"
       }
+      return Promise.resolve('done');
   }
 
   cancel(){

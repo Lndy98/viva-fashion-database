@@ -3,19 +3,22 @@
     <a mat-tab-link
     routerLink="./deliveryNoteList"
     routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
+    (click)="activeLink = 'A'"
+      [active]="activeLink == 'A'">
     Szállító levél
   </a>
     <a mat-tab-link
     routerLink= "./products"
     routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
+    (click)="activeLink = 'B'"
+      [active]="activeLink == 'B'">
     Készlet
   </a>
   <a mat-tab-link
     routerLink="./customer"
     routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
+    (click)="activeLink = 'C'"
+      [active]="activeLink == 'C'">
     Partnerek
   </a>
 </nav> 

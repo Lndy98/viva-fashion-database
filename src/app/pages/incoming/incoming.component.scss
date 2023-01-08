@@ -1,35 +1,55 @@
 mat-form-field {
-    margin-left: 2.5%;
-  }
+  margin-left: 2.5%;
+  margin-top: 3%;
+}
 .main_component{
-  justify-content: center;
+justify-content: center;
 }
 .div-flex{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
 }
+.items {
+display: inline;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+margin-bottom: 5%;
+}
+
 .basic{
-    display: inline-grid;
-    width: 50%;
-    align-self: center;
-    margin-bottom: 5%;
-  }
-  .button {
-    border-left: 5%;
-    margin-left: 2.5%;
-    border: 2%;
-    width: auto;
-  }
-table{
-  width: 100%;
+display: inline-grid;
+width: 50%;
+align-self: center;
+margin-bottom: 5%;
+}
+.button {
+border-left: 5%;
+margin-left: 2.5%;
+border: 2%;
+width: auto;
+}
+table {
+width: 100%;
 }
 .mat-header-cell, .mat-cell, .mat-footer-row {
-  justify-content: center; 
-  text-align: center;
+justify-content: center; 
+text-align: center;
+}
+tr.mat-footer-row {
+font-weight: bold;
+}
+h1{
+text-align: center;
+padding-bottom: 2.5%;
+padding-top: 2.5%;
 }
 .buttons {
-  margin: 5%;
-  width: 40%;
+margin: 5%;
+width: 40%;
+}
+.demo-row-is-clicked {
+background-color: #ffe6f0; 
 }

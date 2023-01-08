@@ -1,6 +1,6 @@
 <div class="main_component" *ngIf="deliveryNote"><div class="div-flex">
     <h1>Árúkisérő (bejövő)</h1>
-    <h2>{{deliveryNote.number}}</h2>
+    <h1>{{deliveryNote.number}}</h1>
     <div class="div-flex">
         <form class="basic" id="basic" [formGroup]="detailsForm" (ngSubmit)="save()">
             <mat-form-field appearance="fill" [color]="'accent'">

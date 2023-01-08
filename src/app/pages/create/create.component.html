@@ -4,7 +4,8 @@
     routerLinkActive
      #rla="routerLinkActive"
      mat-tab-link
-     [active]="rla.isActive">
+     (click)="activeLink = 'A'"
+      [active]="activeLink == 'A'">
     Kimenő
   </a>
     <a mat-tab-link
@@ -12,7 +13,8 @@
     routerLinkActive
      #rla="routerLinkActive"
      mat-tab-link
-     [active]="rla.isActive">
+     (click)="activeLink = 'B'"
+      [active]="activeLink == 'B'">
     Bejövő
   </a>
   <a mat-tab-link
@@ -20,7 +22,8 @@
   routerLinkActive
      #rla="routerLinkActive"
      mat-tab-link
-     [active]="rla.isActive">
+     (click)="activeLink = 'C'"
+      [active]="activeLink == 'C'">
   Új árucikk
   </a>
   <a mat-tab-link
@@ -28,7 +31,8 @@
   routerLinkActive
      #rla="routerLinkActive"
      mat-tab-link
-     [active]="rla.isActive">
+     (click)="activeLink = 'D'"
+      [active]="activeLink == 'D'">
   Új partner
   </a>
 </nav> 

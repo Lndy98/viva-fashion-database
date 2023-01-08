@@ -197,6 +197,9 @@ export class IncomingComponent implements OnInit {
 
  generateDeliveryNoteNumber(number: string){
   let now = new Date();
+  if(number === "9999"){
+    number = "0";
+  }
   while(number.length<4){
     number = "0"+number;
   }
@@ -239,7 +242,7 @@ export class IncomingComponent implements OnInit {
   isInItemArray(productNumber: string){
     let isInArray = false;
     this.items.forEach(element =>{
-      if(element.productNumber = productNumber){
+      if(element.productNumber == productNumber){
         isInArray = true;
       }
     })
@@ -297,12 +300,8 @@ export class IncomingComponent implements OnInit {
       let modifyProductsList : Product[] = [];
 
       this.incomingProduct.forEach(async product =>{
-        console.log("Mielőtt hozáadnánk: "+product.name +": " + product.stock);
+        this.deliveryNote.searchArray.push(product.number);
         await this.util.addItemAmountToStock(product,this.items);
-        if(this.isNew){
-          await this.util.modifyProductsPrice(product,this.items);
-        }
-        console.log("Miután hozáadtuk: "+product.name +": " + product.stock);
         modifyProductsList.push(product);
       })
 

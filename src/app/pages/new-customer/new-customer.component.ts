@@ -12,6 +12,7 @@ import { v4 as uuidv4 } from 'uuid';
 })
 export class NewCustomerComponent implements OnInit {
 
+  text: string = "";
   customer !: Custamer;
 
   detailsForm = new FormGroup({
@@ -31,14 +32,21 @@ export class NewCustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  save(){
-    this.createCustomer();
-    this.customerService.getByName(this.customer.companyName).subscribe(data =>{
-      if(data.length > 0){}else{
-        this.customerService.create(this.customer);
-        this.detailsForm.reset();
-      }
-    })
+  async save(){
+    this.text = "";
+    let isSuccess = false;
+    await this.createCustomer();
+    if(this.text == ""){
+      this.customerService.getByName(this.customer.companyName).subscribe(async data =>{
+        if(data.length == 0){
+          isSuccess = true;
+          await this.customerService.create(this.customer);
+          window.location.reload();
+        }else if (data.length != 0 && !isSuccess){
+          this.text = "A megadott partner név már létezik!";
+        }
+      })
+    }
   }
 
   createCustomer(){
@@ -87,7 +95,11 @@ export class NewCustomerComponent implements OnInit {
         this.customer.comment = this.detailsForm.value.comment;
       }
 
+    } else {
+      this.text = "Minden csillaggal jelölt mezőt töltsön ki!"
     }
+    
+    return Promise.resolve('done');
     
   }
 

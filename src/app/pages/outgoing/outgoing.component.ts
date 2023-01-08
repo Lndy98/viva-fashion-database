@@ -122,6 +122,9 @@ export class OutgoingComponent implements OnInit {
 
     generateDeliveryNoteNumber(number: string){
       let now = new Date();
+      if(number === "9999"){
+        number = "0";
+      }
       while(number.length<4){
         number = "0"+number;
       }
@@ -248,7 +251,7 @@ export class OutgoingComponent implements OnInit {
   isInItemArray(productNumber: string){
     let isInArray = false;
     this.itemArray.forEach(element =>{
-      if(element.productNumber = productNumber){
+      if(element.productNumber == productNumber){
         isInArray = true;
       }
     })
@@ -301,11 +304,7 @@ export class OutgoingComponent implements OnInit {
       let modifyProductsList : Product[] = [];
       this.selectedProducts.forEach(async product =>{
         this.deliveryNote.searchArray.push(product.number);
-        await this.util.takeItemAmountFromStock(product,this.itemArray);
-        if(this.isNew){
-          await this.util.modifyProductsPrice(product,this.itemArray);
-        }
-        
+        await this.util.takeItemAmountFromStock(product,this.itemArray);        
         modifyProductsList.push(product);
       })
       console.log("A kiválasztott termékek kódok listája:")

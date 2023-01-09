@@ -26,7 +26,9 @@ export class DeliveryNotesService {
     return this.afs.collection<DeliveryNote>(this.collectionName).doc(id).valueChanges();
   }
   getByMonth(date: Date){
-    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '>=', date.toDateString())).valueChanges();
+    let start = date.getFullYear()+"-" + (date.getMonth()+1);
+    console.log(start); 
+    return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('number', '>=', start)).valueChanges();
   }
   getByDate(date: Date, type: string){
     return this.afs.collection<DeliveryNote>(this.collectionName, o => o.where('date', '==', date.toDateString()).where('type', '==', type)).valueChanges();

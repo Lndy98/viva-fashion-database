@@ -105,9 +105,10 @@ export class OutgoingComponent implements OnInit {
 
     this.deliveryNoteService.getByMonth(date).subscribe((data : Array<DeliveryNote>) => {
       if(data){
+
        this.deliveryNote= {
           id: uuidv4(),
-          number: this.generateDeliveryNoteNumber((data.length+1).toString()),
+          number: this.generateDeliveryNoteNumber((data.length+3).toString()),
           date: "",
           customerId: "",
           products: [],

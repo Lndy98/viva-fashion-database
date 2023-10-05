@@ -30,7 +30,7 @@ export class OutgoingComponent implements OnInit {
   itemNumber: number = 0;  
   itemArray: Item [] = [];
 
-  displayedColumns: string[] = ['id','productNumber','name', 'amount', 'price','payable', 'remove'];
+  displayedColumns: string[] = ['id','productNumber','name', 'amount', 'price','brutto','payable', 'remove'];
   invalidStock : string[] = [];
 
   products !: Array<Product>;

@@ -57,8 +57,8 @@ export class NewProductComponent implements OnInit {
       && this.detailsForm.value.unit && this.detailsForm.value.price && this.detailsForm.value.incomingPrice){
         this.product={
           id: uuidv4(),
-          number: this.detailsForm.value.number,
-          name: this.detailsForm.value.name,
+          number: this.detailsForm.value.number.toUpperCase(),
+          name: this.detailsForm.value.name.toUpperCase(),
           stock: this.detailsForm.value.stock,
           unit: this.detailsForm.value.unit,
           price: this.detailsForm.value.price,

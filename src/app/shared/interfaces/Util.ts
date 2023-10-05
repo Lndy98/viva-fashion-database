@@ -12,13 +12,14 @@ export class Util{
     customers: Array<Custamer> = [];
     constructor(private productService: ProductService, private customerService: CustomersService){}
     getPayable(taxString: any, price: string, amount: string): any{
-        let tax = (this.getTaxFromStrign(taxString)/100)+1
-        return this.formatNumber(((+amount)*(+price)*tax).toString());
+        return this.formatNumber(((+amount)*(+price)*this.getTaxMultiplier(taxString)).toString());
       }
     getSumPayable(taxString: any, sumPrice: number): any{
-        let tax = (this.getTaxFromStrign(taxString)/100)+1
-        return this.formatNumber((sumPrice*tax).toString());
+        return this.formatNumber((sumPrice*this.getTaxMultiplier(taxString)).toString());
       }
+    getTaxMultiplier(taxString: any): number{
+      return (this.getTaxFromStrign(taxString)/100)+1;
+    }
     getTaxFromStrign(tax: any): number{
         switch(tax){
           case 'zero': 

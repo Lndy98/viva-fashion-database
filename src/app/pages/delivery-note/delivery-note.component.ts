@@ -22,7 +22,7 @@ export class DeliveryNoteComponent implements OnInit {
 
 
   deliveryNote !: DeliveryNote;
-  displayedColumns: string[] = ['productNumber','name', 'amount', 'price', 'payable'];
+  displayedColumns: string[] = ['productNumber','name', 'amount', 'price','brutto', 'payable'];
 
   constructor(private activatedRoute: ActivatedRoute,private router: Router, private deliveryNoteService: DeliveryNotesService, public util: Util) { }
 

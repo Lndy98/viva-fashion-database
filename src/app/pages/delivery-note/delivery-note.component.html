@@ -1,6 +1,6 @@
 <div id="print-section" *ngIf="!isIncoming">
   <div *ngIf="deliveryNote" id="delivery-note">
-      <h1>Árú kísérő (kimenő)</h1>
+      <h1>Árúkísérő (kimenő)</h1>
       <p>Bizonylat szám: {{deliveryNote.number}} <br> Vevő:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date | date: 'yyyy/MM/dd'}} <br> Áfa:  {{deliveryNote.tax}} %</p>
       <table mat-table [dataSource]="deliveryNote.products">
         <ng-container matColumnDef="productNumber" *ngIf="deliveryNote">
@@ -15,18 +15,23 @@
         </ng-container>
         <ng-container matColumnDef="amount">
             <th mat-header-cell *matHeaderCellDef> Mennyiség </th>
-            <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.amount | number}} </td>
             <td mat-footer-cell *matFooterCellDef> {{ sumAmount }} </td>  
         </ng-container>
         <ng-container matColumnDef="price">
-            <th mat-header-cell *matHeaderCellDef> Ár (Ft)</th>
-            <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+            <th mat-header-cell *matHeaderCellDef> Nettó </th>
+            <td mat-cell *matCellDef="let element"> {{element.price | number}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
+        </ng-container>
+        <ng-container matColumnDef="brutto">
+            <th mat-header-cell *matHeaderCellDef> Bruttó ({{deliveryNote.tax}}% áfa)</th>
+            <td mat-cell *matCellDef="let element"> {{element.price * util.getTaxMultiplier(this.deliveryNote.tax)| number:'1.0-0':'fr'}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
         </ng-container>
         <ng-container matColumnDef="payable">
             <th mat-header-cell *matHeaderCellDef> Fizetendő összeg ({{deliveryNote.tax}}% áfa)</th>
-            <td mat-cell *matCellDef="let element" > {{util.getPayable(this.deliveryNote.tax,element.price, element.amount)}} </td>
-            <td mat-footer-cell *matFooterCellDef> {{ util.getSumPayable(this.deliveryNote.tax, this.sumPrice) }} </td>
+            <td mat-cell *matCellDef="let element" > {{util.getPayable(this.deliveryNote.tax,element.price, element.amount)| number:'1.0-0':'fr'}} </td>
+            <td mat-footer-cell *matFooterCellDef> {{ util.getSumPayable(this.deliveryNote.tax, this.sumPrice)| number:'1.0-0':'fr' }} </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

@@ -123,54 +123,42 @@ export class DeliveryNoteListComponent implements OnInit {
   goToProductDetails(id: string) {
     this.router.navigate(['home/deliveryNote', id]);
   }
-  search(){
-    if(this.detailsForm.value.type){
-      let type = this.detailsForm.value.type;
-      if(this.detailsForm.value.date && !this.detailsForm.value.companyName && !this.detailsForm.value.productNumber){
-        this.deliveryNotesService.getByDate(new Date(this.detailsForm.value.date), type).subscribe(data =>{
-          if(data){
-            this.deliveryNotes = data;
-          }
-        });
-      }
-      if(!this.detailsForm.value.date && this.detailsForm.value.companyName && !this.detailsForm.value.productNumber){
-        this.deliveryNotesService.getByCustomer(this.detailsForm.value.companyName, type).subscribe(data =>{
-          this.deliveryNotes = data;
-        })
-      }
-      if(!this.detailsForm.value.date && !this.detailsForm.value.companyName && this.detailsForm.value.productNumber){
-        this.deliveryNotesService.getByProduct(this.detailsForm.value.productNumber, type).subscribe(data =>{
-          this.deliveryNotes = data;
-        })
-      }
-      if(this.detailsForm.value.date && this.detailsForm.value.companyName && !this.detailsForm.value.productNumber){
-        this.deliveryNotesService.getByCustomerAndDate(this.detailsForm.value.companyName,new Date(this.detailsForm.value.date), type).subscribe(data =>{
-          this.deliveryNotes = data;
-        })
-      }
-      if(!this.detailsForm.value.date && this.detailsForm.value.companyName && this.detailsForm.value.productNumber){
-        this.deliveryNotesService.getByCustomerAndProductNumber(this.detailsForm.value.companyName,this.detailsForm.value.productNumber, type).subscribe(data =>{
-          this.deliveryNotes = data;
-        })
-      }
-      
-      if(this.detailsForm.value.date && !this.detailsForm.value.companyName && this.detailsForm.value.productNumber){
-        this.deliveryNotesService.getByDateAndProductNumber(this.detailsForm.value.date,this.detailsForm.value.productNumber, type).subscribe(data =>{
-          this.deliveryNotes = data;
-        })
-      }
-      if(this.detailsForm.value.date && this.detailsForm.value.companyName && this.detailsForm.value.productNumber){
-        this.deliveryNotesService.getByCustomerAndDateAndProductNumber(this.detailsForm.value.companyName,this.detailsForm.value.date,
-            this.detailsForm.value.productNumber, type).subscribe(data =>{
-          this.deliveryNotes = data;
-        })
-      } 
-      if(!this.detailsForm.value.date && !this.detailsForm.value.companyName && !this.detailsForm.value.productNumber){
-        this.deliveryNotesService.loadDeliveryNotesByType(type).subscribe((data: Array<DeliveryNote>) => {
-          console.log(data);
-          this.deliveryNotes = data;
-        })
-      }
+  search() {
+    const { type, date, companyName, productNumber } = this.detailsForm.value;
+  
+    if (!type) {
+      return;
     }
+  
+    let observable;
+  
+    if (date) {
+      if (companyName && productNumber) {
+        observable = this.deliveryNotesService
+              .getByCustomerAndDateAndProductNumber(companyName,new Date(date),productNumber,type);
+      } else if (companyName) {
+        observable = this.deliveryNotesService
+              .getByCustomerAndDate(companyName,new Date(date),type);
+      } else if (productNumber) {
+        observable = this.deliveryNotesService
+              .getByDateAndProductNumber(new Date(date),productNumber, type);
+      } else {
+        observable = this.deliveryNotesService.getByDate(new Date(date), type);
+      }
+    } else if (companyName && productNumber) {
+      observable = this.deliveryNotesService
+              .getByCustomerAndProductNumber(companyName, productNumber, type );
+    } else if (companyName) {
+      observable = this.deliveryNotesService.getByCustomer(companyName, type);
+    } else if (productNumber) {
+      observable = this.deliveryNotesService.getByProduct(productNumber, type);
+    } else {
+      observable = this.deliveryNotesService.loadDeliveryNotesByType(type);
+    }
+  
+    observable.subscribe((data: Array<DeliveryNote>) => {
+      console.log(data);
+      this.deliveryNotes = data;
+    });
   }
 }

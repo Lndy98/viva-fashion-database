@@ -16,6 +16,7 @@ import { Util } from 'src/app/shared/interfaces/Util';
 import { CustomersService } from 'src/app/shared/services/customers.service';
 
 import { v4 as uuidv4 } from 'uuid';
+import { Timestamp } from '@firebase/firestore';
 
 @Component({
   selector: 'app-incoming',
@@ -90,7 +91,7 @@ export class IncomingComponent implements OnInit {
         })
         this.deliveryNote.searchArray = [];
         this.detailsForm.get('customer')?.setValue(this.deliveryNote.customerId);
-        this.detailsForm.get('date')?.setValue(new Date(this.deliveryNote.date));
+        this.detailsForm.get('date')?.setValue(this.deliveryNote.date);
       }
     })
   }
@@ -188,7 +189,7 @@ export class IncomingComponent implements OnInit {
         products: [],
         type: "incoming",
         tax: "",
-        date: "",
+        date: Timestamp.fromDate(new Date(new Date().toDateString())),
         searchArray: []
       } 
     }
@@ -291,7 +292,7 @@ export class IncomingComponent implements OnInit {
   }
   async save(){
     if(this.detailsForm.value.date){ 
-      this.deliveryNote.date = (this.detailsForm.value.date).toDateString();
+      this.deliveryNote.date = Timestamp.fromDate(new Date(new Date().toDateString()));
       if(this.detailsForm.value.customer){
         this.deliveryNote.customerId = this.detailsForm.value.customer;
       }

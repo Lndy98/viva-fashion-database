@@ -5,12 +5,22 @@
         <th></th>
     </tr>
     <tr>
-        <td>Termékek feltöltése az adatbázisba. Jelenleg {{productsLength}} elem vár betöltésre.</td>
-        <td><button mat-raised-button color="primary" (click)="loadProducts()">Betöltés</button></td>
+        <td>Teszt delivaryNote modosítása és tesztelése.</td>
+        <td><button mat-raised-button color="primary" (click)="modifyThatDelivaryNotes()">Módosít</button></td>
+        <td><button mat-raised-button color="primary" (click)="checkDateIsEqualTest()">Típus ellenőrzés</button></td>
     </tr>
     <tr>
-        <td>Ügyfelek feltöltése az adatbázisba. Jelenleg {{custamers.length}} elem vár betöltésre.</td>
-        <td><button mat-raised-button color="primary"  (click)="loadCustomer()">Betöltés</button></td>
+        <td>módosítandó DelivaryNotes betöltés és statusz.</td>
+        <td><button mat-raised-button color="primary" (click)="getStatus()">Betölt</button></td>
+        <td> A összes dokumentum száma: {{elementCounter}}</td>
+        <td> A már megfelelő dátummal rendelkező mezők száma: {{successCounter}}</td>
+        <td> A még módosítandó dokumentumok száma: {{unSuccessCounter}}</td>
+    </tr>
+    <tr>
+        <td>DelivaryNotes date módosítás.</td>
+        <td><button mat-raised-button color="primary" (click)="loadDeliveryNotes()">Módosít</button></td>
+        <td> A betöltött dokumentumok száma: {{unSuccessCounter}}</td>
+        
     </tr>
     
 </table>

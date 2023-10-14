@@ -1,7 +1,7 @@
 <div id="print-section" *ngIf="!isIncoming">
   <div *ngIf="deliveryNote" id="delivery-note">
       <h1>Árúkísérő (kimenő)</h1>
-      <p>Bizonylat szám: {{deliveryNote.number}} <br> Vevő:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date | date: 'yyyy/MM/dd'}} <br> Áfa:  {{deliveryNote.tax}} %</p>
+      <p>Bizonylat szám: {{deliveryNote.number}} <br> Vevő:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date.toMillis()  | date:'yyyy/MM/dd'}} <br> Áfa:  {{deliveryNote.tax}} %</p>
       <table mat-table [dataSource]="deliveryNote.products">
         <ng-container matColumnDef="productNumber" *ngIf="deliveryNote">
             <th mat-header-cell *matHeaderCellDef> Cikkszám </th>
@@ -50,7 +50,7 @@
 <div id="print-section" *ngIf="isIncoming">
     <div *ngIf="deliveryNote" id="delivery-note">
         <h1>Árú kísérő (bejövő)</h1>
-        <p>Bizonylat szám: {{deliveryNote.number}} <br> Beszállító:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date | date: 'yyyy/MM/dd'}} </p>
+        <p>Bizonylat szám: {{deliveryNote.number}} <br> Beszállító:  {{deliveryNote.customerId}} <br>Dátum:  {{deliveryNote.date.toMillis()  | date:'yyyy/MM/dd'}} </p>
         <table mat-table [dataSource]="deliveryNote.products">
           <ng-container matColumnDef="productNumber" *ngIf="deliveryNote">
               <th mat-header-cell *matHeaderCellDef> Cikkszám </th>

@@ -16,6 +16,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import { hrtime } from 'process';
+import { Timestamp } from '@firebase/firestore';
 
 @Component({
   selector: 'app-outgoing',
@@ -94,7 +95,7 @@ export class OutgoingComponent implements OnInit {
           this.deliveryNote.searchArray = [];
           this.detailsForm.get('customer')?.setValue(this.deliveryNote.customerId);
           this.detailsForm.get('tax')?.setValue(this.util.getTaxToString(this.deliveryNote.tax));
-          this.detailsForm.get('date')?.setValue(new Date(this.deliveryNote.date));
+          this.detailsForm.get('date')?.setValue(this.deliveryNote.date);
         }
       })
     
@@ -102,14 +103,14 @@ export class OutgoingComponent implements OnInit {
   setDeliveryNote(){
     let now = new Date();
     let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
-
+    
     this.deliveryNoteService.getByMonth(date).subscribe((data : Array<DeliveryNote>) => {
       if(data){
 
        this.deliveryNote= {
           id: uuidv4(),
-          number: this.generateDeliveryNoteNumber((data.length+3).toString()),
-          date: "",
+          number: this.generateDeliveryNoteNumber((data.length).toString()),
+          date: Timestamp.fromDate(new Date(new Date().toDateString())),
           customerId: "",
           products: [],
           tax: '27',
@@ -123,6 +124,7 @@ export class OutgoingComponent implements OnInit {
 
     generateDeliveryNoteNumber(number: string){
       let now = new Date();
+      console.log(number);
       if(number === "9999"){
         number = "0";
       }
@@ -299,7 +301,7 @@ export class OutgoingComponent implements OnInit {
     if(this.detailsForm.value.date && this.detailsForm.value.customer ){
       this.deliveryNote.tax = this.util.getTaxFromStrign(this.detailsForm.value.tax).toString();
       this.deliveryNote.customerId = this.detailsForm.value.customer;
-      this.deliveryNote.date = this.detailsForm.value.date.toDateString();
+      this.deliveryNote.date = Timestamp.fromDate(new Date(new Date().toDateString()));
       this.deliveryNote.products = this.itemArray;
       
       let modifyProductsList : Product[] = [];

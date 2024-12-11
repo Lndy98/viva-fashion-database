@@ -17,6 +17,7 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import { hrtime } from 'process';
 import { Timestamp } from '@firebase/firestore';
+import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
 
 @Component({
   selector: 'app-outgoing',
@@ -58,7 +59,7 @@ export class OutgoingComponent implements OnInit {
   @ViewChild (MatTable) table !: MatTable<Item>;
 
   constructor(private route: ActivatedRoute, private router: Router, private productService: ProductService,
-      private deliveryNoteService: DeliveryNotesService, private customerService: CustomersService, public util: Util) { }
+      private deliveryNoteService: DeliveryNotesService, private localStorageServiceService:LocalStorageServiceService, public util: Util) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -134,77 +135,34 @@ export class OutgoingComponent implements OnInit {
       return  now.getFullYear()+"-"+ (now.getMonth()+1)+"-"+number;
     }
 
-  setProduct(){
-    this.filteredProducts = this.itemForm.controls['productNumber'].valueChanges.pipe(
-      startWith(''),
-      map(value => this._filterProduct(value||'')),
-    );
-  }
-
-  setCustomer(){
-    this.filteredCustomer = this.detailsForm.controls['customer'].valueChanges.pipe(
-      startWith(''),
-      map(value => this._filterCustomer(value||'')),
-    );
-  }
+    setCustomer() {
+      // Az aszinkron adatbetöltést a subscribe-al végezzük el
+      this.localStorageServiceService.getCustomers().subscribe(customers => {
+        this.customers = customers; 
+        this.filteredCustomer = this.detailsForm.controls['customer'].valueChanges.pipe(
+          startWith(''),
+          map(value => this._filterCustomer(value || '')),
+        );
+      });
+    }
+    setProduct(){
+      this.localStorageServiceService.getProducts().subscribe(products => {
+        this.products = products; 
+        this.filteredProducts = this.itemForm.controls['productNumber'].valueChanges.pipe(
+          startWith(''),
+          map(value => this._filterProduct(value || '')),
+        );
+      });
+    }
   _filterProduct(value: string) {
-    if(value.length === 0){
-        this.products = [];
-    }
-    if(value.length === 2 || value.length > 2 && !this.products){
-       this.searchProduct(value);
-    }
-    if(value.length >=3 && this.products){
-      const filterValue = value.toLowerCase();
-      return this.products.filter(product => product.number.toLowerCase().includes(filterValue) );
-    }
-    return [];
+    const filterValue = value.toLowerCase();
+    return this.products.filter(product => product.number.toLowerCase().includes(filterValue) );
   }
   _filterCustomer(value: string) {
-    if(value.length === 0 || value.length === 1){
-        this.customers = [];
-    }
-    if(value.length == 2 ){
-        this.searchCustomer(value);
-    }
-    if(value.length >=3){
-      const filterValue = value.toLowerCase();
-      return this.customers.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
-    }
-    return [];
+    // A szűrési logika
+    const filterValue = value.toLowerCase();
+    return this.customers.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
   }
-
-  searchProduct(start: string){
-    start = start.toUpperCase();
-    let end = this.util.endPartOfSearch(start); 
-    if(end == ''){
-        this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
-          this.products = data;
-          })
-    } else {
-        this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
-          this.products = data;
-          })
-     }
-    }
-
-    
-  searchCustomer(start: string){
-      start = start.toUpperCase();
-      let end = this.util.endPartOfSearch(start);
-      if(end == ''){
-        this.customerService.getBySearchNameStartWith(start).subscribe((data:Array<Custamer>)=>{
-          this.customers =  data;
-          }) 
-    } else {
-        let end = this.util.endPartOfSearch(start);
-        this.customerService.getBySearchNameBetween(start,end).subscribe((data: Array<Custamer>) => {
-            this.customers =  data;
-        })
-     }
- }
-
-  
 
   addItem(){
     if(this.itemForm.value.productNumber && this.itemForm.value.amount ){

@@ -1,4 +1,207 @@
 {
-  "indexes": [],
+  "indexes": [
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "customerId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "customerId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "searchArray",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "customerId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "searchArray",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "customerId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "searchArray",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "searchArray",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "DeliveryNotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "number",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
   "fieldOverrides": []
 }

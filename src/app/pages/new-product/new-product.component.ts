@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms'
 import { Router } from '@angular/router';
 import { Product } from 'src/app/shared/models/Product';
+import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
 import { ProductService } from 'src/app/shared/services/products.service';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -29,7 +30,7 @@ export class NewProductComponent implements OnInit {
 
   text : string = ""
 
-  constructor(private router: Router,private productService: ProductService) { }
+  constructor(private router: Router,private productService: ProductService, private localStorage: LocalStorageServiceService) { }
 
   ngOnInit(): void {
   }
@@ -44,6 +45,7 @@ export class NewProductComponent implements OnInit {
         if(data.length == 0){
           isSuccess = true;
           await this.productService.create(this.product);
+          this.localStorage.updateProduct(this.product);
           window.location.reload();
         } else if (data.length != 0 && !isSuccess){
           this.text = "A megadott cikkszám már létezik!";

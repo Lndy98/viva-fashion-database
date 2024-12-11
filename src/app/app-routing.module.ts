@@ -9,7 +9,6 @@ const routes: Routes = [
 { path: 'login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule) },
 { path: 'create', loadChildren: () => import('./pages/create/create.module').then(m => m.CreateModule), canActivate: [AuthGuard] },
 { path: '', component:LoginComponent},
-{ path: 'dbLoader', loadChildren: () => import('./pages/db-loader/db-loader.module').then(m => m.DbLoaderModule), canActivate: [AdminGuard] },
 ];
 
 @NgModule({

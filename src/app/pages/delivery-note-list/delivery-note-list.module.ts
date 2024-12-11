@@ -11,6 +11,8 @@ import {MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatRadioModule} from '@angular/material/radio';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatDatepickerModule,
     MatNativeDateModule,
     MatAutocompleteModule,
-    MatRadioModule
+    MatRadioModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class DeliveryNoteListModule { }

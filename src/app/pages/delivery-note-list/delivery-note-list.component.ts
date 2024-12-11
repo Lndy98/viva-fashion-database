@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
@@ -34,8 +34,7 @@ export class DeliveryNoteListComponent implements OnInit {
   filteredProducts !: Observable<Product[]>;
   filteredCustomer !: Observable<Custamer[]>;
 
-  constructor(private router: Router, private deliveryNotesService: DeliveryNotesService, private productService: ProductService,
-  private util: Util, private localStorageServiceService:LocalStorageServiceService) { }
+  constructor(private router: Router, public deliveryNotesService: DeliveryNotesService, private util: Util, private localStorageServiceService:LocalStorageServiceService) { }
   ngOnInit(): void {
     this.detailsForm.get('type')?.setValue("outgoing");
     this.setDeliveryNotes();
@@ -46,7 +45,7 @@ export class DeliveryNoteListComponent implements OnInit {
   setCustomer() {
     // Az aszinkron adatbetöltést a subscribe-al végezzük el
     this.localStorageServiceService.getCustomers().subscribe(customers => {
-      this.customers = customers; // Miután betöltődtek az adatok, beállítjuk őket
+      this.customers = customers; 
       this.filteredCustomer = this.detailsForm.controls['companyName'].valueChanges.pipe(
         startWith(''),
         map(value => this._filterCustomer(value || '')),
@@ -54,10 +53,13 @@ export class DeliveryNoteListComponent implements OnInit {
     });
   }
   setProduct(){
-    this.filteredProducts = this.detailsForm.controls['productNumber'].valueChanges.pipe(
-      startWith(''),
-      map(value => this._filterProduct(value||'')),
-    );
+    this.localStorageServiceService.getProducts().subscribe(products => {
+      this.products = products; 
+      this.filteredProducts = this.detailsForm.controls['productNumber'].valueChanges.pipe(
+        startWith(''),
+        map(value => this._filterProduct(value || '')),
+      );
+    });
   }
 
   setDeliveryNotes(){
@@ -68,37 +70,14 @@ export class DeliveryNoteListComponent implements OnInit {
   }
 
   _filterProduct(value: string) {
-    if(value.length === 0){
-        this.products = [];
-    }
-    if(value.length === 2 || value.length > 2 && !this.products){
-       this.searchProduct(value);
-    }
-    if(value.length >=3 && this.products){
-      const filterValue = value.toLowerCase();
-      return this.products.filter(product => product.number.toLowerCase().includes(filterValue) );
-    }
-    return [];
+    const filterValue = value.toLowerCase();
+    return this.products.filter(product => product.number.toLowerCase().includes(filterValue) );
   }
   _filterCustomer(value: string) {
     // A szűrési logika
     const filterValue = value.toLowerCase();
     return this.customers.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
   }
-
-  searchProduct(start: string){
-    start = start.toUpperCase();
-    let end = this.util.endPartOfSearch(start); 
-    if(end == ''){
-        this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
-          this.products = data;
-          })
-    } else {
-        this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
-          this.products = data;
-          })
-     }
-    }
 
   goToProductDetails(id: string) {
     this.router.navigate(['home/deliveryNote', id]);

@@ -4,12 +4,12 @@
 
 export const environment = {
   firebase: {
-    projectId: 'viva-fashion-database',
-    appId: '1:1065153561448:web:1168b4619e2427a36d0cdd',
-    storageBucket: 'viva-fashion-database.appspot.com',
-    apiKey: 'AIzaSyDQfBb3o4LER0o3DpFrX9yV9I8rUlYKzp0',
-    authDomain: 'viva-fashion-database.firebaseapp.com',
-    messagingSenderId: '1065153561448',
+    apiKey: "AIzaSyAx2Sas1u6vPZ51xhtbXWxk_Ztb4-ZRvi4",
+    authDomain: "test-v-f-database.firebaseapp.com",
+    projectId: "test-v-f-database",
+    storageBucket: "test-v-f-database.firebasestorage.app",
+    messagingSenderId: "237493889442",
+    appId: "1:237493889442:web:1ac2d252527dd1a5776afb"
   },
   production: false
 };

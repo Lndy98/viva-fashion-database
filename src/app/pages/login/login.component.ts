@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms'
 import { Router } from '@angular/router';
+import { User } from 'src/app/shared/models/User';
 import { AuthService } from 'src/app/shared/services/auth.service';
 import { ProductService } from 'src/app/shared/services/products.service';
 
@@ -24,18 +25,22 @@ export class LoginComponent implements OnInit {
 
   login() {
     if(this.signInForm.value.password && this.signInForm.value.username){
-      let email = this.signInForm.value.username + "@gmail.com";
-
-      this.authService.login(email, this.signInForm.value.password).then(cred=>{
-        console.log(cred);
-        this.rout.navigateByUrl('/home');
-    }).catch(error=>{
-      console.log(error);
-    });
+      let password = this.signInForm.value.password;
+      this.authService.getUserByUsername(this.signInForm.value.username).subscribe(user=>{
+        if(user)
+          {
+            this.authService.login(user.email,password ).then(cred=>{
+              console.log(cred);
+              this.rout.navigateByUrl('/home');
+          }).catch(error=>{
+            console.log(error);
+          });
+          }
+      })      
     } else {
-      console.log("nem töltötted ki!")
+      console.log("Hiányos login adatok!")
     }
-    //TODO
+    
   }
 
 }

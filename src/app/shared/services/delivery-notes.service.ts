@@ -8,7 +8,6 @@ import { QuerySnapshot, Timestamp, where } from '@firebase/firestore';
   providedIn: 'root'
 })
 export class DeliveryNotesService {
-
   collectionName = 'DeliveryNotes';
 
   constructor(private afs: AngularFirestore) { }

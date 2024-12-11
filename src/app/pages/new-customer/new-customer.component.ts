@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms'
 import { Router } from '@angular/router';
 import { Custamer } from 'src/app/shared/models/Custamer';
 import { CustomersService } from 'src/app/shared/services/customers.service';
+import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
 import { v4 as uuidv4 } from 'uuid';
 
 @Component({
@@ -27,7 +28,7 @@ export class NewCustomerComponent implements OnInit {
     comment: new FormControl()
   });
 
-  constructor(private router: Router, private customerService: CustomersService) { }
+  constructor(private router: Router, private customerService: CustomersService, private localStorageServiceService:LocalStorageServiceService) { }
 
   ngOnInit(): void {
   }
@@ -41,6 +42,7 @@ export class NewCustomerComponent implements OnInit {
         if(data.length == 0){
           isSuccess = true;
           await this.customerService.create(this.customer);
+          this.localStorageServiceService.updateCustomer(this.customer);
           window.location.reload();
         }else if (data.length != 0 && !isSuccess){
           this.text = "A megadott partner név már létezik!";

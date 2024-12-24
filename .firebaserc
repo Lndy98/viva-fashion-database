@@ -1,4 +1,8 @@
 {
+  "projects": {
+    "default": "viva-fashion-database",
+    "test-vf-database": "test-v-f-database"
+  },
   "targets": {
     "viva-fashion-database": {
       "hosting": {
@@ -8,7 +12,5 @@
       }
     }
   },
-  "projects": {
-    "default": "viva-fashion-database"
-  }
+  "etags": {}
 }

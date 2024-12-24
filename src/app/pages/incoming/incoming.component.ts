@@ -3,27 +3,28 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
 import { FormControl, FormGroup } from '@angular/forms'
-import { Product } from 'src/app/shared/models/Product';
+import { Product, ProductKeys } from 'src/app/shared/models/Product';
 import { ProductService } from 'src/app/shared/services/products.service';
 import { Item } from 'src/app/shared/models/Item';
 import {MatTable} from '@angular/material/table';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 
-import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
+import { DeliveryNote, DeliveryNoteKeys } from 'src/app/shared/models/DeliveryNote';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
 import { Custamer } from 'src/app/shared/models/Custamer';
 import { Util } from 'src/app/shared/interfaces/Util';
-import { CustomersService } from 'src/app/shared/services/customers.service';
+
 
 import { v4 as uuidv4 } from 'uuid';
 import { Timestamp } from '@firebase/firestore';
 import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
+import { FileReaderUtil } from 'src/app/shared/interfaces/FileReader';
 
 @Component({
   selector: 'app-incoming',
   templateUrl: './incoming.component.html',
   styleUrls: ['./incoming.component.scss'],
-  providers: [Util]
+  providers: [Util, FileReaderUtil]
 })
 export class IncomingComponent implements OnInit {
   @ViewChild (MatTable) table !: MatTable<Item>;
@@ -53,9 +54,11 @@ export class IncomingComponent implements OnInit {
 
   deliveryNote!: DeliveryNote; 
 
+  fileInput:any;
+
 
   constructor(private route: ActivatedRoute,private router: Router, private productService: ProductService, private deliveryNoteService: DeliveryNotesService,
-      private localStorageServiceService:LocalStorageServiceService, public util: Util) { }
+      private localStorageServiceService:LocalStorageServiceService, public util: Util, public fileReader: FileReaderUtil) { }
 
   ngOnInit(): void {
     if(!this.deliveryNote){
@@ -277,4 +280,30 @@ _filterCustomer(value: string) {
 
     }
   } 
-}
+
+
+  onFileChange(event: any): void{
+    console.log("Hello")
+      const file: File = event.target.files[0];
+      if (file && file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+        const reader = new FileReader();
+
+        reader.onload = (e: any) => {
+         const jsonData = this.fileReader.readExcel(e);
+         let keys: ProductKeys[] = ['number', 'stock', 'incomingPrice'];
+         if(this.fileReader.validateHeader(jsonData[0], keys )){
+          console.log("Valid fejléc")
+          keys = jsonData[0];
+          let output = this.fileReader.transferJsonToObject(jsonData.slice(1), keys);
+          console.log(output);
+         } else {
+          alert("Az excel fejléce nem megfelelő.")
+         }
+        };
+
+        reader.readAsArrayBuffer(file);
+      } else {
+        alert('Kérlek válassz egy érvényes Excel fájlt (.xlsx)');
+      }
+    }
+  }

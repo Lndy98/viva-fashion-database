@@ -3,12 +3,10 @@ import { Router } from '@angular/router';
 import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
 import { FormControl, FormGroup } from '@angular/forms'
-import { ProductService } from 'src/app/shared/services/products.service';
 import { Custamer } from 'src/app/shared/models/Custamer';
 import { map, Observable, startWith } from 'rxjs';
 import { Util } from 'src/app/shared/interfaces/Util';
 import { Product } from 'src/app/shared/models/Product';
-import { CustomersService } from 'src/app/shared/services/customers.service';
 import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
 
 @Component({
@@ -34,7 +32,7 @@ export class DeliveryNoteListComponent implements OnInit {
   filteredProducts !: Observable<Product[]>;
   filteredCustomer !: Observable<Custamer[]>;
 
-  constructor(private router: Router, public deliveryNotesService: DeliveryNotesService, private util: Util, private localStorageServiceService:LocalStorageServiceService) { }
+  constructor(private router: Router, private deliveryNotesService: DeliveryNotesService, private util: Util, private localStorageServiceService:LocalStorageServiceService) { }
   ngOnInit(): void {
     this.detailsForm.get('type')?.setValue("outgoing");
     this.setDeliveryNotes();

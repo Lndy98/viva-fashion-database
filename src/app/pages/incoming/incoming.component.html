@@ -47,7 +47,12 @@
             </span>
         </form>
 </div>
-</div></div>
+</div>
+<form #fileForm="ngForm">
+    <label for="fileInput">Válassz egy Excel fájlt:</label>
+    <input type="file" id="fileInput" name="file" (change)="onFileChange($event)" accept=".xlsx, .xls" />
+  </form>
+</div>
 
 <table mat-table [dataSource]="items" *ngIf="isItem">
     <ng-container matColumnDef="number">

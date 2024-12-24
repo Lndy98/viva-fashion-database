@@ -11,3 +11,4 @@ export interface Product{
     vtsz: string;
     incomingPrice: string;
 }
+export type ProductKeys = keyof Product;

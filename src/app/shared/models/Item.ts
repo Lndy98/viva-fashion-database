@@ -3,6 +3,7 @@ export interface Item{
     productNumber: string,
     productName: string,
     amount: string,
+    //amountNum: number,
     price: string,
     incomingPrice: string,
 }

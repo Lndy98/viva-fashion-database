@@ -28,8 +28,7 @@ import { FileReaderUtil } from 'src/app/shared/interfaces/FileReader';
 })
 export class IncomingComponent implements OnInit {
   @ViewChild (MatTable) table !: MatTable<Item>;
-  itemNumber: number = 0;
-  isItem: boolean = false;
+  itemNumber: number = 1;
 
   isNew: boolean = false;
 
@@ -81,7 +80,6 @@ export class IncomingComponent implements OnInit {
       if(data){
         this.deliveryNote = data;
         this.items = this.deliveryNote.products;
-        this.isItem = true;
         this.itemNumber = this.items.length;
 
         this.items.forEach( item =>{
@@ -98,16 +96,6 @@ export class IncomingComponent implements OnInit {
         this.detailsForm.get('date')?.setValue(this.deliveryNote.date);
       }
     })
-  }
-
-  isInArray(productNumber: string): boolean{
-    let isIn = false;
-    this.products.forEach(product=>{
-      if(product.number == productNumber){
-        isIn = true;
-      }
-    })
-    return isIn;
   }
 
   setCustomer() {
@@ -169,50 +157,54 @@ _filterCustomer(value: string) {
   }
   return  now.getFullYear()+"-"+ (now.getMonth()+1)+"-"+number;
 }
-    
-
 
   addItem(){
     if(this.itemForm.value.productNumber && this.itemForm.value.amount && this.getProduct(this.itemForm.value.productNumber)){
-      let pr = this.getProduct(this.itemForm.value.productNumber);
-      let amount = this.itemForm.value.amount;
-      this.itemNumber += 1;
-      this.isItem = true;
-      if(this.isInItemArray(this.itemForm.value.productNumber)){
-        this.items.forEach(element => {
-          console.log(element.number == this.itemForm.value.productNumber)
-          if(element.productNumber == this.itemForm.value.productNumber){
-            console.log(element);
-            element.amount = (+element.amount + +amount).toString();
-          }
-        });
-      } else{
-      let item : Item ={
-        number: this.itemNumber.toString(),
-        productNumber: this.itemForm.value.productNumber,
-        productName: pr.name,
-        amount: amount,
-        price: pr.price,
-        incomingPrice: pr.incomingPrice
-      }
-      this.incomingProduct.push(pr);
-      this.items.push(item);
-      if(this.itemNumber >1){ this.table.renderRows(); }
-      
-      }
+      console.log("Itemnumber: "+ this.itemNumber);
+      this.loadToTable(this.itemForm.value.productNumber, this.itemForm.value.amount)
       this.itemForm.reset();
     }
   }
-  isInItemArray(productNumber: string){
-    let isInArray = false;
+  loadToTable(productNumber:string, amount: string){
+    let pr = this.getProduct(productNumber);
+    if(!pr){
+      console.log(productNumber + " is not valid product number.")
+      //TODO: legyen kezelve hogy még nincs ilyen termék: valahogy legyen lehőség létrehozni
+      //1. új táblázat sor végén gomb ami felugró ablakban egy új terméket hoz létre mentés gombra bezáródik, újra renderelődik a két táblázat
+      //excel export-> talán kevéssbé jó.
+      return
+    }
+    let item = this.getItem(productNumber, pr);
+    if(item){
+        console.log(item);
+        if(+item.amount === 0){
+          this.incomingProduct.push(pr);
+          this.items.push(item);
+          if(this.itemNumber >1){ this.table.renderRows(); }
+          this.itemNumber += 1;
+        }
+        item.amount = (+item.amount + +amount).toString();
+    } 
+  }
+  getItem(productNumber: string, pr: Product):Item{
+    let item :Item={
+      number: this.itemNumber.toString(),
+      productNumber: productNumber,
+      productName: pr.name,
+      amount: "0",
+      price: pr.price,
+      incomingPrice: pr.incomingPrice
+    }
     this.items.forEach(element =>{
       if(element.productNumber == productNumber){
-        isInArray = true;
+        item = element;
       }
-    })
-    return isInArray;
+    })  
+    return item;
   }
+  
 
+  //TODO: nem lehet esetleg ezt a service oyztályba kiemelni?
   getProduct(productNumber: string): any{
     let product:Product|null = null;
     this.products.forEach(element => {
@@ -237,11 +229,10 @@ _filterCustomer(value: string) {
     const indexItem = this.items.indexOf(item);
     if (indexItem !== -1) {
       this.items.splice(indexItem, 1);
+      this.itemNumber -=1;
     }
     if(this.items){
       this.table.renderRows();
-    } else {
-      this.isItem = false;
     }
   }
 
@@ -296,6 +287,7 @@ _filterCustomer(value: string) {
           keys = jsonData[0];
           let output = this.fileReader.transferJsonToObject(jsonData.slice(1), keys);
           console.log(output);
+          output.forEach(element=>{this.loadToTable(element.number,element.stock)});
          } else {
           alert("Az excel fejléce nem megfelelő.")
          }
@@ -306,4 +298,5 @@ _filterCustomer(value: string) {
         alert('Kérlek válassz egy érvényes Excel fájlt (.xlsx)');
       }
     }
+   
   }

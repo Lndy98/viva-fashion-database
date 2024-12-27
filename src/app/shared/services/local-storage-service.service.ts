@@ -59,7 +59,7 @@ export class LocalStorageServiceService {
       //Ha a localStorage nem tartalmazza frissítjük azt
       products[index] = updatedProduct;
       this.productsSubject.next([...products]);
-      localStorage.setItem(this.customerKey, JSON.stringify(products));
+      localStorage.setItem(this.productKey, JSON.stringify(products));
     }
   }
   private loadProductsFromServer(): Observable<Product[]> {

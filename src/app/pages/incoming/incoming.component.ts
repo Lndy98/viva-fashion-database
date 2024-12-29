@@ -28,6 +28,8 @@ import { FileReaderUtil } from 'src/app/shared/interfaces/FileReader';
 })
 export class IncomingComponent implements OnInit {
   @ViewChild (MatTable) table !: MatTable<Item>;
+
+  //TODO: itemNumber elvileg már nem kell
   itemNumber: number = 1;
 
   isNew: boolean = false;
@@ -38,8 +40,10 @@ export class IncomingComponent implements OnInit {
   filteredCustomer !: Observable<Custamer[]>;
 
   items: Item[] = []
+  datasource:  [boolean, Item][] = [];
+  
   incomingProduct : Array< Product> = [];
-  displayedColumns: string[] = ['number', 'amount', 'incomingPrice', 'price', 'delete'];
+  displayedColumns: string[] = ['number', 'amount', 'incomingPrice', 'price', 'action'];
 
   detailsForm = new FormGroup({
     customer: new FormControl(''),
@@ -79,6 +83,7 @@ export class IncomingComponent implements OnInit {
     this.deliveryNoteService.getById(id).subscribe(data =>{
       if(data){
         this.deliveryNote = data;
+        //TODO: itt még nem a boolean,Itemet töltjük
         this.items = this.deliveryNote.products;
         this.itemNumber = this.items.length;
 
@@ -126,7 +131,7 @@ _filterCustomer(value: string) {
   const filterValue = value.toLowerCase();
   return this.customers.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
 }
-
+//TODO: kiemelés-> illetve valami memória barátabb megoldás
  setDeliveryNote(){
   let now = new Date();
     let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
@@ -146,7 +151,7 @@ _filterCustomer(value: string) {
     }
   })
  }
-
+//TODO: kiemelés-> illetve valami memória barátabb megoldás
  generateDeliveryNoteNumber(number: string){
   let now = new Date();
   if(number === "9999"){
@@ -165,30 +170,48 @@ _filterCustomer(value: string) {
       this.itemForm.reset();
     }
   }
+
+  //TODO: nem ellenőrzi hogy van e már a datasource-ban ilyen elem.
   loadToTable(productNumber:string, amount: string){
     let pr = this.getProduct(productNumber);
     if(!pr){
       console.log(productNumber + " is not valid product number.")
-      //TODO: legyen kezelve hogy még nincs ilyen termék: valahogy legyen lehőség létrehozni
-      //1. új táblázat sor végén gomb ami felugró ablakban egy új terméket hoz létre mentés gombra bezáródik, újra renderelődik a két táblázat
-      //excel export-> talán kevéssbé jó.
-      return
-    }
+      let item :Item={
+        number: this.itemNumber.toString(),
+        productNumber: productNumber,
+        productName: "",
+        amount: amount,
+        price: "",
+        incomingPrice:""
+      }
+      this.datasource.push([false,item]);
+      } else {
     let item = this.getItem(productNumber, pr);
     if(item){
         console.log(item);
         if(+item.amount === 0){
           this.incomingProduct.push(pr);
-          this.items.push(item);
-          if(this.itemNumber >1){ this.table.renderRows(); }
+          this.datasource.push([true,item]);
           this.itemNumber += 1;
         }
         item.amount = (+item.amount + +amount).toString();
-    } 
+    } }
+    this.updateDataSource();
   }
+updateDataSource(){
+  if(this.table && this.datasource.length > 1){ 
+    this.datasource.sort((a, b) => {
+      if (a[0] === b[0]) return 0; 
+      return a[0] ? -1 : 1;
+    });
+    this.table.renderRows();
+   }
+}
+
+//TODO: nem lehet esetleg ezt a service oyztályba kiemelni?
   getItem(productNumber: string, pr: Product):Item{
     let item :Item={
-      number: this.itemNumber.toString(),
+      number: (this.items.length+1).toString(),
       productNumber: productNumber,
       productName: pr.name,
       amount: "0",
@@ -214,26 +237,8 @@ _filterCustomer(value: string) {
     });
     return product;
   }
-
-  getIncomingProducts( itemNumber: string){
-    let product:Product = {number: "", id:"", name:"", stock:"", unit:"", price:"", origin:"", materialComposition:"", grammWeight:"", incomingPrice:"", vtsz:""};
-    this.incomingProduct.forEach(element => {
-      if( element.number == itemNumber){
-        product = element;
-      }
-    });
-    return product;
-  }
-
   removeElement(item: Item){
-    const indexItem = this.items.indexOf(item);
-    if (indexItem !== -1) {
-      this.items.splice(indexItem, 1);
-      this.itemNumber -=1;
-    }
-    if(this.items){
-      this.table.renderRows();
-    }
+    //TODO: datasource remoive item
   }
 
 
@@ -288,6 +293,7 @@ _filterCustomer(value: string) {
           let output = this.fileReader.transferJsonToObject(jsonData.slice(1), keys);
           console.log(output);
           output.forEach(element=>{this.loadToTable(element.number,element.stock)});
+          console.log( this.datasource);
          } else {
           alert("Az excel fejléce nem megfelelő.")
          }
@@ -297,6 +303,9 @@ _filterCustomer(value: string) {
       } else {
         alert('Kérlek válassz egy érvényes Excel fájlt (.xlsx)');
       }
+    }
+    createProduct(item:Item){
+      //TODO: felugró ablakban lehessen létrehozni a terméket.
     }
    
   }

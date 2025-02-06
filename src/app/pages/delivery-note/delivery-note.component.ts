@@ -1,8 +1,8 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Util } from 'src/app/shared/interfaces/Util';
 import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
-import { Item } from 'src/app/shared/models/Item';
+import { ItemInterface } from 'src/app/shared/models/ItemInterface';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
 
 @Component({
@@ -18,13 +18,13 @@ export class DeliveryNoteComponent implements OnInit {
   isCallculated: boolean = false;
   sumAmount: number = 0;
   sumPrice: number = 0;
-  products!: Item[];
+  products!: ItemInterface[];
 
 
   deliveryNote !: DeliveryNote;
   displayedColumns: string[] = ['productNumber','name', 'amount', 'price','brutto', 'payable'];
 
-  constructor(private activatedRoute: ActivatedRoute,private router: Router, private deliveryNoteService: DeliveryNotesService, public util: Util) { }
+  constructor(private readonly activatedRoute: ActivatedRoute,private readonly router: Router, private readonly deliveryNoteService: DeliveryNotesService, public util: Util) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
@@ -55,11 +55,11 @@ export class DeliveryNoteComponent implements OnInit {
       this.router.navigate(['create/outgoing', this.deliveryNote.id]);
     }
   }
- 
+
   calculateSumValues(){
     if(!this.isCallculated){
       this.isCallculated = true;
-        this.deliveryNote.products.forEach((value, key) => {
+        this.deliveryNote.products.forEach((value) => {
         this.sumAmount = this.sumAmount + (+value.amount);
         this.sumPrice = this.sumPrice + (+value.amount)*(+value.price);
       });

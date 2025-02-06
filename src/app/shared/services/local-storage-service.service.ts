@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { tap } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { CustomersService } from './customers.service';
 import { Custamer } from '../models/Custamer';
 import { ProductService } from './products.service';
@@ -11,15 +11,15 @@ import { Product } from '../models/Product';
 })
 export class LocalStorageServiceService {
 
-  private customerKey = 'customer';
-  private productKey = 'products';
+  private readonly customerKey = 'customer';
+  private readonly productKey = 'products';
 
-  private customersSubject: BehaviorSubject<Custamer[]> = new BehaviorSubject<Custamer[]>([]);
+  private readonly customersSubject: BehaviorSubject<Custamer[]> = new BehaviorSubject<Custamer[]>([]);
   public customers$: Observable<Custamer[]> = this.customersSubject.asObservable();
-  private productsSubject: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
+  private readonly productsSubject: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
   public products$: Observable<Product[]> = this.productsSubject.asObservable();
-  
-  constructor(private customersService: CustomersService, private productService: ProductService) { }
+
+  constructor(private readonly customersService: CustomersService, private readonly productService: ProductService) { }
 
 
   getCustomers():Observable<Custamer[]>{
@@ -83,5 +83,10 @@ export class LocalStorageServiceService {
     localStorage.setItem(storageKey, items);
   }
 
-  
+  getProduct(productNumber: string): Observable<Product | null>{
+    return this.getProducts().pipe(
+      map(products => products.find(p => p.number === productNumber) || null)
+    );
+  }
+
 }

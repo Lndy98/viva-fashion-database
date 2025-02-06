@@ -57,37 +57,37 @@
 <table mat-table [dataSource]="datasource" *ngIf="datasource.length>=1">
     <ng-container matColumnDef="number">
         <th mat-header-cell *matHeaderCellDef> Cikkszám* </th>
-        <td mat-cell *matCellDef="let element"> {{ element[1].productNumber }} </td>
+        <td mat-cell *matCellDef="let element"> {{ element[0].productNumber }} </td>
     </ng-container>
     <ng-container matColumnDef="amount">
         <th mat-header-cell *matHeaderCellDef> mennyiség </th>
-        <td mat-cell *matCellDef="let element">  
+        <td mat-cell *matCellDef="let element">
             <mat-form-field class="example-full-width" appearance="fill">
-            <input matInput type="text" [(ngModel)]="element[1].amount">
-            </mat-form-field> 
+            <input matInput type="text" [(ngModel)]="element[0].amount">
+            </mat-form-field>
         </td>
     </ng-container>
     <ng-container matColumnDef="incomingPrice">
         <th mat-header-cell *matHeaderCellDef>Bekerülési ár</th>
-        <td mat-cell *matCellDef="let element">  
+        <td mat-cell *matCellDef="let element">
             <mat-form-field class="example-full-width" appearance="fill">
-            <input matInput type="text" [(ngModel)]="element[1].incomingPrice">
-            </mat-form-field> 
+            <input matInput type="text" [(ngModel)]="element[0].incomingPrice">
+            </mat-form-field>
         </td>
     </ng-container>
     <ng-container matColumnDef="price">
         <th mat-header-cell *matHeaderCellDef> Ár </th>
-        <td mat-cell *matCellDef="let element">  
+        <td mat-cell *matCellDef="let element">
             <mat-form-field class="example-full-width" appearance="fill">
-            <input matInput type="text" [(ngModel)]="element[1].price">
-            </mat-form-field> 
+            <input matInput type="text" [(ngModel)]="element[0].price">
+            </mat-form-field>
         </td>
     </ng-container>
     <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let element" > 
-            <button mat-button *ngIf="!element[0]"(click)="createProduct(element[1])">Hozzáad</button>
-            <button mat-button (click)="removeElement(element[1])">Törlés</button>
+        <td mat-cell *matCellDef="let element" >
+            <button mat-button *ngIf="!element[1]"(click)="createProduct(element[0])">Hozzáad</button>
+            <button mat-button (click)="removeElement(element[0])">Törlés</button>
         </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -4,18 +4,16 @@ import { ProductService } from 'src/app/shared/services/products.service';
 import { Product } from '../../shared/models/Product';
 import { DeliveryNote } from '../../shared/models/DeliveryNote';
 import { Custamer } from '../../shared/models/Custamer';
-import { Item } from 'src/app/shared/models/Item';
+import { ItemInterface } from 'src/app/shared/models/ItemInterface';
 import { Util } from 'src/app/shared/interfaces/Util';
 
 import {MatTable} from '@angular/material/table';
 import { v4 as uuidv4 } from 'uuid';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
-import { CustomersService } from 'src/app/shared/services/customers.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import { hrtime } from 'process';
 import { Timestamp } from '@firebase/firestore';
 import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
 
@@ -29,8 +27,8 @@ export class OutgoingComponent implements OnInit {
 
   isNew: boolean = false;
   isItem: boolean = false;
-  itemNumber: number = 0;  
-  itemArray: Item [] = [];
+  itemNumber: number = 0;
+  itemArray: ItemInterface [] = [];
 
   displayedColumns: string[] = ['id','productNumber','name', 'amount', 'price','brutto','payable', 'remove'];
   invalidStock : string[] = [];
@@ -41,7 +39,7 @@ export class OutgoingComponent implements OnInit {
   filteredCustomer !: Observable<Custamer[]>;
 
   selectedProducts: Product [] = [];
-  
+
   detailsForm = new FormGroup({
     customer: new FormControl(''),
     tax: new FormControl(''),
@@ -55,11 +53,11 @@ export class OutgoingComponent implements OnInit {
   });
 
   deliveryNotes: DeliveryNote[] = [];
-  
-  @ViewChild (MatTable) table !: MatTable<Item>;
 
-  constructor(private route: ActivatedRoute, private router: Router, private productService: ProductService,
-      private deliveryNoteService: DeliveryNotesService, private localStorageServiceService:LocalStorageServiceService, public util: Util) { }
+  @ViewChild (MatTable) table !: MatTable<ItemInterface>;
+
+  constructor(private readonly route: ActivatedRoute, private readonly router: Router, private readonly productService: ProductService,
+      private readonly deliveryNoteService: DeliveryNotesService, private readonly localStorageServiceService:LocalStorageServiceService, public util: Util) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -79,11 +77,11 @@ export class OutgoingComponent implements OnInit {
       this.deliveryNoteService.getById(id).subscribe(data =>{
         if(data){
           this.deliveryNote = data;
-          
+
           this.itemArray = this.deliveryNote.products;
           this.isItem = true;
           this.itemNumber = this.itemArray.length;
-  
+
           this.itemArray.forEach( item =>{
             this.productService.getByNumber(item.productNumber).subscribe(product =>{
               if(product){
@@ -99,12 +97,12 @@ export class OutgoingComponent implements OnInit {
           this.detailsForm.get('date')?.setValue(this.deliveryNote.date);
         }
       })
-    
+
   }
   setDeliveryNote(){
     let now = new Date();
     let date = new Date(now.getFullYear().toString()+"-"+(now.getMonth()+1).toString());
-    
+
     this.deliveryNoteService.getByMonth(date).subscribe((data : Array<DeliveryNote>) => {
       if(data){
 
@@ -138,19 +136,19 @@ export class OutgoingComponent implements OnInit {
     setCustomer() {
       // Az aszinkron adatbetöltést a subscribe-al végezzük el
       this.localStorageServiceService.getCustomers().subscribe(customers => {
-        this.customers = customers; 
+        this.customers = customers;
         this.filteredCustomer = this.detailsForm.controls['customer'].valueChanges.pipe(
           startWith(''),
-          map(value => this._filterCustomer(value || '')),
+          map(value => this._filterCustomer(value ?? '')),
         );
       });
     }
     setProduct(){
       this.localStorageServiceService.getProducts().subscribe(products => {
-        this.products = products; 
+        this.products = products;
         this.filteredProducts = this.itemForm.controls['productNumber'].valueChanges.pipe(
           startWith(''),
-          map(value => this._filterProduct(value || '')),
+          map(value => this._filterProduct(value ?? '')),
         );
       });
     }
@@ -180,7 +178,7 @@ export class OutgoingComponent implements OnInit {
           });
         } else{
           this.itemNumber += 1;
-        let item : Item = ({
+        let item : ItemInterface = ({
           number: this.itemNumber.toString(),
           productNumber: this.itemForm.value.productNumber,
           productName: product.name,
@@ -225,8 +223,8 @@ export class OutgoingComponent implements OnInit {
       this.invalidStock.push(product.number);
     }
   }
-  
-  removeElement(item: Item){
+
+  removeElement(item: ItemInterface){
     const index = this.itemArray.indexOf(item);
     if (index !== -1) {
       this.itemArray.splice(index, 1);
@@ -261,27 +259,27 @@ export class OutgoingComponent implements OnInit {
       this.deliveryNote.customerId = this.detailsForm.value.customer;
       this.deliveryNote.date = Timestamp.fromDate(new Date(new Date().toDateString()));
       this.deliveryNote.products = this.itemArray;
-      
+
       let modifyProductsList : Product[] = [];
       this.selectedProducts.forEach(async product =>{
         this.deliveryNote.searchArray.push(product.number);
-        await this.util.takeItemAmountFromStock(product,this.itemArray);        
+        await this.util.takeItemAmountFromStock(product,this.itemArray);
         modifyProductsList.push(product);
       })
       console.log("A kiválasztott termékek kódok listája:")
       console.log(this.deliveryNote.searchArray)
-      
+
       this.deliveryNoteService.create(this.deliveryNote).then(_=>{
         modifyProductsList.forEach(async product  =>{
           await this.productService.setProduct(product);
        })
 
       })
-      
+
       this.router.navigate(['home/deliveryNote', this.deliveryNote.id]);
-      
-      
-    } 
+
+
+    }
   }
 
 

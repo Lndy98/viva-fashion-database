@@ -1,13 +1,13 @@
 
 import { Timestamp } from "@firebase/firestore";
-import { Item } from "./Item";
+import { ItemInterface } from "./ItemInterface";
 
 export interface DeliveryNote{
     id: string;
     number: string;
     date: Timestamp;
     customerId: string;
-    products: Item[];
+    products: ItemInterface[];
     tax: string;
     type: string; //incoming or outgoing
     searchArray: string[];

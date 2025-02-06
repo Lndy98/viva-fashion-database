@@ -3,14 +3,13 @@ import { Product } from "../models/Product";
 import { CustomersService } from "../services/customers.service";
 import { ProductService } from "../services/products.service";
 import { Injectable } from "@angular/core";
-import { Item } from "../models/Item";
-import { Observable } from "rxjs";
+import { ItemInterface } from "../models/ItemInterface";
 
 @Injectable()
 export class Util{
     products: Array<Product> = [];
     customers: Array<Custamer> = [];
-    constructor(private productService: ProductService, private customerService: CustomersService){}
+    constructor(private readonly productService: ProductService){}
     getPayable(taxString: any, price: string, amount: string): any{
         return this.formatNumber(((+amount)*(+price)*this.getTaxMultiplier(taxString)).toString());
       }
@@ -22,11 +21,11 @@ export class Util{
     }
     getTaxFromStrign(tax: any): number{
         switch(tax){
-          case 'zero': 
+          case 'zero':
             return 0;
           case 'half':
             return 13.5;
-          case '0': 
+          case '0':
               return 0;
           case '13.5':
               return 13.5;
@@ -35,7 +34,7 @@ export class Util{
       }
       getTaxToString(tax: string): string{
         switch(tax){
-            case '0': 
+            case '0':
               return 'zero';
             case '13.5':
               return 'half';
@@ -61,25 +60,25 @@ export class Util{
         return '';
     }
 
-    addItemAmountToStock(product: Product, items: Item[]){
+    addItemAmountToStock(product: Product, items: ItemInterface[]){
       items.forEach(item =>{
           if(product.number == item.productNumber){
             product.stock = (+product.stock + +item.amount).toString();
-          } 
+          }
         })
         return Promise.resolve('done');
     }
 
-    takeItemAmountFromStock(product: Product, items: Item[]){
+    takeItemAmountFromStock(product: Product, items: ItemInterface[]){
       items.forEach(item =>{
         if(product.number == item.productNumber){
           product.stock = (+product.stock - +item.amount).toString();
-        } 
+        }
       })
       return Promise.resolve('done');
     }
 
-    modifyProductsPrice(product: Product, items: Item[]){
+    modifyProductsPrice(product: Product, items: ItemInterface[]){
       items.forEach(async item =>{
           if(product.number == item.productNumber){
             product.price = item.price;
@@ -89,6 +88,6 @@ export class Util{
       })
       return Promise.resolve('done');
     }
-    
-  
+
+
 }

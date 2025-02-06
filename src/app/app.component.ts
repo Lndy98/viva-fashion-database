@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from './shared/models/Product';
+import { ProductInterface } from './shared/models/ProductInterface';
 import { AuthService } from './shared/services/auth.service';
 import { ProductService } from './shared/services/products.service';
 
@@ -12,11 +12,11 @@ export class AppComponent {
   title = 'viva-fashion-database';
   loggedInUser?: firebase.default.User | null;
   isAdmin :boolean = false;
-  
-  constructor (private authService: AuthService, private productService: ProductService){}
 
-  products!: Product[];
- 
+  constructor (private readonly authService: AuthService){}
+
+  products!: ProductInterface[];
+
   ngOnInit(){
     this.authService.isUserLoggedIn().subscribe(user=>{
       this.loggedInUser = user;
@@ -30,7 +30,7 @@ export class AppComponent {
     })
   }
 
-  logout(){ 
+  logout(){
     this.authService.logout().then(()=>{
       this.isAdmin = false;
     }).catch(error=>{

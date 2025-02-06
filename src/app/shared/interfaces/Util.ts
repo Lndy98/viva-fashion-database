@@ -1,13 +1,12 @@
 import { Custamer } from "../models/Custamer";
-import { Product } from "../models/Product";
-import { CustomersService } from "../services/customers.service";
+import { ProductInterface } from "../models/ProductInterface";
 import { ProductService } from "../services/products.service";
 import { Injectable } from "@angular/core";
 import { ItemInterface } from "../models/ItemInterface";
 
 @Injectable()
 export class Util{
-    products: Array<Product> = [];
+    products: Array<ProductInterface> = [];
     customers: Array<Custamer> = [];
     constructor(private readonly productService: ProductService){}
     getPayable(taxString: any, price: string, amount: string): any{
@@ -60,7 +59,7 @@ export class Util{
         return '';
     }
 
-    addItemAmountToStock(product: Product, items: ItemInterface[]){
+    addItemAmountToStock(product: ProductInterface, items: ItemInterface[]){
       items.forEach(item =>{
           if(product.number == item.productNumber){
             product.stock = (+product.stock + +item.amount).toString();
@@ -69,7 +68,7 @@ export class Util{
         return Promise.resolve('done');
     }
 
-    takeItemAmountFromStock(product: Product, items: ItemInterface[]){
+    takeItemAmountFromStock(product: ProductInterface, items: ItemInterface[]){
       items.forEach(item =>{
         if(product.number == item.productNumber){
           product.stock = (+product.stock - +item.amount).toString();
@@ -78,7 +77,7 @@ export class Util{
       return Promise.resolve('done');
     }
 
-    modifyProductsPrice(product: Product, items: ItemInterface[]){
+    modifyProductsPrice(product: ProductInterface, items: ItemInterface[]){
       items.forEach(async item =>{
           if(product.number == item.productNumber){
             product.price = item.price;

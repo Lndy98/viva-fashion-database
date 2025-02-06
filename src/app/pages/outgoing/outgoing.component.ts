@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms'
 import { ProductService } from 'src/app/shared/services/products.service';
-import { Product } from '../../shared/models/Product';
+import { ProductInterface } from '../../shared/models/ProductInterface';
 import { DeliveryNote } from '../../shared/models/DeliveryNote';
 import { Custamer } from '../../shared/models/Custamer';
 import { ItemInterface } from 'src/app/shared/models/ItemInterface';
@@ -33,12 +33,12 @@ export class OutgoingComponent implements OnInit {
   displayedColumns: string[] = ['id','productNumber','name', 'amount', 'price','brutto','payable', 'remove'];
   invalidStock : string[] = [];
 
-  products !: Array<Product>;
+  products !: Array<ProductInterface>;
   customers !: Array<Custamer>;
-  filteredProducts !: Observable<Product[]>;
+  filteredProducts !: Observable<ProductInterface[]>;
   filteredCustomer !: Observable<Custamer[]>;
 
-  selectedProducts: Product [] = [];
+  selectedProducts: ProductInterface [] = [];
 
   detailsForm = new FormGroup({
     customer: new FormControl(''),
@@ -198,7 +198,7 @@ export class OutgoingComponent implements OnInit {
   }
 
   getProduct(productNumber: string): any{
-    let product:Product|null = null;
+    let product:ProductInterface|null = null;
     this.products.forEach(element => {
       if(element.number == productNumber){
         product = element;
@@ -217,7 +217,7 @@ export class OutgoingComponent implements OnInit {
     return isInArray;
   }
 
-  checkStock(product: Product, amount: string){
+  checkStock(product: ProductInterface, amount: string){
     product.stock = (+this.util.formatNumber(product.stock) - +amount).toString();
     if(+product.stock < 0){
       this.invalidStock.push(product.number);
@@ -260,7 +260,7 @@ export class OutgoingComponent implements OnInit {
       this.deliveryNote.date = Timestamp.fromDate(new Date(new Date().toDateString()));
       this.deliveryNote.products = this.itemArray;
 
-      let modifyProductsList : Product[] = [];
+      let modifyProductsList : ProductInterface[] = [];
       this.selectedProducts.forEach(async product =>{
         this.deliveryNote.searchArray.push(product.number);
         await this.util.takeItemAmountFromStock(product,this.itemArray);

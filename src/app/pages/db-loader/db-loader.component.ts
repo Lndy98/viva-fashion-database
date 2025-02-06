@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Timestamp } from '@firebase/firestore';
 import { Custamer } from 'src/app/shared/models/Custamer';
 import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
-import { Product } from 'src/app/shared/models/Product';
+import { ProductInterface } from 'src/app/shared/models/ProductInterface';
 import { CustomersService } from 'src/app/shared/services/customers.service';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
 import { ProductService } from 'src/app/shared/services/products.service';
@@ -14,7 +14,7 @@ import { ProductService } from 'src/app/shared/services/products.service';
 })
 export class DbLoaderComponent implements OnInit {
 
-  products: Product[] =[];
+  products: ProductInterface[] =[];
   productsLength: number = this.products.length;
   custamers: Custamer[] = [];
   custamersLength: number = this.custamers.length;
@@ -36,7 +36,7 @@ export class DbLoaderComponent implements OnInit {
 
   loadProducts(){
     console.log("Loading has started!")
-    this.products.forEach((product, index) =>{
+    this.products.forEach((product) =>{
       this.productService.create(product).then(_=>{
         this.productsLength -= 1;
         console.log(this.productsLength);
@@ -45,7 +45,7 @@ export class DbLoaderComponent implements OnInit {
   }
   loadCustomer(){
     console.log("Loading has started!")
-    this.custamers.forEach((custamer, index) =>{
+    this.custamers.forEach((custamer) =>{
       this.customerService.create(custamer).then(_=>{
         this.custamersLength -= 1;
         console.log(this.custamersLength);
@@ -62,34 +62,34 @@ export class DbLoaderComponent implements OnInit {
     this.elementCounter = 0;
     this.successCounter = 0;
     this.unSuccessCounter = 0;
-    
+
     this.deliveryNoteService.loadDeliveryNotes().subscribe(data=>{
       if(data){
-        
+
         data.forEach(deliveryNote=>{
-          
+
             let datum = new Date(deliveryNote.date.toString());
             if(isCorrectDate(datum)){
-                
+
                 deliveryNote.date = Timestamp.fromDate(datum);
                 this.deliverNotes.push(deliveryNote);
-                
+
                 this.unSuccessCounter +=1;
             } else {
               this.successCounter +=1;
-            }        
-            
+            }
+
             this.elementCounter += 1;
-          
+
         })
       }
     })
-    
+
   }
 
   loadDeliveryNotes(){
     console.log("Loading has started!")
-    this.deliverNotes.forEach((deliverNote, index) =>{
+    this.deliverNotes.forEach((deliverNote) =>{
       this.deliveryNoteService.create(deliverNote).then(_=>{
         this.unSuccessCounter -= 1;
       })
@@ -97,7 +97,6 @@ export class DbLoaderComponent implements OnInit {
   }
 
   modifyThatDelivaryNotes(){
-    let datum  = Timestamp.fromDate(new Date);
     console.log("modification is started!");
     this.deliveryNoteService.getById("2ffbe3b8-df42-434b-851a-5c3164587d13").subscribe(data=>{
       if(data){
@@ -106,7 +105,7 @@ export class DbLoaderComponent implements OnInit {
         this.deliveryNoteService.create(data);
       }
     })
-    
+
     console.log("modification is ended!");
   }
 
@@ -117,7 +116,7 @@ export class DbLoaderComponent implements OnInit {
         console.log("DB-ben szereplő: " + Timestamp.fromDate(new Date(new Date().toDateString())));
 
         console.log(date.isEqual( Timestamp.fromDate(new Date(new Date().toDateString()))));
-    
+
   }
 
 

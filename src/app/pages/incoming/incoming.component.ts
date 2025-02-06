@@ -1,9 +1,9 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable, firstValueFrom} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
 import {FormControl, FormGroup} from '@angular/forms'
-import {Product, ProductKeys} from 'src/app/shared/models/Product';
+import {ProductInterface, ProductKeys} from 'src/app/shared/models/ProductInterface';
 import {ProductService} from 'src/app/shared/services/products.service';
 import {ItemInterface} from 'src/app/shared/models/ItemInterface';
 import {MatTable} from '@angular/material/table';
@@ -20,6 +20,7 @@ import {Timestamp} from '@firebase/firestore';
 import {LocalStorageServiceService} from 'src/app/shared/services/local-storage-service.service';
 import {FileReaderUtil} from 'src/app/shared/interfaces/FileReader';
 import {ItemFactory} from "../../shared/factories/ItemFactory";
+import {ProductFactory} from "../../shared/factories/ProductFactory";
 
 @Component({
   selector: 'app-incoming',
@@ -35,15 +36,15 @@ export class IncomingComponent implements OnInit {
 
   isNew: boolean = false;
 
-  products !: Array<Product>;
+  products !: Array<ProductInterface>;
   customers !: Array<Custamer>;
-  filteredProducts !: Observable<Product[]>;
+  filteredProducts !: Observable<ProductInterface[]>;
   filteredCustomer !: Observable<Custamer[]>;
 
   items: ItemInterface[] = []
   datasource: [ItemInterface, boolean][] = [];
 
-  incomingProduct: Array<Product> = [];
+  incomingProduct: Array<ProductInterface> = [];
   displayedColumns: string[] = ['number', 'amount', 'incomingPrice', 'price', 'action'];
 
   detailsForm = new FormGroup({
@@ -170,47 +171,29 @@ export class IncomingComponent implements OnInit {
     return now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + number;
   }
 
-  addItem() {
+  async addItem() {
 
     if (this.itemForm.value.productNumber && this.itemForm.value.amount && this.itemForm.value.productNumber) {
-      this.localStorageServiceService.getProduct(this.itemForm.value.productNumber).subscribe(products => {
-        if (products) {
-          console.log("Itemnumber: " + this.itemNumber);
-          this.loadToTable(products)
-          this.itemForm.reset();
-        }
-      })
-
+      let products = await firstValueFrom(this.localStorageServiceService.getProduct(this.itemForm.value.productNumber))
+      if (products) {
+        products.stock = this.itemForm.value.amount;
+        this.loadToTable(products, true);
+        this.itemForm.reset();
+      }
     }
   }
 
-  loadToTable(product: Product) {
-    let pr: Product;
-    this.localStorageServiceService.getProduct(product.number).subscribe(product => {
-      if (product) {
-        pr = product;
-      } else {
-        console.log('Nem található a termék.');
-      }
-    });
-    let item: ItemInterface;
-    let isExisting = true;
-
-    if (!pr) {
-      console.log(product.number + " is not valid product number.")
-      isExisting = false;
-      pr = product;
-    }
-    item = this.getItem(product.number, pr);
-    console.log(item);
-    if (+item.amount === 0) {
-      this.incomingProduct.push(pr);
+  async loadToTable(product: ProductInterface, isExisting: boolean) {
+    let item: ItemInterface | null;
+    item = this.getItemFromDataSource(product.number);
+    if (!item) {
+      item = ItemFactory.createProductItem(this.itemNumber.toString(), product, product.stock);
+      this.incomingProduct.push(product);
       this.itemNumber += 1;
       this.datasource.push([item, isExisting]);
+    } else {
+      item.amount = (+item.amount + +product.stock).toString();
     }
-    item.amount = (+item.amount + +product.stock).toString();
-
-
     this.updateDataSource();
   }
 
@@ -224,13 +207,13 @@ export class IncomingComponent implements OnInit {
     }
   }
 
-  getItem(productNumber: string, pr: Product): ItemInterface {
+  getItemFromDataSource(productNumber: string): ItemInterface | null {
     for (let value of this.datasource.values()) {
       if (value[0].productNumber === productNumber) {
         return value[0];
       }
     }
-    return ItemFactory.createProductItem(this.itemNumber.toString(), pr);
+    return null;
   }
 
   removeElement(item: ItemInterface) {
@@ -254,7 +237,7 @@ export class IncomingComponent implements OnInit {
       }
       this.deliveryNote.products = this.items;
 
-      let modifyProductsList: Product[] = [];
+      let modifyProductsList: ProductInterface[] = [];
 
       this.incomingProduct.forEach(async product => {
         this.deliveryNote.searchArray.push(product.number);
@@ -289,7 +272,7 @@ export class IncomingComponent implements OnInit {
           let output = this.fileReader.transferJsonToObject(jsonData.slice(1), keys);
           console.log(output);
           output.forEach(element => {
-            this.loadToTable(element)
+            this.loadProduct(element)
           });
           console.log(this.datasource);
         } else {
@@ -301,6 +284,19 @@ export class IncomingComponent implements OnInit {
     } else {
       alert('Kérlek válassz egy érvényes Excel fájlt (.xlsx)');
     }
+  }
+
+  async loadProduct(element: ProductInterface) {
+    let pr = await firstValueFrom(this.localStorageServiceService.getProduct(element.number));
+    let isExisting = true;
+    if (!pr) {
+      console.log(element.number + " is not valid product number.")
+      isExisting = false;
+      pr = element;
+    } else {
+      pr = ProductFactory.updateProductFromExcel(element.price, element.incomingPrice, element.stock, pr);
+    }
+    this.loadToTable(pr, isExisting)
   }
 
   createProduct(item: ItemInterface) {

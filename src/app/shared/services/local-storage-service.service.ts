@@ -4,7 +4,7 @@ import { map, tap } from 'rxjs/operators';
 import { CustomersService } from './customers.service';
 import { Custamer } from '../models/Custamer';
 import { ProductService } from './products.service';
-import { Product } from '../models/Product';
+import { ProductInterface } from '../models/ProductInterface';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +16,8 @@ export class LocalStorageServiceService {
 
   private readonly customersSubject: BehaviorSubject<Custamer[]> = new BehaviorSubject<Custamer[]>([]);
   public customers$: Observable<Custamer[]> = this.customersSubject.asObservable();
-  private readonly productsSubject: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
-  public products$: Observable<Product[]> = this.productsSubject.asObservable();
+  private readonly productsSubject: BehaviorSubject<ProductInterface[]> = new BehaviorSubject<ProductInterface[]>([]);
+  public products$: Observable<ProductInterface[]> = this.productsSubject.asObservable();
 
   constructor(private readonly customersService: CustomersService, private readonly productService: ProductService) { }
 
@@ -42,7 +42,7 @@ export class LocalStorageServiceService {
       localStorage.setItem(this.customerKey, JSON.stringify(customers));
     }
   }
-  getProducts():Observable<Product[]>{
+  getProducts():Observable<ProductInterface[]>{
     const cachedItems = localStorage.getItem(this.productKey);
     if(cachedItems){
      // Ha a localStorage-ban vannak adatok, akkor azokat visszaadjuk
@@ -52,7 +52,7 @@ export class LocalStorageServiceService {
       return this.loadProductsFromServer();
     }
   }
-  updateProduct(updatedProduct: Product): void {
+  updateProduct(updatedProduct: ProductInterface): void {
     const products = this.productsSubject.value;
     const index = products.findIndex((product: { id: string; }) => product.id === updatedProduct.id);
     if (index !== -1) {
@@ -62,7 +62,7 @@ export class LocalStorageServiceService {
       localStorage.setItem(this.productKey, JSON.stringify(products));
     }
   }
-  private loadProductsFromServer(): Observable<Product[]> {
+  private loadProductsFromServer(): Observable<ProductInterface[]> {
     return this.productService.loadProduct().pipe(
       tap((products) => {
         this.cacheItems(this.productKey, JSON.stringify(products));
@@ -83,7 +83,7 @@ export class LocalStorageServiceService {
     localStorage.setItem(storageKey, items);
   }
 
-  getProduct(productNumber: string): Observable<Product | null>{
+  getProduct(productNumber: string): Observable<ProductInterface | null>{
     return this.getProducts().pipe(
       map(products => products.find(p => p.number === productNumber) || null)
     );

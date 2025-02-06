@@ -1,4 +1,4 @@
-export interface Product{
+export interface ProductInterface {
     id: string;
     number: string;
     name: string;
@@ -11,4 +11,4 @@ export interface Product{
     vtsz: string;
     incomingPrice: string;
 }
-export type ProductKeys = keyof Product;
+export type ProductKeys = keyof ProductInterface;

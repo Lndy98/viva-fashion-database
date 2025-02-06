@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
@@ -6,7 +6,7 @@ import { FormControl, FormGroup } from '@angular/forms'
 import { Custamer } from 'src/app/shared/models/Custamer';
 import { map, Observable, startWith } from 'rxjs';
 import { Util } from 'src/app/shared/interfaces/Util';
-import { Product } from 'src/app/shared/models/Product';
+import { ProductInterface } from 'src/app/shared/models/ProductInterface';
 import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
 
 @Component({
@@ -27,9 +27,9 @@ export class DeliveryNoteListComponent implements OnInit {
     type: new FormControl('')
   });
 
-  products: Array<Product> = [];
+  products: Array<ProductInterface> = [];
   customers: Array<Custamer> = [];
-  filteredProducts !: Observable<Product[]>;
+  filteredProducts !: Observable<ProductInterface[]>;
   filteredCustomer !: Observable<Custamer[]>;
 
   constructor(private router: Router, private deliveryNotesService: DeliveryNotesService, private util: Util, private localStorageServiceService:LocalStorageServiceService) { }
@@ -43,7 +43,7 @@ export class DeliveryNoteListComponent implements OnInit {
   setCustomer() {
     // Az aszinkron adatbetöltést a subscribe-al végezzük el
     this.localStorageServiceService.getCustomers().subscribe(customers => {
-      this.customers = customers; 
+      this.customers = customers;
       this.filteredCustomer = this.detailsForm.controls['companyName'].valueChanges.pipe(
         startWith(''),
         map(value => this._filterCustomer(value || '')),
@@ -52,7 +52,7 @@ export class DeliveryNoteListComponent implements OnInit {
   }
   setProduct(){
     this.localStorageServiceService.getProducts().subscribe(products => {
-      this.products = products; 
+      this.products = products;
       this.filteredProducts = this.detailsForm.controls['productNumber'].valueChanges.pipe(
         startWith(''),
         map(value => this._filterProduct(value || '')),
@@ -82,13 +82,13 @@ export class DeliveryNoteListComponent implements OnInit {
   }
   search() {
     const { type, date, companyName, productNumber } = this.detailsForm.value;
-  
+
     if (!type) {
       return;
     }
-  
+
     let observable;
-  
+
     if (date) {
       if (companyName && productNumber) {
         observable = this.deliveryNotesService
@@ -112,7 +112,7 @@ export class DeliveryNoteListComponent implements OnInit {
     } else {
       observable = this.deliveryNotesService.loadDeliveryNotesByType(type);
     }
-  
+
     observable.subscribe((data: Array<DeliveryNote>) => {
       console.log(data);
       this.deliveryNotes = data;

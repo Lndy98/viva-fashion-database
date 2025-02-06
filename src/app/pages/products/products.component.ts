@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/shared/services/products.service';
-import { Product } from '../../shared/models/Product';
+import { ProductInterface } from '../../shared/models/ProductInterface';
 import { Unit } from "../../shared/models/Unit";
 import { FormControl, FormGroup } from '@angular/forms'
 import { Util } from 'src/app/shared/interfaces/Util';
@@ -18,7 +18,7 @@ export class ProductsComponent implements OnInit {
   });
 
   public Unit = Unit;
-  products !: Array<Product>;
+  products !: Array<ProductInterface>;
 
   productsDisplayedColumns: string[] = ['number', 'name', 'materialComposition', 'stock', 'price', 'incomingPrice', 'stockValue', 'save'];
 
@@ -30,19 +30,19 @@ export class ProductsComponent implements OnInit {
   search(){
     if(this.detailsForm.value.productNumber){
       let start = this.detailsForm.value.productNumber.toUpperCase();
-      let end = this.util.endPartOfSearch(start); 
+      let end = this.util.endPartOfSearch(start);
         if(end == ''){
-          this.productService.getByNumberStartWith(start).subscribe((data:Array<Product>)=>{
+          this.productService.getByNumberStartWith(start).subscribe((data:Array<ProductInterface>)=>{
             this.products = data;
           })
         } else {
-          this.productService.getByNumberBetween(start,end).subscribe((data: Array<Product>) => {
+          this.productService.getByNumberBetween(start,end).subscribe((data: Array<ProductInterface>) => {
             this.products = data;
           })
          }
     }
   }
-  save(element: Product){
+  save(element: ProductInterface){
     if(element.price && element.incomingPrice){
       this.productService.setProduct(element);
     }

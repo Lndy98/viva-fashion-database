@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms'
 import { Router } from '@angular/router';
-import { Product } from 'src/app/shared/models/Product';
+import { ProductInterface } from 'src/app/shared/models/ProductInterface';
 import { LocalStorageServiceService } from 'src/app/shared/services/local-storage-service.service';
 import { ProductService } from 'src/app/shared/services/products.service';
 import { v4 as uuidv4 } from 'uuid';
@@ -13,7 +13,7 @@ import { v4 as uuidv4 } from 'uuid';
 })
 export class NewProductComponent implements OnInit {
 
-  product!: Product;
+  product!: ProductInterface;
 
   detailsForm = new FormGroup({
     name: new FormControl(''),
@@ -93,7 +93,7 @@ export class NewProductComponent implements OnInit {
   }
   isProduct(productNumber: string):boolean{
     let isProduct = false;
-   
+
     return isProduct;
   }
 }

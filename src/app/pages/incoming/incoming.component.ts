@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {Observable, firstValueFrom} from 'rxjs';
+import {firstValueFrom, Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
 import {FormControl, FormGroup} from '@angular/forms'
@@ -9,18 +9,17 @@ import {ItemInterface} from 'src/app/shared/models/ItemInterface';
 import {MatTable} from '@angular/material/table';
 import {ActivatedRoute, Router} from '@angular/router';
 
-import {DeliveryNote} from 'src/app/shared/models/DeliveryNote';
+import {DeliveryNoteInterface} from 'src/app/shared/models/DeliveryNoteInterface';
 import {DeliveryNotesService} from 'src/app/shared/services/delivery-notes.service';
 import {Custamer} from 'src/app/shared/models/Custamer';
 import {Util} from 'src/app/shared/interfaces/Util';
 
-
-import {v4 as uuidv4} from 'uuid';
 import {Timestamp} from '@firebase/firestore';
 import {LocalStorageServiceService} from 'src/app/shared/services/local-storage-service.service';
 import {FileReaderUtil} from 'src/app/shared/interfaces/FileReader';
 import {ItemFactory} from "../../shared/factories/ItemFactory";
 import {ProductFactory} from "../../shared/factories/ProductFactory";
+import {DeliveryNoteFactory} from "../../shared/factories/DeliveryNoteFactory";
 
 @Component({
   selector: 'app-incoming',
@@ -42,7 +41,7 @@ export class IncomingComponent implements OnInit {
   filteredCustomer !: Observable<Custamer[]>;
 
   items: ItemInterface[] = []
-  datasource: [ItemInterface, boolean][] = [];
+  datasource: Map<ItemInterface, boolean> =new Map<ItemInterface, boolean>();
 
   incomingProduct: Array<ProductInterface> = [];
   displayedColumns: string[] = ['number', 'amount', 'incomingPrice', 'price', 'action'];
@@ -57,7 +56,7 @@ export class IncomingComponent implements OnInit {
     amount: new FormControl('')
   });
 
-  deliveryNote!: DeliveryNote;
+  deliveryNote!: DeliveryNoteInterface;
 
   fileInput: any;
 
@@ -73,7 +72,7 @@ export class IncomingComponent implements OnInit {
           this.getDeliveryNote(params['id']);
         } else {
           this.isNew = true;
-          this.setDeliveryNote();
+          this.deliveryNote = DeliveryNoteFactory.createEmpty("incoming");
         }
       });
     }
@@ -138,38 +137,6 @@ export class IncomingComponent implements OnInit {
     return this.customers.filter(customer => customer.companyName.toLowerCase().includes(filterValue));
   }
 
-//TODO: kiemelés-> illetve valami memória barátabb megoldás
-  setDeliveryNote() {
-    let now = new Date();
-    let date = new Date(now.getFullYear().toString() + "-" + (now.getMonth() + 1).toString());
-
-    this.deliveryNoteService.getByMonth(date).subscribe((data: Array<DeliveryNote>) => {
-      if (data) {
-        this.deliveryNote = {
-          id: uuidv4(),
-          number: this.generateDeliveryNoteNumber((data.length + 3).toString()),
-          customerId: "",
-          products: [],
-          type: "incoming",
-          tax: "",
-          date: Timestamp.fromDate(new Date(new Date().toDateString())),
-          searchArray: []
-        }
-      }
-    })
-  }
-
-//TODO: kiemelés-> illetve valami memória barátabb megoldás
-  generateDeliveryNoteNumber(number: string) {
-    let now = new Date();
-    if (number === "9999") {
-      number = "0";
-    }
-    while (number.length < 4) {
-      number = "0" + number;
-    }
-    return now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + number;
-  }
 
   async addItem() {
 
@@ -190,7 +157,7 @@ export class IncomingComponent implements OnInit {
       item = ItemFactory.createProductItem(this.itemNumber.toString(), product, product.stock);
       this.incomingProduct.push(product);
       this.itemNumber += 1;
-      this.datasource.push([item, isExisting]);
+      this.datasource.set(item, isExisting);
     } else {
       item.amount = (+item.amount + +product.stock).toString();
     }
@@ -198,26 +165,31 @@ export class IncomingComponent implements OnInit {
   }
 
   updateDataSource() {
-    if (this.table && this.datasource.length > 1) {
-      this.datasource.sort((a, b) => {
-        if (a[1] === b[1]) return 0;
-        return a[1] ? -1 : 1;
-      });
+    if (this.table && this.datasource.size > 1) {
+      // this.datasource.((a, b) => {
+      //   if (a[1] === b[1]) return 0;
+      //   return a[1] ? -1 : 1;
+      // });
       this.table.renderRows();
     }
   }
 
   getItemFromDataSource(productNumber: string): ItemInterface | null {
-    for (let value of this.datasource.values()) {
-      if (value[0].productNumber === productNumber) {
-        return value[0];
+    for (let item of this.datasource.keys()) {
+      if (item.productNumber === productNumber) {
+        return item;
       }
     }
     return null;
   }
 
   removeElement(item: ItemInterface) {
-    //TODO: datasource remoive item
+    //TODO: teszt
+    if(this.datasource.has(item)){
+      this.itemNumber -= 1;
+      this.datasource.delete(item);
+    }
+    this.updateDataSource();
   }
 
 
@@ -290,7 +262,6 @@ export class IncomingComponent implements OnInit {
     let pr = await firstValueFrom(this.localStorageServiceService.getProduct(element.number));
     let isExisting = true;
     if (!pr) {
-      console.log(element.number + " is not valid product number.")
       isExisting = false;
       pr = element;
     } else {
@@ -303,4 +274,5 @@ export class IncomingComponent implements OnInit {
     //TODO: felugró ablakban lehessen létrehozni a terméket.
   }
 
+  protected readonly Array = Array;
 }

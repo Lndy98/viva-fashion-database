@@ -6,6 +6,7 @@ import {LocalStorageServiceService} from 'src/app/shared/services/local-storage-
 import {ProductService} from 'src/app/shared/services/products.service';
 import {v4 as uuidv4} from 'uuid';
 import {ProductFactory} from "../../shared/factories/ProductFactory";
+import {firstValueFrom} from "rxjs";
 
 @Component({
   selector: 'app-new-product',
@@ -31,7 +32,7 @@ export class NewProductComponent implements OnInit {
 
   text: string = ""
 
-  constructor( private readonly productService: ProductService, private readonly localStorage: LocalStorageServiceService) {
+  constructor(private readonly productService: ProductService, private readonly localStorage: LocalStorageServiceService) {
   }
 
   ngOnInit(): void {
@@ -39,23 +40,21 @@ export class NewProductComponent implements OnInit {
 
   async save() {
     this.text = "";
-    let isSuccess = false;
     await this.createProduct();
-    //TODO:refact and test
+    //TODO: test
     if (this.text == "") {
       console.log(this.product);
-      this.productService.getByNumber(this.product.number).subscribe(async data => {
-        console.log(data);
-        if (data.length == 0) {
-          console.log("isSuccess");
-          isSuccess = true;
-          await this.productService.create(this.product);
-          this.localStorage.updateProduct(this.product);
-          window.location.reload();
-        } else if (data.length != 0 && !isSuccess) {
-          this.text = "A megadott cikkszám már létezik!";
-        }
-      })
+      let d = await firstValueFrom(this.productService.getByNumber(this.product.number));
+      if (!d || d.length === 0) {
+        await this.productService.create(this.product);
+        this.localStorage.updateProduct(this.product);
+        window.location.reload();
+      } else {
+        this.text = "A megadott cikkszám már létezik!";
+      }
+      if (this.text != "") {
+        alert(this.text);
+      }
     }
   }
 

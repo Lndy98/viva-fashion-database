@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
+import { DeliveryNoteInterface } from 'src/app/shared/models/DeliveryNoteInterface';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
 import { FormControl, FormGroup } from '@angular/forms'
 import { Custamer } from 'src/app/shared/models/Custamer';
@@ -16,7 +16,7 @@ import { LocalStorageServiceService } from 'src/app/shared/services/local-storag
   providers: [Util]
 })
 export class DeliveryNoteListComponent implements OnInit {
-  deliveryNotes:Array<DeliveryNote> = [];
+  deliveryNotes:Array<DeliveryNoteInterface> = [];
   displayedColumns: string[] = ['number', 'date', 'custamer'];
 
   detailsForm = new FormGroup({
@@ -61,7 +61,7 @@ export class DeliveryNoteListComponent implements OnInit {
   }
 
   setDeliveryNotes(){
-    this.deliveryNotesService.loadDeliveryNotesByType("outgoing").subscribe((data: Array<DeliveryNote>) => {
+    this.deliveryNotesService.loadDeliveryNotesByType("outgoing").subscribe((data: Array<DeliveryNoteInterface>) => {
       console.log(data);
       this.deliveryNotes = data;
     })
@@ -113,7 +113,7 @@ export class DeliveryNoteListComponent implements OnInit {
       observable = this.deliveryNotesService.loadDeliveryNotesByType(type);
     }
 
-    observable.subscribe((data: Array<DeliveryNote>) => {
+    observable.subscribe((data: Array<DeliveryNoteInterface>) => {
       console.log(data);
       this.deliveryNotes = data;
     });

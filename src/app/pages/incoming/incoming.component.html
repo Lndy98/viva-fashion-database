@@ -54,16 +54,16 @@
   </form>
 </div>
 
-<table mat-table [dataSource]="datasource" *ngIf="datasource.length>=1">
+<table mat-table [dataSource]="Array.from(datasource.keys())" *ngIf="datasource.size>=1">
     <ng-container matColumnDef="number">
         <th mat-header-cell *matHeaderCellDef> Cikkszám* </th>
-        <td mat-cell *matCellDef="let element"> {{ element[0].productNumber }} </td>
+        <td mat-cell *matCellDef="let element"> {{ element.productNumber }} </td>
     </ng-container>
     <ng-container matColumnDef="amount">
         <th mat-header-cell *matHeaderCellDef> mennyiség </th>
         <td mat-cell *matCellDef="let element">
             <mat-form-field class="example-full-width" appearance="fill">
-            <input matInput type="text" [(ngModel)]="element[0].amount">
+            <input matInput type="text" [(ngModel)]="element.amount">
             </mat-form-field>
         </td>
     </ng-container>
@@ -71,7 +71,7 @@
         <th mat-header-cell *matHeaderCellDef>Bekerülési ár</th>
         <td mat-cell *matCellDef="let element">
             <mat-form-field class="example-full-width" appearance="fill">
-            <input matInput type="text" [(ngModel)]="element[0].incomingPrice">
+            <input matInput type="text" [(ngModel)]="element.incomingPrice">
             </mat-form-field>
         </td>
     </ng-container>
@@ -79,19 +79,19 @@
         <th mat-header-cell *matHeaderCellDef> Ár </th>
         <td mat-cell *matCellDef="let element">
             <mat-form-field class="example-full-width" appearance="fill">
-            <input matInput type="text" [(ngModel)]="element[0].price">
+            <input matInput type="text" [(ngModel)]="element.price">
             </mat-form-field>
         </td>
     </ng-container>
     <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let element" >
-            <button mat-button *ngIf="!element[1]"(click)="createProduct(element[0])">Hozzáad</button>
-            <button mat-button (click)="removeElement(element[0])">Törlés</button>
+            <button mat-button *ngIf="!datasource.get(element)"(click)="createProduct(element)">Hozzáad</button>
+            <button mat-button (click)="removeElement(element)">Törlés</button>
         </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-<button class="buttons" mat-raised-button  color="primary" type="submit" *ngIf="datasource.length>=1" (click)="cancel()"> Mégse </button>
-<button class="buttons" mat-raised-button  color="primary" type="submit" form="basic" *ngIf="datasource.length>=1"> Mentés </button>
+<button class="buttons" mat-raised-button  color="primary" type="submit" *ngIf="datasource.size>=1" (click)="cancel()"> Mégse </button>
+<button class="buttons" mat-raised-button  color="primary" type="submit" form="basic" *ngIf="datasource.size>=1"> Mentés </button>

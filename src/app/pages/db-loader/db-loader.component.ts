@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Timestamp } from '@firebase/firestore';
 import { Custamer } from 'src/app/shared/models/Custamer';
-import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
+import { DeliveryNoteInterface } from 'src/app/shared/models/DeliveryNoteInterface';
 import { ProductInterface } from 'src/app/shared/models/ProductInterface';
 import { CustomersService } from 'src/app/shared/services/customers.service';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
@@ -23,7 +23,7 @@ export class DbLoaderComponent implements OnInit {
   successCounter: number = 0;
   unSuccessCounter: number = 0;
 
-  deliverNotes: DeliveryNote[] = [];
+  deliverNotes: DeliveryNoteInterface[] = [];
 
   constructor( private productService: ProductService, private customerService: CustomersService, private deliveryNoteService: DeliveryNotesService) { }
 

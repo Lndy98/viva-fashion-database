@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Util } from 'src/app/shared/interfaces/Util';
-import { DeliveryNote } from 'src/app/shared/models/DeliveryNote';
+import { DeliveryNoteInterface } from 'src/app/shared/models/DeliveryNoteInterface';
 import { ItemInterface } from 'src/app/shared/models/ItemInterface';
 import { DeliveryNotesService } from 'src/app/shared/services/delivery-notes.service';
 
@@ -21,7 +21,7 @@ export class DeliveryNoteComponent implements OnInit {
   products!: ItemInterface[];
 
 
-  deliveryNote !: DeliveryNote;
+  deliveryNote !: DeliveryNoteInterface;
   displayedColumns: string[] = ['productNumber','name', 'amount', 'price','brutto', 'payable'];
 
   constructor(private readonly activatedRoute: ActivatedRoute,private readonly router: Router, private readonly deliveryNoteService: DeliveryNotesService, public util: Util) { }

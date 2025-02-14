@@ -112,8 +112,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "viva-fashion-database:build:production",
-            "firebaseProject": "viva-fashion-database",
-            "firebaseHostingSite": "viva-fashion-database"
+            "firebaseProject": "test-v-f-database",
+            "firebaseHostingSite": "test-v-f-database"
           }
         }
       }
